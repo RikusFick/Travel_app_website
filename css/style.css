@@ -49,3 +49,11 @@ input,textarea,select{width:100%;font:inherit;padding:12px 14px;border:1px solid
 .btn[disabled]{opacity:.6;cursor:not-allowed}
 table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.auth-wrap{max-width:440px}.auth-toggle{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:14px;margin:24px 0 16px}
+.auth-toggle button{flex:1;border:0;background:none;padding:10px;border-radius:10px;font:inherit;font-weight:600;color:var(--muted);cursor:pointer}
+.auth-toggle button[aria-selected=true]{background:#e6f3f2;color:var(--ink)}
+.btn-social{display:block;width:100%;margin-top:10px;padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;font-weight:600;cursor:pointer;color:var(--ink)}
+.btn-social[data-provider=apple]{background:#000;color:#fff;border-color:#000}
+.auth-or{display:flex;align-items:center;gap:10px;color:var(--muted);margin:18px 0}.auth-or::before,.auth-or::after{content:"";flex:1;height:1px;background:var(--line)}
+.auth-form input{width:100%;box-sizing:border-box}.auth-submit{justify-self:stretch}.auth-hint{margin:6px 0 0;font-size:.9rem}
+.auth-msg{margin:0;color:var(--accent-d);min-height:1em}.auth-forgot{justify-self:center}.auth-test{font-size:.85rem;margin-top:20px}

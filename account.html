@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<meta name="theme-color" content="#0b7a75">
+<meta name="robots" content="noindex, nofollow">
+<title>Log in or sign up | Earwise</title><meta name="description" content="Log in or create an Earwise account."></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Earwise</a>
+    <nav aria-label="Main">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#countries">Countries</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="account.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc"><div class="wrap auth-wrap">
+<h1 id="authTitle">Welcome back</h1>
+<p class="muted">Your account syncs guides you buy here with the Earwise app. Sign in to the app with the same account and they unlock. An account is optional in the app.</p>
+<div class="auth-toggle" role="tablist" aria-label="Log in or sign up">
+  <button type="button" role="tab" id="tabLogin" aria-selected="true">Log in</button>
+  <button type="button" role="tab" id="tabSignup" aria-selected="false">Sign up</button>
+</div>
+<button type="button" class="btn-social" data-provider="apple"> Continue with Apple</button>
+<button type="button" class="btn-social" data-provider="google">G&nbsp; Continue with Google</button>
+<div class="auth-or"><span>or</span></div>
+<form class="form auth-form" id="authForm" novalidate>
+  <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+  <div><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+  <p class="muted auth-hint" id="pwHint" hidden>At least 8 characters.</p></div>
+  <p class="auth-msg" id="authMsg" role="status" aria-live="polite"></p>
+  <button class="btn auth-submit" type="submit" id="submitBtn">Log in</button>
+  <a href="#" id="forgot" class="auth-forgot">Forgot password?</a>
+</form>
+<p class="muted auth-test">Test mode: nothing is sent and no account is created. Your test sign-in is saved only in this browser.</p>
+</div></main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div><span class="brand">Earwise</span><p class="muted">Offline audio guides that play by themselves.<br>© 2026 Finick (Pty) Ltd, South Africa.</p></div>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="credits.html">Photo credits</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var mode='login',$=function(i){return document.getElementById(i)};
+  function setMode(m){mode=m;var s=m==='signup';
+    $('tabLogin').setAttribute('aria-selected',!s);$('tabSignup').setAttribute('aria-selected',s);
+    $('authTitle').textContent=s?'Create your account':'Welcome back';
+    $('submitBtn').textContent=s?'Create account':'Log in';
+    $('pwHint').hidden=!s;$('forgot').hidden=s;$('authMsg').textContent='';
+    $('password').autocomplete=s?'new-password':'current-password';}
+  function ok(e){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e.trim())}
+  function signIn(email,p){localStorage.setItem('earwise.session',JSON.stringify({email:email.trim().toLowerCase(),provider:p,since:Date.now()}));location.href='my-guides.html';}
+  $('tabLogin').onclick=function(){setMode('login')};$('tabSignup').onclick=function(){setMode('signup')};
+  document.querySelectorAll('.btn-social').forEach(function(b){b.onclick=function(){var p=b.dataset.provider;signIn(p+'.test@earwise.app',p)}});
+  $('authForm').onsubmit=function(e){e.preventDefault();var em=$('email').value,pw=$('password').value;
+    if(!ok(em)){$('authMsg').textContent='Enter a valid email address.';return}
+    if(pw.length<(mode==='signup'?8:1)){$('authMsg').textContent='Check your password (at least 8 characters to sign up).';return}
+    signIn(em,'email')};
+  $('forgot').onclick=function(e){e.preventDefault();$('authMsg').textContent=ok($('email').value)?"If an account exists, we'll email a reset link.":'Enter your email address first.'};
+  if(location.hash==='#signup')setMode('signup');
+  if(localStorage.getItem('earwise.session'))location.replace('my-guides.html');
+})();
+</script></body></html>

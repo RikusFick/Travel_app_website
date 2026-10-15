@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<meta name="theme-color" content="#0b7a75">
+<meta name="robots" content="noindex, nofollow">
+<title>My guides | Earwise</title><meta name="description" content="Your Earwise guides."></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Earwise</a>
+    <nav aria-label="Main">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#countries">Countries</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a href="account.html">Log in</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc"><div class="wrap narrow">
+<h1>My guides</h1>
+<p class="muted" id="who">Signed in.</p>
+<div class="feature">
+  <p><strong>No guides yet.</strong></p>
+  <p class="muted">Guides and country passes you buy on this website will show here, and unlock in the Earwise app when you sign in with the same account. The shop opens at launch.</p>
+</div>
+<p><button type="button" class="btn" id="signOut">Sign out</button></p>
+<p class="muted auth-test">Test mode: this page reads a test sign-in saved in this browser only.</p>
+</div></main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div><span class="brand">Earwise</span><p class="muted">Offline audio guides that play by themselves.<br>© 2026 Finick (Pty) Ltd, South Africa.</p></div>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="credits.html">Photo credits</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){var s=localStorage.getItem('earwise.session');if(!s){location.replace('account.html');return}
+try{document.getElementById('who').textContent='Signed in as '+JSON.parse(s).email}catch(e){}
+document.getElementById('signOut').onclick=function(){localStorage.removeItem('earwise.session');location.href='account.html'};})();
+</script></body></html>
