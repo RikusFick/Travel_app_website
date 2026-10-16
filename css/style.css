@@ -57,3 +57,9 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border-bottom:1
 .auth-or{display:flex;align-items:center;gap:10px;color:var(--muted);margin:18px 0}.auth-or::before,.auth-or::after{content:"";flex:1;height:1px;background:var(--line)}
 .auth-form input{width:100%;box-sizing:border-box}.auth-submit{justify-self:stretch}.auth-hint{margin:6px 0 0;font-size:.9rem}
 .auth-msg{margin:0;color:var(--accent-d);min-height:1em}.auth-forgot{justify-self:center}.auth-test{font-size:.85rem;margin-top:20px}
+
+/* Show/hide password eye */
+.pw-wrap{position:relative}
+.pw-wrap input{width:100%;padding-right:48px;box-sizing:border-box}
+.pw-eye{position:absolute;top:50%;right:6px;transform:translateY(-50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:none;border:0;border-radius:10px;color:inherit;opacity:.65;cursor:pointer}
+.pw-eye:hover,.pw-eye:focus-visible{opacity:1}
