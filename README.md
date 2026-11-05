@@ -19,7 +19,23 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 
 Portugal guide ids (26, signed off): `alfama-walk`, `baixa-chiado`, `sao-jorge-castle`, `belem-tower`, `jeronimos`, `belem-riverfront`, `coach-museum`, `gulbenkian`, `pena`, `sintra-palace`, `moorish-castle`, `regaleira`, `porto-ribeira`, `clerigos`, `livraria-lello`, `palacio-bolsa`, `gaia-serra-pilar`, `braga-old-town`, `bom-jesus`, `guimaraes-castle-palace`, `guimaraes-old-town`, `douro-valley`, `batalha`, `mafra`, `coimbra-university`, `tomar-convent`.
 
-`account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
+`account.html` is email sign-up and log in through Firebase Authentication. `my-guides.html` shows that session only. Purchases are not connected. Privacy and terms are still drafts (`noindex`). Home, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
+
+## Firebase email sign-in
+
+The site uses the Firebase JS SDK in the browser. GitHub Pages stays static. The only values you paste in are the public web config. Do not commit a service account, admin SDK key, or any private key.
+
+1. Open [Firebase console](https://console.firebase.google.com/) and create a project (for example `earwise`).
+2. Add a **Web** app. Copy the `firebaseConfig` object.
+3. In **Authentication → Sign-in method**, enable **Email/Password**. Leave Google and Apple off for now.
+4. In **Authentication → Settings → Authorized domains**, add `getearwise.com`. `localhost` is already allowed for local checks.
+5. Paste the public fields into `js/firebase-config.js`, replacing every `YOUR_…` placeholder. The file should look like the console snippet: `apiKey`, `authDomain`, `projectId`, `storageBucket`, `messagingSenderId`, `appId`.
+6. Commit that file. `apiKey` is a public client key, not a secret. Security is the authorized domain list plus Firebase’s own rules.
+7. Reload https://getearwise.com/account.html . The “Auth not configured” banner disappears when none of the required fields still start with `YOUR_`.
+
+Until that config is pasted, Log in opens the form and shows **Auth not configured**. The header then shows the email and **Log out** after a real sign-in. The same Firebase project can gain iOS and Android apps later for `travel_app`; this website does not need those configs.
+
+Apple and Google sign-in are not implemented. Paystack is not wired.
 
 ## Contact
 

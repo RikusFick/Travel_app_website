@@ -112,7 +112,7 @@
       <a class="desk-link" href="../#how">How it works</a>
       <a class="desk-link" href="../pompeii/">Pompeii</a>
       <a href="../support.html">Support</a>
-      <a href="../account.html">Log in</a>
+      <span class="auth-slot" data-auth-slot><a href="../account.html" data-auth-link>Log in</a></span>
     </nav>
   </div>
 </header>
@@ -158,5 +158,8 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+
+<script src="/js/firebase-config.js"></script>
+<script type="module" src="/js/auth.js"></script>
 </body>
 </html>
