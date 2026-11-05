@@ -1,0 +1,210 @@
+[
+  {
+    "id": "alfama-walk",
+    "title": "Alfama",
+    "place": "Lisbon",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "baixa-chiado",
+    "title": "Baixa–Chiado",
+    "place": "Lisbon",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "sao-jorge-castle",
+    "title": "São Jorge Castle",
+    "place": "Lisbon",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "belem-tower",
+    "title": "Belém Tower",
+    "place": "Belém",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "jeronimos",
+    "title": "Jerónimos Monastery",
+    "place": "Belém",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "belem-riverfront",
+    "title": "Belém riverfront",
+    "place": "Belém",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "coach-museum",
+    "title": "National Coach Museum",
+    "place": "Belém",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "gulbenkian",
+    "title": "Gulbenkian Museum",
+    "place": "Lisbon",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "pena",
+    "title": "Pena Palace",
+    "place": "Sintra",
+    "stops": 12,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "sintra-palace",
+    "title": "Sintra Palace",
+    "place": "Sintra",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "moorish-castle",
+    "title": "Moorish Castle",
+    "place": "Sintra",
+    "stops": 7,
+    "price": "€1.99",
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "regaleira",
+    "title": "Quinta da Regaleira",
+    "place": "Sintra",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "porto-ribeira",
+    "title": "Porto Ribeira",
+    "place": "Porto",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "clerigos",
+    "title": "Clérigos Tower",
+    "place": "Porto",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "livraria-lello",
+    "title": "Livraria Lello",
+    "place": "Porto",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "palacio-bolsa",
+    "title": "Palácio da Bolsa",
+    "place": "Porto",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "gaia-serra-pilar",
+    "title": "Gaia port lodges",
+    "place": "Vila Nova de Gaia",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "braga-old-town",
+    "title": "Braga old town",
+    "place": "Braga",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "bom-jesus",
+    "title": "Bom Jesus do Monte",
+    "place": "Braga",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "guimaraes-castle-palace",
+    "title": "Guimarães Castle",
+    "place": "Guimarães",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "guimaraes-old-town",
+    "title": "Guimarães old town",
+    "place": "Guimarães",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "douro-valley",
+    "title": "Douro Valley",
+    "place": "Douro",
+    "stops": 4,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "batalha",
+    "title": "Batalha Monastery",
+    "place": "Batalha",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "mafra",
+    "title": "Mafra Palace",
+    "place": "Mafra",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "coimbra-university",
+    "title": "University of Coimbra",
+    "place": "Coimbra",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  },
+  {
+    "id": "tomar-convent",
+    "title": "Convent of Christ",
+    "place": "Tomar",
+    "stops": null,
+    "price": null,
+    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+  }
+]

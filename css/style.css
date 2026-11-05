@@ -159,8 +159,9 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; scroll-margi
 @media (prefers-color-scheme: dark) {
   .band { background: transparent; padding-top: 8px; }
 }
-.section-head { margin: 0 0 12px; }
+.section-head { margin: 0 0 12px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .section-head h2 { font-size: 24px; font-weight: 800; }
+.section-head .more { font-size: 15px; font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
 
 .scroller {
   display: flex;
@@ -336,6 +337,14 @@ section[hidden] { display: none !important; }
 .hero-copy .info { margin: 6px 0 10px; font-size: 15px; color: rgba(255, 255, 255, 0.92); }
 .hero-copy .meta { padding: 0; }
 .hero-copy .price { color: #fff; font-size: 17px; }
+.price.is-soon { color: var(--secondary); font-weight: 700; }
+.hero-copy .price.is-soon { color: rgba(255, 255, 255, 0.92); }
+.grid-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.grid-cards .guide-card { width: auto; flex: none; }
+@media (min-width: 640px) {
+  .grid-cards { grid-template-columns: 1fr 1fr; }
+}
+.country-lead { margin: 4px 0 16px; }
 .hero-copy .langs span { background: rgba(255, 255, 255, 0.16); color: #fff; }
 
 .buy-block { margin: 16px 0 8px; }
