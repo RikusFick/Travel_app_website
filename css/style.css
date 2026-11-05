@@ -75,6 +75,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-hero .search input { background: #fff; color: #1a1d24; }
 .site-hero .search input::placeholder { color: #4a5160; }
 .site-hero .search svg { color: #4a5160; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; }
+.store {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 8px 18px 8px 14px;
+  background: #111;
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1;
+}
+.store:hover { color: #fff; filter: brightness(1.15); }
+.store svg { width: 22px; height: 22px; flex: none; }
+.store small { display: block; font-weight: 500; font-size: 11px; letter-spacing: .01em; opacity: .8; }
+.store-note { margin: 10px 0 16px; max-width: 36rem; font-size: 14px; color: rgba(255,255,255,.88); }
+.stores-inline { margin-top: 28px; }
+.cta { text-align: center; }
+.cta .lede { margin-left: auto; margin-right: auto; }
+.cta .stores { justify-content: center; margin-top: 20px; }
+.cta h2 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 8px; }
+.topbar nav a.nav-cta { background: var(--teal); color: var(--on-teal); border-radius: 999px; padding: 0 16px; }
+.topbar nav a.nav-cta:hover { color: var(--on-teal); filter: brightness(1.08); }
 .site-section { padding: 56px 0; }
 .site-section.alt { background: var(--quiet); }
 .feature-grid, .step-grid { display: grid; gap: 16px; margin-top: 24px; }
