@@ -122,6 +122,12 @@ details.faq p { margin: 4px 0 8px; }
 .narrow { max-width: 760px; }
 .foot-brand .fine { margin: 4px 0 0; }
 .topbar nav a.desk-link { display: none; }
+@media (max-width: 420px) {
+  .brand { font-size: 22px; }
+  .topbar, .nav { gap: 8px; }
+  .topbar nav, .nav nav { gap: 0; }
+  .topbar nav a, .nav nav a { font-size: 14px; padding: 0 6px; }
+}
 .sr {
   position: absolute;
   width: 1px;
@@ -168,6 +174,7 @@ h1.brand { margin: 0; font-size: 26px; }
   align-items: center;
   padding: 0 10px;
   border-radius: 12px;
+  white-space: nowrap;
 }
 .topbar nav a:hover, .nav nav a:hover { color: var(--teal); }
 
@@ -180,6 +187,39 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; scroll-margi
   position: relative;
   margin: 8px 0 18px;
 }
+.suggest {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  max-height: 320px;
+  overflow: auto;
+}
+.suggest[hidden] { display: none !important; }
+.suggest a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.suggest li[aria-selected="true"] a,
+.suggest a:hover { background: var(--soft); }
+.suggest small { color: var(--secondary); font-weight: 600; font-size: 14px; }
 .search svg {
   position: absolute;
   left: 16px;
@@ -691,3 +731,47 @@ td img { width: 120px; height: 80px; object-fit: cover; border-radius: 8px; }
   .scroller, body.is-filtering .scroller { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .grid-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* Country list. Images fill the frame the same way the homepage hero does. */
+.country-card .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.grid-cards[hidden] { display: none !important; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 18px;
+  background: var(--soft);
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 800;
+}
+.badge.soon { background: var(--quiet); color: var(--secondary); }
+.soon-panel {
+  margin-top: 12px;
+  padding: 28px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  max-width: 560px;
+}
+.region-block h2 { font-size: 28px; font-weight: 800; margin: 8px 0 14px; }
+.hits { display: grid; gap: 8px; margin: 0 0 8px; }
+.hit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.hit small { color: var(--secondary); font-weight: 600; font-size: 15px; }
+#hit-block[hidden] { display: none !important; }
+.map-frame .leaflet-container { height: 100%; width: 100%; background: var(--quiet); }

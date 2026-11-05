@@ -108,9 +108,8 @@
   <div class="wrap topbar">
     <a class="brand" href="../">Earwise</a>
     <nav aria-label="Main">
-      <a href="../portugal/">Portugal</a>
+      <a href="../guides/">Audio guides</a>
       <a class="desk-link" href="../#how">How it works</a>
-      <a class="desk-link" href="../pompeii/">Pompeii</a>
       <a href="../support.html">Support</a>
       <a href="../account.html">Log in</a>
     </nav>
@@ -120,6 +119,8 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="../">Earwise</a>
+      <span aria-hidden="true">/</span>
+      <a href="../guides/">Audio guides</a>
       <span aria-hidden="true">/</span>
       <a href="../portugal/">Portugal</a>
       <span aria-hidden="true">/</span>
@@ -141,8 +142,13 @@
     <p class="intro">Sintra’s Moorish walls along the mountain ridge. Seven stops run from the gate to the Royal Tower, about 10 minutes of narration for a 60–90 minute visit. It works offline, in 10 languages, and plays as you arrive.</p>
     <h2 class="block-title">Stops</h2><ol class="stops"><li><span class="num">1</span><div><h3>The Walls</h3><p>Just inside the outer gate, where the path climbs towards the inner ring of walls.</p></div></li><li><span class="num">2</span><div><h3>The Church of São Pedro de Penaferrim</h3><p>By the small church of São Pedro, between the two rings of the castle walls.</p></div></li></ol><p class="fine">The signed script has 7 stops. The titles above are the ones published with the guide sample. The rest play in the guide.</p>
     <h2 class="block-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>On the map</h2>
-    <div class="map-frame"><iframe title="Map of Moorish Castle in Sintra" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-9.4013%2C38.7821%2C-9.3773%2C38.7981&amp;layer=mapnik&amp;marker=38.79007%2C-9.3893"></iframe></div>
-    <p class="fine map-note">The pin is the site point from the signed guide (38.79007, -9.3893). Stop-by-stop pins play in the app.</p>
+    <div class="map-frame">
+      <div id="guide-map" data-pins='[{"name":"1. The Walls","lat":38.79165,"lon":-9.38840},{"name":"2. Church of São Pedro de Penaferrim","lat":38.79232,"lon":-9.38830}]'></div>
+    </div>
+    <p class="fine map-note">Only this guide’s published stop pins are marked: the walls and the church. The rest of Sintra is not on this map. <a href="https://www.openstreetmap.org/?mlat=38.79199&amp;mlon=-9.38835#map=18/38.79199/-9.38835">Open map</a></p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../js/guide-map.js"></script>
   </div>
 </main>
 <footer class="site-footer">
