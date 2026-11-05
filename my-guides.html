@@ -18,20 +18,23 @@
       <a class="desk-link" href="index.html#how">How it works</a>
       <a class="desk-link" href="pompeii/">Pompeii</a>
       <a href="support.html">Support</a>
-      <a href="account.html">Log in</a>
+      <span class="auth-slot" data-auth-slot><a href="account.html" data-auth-link>Log in</a></span>
     </nav>
   </div>
 </header>
 
 <main id="main" class="doc"><div class="wrap narrow">
 <h1>My guides</h1>
-<p class="muted" id="who">Signed in.</p>
+<div class="auth-banner" id="authBanner" role="status" hidden>
+  <strong>Auth not configured.</strong> Add the public Firebase web config in <code>js/firebase-config.js</code>. See the README.
+</div>
+<p class="muted" id="who">Checking sign-in…</p>
 <div class="feature">
   <p><strong>No guides yet.</strong></p>
   <p class="muted">Guides and country passes you buy on this website will show here, and unlock in the Earwise app when you sign in with the same account. The shop opens at launch.</p>
 </div>
 <p><button type="button" class="btn" id="signOut">Sign out</button></p>
-<p class="muted auth-test">Test mode: this page reads a test sign-in saved in this browser only.</p>
+<p class="muted">Purchases are not connected yet. This page only shows the Firebase email session.</p>
 </div></main>
 <footer class="site-footer">
   <div class="wrap foot">
@@ -47,8 +50,6 @@
   </div>
 </footer>
 
-<script>
-(function(){var s=localStorage.getItem('earwise.session');if(!s){location.replace('account.html');return}
-try{document.getElementById('who').textContent='Signed in as '+JSON.parse(s).email}catch(e){}
-document.getElementById('signOut').onclick=function(){localStorage.removeItem('earwise.session');location.href='account.html'};})();
-</script></body></html>
+<script src="/js/firebase-config.js"></script>
+<script type="module" src="/js/auth.js"></script>
+</body></html>
