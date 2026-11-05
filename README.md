@@ -27,7 +27,7 @@ hello@getearwise.com
 
 ## Look and content
 
-Visual tokens follow the Earwise app: Plus Jakarta Sans, teal `#0f766e` (dark `#5eead4`), quiet grey `#f3f3f5`, card radius 16, photo radius 14, search 52px tall. Dark colours follow `prefers-color-scheme`.
+Visual tokens follow Earwise: Plus Jakarta Sans, teal `#0f766e` (dark `#5eead4`), soft grey, card radius 16. Phones keep a single column and sideways card rows. From 900px the page is a site: content up to 1160px, a header with links, and card grids of three or four. Dark colours follow `prefers-color-scheme`.
 
 Guide photos in `img/guides/` are vendored from [Travel_app_media](https://github.com/RikusFick/Travel_app_media). Credits are on `credits.html`.
 
