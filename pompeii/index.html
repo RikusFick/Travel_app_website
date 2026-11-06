@@ -101,9 +101,8 @@
   <div class="wrap topbar">
     <a class="brand" href="../">Earwise</a>
     <nav aria-label="Main">
-      <a href="../portugal/">Portugal</a>
+      <a href="../guides/">Audio guides</a>
       <a class="desk-link" href="../#how">How it works</a>
-      <a class="desk-link" href="../pompeii/">Pompeii</a>
       <a href="../support.html">Support</a>
       <a href="../account.html">Log in</a>
     </nav>
@@ -113,6 +112,8 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="../">Earwise</a>
+      <span aria-hidden="true">/</span>
+      <a href="../guides/">Audio guides</a>
       <span aria-hidden="true">/</span>
       <span>Pompeii</span>
     </nav>
@@ -162,9 +163,12 @@
       On the map
     </h2>
     <div class="map-frame">
-      <iframe title="Map of the Pompeii archaeological park near Porta Marina" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=14.4720%2C40.7458%2C14.4980%2C40.7562&amp;layer=mapnik&amp;marker=40.7489%2C14.4849"></iframe>
+      <div id="guide-map" data-pins='[{"name":"Porta Marina, start of this guide","lat":40.7489,"lon":14.4849}]'></div>
     </div>
-    <p class="fine map-note">The pin is the archaeological park at Porta Marina (40.7489, 14.4849), where this guide starts. Stop-by-stop coordinates are in the app, not on this page.</p>
+    <p class="fine map-note">Only this guide is marked: the published start at Porta Marina (40.7489, 14.4849). Other stops are not on this map. <a href="https://www.openstreetmap.org/?mlat=40.7489&amp;mlon=14.4849#map=17/40.7489/14.4849">Open map</a></p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../js/guide-map.js"></script>
   </div>
 </main>
 <footer class="site-footer">

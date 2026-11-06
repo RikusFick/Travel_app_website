@@ -7,6 +7,8 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 | File | URL |
 | --- | --- |
 | `index.html` | https://getearwise.com/ |
+| `guides/index.html` | https://getearwise.com/guides/ |
+| `guides/<country>/index.html` | Coming soon page for that country |
 | `portugal/index.html` | https://getearwise.com/portugal/ |
 | `<guide-id>/index.html` | https://getearwise.com/`<guide-id>`/ |
 | `pompeii/index.html` | https://getearwise.com/pompeii/ |
@@ -19,7 +21,9 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 
 Portugal guide ids (26, signed off): `alfama-walk`, `baixa-chiado`, `sao-jorge-castle`, `belem-tower`, `jeronimos`, `belem-riverfront`, `coach-museum`, `gulbenkian`, `pena`, `sintra-palace`, `moorish-castle`, `regaleira`, `porto-ribeira`, `clerigos`, `livraria-lello`, `palacio-bolsa`, `gaia-serra-pilar`, `braga-old-town`, `bom-jesus`, `guimaraes-castle-palace`, `guimaraes-old-town`, `douro-valley`, `batalha`, `mafra`, `coimbra-university`, `tomar-convent`.
 
-`account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
+`account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/guides/`, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
+
+The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal is the open country and links to `/portugal/`. Other country pages say coming soon.
 
 ## Contact
 

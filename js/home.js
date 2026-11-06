@@ -17,7 +17,7 @@
       row.hidden = !visible;
       if (visible) any = true;
     });
-    empty.hidden = any || q.length === 0;
+    if (empty) empty.hidden = !cards.length || any || q.length === 0;
     document.body.classList.toggle("is-filtering", q.length > 0);
   }
 
