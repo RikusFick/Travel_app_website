@@ -214,10 +214,11 @@
     btn.type = "button";
     btn.className = "btn btn-block";
     btn.id = "buy-btn";
-    btn.setAttribute("aria-describedby", "buy-note");
+    btn.setAttribute("aria-describedby", "charge-note buy-note");
     const charge = price && window.earwiseCharge ? window.earwiseCharge(price) : null;
-    const money = charge && window.earwiseFormatCharge ? window.earwiseFormatCharge(charge) : "";
-    const label = money ? ("Buy — " + money + " (test)") : "Buy (test)";
+    const euro = price && window.earwiseFormatEuro ? window.earwiseFormatEuro(price) : (price ? ("€" + price.toFixed(2)) : "");
+    const chargedAs = charge && window.earwiseFormatCharge ? window.earwiseFormatCharge(charge) : "";
+    const label = euro ? ("Buy — " + euro + " (test)") : "Buy (test)";
     btn.textContent = label;
     btn.addEventListener("click", function () {
       if (!user) {
@@ -227,13 +228,19 @@
       startBuy(guideId, price, title);
     });
     link.replaceWith(btn);
+    var chargeNote = document.getElementById("charge-note");
+    if (!chargeNote) {
+      chargeNote = document.createElement("p");
+      chargeNote.className = "fine charge-note";
+      chargeNote.id = "charge-note";
+      btn.insertAdjacentElement("afterend", chargeNote);
+    }
+    if (chargedAs) chargeNote.textContent = "Charged as " + chargedAs + " at checkout";
     const note = document.getElementById("buy-note");
     if (note) {
-      var source = price ? ("€" + price.toFixed(2)) : "";
-      note.textContent = money
-        ? ("The guide is " + money + (source ? " (from " + source + ")" : "") +
-          ". This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.")
-        : "This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser.";
+      note.textContent = (euro ? ("The guide price is " + euro + ". ") : "") +
+        (chargedAs ? ("Paystack charges " + chargedAs + " at checkout. ") : "") +
+        "This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.";
     }
   }
 

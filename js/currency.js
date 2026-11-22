@@ -1,9 +1,11 @@
 /* Canonical charge-currency rules. Keep this file in sync with
    data/currency.json and worker/purchase/src/currency.json.
-   Switch chargeCurrency to "ZAR" if Paystack cannot charge USD. */
+   Charge currency is ZAR (set 22 Nov 2026). The website shows euro prices
+   and a "Charged as ZAR … at checkout" note. Switch to "USD" only if
+   Paystack later enables dollars. */
 window.EARWISE_CURRENCY = {
   "sourceCurrency": "EUR",
-  "chargeCurrency": "USD",
+  "chargeCurrency": "ZAR",
   "asOf": "2026-11-22",
   "rates": {
     "USD": 1.1,
@@ -31,7 +33,7 @@ window.EARWISE_CURRENCY = {
 
 window.earwiseCharge = function (eurPrice) {
   var rules = window.EARWISE_CURRENCY || {};
-  var cur = String(rules.chargeCurrency || "USD").toUpperCase();
+  var cur = String(rules.chargeCurrency || "ZAR").toUpperCase();
   var eur = Math.round(Number(eurPrice) * 100) / 100;
   var key = eur.toFixed(2);
   var amount;
@@ -55,10 +57,16 @@ window.earwiseCharge = function (eurPrice) {
   };
 };
 
+window.earwiseFormatEuro = function (eurPrice) {
+  var eur = Math.round(Number(eurPrice) * 100) / 100;
+  if (!isFinite(eur)) return "";
+  return "€" + eur.toFixed(2);
+};
+
 window.earwiseFormatCharge = function (charge) {
   if (!charge) return "";
   if (charge.currency === "USD") return "$" + charge.amount.toFixed(2);
-  if (charge.currency === "ZAR") return "R" + charge.amount.toFixed(2);
+  if (charge.currency === "ZAR") return "ZAR " + charge.amount.toFixed(2);
   if (charge.currency === "EUR") return "€" + charge.amount.toFixed(2);
   return charge.currency + " " + charge.amount.toFixed(2);
 };

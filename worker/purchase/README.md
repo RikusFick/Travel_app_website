@@ -18,8 +18,8 @@ Purchases are stored in Cloudflare KV, key `user:<firebaseUid>`, as:
       "title": "Pompeii",
       "source": "paystack",
       "reference": "ew_…",
-      "amount": 219,
-      "currency": "USD",
+      "amount": 3899,
+      "currency": "ZAR",
       "sourceAmount": 1.99,
       "sourceCurrency": "EUR",
       "purchasedAt": "2026-11-22T20:00:00.000Z",
@@ -35,7 +35,7 @@ The app does not have Firebase or a cloud purchase store yet (unlocks today live
 
 Do not deploy until the test keys are in place.
 
-1. Copy `../../data/prices.json` to `src/prices.json` and `../../data/currency.json` to `src/currency.json` if either has changed. `chargeCurrency` in those files is the single switch (USD by default, or ZAR).
+1. Copy `../../data/prices.json` to `src/prices.json` and `../../data/currency.json` to `src/currency.json` if either has changed. `chargeCurrency` in those files is the single switch (ZAR, as chosen 22 Nov 2026; USD remains the unused alternative).
 2. Create KV: `wrangler kv namespace create ENTITLEMENTS` and paste the id into `wrangler.toml`.
 3. Set secrets: `wrangler secret put PAYSTACK_SECRET_KEY` (use the test secret from the box env `PAYSTACK_TEST_SECRET_KEY`; never print or commit it) and `wrangler secret put FIREBASE_WEB_API_KEY`.
 4. Set `[vars]` in `wrangler.toml`: `FIREBASE_PROJECT_ID=earwise-app`, `SITE_ORIGIN=https://getearwise.com`.

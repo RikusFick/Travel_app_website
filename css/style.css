@@ -1159,3 +1159,5 @@ html:not(.has-audio-js) .player-ui { display: none; }
 .my-guide-links { list-style: none; padding: 0; margin: 12px 0 0; }
 .my-guide-links li { margin: 0; border-bottom: 1px solid var(--line); }
 .my-guide-links a { display: flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: none; }
+
+.buy-block .charge-note { margin: 8px 0 0; color: var(--secondary); }
