@@ -3,208 +3,260 @@
     "id": "alfama-walk",
     "title": "Alfama",
     "place": "Lisbon",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 5,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "Free"
   },
   {
     "id": "baixa-chiado",
     "title": "Baixa–Chiado",
     "place": "Lisbon",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "Free"
   },
   {
     "id": "sao-jorge-castle",
     "title": "São Jorge Castle",
     "place": "Lisbon",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 4,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€2.99"
   },
   {
     "id": "belem-tower",
     "title": "Belém Tower",
     "place": "Belém",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 8,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 10,
+    "priceLabel": "€2.99"
   },
   {
     "id": "jeronimos",
     "title": "Jerónimos Monastery",
     "place": "Belém",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 9,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 13,
+    "priceLabel": "€2.99"
   },
   {
     "id": "belem-riverfront",
     "title": "Belém riverfront",
     "place": "Belém",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "Free"
   },
   {
     "id": "coach-museum",
     "title": "National Coach Museum",
     "place": "Belém",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "€1.99"
   },
   {
     "id": "gulbenkian",
     "title": "Gulbenkian Museum",
     "place": "Lisbon",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "€1.99"
   },
   {
     "id": "pena",
     "title": "Pena Palace",
     "place": "Sintra",
     "stops": 12,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 15,
+    "priceLabel": "€2.99"
   },
   {
     "id": "sintra-palace",
     "title": "Sintra Palace",
     "place": "Sintra",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 10,
+    "priceLabel": "€2.99"
   },
   {
     "id": "moorish-castle",
     "title": "Moorish Castle",
     "place": "Sintra",
     "stops": 7,
-    "price": "€1.99",
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "€1.99"
   },
   {
     "id": "regaleira",
     "title": "Quinta da Regaleira",
     "place": "Sintra",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 8,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€2.99"
   },
   {
     "id": "porto-ribeira",
     "title": "Porto Ribeira",
     "place": "Porto",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "Free"
   },
   {
     "id": "clerigos",
     "title": "Clérigos Tower",
     "place": "Porto",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 5,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 7,
+    "priceLabel": "€2.99"
   },
   {
     "id": "livraria-lello",
     "title": "Livraria Lello",
     "place": "Porto",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 4,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 7,
+    "priceLabel": "€2.99"
   },
   {
     "id": "palacio-bolsa",
     "title": "Palácio da Bolsa",
     "place": "Porto",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "€1.99"
   },
   {
     "id": "gaia-serra-pilar",
     "title": "Gaia port lodges",
     "place": "Vila Nova de Gaia",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 5,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "Free"
   },
   {
     "id": "braga-old-town",
     "title": "Braga old town",
     "place": "Braga",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 5,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€1.99"
   },
   {
     "id": "bom-jesus",
     "title": "Bom Jesus do Monte",
     "place": "Braga",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 5,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€1.99"
   },
   {
     "id": "guimaraes-castle-palace",
     "title": "Guimarães Castle",
     "place": "Guimarães",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 10,
+    "priceLabel": "€1.99"
   },
   {
     "id": "guimaraes-old-town",
     "title": "Guimarães old town",
     "place": "Guimarães",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "Free"
   },
   {
     "id": "douro-valley",
     "title": "Douro Valley",
     "place": "Douro",
     "stops": 4,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "price": 0,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "Free"
   },
   {
     "id": "batalha",
     "title": "Batalha Monastery",
     "place": "Batalha",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€1.99"
   },
   {
     "id": "mafra",
     "title": "Mafra Palace",
     "place": "Mafra",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 7,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 9,
+    "priceLabel": "€1.99"
   },
   {
     "id": "coimbra-university",
     "title": "University of Coimbra",
     "place": "Coimbra",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 2.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 7,
+    "priceLabel": "€2.99"
   },
   {
     "id": "tomar-convent",
     "title": "Convent of Christ",
     "place": "Tomar",
-    "stops": null,
-    "price": null,
-    "notes": "Stop count and price only where the signed handover states them. Other prices are unpublished here."
+    "stops": 6,
+    "price": 1.99,
+    "notes": "Signed-off Portugal guide; price from Earwise pricing catalog.",
+    "minutes": 8,
+    "priceLabel": "€1.99"
   }
 ]

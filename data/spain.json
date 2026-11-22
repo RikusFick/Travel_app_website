@@ -1,0 +1,392 @@
+[
+  {
+    "id": "sagrada-familia",
+    "title": "Sagrada Família",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 8,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "park-guell",
+    "title": "Park Güell",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 6,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "casa-batllo",
+    "title": "Casa Batlló",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "casa-mila",
+    "title": "Casa Milà",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 6,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "gothic-quarter",
+    "title": "Gothic Quarter",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 8,
+    "minutes": 12,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "la-rambla",
+    "title": "La Rambla and La Boqueria",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 9,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "camp-nou",
+    "title": "FC Barcelona Museum and Camp Nou",
+    "place": "Barcelona",
+    "region": "barcelona",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "montserrat",
+    "title": "Montserrat",
+    "place": "Montserrat",
+    "region": "barcelona",
+    "stops": 7,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "dali-museum",
+    "title": "Dalí Theatre-Museum",
+    "place": "Figueres",
+    "region": "barcelona",
+    "stops": 8,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "prado",
+    "title": "Prado Museum",
+    "place": "Madrid",
+    "region": "madrid",
+    "stops": 10,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "royal-palace-madrid",
+    "title": "Royal Palace of Madrid",
+    "place": "Madrid",
+    "region": "madrid",
+    "stops": 10,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "reina-sofia",
+    "title": "Museo Reina Sofía",
+    "place": "Madrid",
+    "region": "madrid",
+    "stops": 6,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "madrid-walk",
+    "title": "Madrid old town walk",
+    "place": "Madrid",
+    "region": "madrid",
+    "stops": 7,
+    "minutes": 11,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "bernabeu",
+    "title": "Santiago Bernabéu Stadium Tour",
+    "place": "Madrid",
+    "region": "madrid",
+    "stops": 4,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "toledo",
+    "title": "Toledo old town",
+    "place": "Toledo",
+    "region": "madrid",
+    "stops": 8,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "segovia",
+    "title": "Segovia",
+    "place": "Segovia",
+    "region": "madrid",
+    "stops": 7,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "el-escorial",
+    "title": "El Escorial",
+    "place": "San Lorenzo de El Escorial",
+    "region": "madrid",
+    "stops": 9,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "avila",
+    "title": "Walls of Ávila",
+    "place": "Ávila",
+    "region": "madrid",
+    "stops": 6,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "salamanca",
+    "title": "Salamanca",
+    "place": "Salamanca",
+    "region": "madrid",
+    "stops": 8,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "cuenca",
+    "title": "Cuenca",
+    "place": "Cuenca",
+    "region": "madrid",
+    "stops": 5,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "alhambra",
+    "title": "Alhambra",
+    "place": "Granada",
+    "region": "andalusia",
+    "stops": 9,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "albaicin",
+    "title": "Albaicín & Sacromonte",
+    "place": "Granada",
+    "region": "andalusia",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "seville-alcazar",
+    "title": "Real Alcázar of Seville",
+    "place": "Seville",
+    "region": "andalusia",
+    "stops": 10,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "seville-cathedral",
+    "title": "Seville Cathedral",
+    "place": "Seville",
+    "region": "andalusia",
+    "stops": 10,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "plaza-espana-seville",
+    "title": "Plaza de España",
+    "place": "Seville",
+    "region": "andalusia",
+    "stops": 7,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "mezquita-cordoba",
+    "title": "Mosque-Cathedral of Córdoba",
+    "place": "Córdoba",
+    "region": "andalusia",
+    "stops": 8,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "medina-azahara",
+    "title": "Medina Azahara",
+    "place": "Córdoba",
+    "region": "andalusia",
+    "stops": 7,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ronda",
+    "title": "Ronda",
+    "place": "Ronda",
+    "region": "andalusia",
+    "stops": 7,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "malaga-alcazaba",
+    "title": "Málaga Alcazaba",
+    "place": "Málaga",
+    "region": "andalusia",
+    "stops": 8,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "caminito-del-rey",
+    "title": "Caminito del Rey",
+    "place": "Ardales",
+    "region": "andalusia",
+    "stops": 7,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "santiago-cathedral",
+    "title": "Santiago Cathedral",
+    "place": "Santiago de Compostela",
+    "region": "spain-north",
+    "stops": 9,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "guggenheim-bilbao",
+    "title": "Guggenheim Bilbao",
+    "place": "Bilbao",
+    "region": "spain-north",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "burgos-cathedral",
+    "title": "Burgos Cathedral",
+    "place": "Burgos",
+    "region": "spain-north",
+    "stops": 7,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "san-sebastian",
+    "title": "San Sebastián",
+    "place": "San Sebastián",
+    "region": "spain-north",
+    "stops": 8,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "merida",
+    "title": "Mérida Roman sites",
+    "place": "Mérida",
+    "region": "spain-north",
+    "stops": 9,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "valencia-old-town",
+    "title": "Valencia old town",
+    "place": "Valencia",
+    "region": "east",
+    "stops": 7,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "city-arts-sciences",
+    "title": "City of Arts and Sciences",
+    "place": "Valencia",
+    "region": "east",
+    "stops": 6,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "palma-cathedral",
+    "title": "Palma Cathedral (La Seu)",
+    "place": "Palma",
+    "region": "east",
+    "stops": 6,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "teide",
+    "title": "Teide National Park",
+    "place": "Tenerife",
+    "region": "east",
+    "stops": 7,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  }
+]

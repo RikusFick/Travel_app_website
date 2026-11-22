@@ -8,7 +8,7 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 | --- | --- |
 | `index.html` | https://getearwise.com/ |
 | `guides/index.html` | https://getearwise.com/guides/ |
-| `guides/<country>/index.html` | Coming soon page for that country |
+| `guides/<country>/index.html` | Country page (`spain/` is open with 39 guides; `portugal/` redirects to `/portugal/`; others are coming soon) |
 | `portugal/index.html` | https://getearwise.com/portugal/ |
 | `<guide-id>/index.html` | https://getearwise.com/`<guide-id>`/ |
 | `pompeii/index.html` | https://getearwise.com/pompeii/ |
@@ -23,7 +23,7 @@ Portugal guide ids (26, signed off): `alfama-walk`, `baixa-chiado`, `sao-jorge-c
 
 `account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/guides/`, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
 
-The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal is the open country and links to `/portugal/`. Other country pages say coming soon.
+The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal (26 guides at `/portugal/`) and Spain (39 guides at `/guides/spain/`) are open. `/guides/portugal/` redirects to `/portugal/`. Other country pages say coming soon.
 
 ## Contact
 
