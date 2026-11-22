@@ -5,10 +5,10 @@
    to be enabled, and getearwise.com (and localhost, for local tests) to be
    authorized domains. */
 window.EARWISE_FIREBASE = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAImKGJJ4eYSOAC0JXYbmd74ie1B-q750I",
+  authDomain: "earwise-app.firebaseapp.com",
+  projectId: "earwise-app",
+  storageBucket: "earwise-app.firebasestorage.app",
+  messagingSenderId: "920122598599",
+  appId: "1:920122598599:web:cdc1dcfc1d4c11dcd28ae2"
 };
