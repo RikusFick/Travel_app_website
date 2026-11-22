@@ -14,6 +14,38 @@
   var wraps = Array.prototype.slice.call(document.querySelectorAll('.stop-audio'));
   if (!select || !wraps.length) return;
 
+  var LANG_NAMES = {en:'English',es:'Spanish',fr:'French',de:'German',it:'Italian',pt:'Portuguese',ru:'Russian',ja:'Japanese',hi:'Hindi',zh:'Chinese'};
+  var LANG_ORDER = ['en','es','fr','de','it','pt','ru','ja','hi','zh'];
+
+  function langsWithAudio() {
+    var codes = LANG_ORDER.filter(function (code) {
+      return Array.isArray(data.languages[code]) && data.languages[code].length > 0;
+    });
+    Object.keys(data.languages).forEach(function (code) {
+      if (codes.indexOf(code) === -1 && Array.isArray(data.languages[code]) && data.languages[code].length > 0) {
+        codes.push(code);
+      }
+    });
+    return codes;
+  }
+
+  function syncSelect(current) {
+    var codes = langsWithAudio();
+    var keep = codes.indexOf(current) !== -1 ? current : (codes.indexOf('en') !== -1 ? 'en' : codes[0]);
+    select.innerHTML = '';
+    codes.forEach(function (code) {
+      var opt = document.createElement('option');
+      opt.value = code;
+      opt.textContent = LANG_NAMES[code] || code;
+      if (code === keep) opt.selected = true;
+      select.appendChild(opt);
+    });
+    var wrap = select.closest('.audio-lang');
+    if (wrap) wrap.hidden = codes.length === 0;
+    select.disabled = codes.length === 0;
+    return keep || 'en';
+  }
+
   function clipUrl(lang, stop) {
     return data.base + '/' + lang + '/' + data.id + '-' + stop + '.mp3';
   }
@@ -109,9 +141,10 @@
     });
   });
 
+  var initial = syncSelect(select.value);
   select.addEventListener('change', function () {
     applyLang(select.value);
   });
 
-  applyLang(select.value);
+  applyLang(initial);
 })();
