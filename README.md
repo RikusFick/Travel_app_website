@@ -42,3 +42,7 @@ Portugal is the signed-off country: 26 guides, recorded in 10 languages. Titles 
 ## Checkout
 
 Buy is a placeholder on every guide page: a `mailto:hello@getearwise.com` link labelled “Buy — coming soon”. It does not take payment. Paystack is not wired on this site.
+
+## On-page audio
+
+Guide pages that have recordings on R2 include an on-page player. Free guides play every available stop in full. Paid guides play only stop 1 as a free sample (`Free sample: stop 1`); later stops stay locked and the Buy button is still a placeholder. Clips are streamed from `https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/<lang>/<guide>-<stop>.mp3` (no leading zero on the stop; `zh-Hans` is stored as `zh`). A language picker defaults to English, then lists whatever languages exist for that guide. Players use `preload="none"` and do not autoplay. Availability is baked into each page and into `data/audio.json` from live `HEAD` checks. Guides with no audio (some UAE titles) show no player.
