@@ -46,3 +46,11 @@ Buy is a placeholder on every guide page: a `mailto:hello@getearwise.com` link l
 ## On-page audio
 
 Guide pages that have recordings on R2 include an on-page player. Free guides play every available stop in full. Paid guides play only stop 1 as a free sample (`Free sample: stop 1`); later stops stay locked and the Buy button is still a placeholder. Clips are streamed from `https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/<lang>/<guide>-<stop>.mp3` (no leading zero on the stop; `zh-Hans` is stored as `zh`). A language picker defaults to English, then lists whatever languages exist for that guide. Players use `preload="none"` and do not autoplay. Availability is baked into each page and into `data/audio.json` from live `HEAD` checks. Guides with no audio (some UAE titles) show no player.
+
+## Read along
+
+Each stop with a public English script has a collapsible **Read along** transcript (`details`/`summary`, works without JavaScript). Free guides include every stop. Paid guides include only stop 1; later stops say “Script and audio included when you buy” and do not contain the remaining script in the page, JSON, or JavaScript. `js/guide-script.js` exposes `earwiseLoadPurchasedScript` as a placeholder hook for a future purchase flow; checkout is still a placeholder.
+
+## Map pins
+
+`js/guide-map.js` groups stops that share the same coordinates, or lie less than 5 metres apart, into one marker labelled with the stop range (for example `4–8`). The popup lists each stop. Catalog coordinates are not changed. When pins are grouped, the map note reads “All N stops are marked; some stops share a pin.”
