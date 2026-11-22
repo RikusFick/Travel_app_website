@@ -8,7 +8,7 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 | --- | --- |
 | `index.html` | https://getearwise.com/ |
 | `guides/index.html` | https://getearwise.com/guides/ |
-| `guides/<country>/index.html` | Country page (`spain/` is open with 39 guides; `italy/` is open with 30 guides; `portugal/` redirects to `/portugal/`; others are coming soon) |
+| `guides/<country>/index.html` | Country page (`spain/` is open with 39 guides; `italy/` is open with 30 guides; `france/` is open with 66 guides; `portugal/` redirects to `/portugal/`; others are coming soon) |
 | `portugal/index.html` | https://getearwise.com/portugal/ |
 | `<guide-id>/index.html` | https://getearwise.com/`<guide-id>`/ |
 | `pompeii/index.html` | https://getearwise.com/pompeii/ |
@@ -23,7 +23,7 @@ Portugal guide ids (26, signed off): `alfama-walk`, `baixa-chiado`, `sao-jorge-c
 
 `account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/guides/`, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
 
-The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal (26 guides at `/portugal/`), Spain (39 guides at `/guides/spain/`), and Italy (30 guides at `/guides/italy/`, including `/pompeii/`) are open. `/guides/portugal/` redirects to `/portugal/`. Other country pages say coming soon.
+The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal (26 guides at `/portugal/`), Spain (39 guides at `/guides/spain/`), Italy (30 guides at `/guides/italy/`, including `/pompeii/`), and France (66 guides at `/guides/france/`) are open. The Paris Panthéon is at `/pantheon-paris/` so it does not collide with Rome’s `/pantheon/`. `/guides/portugal/` redirects to `/portugal/`. Other country pages say coming soon.
 
 ## Contact
 

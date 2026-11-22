@@ -664,5 +664,467 @@ window.EARWISE_ATTRACTIONS = [
     "country": "Italy",
     "href": "/valley-of-the-temples/",
     "q": "valley of the temples agrigento sicily temple of concordia juno heracles zeus kolymbethra italy"
+  },
+  {
+    "title": "Notre-Dame de Paris",
+    "place": "Paris",
+    "country": "France",
+    "href": "/notre-dame/",
+    "q": "notre dame paris cathedral ile de la cite parvis portals treasury france"
+  },
+  {
+    "title": "Sacré-Cœur & Montmartre",
+    "place": "Paris",
+    "country": "France",
+    "href": "/sacre-coeur-montmartre/",
+    "q": "sacre coeur montmartre paris basilica place du tertre vineyard france"
+  },
+  {
+    "title": "Louvre",
+    "place": "Paris",
+    "country": "France",
+    "href": "/louvre/",
+    "q": "louvre paris mona lisa pyramid winged victory venus de milo france"
+  },
+  {
+    "title": "Eiffel Tower",
+    "place": "Paris",
+    "country": "France",
+    "href": "/eiffel-tower/",
+    "q": "eiffel tower paris champ de mars iron summit france"
+  },
+  {
+    "title": "Musée d'Orsay",
+    "place": "Paris",
+    "country": "France",
+    "href": "/musee-orsay/",
+    "q": "musee d'orsay paris impressionism monet van gogh station france"
+  },
+  {
+    "title": "Arc de Triomphe",
+    "place": "Paris",
+    "country": "France",
+    "href": "/arc-de-triomphe/",
+    "q": "arc de triomphe paris champs elysees unknown soldier france"
+  },
+  {
+    "title": "Les Invalides & Musée de l'Armée",
+    "place": "Paris",
+    "country": "France",
+    "href": "/invalides/",
+    "q": "invalides paris napoleon tomb musee armee dome france"
+  },
+  {
+    "title": "Musée du quai Branly",
+    "place": "Paris",
+    "country": "France",
+    "href": "/quai-branly/",
+    "q": "quai branly paris jean nouvel museum oceania africa asia france"
+  },
+  {
+    "title": "Sainte-Chapelle",
+    "place": "Paris",
+    "country": "France",
+    "href": "/sainte-chapelle/",
+    "q": "sainte chapelle paris stained glass ile de la cite saint louis france"
+  },
+  {
+    "title": "Musée de l'Orangerie",
+    "place": "Paris",
+    "country": "France",
+    "href": "/musee-orangerie/",
+    "q": "orangerie paris monet water lilies nymphéas tuileries france"
+  },
+  {
+    "title": "Panthéon",
+    "place": "Paris",
+    "country": "France",
+    "href": "/pantheon-paris/",
+    "q": "pantheon paris soufflot foucault pendulum crypt voltaire hugo france"
+  },
+  {
+    "title": "Conciergerie",
+    "place": "Paris",
+    "country": "France",
+    "href": "/conciergerie/",
+    "q": "conciergerie paris marie antoinette revolution prison ile de la cite france"
+  },
+  {
+    "title": "Musée Rodin",
+    "place": "Paris",
+    "country": "France",
+    "href": "/musee-rodin/",
+    "q": "musee rodin paris thinker gates of hell hotel biron france"
+  },
+  {
+    "title": "Le Marais",
+    "place": "Paris",
+    "country": "France",
+    "href": "/le-marais/",
+    "q": "le marais paris place des vosges hotel particulier jewish quarter france"
+  },
+  {
+    "title": "Catacombs of Paris",
+    "place": "Paris",
+    "country": "France",
+    "href": "/catacombs/",
+    "q": "catacombs paris ossuary quarries bones denfert rochereau france"
+  },
+  {
+    "title": "Palais Garnier (Opéra)",
+    "place": "Paris",
+    "country": "France",
+    "href": "/palais-garnier/",
+    "q": "palais garnier opera paris grand staircase chandelier garnier france"
+  },
+  {
+    "title": "Père Lachaise Cemetery",
+    "place": "Paris",
+    "country": "France",
+    "href": "/pere-lachaise/",
+    "q": "pere lachaise paris cemetery wilde morrison chopin piaf france"
+  },
+  {
+    "title": "Hôtel de la Marine",
+    "place": "Paris",
+    "country": "France",
+    "href": "/hotel-de-la-marine/",
+    "q": "hotel de la marine paris concorde garde meuble loggia france"
+  },
+  {
+    "title": "Château de Vincennes",
+    "place": "Vincennes",
+    "country": "France",
+    "href": "/vincennes/",
+    "q": "vincennes chateau donjon keep chapel bois de vincennes france"
+  },
+  {
+    "title": "Basilica of Saint-Denis",
+    "place": "Saint-Denis",
+    "country": "France",
+    "href": "/saint-denis/",
+    "q": "saint denis basilica royal necropolis gothic tombs france"
+  },
+  {
+    "title": "Versailles",
+    "place": "Versailles",
+    "country": "France",
+    "href": "/versailles/",
+    "q": "versailles palace hall of mirrors gardens trianon fountains france"
+  },
+  {
+    "title": "Mont-Saint-Michel",
+    "place": "Mont-Saint-Michel",
+    "country": "France",
+    "href": "/mont-saint-michel/",
+    "q": "mont saint michel abbey normandy bay ramparts france"
+  },
+  {
+    "title": "Château de Fontainebleau",
+    "place": "Fontainebleau",
+    "country": "France",
+    "href": "/fontainebleau/",
+    "q": "fontainebleau chateau horseshoe staircase napoleon francois france"
+  },
+  {
+    "title": "Domaine de Chantilly",
+    "place": "Chantilly",
+    "country": "France",
+    "href": "/chantilly/",
+    "q": "chantilly chateau musée conde stables le notre france"
+  },
+  {
+    "title": "D-Day Landing Beaches",
+    "place": "Normandy",
+    "country": "France",
+    "href": "/d-day-beaches/",
+    "q": "d-day omaha beach american cemetery colleville normandy france"
+  },
+  {
+    "title": "Giverny",
+    "place": "Giverny",
+    "country": "France",
+    "href": "/giverny/",
+    "q": "giverny monet house gardens japanese bridge water lilies france"
+  },
+  {
+    "title": "Étretat Cliffs",
+    "place": "Étretat",
+    "country": "France",
+    "href": "/etretat/",
+    "q": "etretat cliffs porte d aval aiguille normandy france"
+  },
+  {
+    "title": "Bayeux",
+    "place": "Bayeux",
+    "country": "France",
+    "href": "/bayeux/",
+    "q": "bayeux tapestry cathedral 1066 normandy william conqueror france"
+  },
+  {
+    "title": "Chartres Cathedral",
+    "place": "Chartres",
+    "country": "France",
+    "href": "/chartres/",
+    "q": "chartres cathedral stained glass labyrinth spires unesco france"
+  },
+  {
+    "title": "Reims Cathedral",
+    "place": "Reims",
+    "country": "France",
+    "href": "/reims-cathedral/",
+    "q": "reims cathedral coronation smiling angel palais du tau france"
+  },
+  {
+    "title": "Château de Pierrefonds",
+    "place": "Pierrefonds",
+    "country": "France",
+    "href": "/pierrefonds/",
+    "q": "pierrefonds chateau viollet le duc compiègne france"
+  },
+  {
+    "title": "Amiens Cathedral",
+    "place": "Amiens",
+    "country": "France",
+    "href": "/amiens-cathedral/",
+    "q": "amiens cathedral gothic nave west front unesco france"
+  },
+  {
+    "title": "Lourdes Sanctuary",
+    "place": "Lourdes",
+    "country": "France",
+    "href": "/lourdes/",
+    "q": "lourdes sanctuary grotto massabielle basilica pyrenees france"
+  },
+  {
+    "title": "Marseille",
+    "place": "Marseille",
+    "country": "France",
+    "href": "/marseille/",
+    "q": "marseille vieux port mucem notre dame de la garde france"
+  },
+  {
+    "title": "Nice",
+    "place": "Nice",
+    "country": "France",
+    "href": "/nice/",
+    "q": "nice promenade des anglais vieux nice castle hill cote dazur france"
+  },
+  {
+    "title": "Palais des Papes",
+    "place": "Avignon",
+    "country": "France",
+    "href": "/palais-des-papes/",
+    "q": "palais des papes avignon pont d avignon rhone france"
+  },
+  {
+    "title": "Carcassonne",
+    "place": "Carcassonne",
+    "country": "France",
+    "href": "/carcassonne/",
+    "q": "carcassonne cite ramparts chateau comtal basilica france"
+  },
+  {
+    "title": "Pont du Gard",
+    "place": "Vers-Pont-du-Gard",
+    "country": "France",
+    "href": "/pont-du-gard/",
+    "q": "pont du gard roman aqueduct nimes gardon unesco france"
+  },
+  {
+    "title": "Gorges du Verdon",
+    "place": "Verdon",
+    "country": "France",
+    "href": "/gorges-du-verdon/",
+    "q": "gorges du verdon canyon belvedere point sublime france"
+  },
+  {
+    "title": "Calanques of Marseille",
+    "place": "Marseille",
+    "country": "France",
+    "href": "/calanques/",
+    "q": "calanques marseille cassis sugiton en vau limestone france"
+  },
+  {
+    "title": "Arles",
+    "place": "Arles",
+    "country": "France",
+    "href": "/arles/",
+    "q": "arles roman amphitheatre van gogh alyscamps provence france"
+  },
+  {
+    "title": "Nîmes",
+    "place": "Nîmes",
+    "country": "France",
+    "href": "/nimes/",
+    "q": "nimes arena maison carree jardins fontaine roman france"
+  },
+  {
+    "title": "Orange Roman Theatre",
+    "place": "Orange",
+    "country": "France",
+    "href": "/orange-theatre/",
+    "q": "orange roman theatre scaenae frons triumphal arch provence france"
+  },
+  {
+    "title": "Albi",
+    "place": "Albi",
+    "country": "France",
+    "href": "/albi/",
+    "q": "albi sainte cecile toulouse lautrec palais de la berbie france"
+  },
+  {
+    "title": "Èze & Saint-Paul-de-Vence",
+    "place": "Èze",
+    "country": "France",
+    "href": "/eze-saint-paul/",
+    "q": "eze saint paul de vence perched village cote dazur france"
+  },
+  {
+    "title": "Aigues-Mortes",
+    "place": "Aigues-Mortes",
+    "country": "France",
+    "href": "/aigues-mortes/",
+    "q": "aigues mortes ramparts constance tower camargue france"
+  },
+  {
+    "title": "Château d'If",
+    "place": "Marseille",
+    "country": "France",
+    "href": "/chateau-d-if/",
+    "q": "chateau d if marseille monte cristo dumas island fortress france"
+  },
+  {
+    "title": "Château de Chambord",
+    "place": "Chambord",
+    "country": "France",
+    "href": "/chambord/",
+    "q": "chambord chateau loire francois staircase france"
+  },
+  {
+    "title": "Château de Chenonceau",
+    "place": "Chenonceaux",
+    "country": "France",
+    "href": "/chenonceau/",
+    "q": "chenonceau chateau cher loire diane catherine gallery france"
+  },
+  {
+    "title": "Amboise & Clos Lucé",
+    "place": "Amboise",
+    "country": "France",
+    "href": "/amboise/",
+    "q": "amboise chateau clos luce leonardo da vinci loire france"
+  },
+  {
+    "title": "Château d'Angers",
+    "place": "Angers",
+    "country": "France",
+    "href": "/chateau-angers/",
+    "q": "chateau angers apocalypse tapestry fortress loire france"
+  },
+  {
+    "title": "Château d'Azay-le-Rideau",
+    "place": "Azay-le-Rideau",
+    "country": "France",
+    "href": "/azay-le-rideau/",
+    "q": "azay le rideau chateau indre loire renaissance france"
+  },
+  {
+    "title": "Château de Villandry",
+    "place": "Villandry",
+    "country": "France",
+    "href": "/villandry/",
+    "q": "villandry chateau gardens loire ornamental kitchen france"
+  },
+  {
+    "title": "Chamonix & Aiguille du Midi",
+    "place": "Chamonix",
+    "country": "France",
+    "href": "/aiguille-du-midi/",
+    "q": "aiguille du midi chamonix mont blanc cable car alps france"
+  },
+  {
+    "title": "Strasbourg",
+    "place": "Strasbourg",
+    "country": "France",
+    "href": "/strasbourg/",
+    "q": "strasbourg cathedral petite france grande ile alsace france"
+  },
+  {
+    "title": "Annecy",
+    "place": "Annecy",
+    "country": "France",
+    "href": "/annecy/",
+    "q": "annecy palais de l ile lake canals old town alps france"
+  },
+  {
+    "title": "Lyon",
+    "place": "Lyon",
+    "country": "France",
+    "href": "/lyon/",
+    "q": "lyon vieux lyon fourviere traboules presquile france"
+  },
+  {
+    "title": "Hospices de Beaune",
+    "place": "Beaune",
+    "country": "France",
+    "href": "/hospices-de-beaune/",
+    "q": "hospices de beaune hotel dieu burgundy roofs last judgement france"
+  },
+  {
+    "title": "Colmar old town",
+    "place": "Colmar",
+    "country": "France",
+    "href": "/colmar/",
+    "q": "colmar little venice unterlinden isenheim alsace france"
+  },
+  {
+    "title": "Château du Haut-Kœnigsbourg",
+    "place": "Orschwiller",
+    "country": "France",
+    "href": "/haut-koenigsbourg/",
+    "q": "haut koenigsbourg castle alsace vosges wilhelm france"
+  },
+  {
+    "title": "Vézelay Abbey",
+    "place": "Vézelay",
+    "country": "France",
+    "href": "/vezelay/",
+    "q": "vezelay abbey sainte marie madeleine romanesque burgundy france"
+  },
+  {
+    "title": "Dune du Pilat & Arcachon Bay",
+    "place": "La Teste-de-Buch",
+    "country": "France",
+    "href": "/dune-du-pilat/",
+    "q": "dune du pilat arcachon bay cap ferret sand dune france"
+  },
+  {
+    "title": "Saint-Malo Walled City",
+    "place": "Saint-Malo",
+    "country": "France",
+    "href": "/saint-malo/",
+    "q": "saint malo walled city ramparts corsair brittany france"
+  },
+  {
+    "title": "Bordeaux",
+    "place": "Bordeaux",
+    "country": "France",
+    "href": "/bordeaux/",
+    "q": "bordeaux place de la bourse miroir d eau garonne unesco france"
+  },
+  {
+    "title": "Rocamadour",
+    "place": "Rocamadour",
+    "country": "France",
+    "href": "/rocamadour/",
+    "q": "rocamadour sanctuary cliff dordogne black madonna france"
+  },
+  {
+    "title": "Lascaux IV",
+    "place": "Montignac",
+    "country": "France",
+    "href": "/lascaux-iv/",
+    "q": "lascaux iv cave paintings montignac dordogne bulls facsimile france"
   }
 ];
