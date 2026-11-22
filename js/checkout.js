@@ -130,8 +130,9 @@
       return;
     }
     const cfg = window.EARWISE_PAYSTACK;
-    const amount = Math.round(price * 100);
-    const currency = cfg.currency || "EUR";
+    const charge = window.earwiseCharge ? window.earwiseCharge(price) : { currency: "USD", amount: price, minor: Math.round(price * 100) };
+    const amount = charge.minor;
+    const currency = charge.currency;
     const ref = "ew_" + user.uid.slice(0, 12) + "_" + guideId.replace(/[^a-z0-9-]/gi, "") + "_" + Date.now();
     try {
       await loadPaystack();
@@ -214,7 +215,9 @@
     btn.className = "btn btn-block";
     btn.id = "buy-btn";
     btn.setAttribute("aria-describedby", "buy-note");
-    const label = price ? ("Buy — €" + price.toFixed(2) + " (test)") : "Buy (test)";
+    const charge = price && window.earwiseCharge ? window.earwiseCharge(price) : null;
+    const money = charge && window.earwiseFormatCharge ? window.earwiseFormatCharge(charge) : "";
+    const label = money ? ("Buy — " + money + " (test)") : "Buy (test)";
     btn.textContent = label;
     btn.addEventListener("click", function () {
       if (!user) {
@@ -226,8 +229,11 @@
     link.replaceWith(btn);
     const note = document.getElementById("buy-note");
     if (note) {
-      note.textContent = "The guide price is €" + (price ? price.toFixed(2) : "—") +
-        ". This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.";
+      var source = price ? ("€" + price.toFixed(2)) : "";
+      note.textContent = money
+        ? ("The guide is " + money + (source ? " (from " + source + ")" : "") +
+          ". This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.")
+        : "This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser.";
     }
   }
 

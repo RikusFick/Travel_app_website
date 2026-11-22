@@ -1,6 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 import {
   getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
@@ -84,10 +88,54 @@ function friendly(err) {
   }
   if (code === "auth/too-many-requests") return "Too many tries. Wait a moment and try again.";
   if (code === "auth/network-request-failed") return "Network problem. Check your connection and try again.";
+  if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return "Google sign-in was cancelled.";
+  if (code === "auth/account-exists-with-different-credential") {
+    return "That email already has an Earwise account. Log in with email and password.";
+  }
+  if (code === "auth/operation-not-allowed") return "Google sign-in is not enabled yet.";
+  if (code === "auth/unauthorized-domain") return "This site is not on the Firebase authorized domain list.";
   return "Something went wrong. Try again.";
 }
 
+
+function afterSignIn() {
+  const next = new URLSearchParams(location.search).get("next");
+  if (next && next.charAt(0) === "/" && next.indexOf("//") === -1) {
+    location.href = next;
+  } else {
+    location.href = "my-guides.html";
+  }
+}
+
+function shouldUseGoogleRedirect() {
+  const ua = navigator.userAgent || "";
+  const iOS = /iP(ad|hone|od)/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  const webkit = /WebKit/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Chrome/.test(ua);
+  return iOS && webkit;
+}
+
+function googleProvider() {
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: "select_account" });
+  return provider;
+}
+
+function signInWithGoogle() {
+  if (!auth) return Promise.reject(new Error("not configured"));
+  const provider = googleProvider();
+  if (shouldUseGoogleRedirect()) {
+    return signInWithRedirect(auth, provider);
+  }
+  return signInWithPopup(auth, provider).catch(function (err) {
+    if (err && (err.code === "auth/popup-blocked" || err.code === "auth/operation-not-supported-in-this-environment")) {
+      return signInWithRedirect(auth, provider);
+    }
+    throw err;
+  });
+}
+
 function wireAccount() {
+
   const form = document.getElementById("authForm");
   if (!form || form.dataset.wired) return;
   form.dataset.wired = "1";
@@ -128,14 +176,27 @@ function wireAccount() {
     });
   }
 
+  const googleBtn = $("googleSignIn");
+
   if (!firebaseConfigured()) {
     if (banner) banner.hidden = false;
     form.querySelectorAll("input, button").forEach(function (el) { el.disabled = true; });
+    if (googleBtn) googleBtn.disabled = true;
     const forgot = $("forgot");
     if (forgot) forgot.addEventListener("click", function (event) { event.preventDefault(); });
     return;
   }
   if (banner) banner.hidden = true;
+
+  if (googleBtn && !googleBtn.dataset.wired) {
+    googleBtn.dataset.wired = "1";
+    googleBtn.addEventListener("click", function () {
+      if (msg) msg.textContent = "Opening Google…";
+      signInWithGoogle().then(afterSignIn).catch(function (err) {
+        if (msg) msg.textContent = friendly(err);
+      });
+    });
+  }
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -157,14 +218,7 @@ function wireAccount() {
     const task = mode === "signup"
       ? createUserWithEmailAndPassword(auth, email, password)
       : signInWithEmailAndPassword(auth, email, password);
-    task.then(function () {
-      const next = new URLSearchParams(location.search).get("next");
-      if (next && next.charAt(0) === "/" && next.indexOf("//") === -1) {
-        location.href = next;
-      } else {
-        location.href = "my-guides.html";
-      }
-    }).catch(function (err) {
+    task.then(afterSignIn).catch(function (err) {
       msg.textContent = friendly(err);
     });
   });
@@ -250,5 +304,13 @@ if (!firebaseConfigured()) {
 } else {
   const app = initializeApp(cfg);
   auth = getAuth(app);
+  getRedirectResult(auth).then(function (result) {
+    if (result && result.user && document.getElementById("authForm")) {
+      afterSignIn();
+    }
+  }).catch(function (err) {
+    const msg = document.getElementById("authMsg");
+    if (msg) msg.textContent = friendly(err);
+  });
   onAuthStateChanged(auth, notify);
 }

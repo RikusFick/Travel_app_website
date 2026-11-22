@@ -2,6 +2,7 @@
    against a Firebase Auth user, and tell the website/app what that account owns.
    Secrets stay in Worker env — never in the static site. */
 import prices from "./prices.json";
+import currencyRules from "./currency.json";
 
 const SITE_ORIGINS = [
   "https://getearwise.com",
@@ -36,8 +37,23 @@ function guideCatalog() {
   return map;
 }
 
-function minorAmount(price) {
-  return Math.round(Number(price) * 100);
+function chargeFor(eurPrice) {
+  const rules = currencyRules || {};
+  const cur = String(rules.chargeCurrency || "USD").toUpperCase();
+  const eur = Math.round(Number(eurPrice) * 100) / 100;
+  const key = eur.toFixed(2);
+  let amount;
+  if (rules.tiers && rules.tiers[key] && rules.tiers[key][cur] != null) {
+    amount = Number(rules.tiers[key][cur]);
+  } else if (cur === "USD") {
+    amount = Math.round(eur * Number((rules.rates && rules.rates.USD) || 1.1) * 100) / 100;
+  } else if (cur === "ZAR") {
+    const raw = eur * Number((rules.rates && rules.rates.ZAR) || 19.25);
+    amount = raw === Math.floor(raw) ? raw - 0.01 : Math.floor(raw) + 0.99;
+  } else {
+    return { currency: "EUR", amount: eur, minor: Math.round(eur * 100) };
+  }
+  return { currency: cur, amount: Math.round(amount * 100) / 100, minor: Math.round(amount * 100) };
 }
 
 async function lookupFirebaseUser(idToken, env) {
@@ -107,12 +123,13 @@ function purchaseFromTx(tx, expected) {
   if (!catalog || catalog.free) {
     return { ok: false, message: "Unknown or free guide." };
   }
-  const currency = (expected.currency || "EUR").toUpperCase();
+  const charge = chargeFor(catalog.price);
+  const currency = charge.currency;
   const txCurrency = String(tx.currency || "").toUpperCase();
   if (txCurrency && txCurrency !== currency) {
     return { ok: false, message: "Payment currency does not match." };
   }
-  if (Number(tx.amount) !== minorAmount(catalog.price)) {
+  if (Number(tx.amount) !== charge.minor) {
     return { ok: false, message: "Payment amount does not match the guide price." };
   }
   return {
@@ -123,6 +140,8 @@ function purchaseFromTx(tx, expected) {
       source: "paystack",
       reference: tx.reference,
       amount: tx.amount,
+      sourceAmount: catalog.price,
+      sourceCurrency: "EUR",
       currency: txCurrency || currency,
       purchasedAt: tx.paid_at || new Date().toISOString(),
       test: String(tx.domain || "") === "test" || String(expected.secretHint || "").indexOf("sk_test_") === 0
@@ -147,7 +166,6 @@ async function handleVerify(request, env) {
   const built = purchaseFromTx(verified.tx, {
     uid: user.uid,
     guideId: guideId,
-    currency: env.PAYSTACK_CURRENCY || "EUR",
     secretHint: env.PAYSTACK_SECRET_KEY || ""
   });
   if (!built.ok) return json(request, { ok: false, message: built.message }, 400);
@@ -184,7 +202,6 @@ async function handleWebhook(request, env) {
   const built = purchaseFromTx(tx, {
     uid: uid,
     guideId: meta.guideId,
-    currency: env.PAYSTACK_CURRENCY || "EUR",
     secretHint: env.PAYSTACK_SECRET_KEY || ""
   });
   if (!built.ok || !uid) return json(request, { ok: false, message: built.message || "Missing account." }, 400);

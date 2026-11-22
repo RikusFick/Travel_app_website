@@ -1,9 +1,9 @@
-/* Public Paystack test key and the purchase Worker URL.
-   Paste the TEST public key (pk_test_…) from the Paystack dashboard.
-   The secret key must never go in this file — it lives only on the Worker.
-   verifyUrl is the Worker, e.g. https://earwise-purchase.<subdomain>.workers.dev */
+/* Public Paystack TEST key and the purchase Worker URL.
+   The secret key must never go in this file — it lives only on the Worker
+   (box env PAYSTACK_TEST_SECRET_KEY, set as a wrangler secret at deploy).
+   verifyUrl is the Worker, e.g. https://earwise-purchase.<subdomain>.workers.dev
+   Charge currency lives in js/currency.js (and data/currency.json), not here. */
 window.EARWISE_PAYSTACK = {
-  publicKey: "YOUR_PAYSTACK_TEST_PUBLIC_KEY",
-  verifyUrl: "YOUR_PURCHASE_WORKER_URL",
-  currency: "EUR"
+  publicKey: "pk_test_22ecdf07cdec2000b3cee4cfc9c592b3db4253a1",
+  verifyUrl: "YOUR_PURCHASE_WORKER_URL"
 };
