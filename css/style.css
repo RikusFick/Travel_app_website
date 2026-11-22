@@ -161,9 +161,9 @@ details.faq p { margin: 4px 0 8px; }
   line-height: 1;
 }
 .brand-logo {
-  width: 28px;
+  width: 34px;
   height: 28px;
-  border-radius: 7px;
+  border-radius: 0;
   flex: none;
   display: block;
 }
@@ -734,7 +734,7 @@ td img { width: 120px; height: 80px; object-fit: cover; border-radius: 8px; }
   }
   .topbar { min-height: 76px; }
   .brand, h1.brand { font-size: 28px; }
-  .brand-logo { width: 30px; height: 30px; border-radius: 8px; }
+  .brand-logo { width: 37px; height: 30px; border-radius: 0; }
   .nav-toggle { display: none; }
   .topbar nav a.desk-link { display: inline-flex; }
   .topbar nav a { font-size: 16px; padding: 0 14px; }
