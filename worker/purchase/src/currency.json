@@ -1,0 +1,7 @@
+{
+  "sourceCurrency": "EUR",
+  "chargeCurrency": "ZAR",
+  "fallbackRate": 19.25,
+  "asOf": "2026-11-22",
+  "rule": "Website shows euro prices. Paystack is billed in ZAR at the day's EUR to ZAR rate: ZAR cents = round(EUR price \u00d7 rate \u00d7 100). The Worker fetches the rate from frankfurter.app (ECB) with a fallback to open.er-api.com, caches it in KV for 24 hours, and uses 19.25 only if both fetches fail and there is no cache."
+}

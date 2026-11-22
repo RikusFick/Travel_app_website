@@ -106,6 +106,7 @@
   }
 
   wraps.forEach(function (wrap) {
+    wrap.dataset.bound = "1";
     var audio = wrap.querySelector('audio');
     var btn = wrap.querySelector('.player-toggle');
     var elapsed = wrap.querySelector('.t-elapsed');
@@ -147,4 +148,87 @@
   });
 
   applyLang(initial);
+
+  window.earwiseBindAudioPlayers = function () {
+    wraps = Array.prototype.slice.call(document.querySelectorAll('.stop-audio'));
+    wraps.forEach(function (wrap) {
+      if (wrap.dataset.bound) return;
+      wrap.dataset.bound = "1";
+      var audio = wrap.querySelector('audio');
+      var btn = wrap.querySelector('.player-toggle');
+      var elapsed = wrap.querySelector('.t-elapsed');
+      var duration = wrap.querySelector('.t-duration');
+      if (!audio || !btn) return;
+      audio.removeAttribute('controls');
+      audio.preload = 'none';
+      audio.autoplay = false;
+      btn.addEventListener('click', function () {
+        if (audio.paused) {
+          pauseOthers(wrap);
+          var playPromise = audio.play();
+          if (playPromise && playPromise.catch) playPromise.catch(function () {});
+        } else {
+          audio.pause();
+        }
+      });
+      audio.addEventListener('play', function () { setPlaying(wrap, true); });
+      audio.addEventListener('pause', function () { setPlaying(wrap, false); });
+      audio.addEventListener('ended', function () {
+        audio.currentTime = 0;
+        setPlaying(wrap, false);
+        resetTime(wrap);
+      });
+      audio.addEventListener('loadedmetadata', function () {
+        if (duration) duration.textContent = fmt(audio.duration);
+      });
+      audio.addEventListener('timeupdate', function () {
+        if (elapsed) elapsed.textContent = fmt(audio.currentTime);
+      });
+    });
+    if (select) applyLang(select.value || initial);
+  };
 })();
+
+
+window.earwiseUnlockGuideAudio = function (info) {
+  if (!info || !info.id || !info.base) return;
+  var toolbar = document.querySelector(".audio-toolbar-note");
+  if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. Offline listening stays in the app.";
+  var dataEl = document.getElementById("earwise-audio");
+  if (dataEl) {
+    var current = {};
+    try { current = JSON.parse(dataEl.textContent); } catch (err) { current = {}; }
+    current.mode = "full";
+    current.languages = info.languages || current.languages;
+    dataEl.textContent = JSON.stringify(current);
+  }
+  var langSelect = document.getElementById("audio-lang-select");
+  var lang = (langSelect && langSelect.value) || "en";
+  var stops = (info.languages && info.languages[lang]) || (info.languages && info.languages.en) || [];
+  document.querySelectorAll(".stop-locked").forEach(function (lock) {
+    var item = lock.closest("li");
+    if (!item) return;
+    var numEl = item.querySelector(".num");
+    var titleEl = item.querySelector("h3");
+    var stop = numEl ? Number(numEl.textContent) : 0;
+    if (!stop) return;
+    var title = titleEl ? titleEl.textContent : ("Stop " + stop);
+    var wrap = document.createElement("div");
+    wrap.className = "stop-audio";
+    wrap.setAttribute("data-stop", String(stop));
+    wrap.setAttribute("data-title", "stop " + stop + ": " + title);
+    var src = info.base + "/" + lang + "/" + info.id + "-" + stop + ".mp3";
+    wrap.innerHTML =
+      '<div class="player">' +
+      '<button type="button" class="player-toggle" aria-label="Play stop ' + stop + ": " + title.replace(/"/g, "&quot;") + '">' +
+      '<svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg>' +
+      '<svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg>' +
+      "</button>" +
+      '<div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div>' +
+      '<audio preload="none" controls src="' + src + '"></audio></div>';
+    lock.replaceWith(wrap);
+  });
+  if (typeof window.earwiseBindAudioPlayers === "function") {
+    window.earwiseBindAudioPlayers();
+  }
+};
