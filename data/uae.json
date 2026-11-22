@@ -1,0 +1,132 @@
+[
+  {
+    "id": "al-fahidi-dubai-creek",
+    "title": "Al Fahidi and Dubai Creek",
+    "place": "Dubai",
+    "region": "dubai",
+    "stops": 11,
+    "minutes": 25,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "al-shindagha",
+    "title": "Al Shindagha",
+    "place": "Dubai",
+    "region": "dubai",
+    "stops": 12,
+    "minutes": 23,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "jumeirah-mosque-coast",
+    "title": "Jumeirah Mosque & coast",
+    "place": "Dubai",
+    "region": "dubai",
+    "stops": 6,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dubai-desert-conservation-reserve",
+    "title": "Dubai Desert Conservation Reserve",
+    "place": "Dubai",
+    "region": "dubai",
+    "stops": 7,
+    "minutes": 19,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "sheikh-zayed-grand-mosque",
+    "title": "Sheikh Zayed Grand Mosque",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 9,
+    "minutes": 21,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "qasr-al-hosn",
+    "title": "Qasr Al Hosn",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 9,
+    "minutes": 21,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "qasr-al-watan",
+    "title": "Qasr Al Watan",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 9,
+    "minutes": 20,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "corniche-heritage-village-emirates-palace",
+    "title": "Abu Dhabi Corniche & Emirates Palace",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 7,
+    "minutes": 14,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "al-ain-oasis",
+    "title": "Al Ain Oasis",
+    "place": "Al Ain",
+    "region": "al-ain",
+    "stops": 8,
+    "minutes": 20,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "al-jahili-fort-al-ain-palace-museum",
+    "title": "Al Jahili Fort & Al Ain Palace Museum",
+    "place": "Al Ain",
+    "region": "al-ain",
+    "stops": 8,
+    "minutes": 17,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "hili",
+    "title": "Hili",
+    "place": "Al Ain",
+    "region": "al-ain",
+    "stops": 7,
+    "minutes": 16,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "jebel-hafit",
+    "title": "Jebel Hafit",
+    "place": "Al Ain",
+    "region": "al-ain",
+    "stops": 8,
+    "minutes": 17,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "heart-of-sharjah",
+    "title": "Heart of Sharjah",
+    "place": "Sharjah",
+    "region": "sharjah",
+    "stops": 9,
+    "minutes": 21,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  }
+]

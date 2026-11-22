@@ -8,7 +8,7 @@ Static site for [getearwise.com](https://getearwise.com). GitHub Pages serves th
 | --- | --- |
 | `index.html` | https://getearwise.com/ |
 | `guides/index.html` | https://getearwise.com/guides/ |
-| `guides/<country>/index.html` | Country page (`spain/` is open with 39 guides; `france/` is open with 66 guides; `italy/` is open with 30 guides; `turkey/` is open with 60 guides; `greece/` is open with 36 guides; `morocco/` is open with 17 guides; `portugal/` redirects to `/portugal/`; others are coming soon) |
+| `guides/<country>/index.html` | Country page (`spain/` is open with 39 guides; `france/` is open with 66 guides; `italy/` is open with 30 guides; `turkey/` is open with 60 guides; `greece/` is open with 36 guides; `morocco/` is open with 17 guides; `uae/` is open with 13 guides; `portugal/` redirects to `/portugal/`; others are coming soon) |
 | `portugal/index.html` | https://getearwise.com/portugal/ |
 | `<guide-id>/index.html` | https://getearwise.com/`<guide-id>`/ |
 | `pompeii/index.html` | https://getearwise.com/pompeii/ |
@@ -23,7 +23,7 @@ Portugal guide ids (26, signed off): `alfama-walk`, `baixa-chiado`, `sao-jorge-c
 
 `account.html` and `my-guides.html` are a test sign-in kept in the browser only (`noindex`). Privacy and terms are still drafts (`noindex`). Home, `/guides/`, `/portugal/`, each Portugal guide, and `/pompeii/` are the public pages.
 
-The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal (26 guides at `/portugal/`), Spain (39 guides at `/guides/spain/`), France (66 guides at `/guides/france/`), Italy (30 guides at `/guides/italy/`, including `/pompeii/`), Turkey (60 guides at `/guides/turkey/`), Greece (36 guides at `/guides/greece/`), and Morocco (17 guides at `/guides/morocco/`) are open. The Paris Panthéon is at `/pantheon-paris/` so it does not collide with Rome’s `/pantheon/`. `/guides/portugal/` redirects to `/portugal/`. Other country pages say coming soon.
+The home page is the marketing story. It does not list Portugal or Pompeii. The header links to Audio guides, not to a country or an attraction. `/guides/` groups countries by region (Europe, Middle East, Africa, Asia, Americas, Oceania). Portugal (26 guides at `/portugal/`), Spain (39 guides at `/guides/spain/`), France (66 guides at `/guides/france/`), Italy (30 guides at `/guides/italy/`, including `/pompeii/`), Turkey (60 guides at `/guides/turkey/`), Greece (36 guides at `/guides/greece/`), Morocco (17 guides at `/guides/morocco/`), and UAE (13 guides at `/guides/uae/`) are open. The Paris Panthéon is at `/pantheon-paris/` so it does not collide with Rome’s `/pantheon/`. `/guides/portugal/` redirects to `/portugal/`. Other country pages say coming soon. UAE omits 3 owner-approved guides (`burj-khalifa`, `louvre-abu-dhabi`, `saadiyat-cultural-district`) pending legal-clear real-photo covers.
 
 ## Contact
 

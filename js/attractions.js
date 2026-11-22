@@ -1917,5 +1917,96 @@ window.EARWISE_ATTRACTIONS = [
     "country": "Morocco",
     "href": "/ait-benhaddou/",
     "q": "ait benhaddou ksar earthen towers ouarzazate caravan unesco morocco"
+  },
+  {
+    "title": "Al Fahidi and Dubai Creek",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/al-fahidi-dubai-creek/",
+    "q": "al fahidi bastakiya dubai creek wind towers abra heritage uae"
+  },
+  {
+    "title": "Al Shindagha",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/al-shindagha/",
+    "q": "al shindagha museum dubai creek sheikh saeed heritage uae"
+  },
+  {
+    "title": "Jumeirah Mosque & coast",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/jumeirah-mosque-coast/",
+    "q": "jumeirah mosque dubai coast fatimid stone architecture uae"
+  },
+  {
+    "title": "Dubai Desert Conservation Reserve",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/dubai-desert-conservation-reserve/",
+    "q": "dubai desert conservation reserve arabian oryx dunes ecology uae"
+  },
+  {
+    "title": "Sheikh Zayed Grand Mosque",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/sheikh-zayed-grand-mosque/",
+    "q": "sheikh zayed grand mosque abu dhabi white marble domes pools uae"
+  },
+  {
+    "title": "Qasr Al Hosn",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/qasr-al-hosn/",
+    "q": "qasr al hosn abu dhabi old fort watchtower artisans uae"
+  },
+  {
+    "title": "Qasr Al Watan",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/qasr-al-watan/",
+    "q": "qasr al watan abu dhabi presidential palace great hall library uae"
+  },
+  {
+    "title": "Abu Dhabi Corniche & Emirates Palace",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/corniche-heritage-village-emirates-palace/",
+    "q": "abu dhabi corniche heritage village emirates palace promenade uae"
+  },
+  {
+    "title": "Al Ain Oasis",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/al-ain-oasis/",
+    "q": "al ain oasis falaj irrigation date palms unesco uae"
+  },
+  {
+    "title": "Al Jahili Fort & Al Ain Palace Museum",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/al-jahili-fort-al-ain-palace-museum/",
+    "q": "al jahili fort al ain palace museum thesiger mudbrick uae"
+  },
+  {
+    "title": "Hili",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/hili/",
+    "q": "hili archaeological park grand tomb bronze age al ain uae"
+  },
+  {
+    "title": "Jebel Hafit",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/jebel-hafit/",
+    "q": "jebel hafit al ain beehive tombs mountain road unesco uae"
+  },
+  {
+    "title": "Heart of Sharjah",
+    "place": "Sharjah",
+    "country": "United Arab Emirates",
+    "href": "/heart-of-sharjah/",
+    "q": "heart of sharjah heritage area al hisn fort creek uae"
   }
 ];
