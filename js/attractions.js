@@ -183,13 +183,6 @@ window.EARWISE_ATTRACTIONS = [
     "q": "tomar convent christ"
   },
   {
-    "title": "Pompeii",
-    "place": "Campania",
-    "country": "Italy",
-    "href": "/pompeii/",
-    "q": "pompeii pompeii vesuvius napoli"
-  },
-  {
     "title": "Sagrada Família",
     "place": "Barcelona",
     "country": "Spain",
@@ -461,5 +454,215 @@ window.EARWISE_ATTRACTIONS = [
     "country": "Spain",
     "href": "/teide/",
     "q": "teide national park mount teide tenerife volcano canary islands roques de garcia caldera spain"
+  },
+  {
+    "title": "Colosseum",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/colosseum/",
+    "q": "colosseum rome flavian amphitheatre arch of constantine arena hypogeum gladiators italy"
+  },
+  {
+    "title": "Pantheon",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/pantheon/",
+    "q": "pantheon rome piazza della rotonda oculus dome agrippa hadrian raphael tomb italy"
+  },
+  {
+    "title": "Forum & Palatine",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/roman-forum-palatine/",
+    "q": "roman forum palatine hill rome via sacra arch of titus vesta senate house augustus italy"
+  },
+  {
+    "title": "Navona, Trevi & the Spanish Steps",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/trevi-spanish-steps-navona-walk/",
+    "q": "piazza navona trevi fountain spanish steps rome free walking tour baroque fountains italy"
+  },
+  {
+    "title": "Vatican Museums",
+    "place": "Vatican City",
+    "country": "Italy",
+    "href": "/vatican-museums-sistine-chapel/",
+    "q": "vatican museums sistine chapel raphael rooms laocoon spiral staircase rome italy"
+  },
+  {
+    "title": "St Peter's",
+    "place": "Vatican City",
+    "country": "Italy",
+    "href": "/st-peters-basilica/",
+    "q": "st peters basilica vatican city bernini pieta michelangelo dome grottoes rome italy"
+  },
+  {
+    "title": "Castel Sant'Angelo",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/castel-sant-angelo/",
+    "q": "castel sant angelo ponte sant angelo hadrian mausoleum tiber rome italy"
+  },
+  {
+    "title": "Galleria Borghese",
+    "place": "Rome",
+    "country": "Italy",
+    "href": "/galleria-borghese/",
+    "q": "galleria borghese rome bernini apollo daphne david caravaggio canova raphael titian italy"
+  },
+  {
+    "title": "Tivoli",
+    "place": "Tivoli",
+    "country": "Italy",
+    "href": "/tivoli-villas/",
+    "q": "tivoli hadrians villa villa deste fountains canopus maritime theatre italy"
+  },
+  {
+    "title": "Florence Cathedral",
+    "place": "Florence",
+    "country": "Italy",
+    "href": "/florence-duomo/",
+    "q": "florence duomo brunelleschi dome baptistery giotto campanile santa maria del fiore italy"
+  },
+  {
+    "title": "Florence old town",
+    "place": "Florence",
+    "country": "Italy",
+    "href": "/florence-old-town-walk/",
+    "q": "florence walking tour free piazza della signoria palazzo vecchio ponte vecchio santa croce italy"
+  },
+  {
+    "title": "Uffizi Gallery",
+    "place": "Florence",
+    "country": "Italy",
+    "href": "/uffizi/",
+    "q": "uffizi gallery florence botticelli birth of venus primavera leonardo michelangelo caravaggio italy"
+  },
+  {
+    "title": "The Accademia",
+    "place": "Florence",
+    "country": "Italy",
+    "href": "/accademia/",
+    "q": "accademia gallery florence michelangelo david prisoners giambologna instruments italy"
+  },
+  {
+    "title": "Siena",
+    "place": "Siena",
+    "country": "Italy",
+    "href": "/siena/",
+    "q": "siena piazza del campo torre del mangia palio cathedral duccio piccolomini library italy"
+  },
+  {
+    "title": "Pisa",
+    "place": "Pisa",
+    "country": "Italy",
+    "href": "/pisa-piazza-dei-miracoli/",
+    "q": "pisa leaning tower piazza dei miracoli baptistery cathedral camposanto italy"
+  },
+  {
+    "title": "St Mark's",
+    "place": "Venice",
+    "country": "Italy",
+    "href": "/st-marks-square-basilica/",
+    "q": "st marks square basilica piazza san marco venice campanile clock tower pala doro italy"
+  },
+  {
+    "title": "Doge's Palace",
+    "place": "Venice",
+    "country": "Italy",
+    "href": "/doges-palace/",
+    "q": "doges palace palazzo ducale venice bridge of sighs council of ten armoury italy"
+  },
+  {
+    "title": "Grand Canal",
+    "place": "Venice",
+    "country": "Italy",
+    "href": "/grand-canal-vaporetto/",
+    "q": "grand canal venice vaporetto boat tour rialto bridge ca doro guggenheim salute italy"
+  },
+  {
+    "title": "Milan Cathedral",
+    "place": "Milan",
+    "country": "Italy",
+    "href": "/milan-duomo/",
+    "q": "milan duomo cathedral rooftop madonnina galleria vittorio emanuele italy"
+  },
+  {
+    "title": "The Last Supper",
+    "place": "Milan",
+    "country": "Italy",
+    "href": "/last-supper/",
+    "q": "last supper leonardo da vinci milan santa maria delle grazie refectory cenacolo italy"
+  },
+  {
+    "title": "Lake Como",
+    "place": "Lake Como",
+    "country": "Italy",
+    "href": "/lake-como/",
+    "q": "lake como bellagio varenna villa balbianello villa carlotta melzi vezio italy"
+  },
+  {
+    "title": "Cinque Terre",
+    "place": "Liguria",
+    "country": "Italy",
+    "href": "/cinque-terre/",
+    "q": "cinque terre riomaggiore manarola corniglia vernazza monterosso liguria italy"
+  },
+  {
+    "title": "Museo Egizio",
+    "place": "Turin",
+    "country": "Italy",
+    "href": "/museo-egizio/",
+    "q": "museo egizio turin egyptian museum kha merit ellesyia drovetti king list italy"
+  },
+  {
+    "title": "Naples",
+    "place": "Naples",
+    "country": "Italy",
+    "href": "/naples-centre-mann/",
+    "q": "naples centro storico spaccanapoli veiled christ sannazzaro duomo mann archaeological museum italy"
+  },
+  {
+    "title": "Pompeii",
+    "place": "Pompeii",
+    "country": "Italy",
+    "href": "/pompeii/",
+    "q": "pompeii campania napoli vesuvius roman town italy"
+  },
+  {
+    "title": "Herculaneum",
+    "place": "Ercolano",
+    "country": "Italy",
+    "href": "/herculaneum/",
+    "q": "herculaneum ercolano vesuvius roman ruins boathouses wooden partition villa papyri italy"
+  },
+  {
+    "title": "Amalfi Coast",
+    "place": "Amalfi Coast",
+    "country": "Italy",
+    "href": "/amalfi-coast-drive/",
+    "q": "amalfi coast road trip positano praiano furore amalfi ravello villa rufolo cimbrone vietri italy"
+  },
+  {
+    "title": "Capri",
+    "place": "Capri",
+    "country": "Italy",
+    "href": "/capri/",
+    "q": "capri marina grande piazzetta faraglioni gardens of augustus via krupp villa jovis blue grotto italy"
+  },
+  {
+    "title": "Taormina",
+    "place": "Taormina",
+    "country": "Italy",
+    "href": "/taormina/",
+    "q": "taormina sicily greek theatre mount etna corso umberto piazza ix aprile isola bella italy"
+  },
+  {
+    "title": "Valley of the Temples",
+    "place": "Agrigento",
+    "country": "Italy",
+    "href": "/valley-of-the-temples/",
+    "q": "valley of the temples agrigento sicily temple of concordia juno heracles zeus kolymbethra italy"
   }
 ];

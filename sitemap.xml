@@ -4,8 +4,8 @@
   <url><loc>https://getearwise.com/guides/</loc></url>
   <url><loc>https://getearwise.com/portugal/</loc></url>
   <url><loc>https://getearwise.com/guides/spain/</loc></url>
-  <url><loc>https://getearwise.com/guides/france/</loc></url>
   <url><loc>https://getearwise.com/guides/italy/</loc></url>
+  <url><loc>https://getearwise.com/guides/france/</loc></url>
   <url><loc>https://getearwise.com/guides/greece/</loc></url>
   <url><loc>https://getearwise.com/guides/croatia/</loc></url>
   <url><loc>https://getearwise.com/guides/turkey/</loc></url>
@@ -26,7 +26,6 @@
   <url><loc>https://getearwise.com/guides/peru/</loc></url>
   <url><loc>https://getearwise.com/guides/australia/</loc></url>
   <url><loc>https://getearwise.com/guides/new-zealand/</loc></url>
-  <url><loc>https://getearwise.com/pompeii/</loc></url>
   <url><loc>https://getearwise.com/jeronimos/</loc></url>
   <url><loc>https://getearwise.com/belem-tower/</loc></url>
   <url><loc>https://getearwise.com/belem-riverfront/</loc></url>
@@ -53,20 +52,20 @@
   <url><loc>https://getearwise.com/guimaraes-old-town/</loc></url>
   <url><loc>https://getearwise.com/bom-jesus/</loc></url>
   <url><loc>https://getearwise.com/braga-old-town/</loc></url>
+  <url><loc>https://getearwise.com/camp-nou/</loc></url>
+  <url><loc>https://getearwise.com/la-rambla/</loc></url>
+  <url><loc>https://getearwise.com/bernabeu/</loc></url>
   <url><loc>https://getearwise.com/sagrada-familia/</loc></url>
   <url><loc>https://getearwise.com/park-guell/</loc></url>
   <url><loc>https://getearwise.com/casa-batllo/</loc></url>
   <url><loc>https://getearwise.com/casa-mila/</loc></url>
   <url><loc>https://getearwise.com/gothic-quarter/</loc></url>
-  <url><loc>https://getearwise.com/la-rambla/</loc></url>
-  <url><loc>https://getearwise.com/camp-nou/</loc></url>
   <url><loc>https://getearwise.com/montserrat/</loc></url>
   <url><loc>https://getearwise.com/dali-museum/</loc></url>
   <url><loc>https://getearwise.com/prado/</loc></url>
   <url><loc>https://getearwise.com/royal-palace-madrid/</loc></url>
   <url><loc>https://getearwise.com/reina-sofia/</loc></url>
   <url><loc>https://getearwise.com/madrid-walk/</loc></url>
-  <url><loc>https://getearwise.com/bernabeu/</loc></url>
   <url><loc>https://getearwise.com/toledo/</loc></url>
   <url><loc>https://getearwise.com/segovia/</loc></url>
   <url><loc>https://getearwise.com/el-escorial/</loc></url>
@@ -92,4 +91,34 @@
   <url><loc>https://getearwise.com/city-arts-sciences/</loc></url>
   <url><loc>https://getearwise.com/palma-cathedral/</loc></url>
   <url><loc>https://getearwise.com/teide/</loc></url>
+  <url><loc>https://getearwise.com/colosseum/</loc></url>
+  <url><loc>https://getearwise.com/pantheon/</loc></url>
+  <url><loc>https://getearwise.com/roman-forum-palatine/</loc></url>
+  <url><loc>https://getearwise.com/trevi-spanish-steps-navona-walk/</loc></url>
+  <url><loc>https://getearwise.com/vatican-museums-sistine-chapel/</loc></url>
+  <url><loc>https://getearwise.com/st-peters-basilica/</loc></url>
+  <url><loc>https://getearwise.com/castel-sant-angelo/</loc></url>
+  <url><loc>https://getearwise.com/galleria-borghese/</loc></url>
+  <url><loc>https://getearwise.com/tivoli-villas/</loc></url>
+  <url><loc>https://getearwise.com/florence-duomo/</loc></url>
+  <url><loc>https://getearwise.com/florence-old-town-walk/</loc></url>
+  <url><loc>https://getearwise.com/uffizi/</loc></url>
+  <url><loc>https://getearwise.com/accademia/</loc></url>
+  <url><loc>https://getearwise.com/siena/</loc></url>
+  <url><loc>https://getearwise.com/pisa-piazza-dei-miracoli/</loc></url>
+  <url><loc>https://getearwise.com/st-marks-square-basilica/</loc></url>
+  <url><loc>https://getearwise.com/doges-palace/</loc></url>
+  <url><loc>https://getearwise.com/grand-canal-vaporetto/</loc></url>
+  <url><loc>https://getearwise.com/milan-duomo/</loc></url>
+  <url><loc>https://getearwise.com/last-supper/</loc></url>
+  <url><loc>https://getearwise.com/lake-como/</loc></url>
+  <url><loc>https://getearwise.com/cinque-terre/</loc></url>
+  <url><loc>https://getearwise.com/museo-egizio/</loc></url>
+  <url><loc>https://getearwise.com/naples-centre-mann/</loc></url>
+  <url><loc>https://getearwise.com/pompeii/</loc></url>
+  <url><loc>https://getearwise.com/herculaneum/</loc></url>
+  <url><loc>https://getearwise.com/amalfi-coast-drive/</loc></url>
+  <url><loc>https://getearwise.com/capri/</loc></url>
+  <url><loc>https://getearwise.com/taormina/</loc></url>
+  <url><loc>https://getearwise.com/valley-of-the-temples/</loc></url>
 </urlset>
