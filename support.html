@@ -4,16 +4,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css?v=20261122">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
-<meta name="robots" content="noindex, nofollow">
-<title>Support | Earwise</title><meta name="description" content="Get help with Earwise audio guides."></head><body>
+<link rel="canonical" href="https://getearwise.com/support.html">
+<title>Support &amp; Contact | Earwise</title>
+<meta name="description" content="Get help with Earwise audio guides, contact Finick (Pty) Ltd, or read answers about online browser listening, offline app downloads, and refunds.">
+</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="index.html">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="index.html"><img class="brand-logo" src="favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="guides/">Audio guides</a>
       <a class="desk-link" href="index.html#how">How it works</a>
       <a href="support.html">Support</a>
@@ -23,22 +31,49 @@
 </header>
 
 <main id="main" class="doc"><div class="wrap narrow">
-<h1>Support</h1>
-<p class="muted">Questions, a stop that didn't play, or a guide idea? Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>. We usually reply within two working days.</p>
-<!-- PLACEHOLDER: connect to a form service (e.g. Formspree) by setting action="https://formspree.io/f/XXXX" and removing disabled -->
-<form class="form" action="#" method="post" onsubmit="return false">
-  <div><label for="name">Name</label><input id="name" name="name" autocomplete="name"></div>
-  <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-  <div><label for="topic">Topic</label><select id="topic" name="topic"><option>A stop didn't play</option><option>Purchase or refund</option><option>Wrong or missing information</option><option>Partnership (travel agents, creators)</option><option>Other</option></select></div>
-  <div><label for="msg">Message</label><textarea id="msg" name="message" rows="6" required></textarea></div>
-  <p class="muted" style="margin:0;font-size:.9rem">We use your details only to reply to you. See our <a href="privacy.html">privacy policy</a>.</p>
-  <button class="btn" type="submit" disabled aria-describedby="formnote">Send message</button>
-  <p id="formnote" class="fine" style="margin:0">Placeholder. The form isn't connected, so it does not send. Email hello@getearwise.com instead.</p>
-</form>
-<h2>Quick fixes</h2>
-<ul><li><strong>Stories don't start by themselves:</strong> allow location access for the app ("While using"), and check that the guide is downloaded.</li>
-<li><strong>A purchase doesn't show:</strong> tap "Restore purchases" in Settings.</li>
-<li><strong>Refunds:</strong> these are handled by Apple (reportaproblem.apple.com) or Google Play (play.google.com, Order history).</li></ul>
+<h1>Support &amp; contact</h1>
+<p class="muted">Need help with a guide, a purchase, or a fact to check? Write to us directly—we usually reply within two working days.</p>
+
+<section class="contact-card" id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact us</h2>
+  <p>Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> with the guide name, stop number, or your account email if it is about a purchase.</p>
+  <p class="fine">Operated by Finick (Pty) Ltd (FINICK R EN J (Pty) Ltd, reg. 2025/324909/07), South Africa.</p>
+  <div><a class="btn" href="mailto:hello@getearwise.com?subject=Earwise%20support">Email hello@getearwise.com</a></div>
+</section>
+
+<h2>Frequently asked questions</h2>
+<details class="faq" open>
+  <summary>Can I listen offline on the website, or only in the app?</summary>
+  <p class="fine">Offline guides are <strong>app-only</strong>. Guides bought on the website play online in your browser (with the read-along script) whenever you have a connection. Offline listening and automatic GPS playback at each stop need the free Earwise app signed in with the same account.</p>
+</details>
+<details class="faq">
+  <summary>Are the iPhone and Android apps or website checkout open yet?</summary>
+  <p class="fine">Not yet. The apps are not in the App Store or Google Play yet, and "Buy — coming soon" buttons on guide pages email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> instead of taking payment. You can already listen to free guides and stop-1 samples of paid guides on the website.</p>
+</details>
+<details class="faq">
+  <summary>How do guides I buy on the website unlock in the app?</summary>
+  <p class="fine">When checkout and sign-in go live, purchases on getearwise.com are tied to your Earwise account. Sign in to the free Earwise app with the same email address to download those guides for offline use and GPS auto-play.</p>
+</details>
+<details class="faq">
+  <summary>Stories don’t start by themselves in the app</summary>
+  <p class="fine">Check that location permission is set to "While using the app", that auto-play is enabled in Settings, and that the guide has been downloaded.</p>
+</details>
+<details class="faq">
+  <summary>A purchase doesn’t show up in the app</summary>
+  <p class="fine">If you bought inside the app, tap "Restore purchases" in Settings. If you bought on the website, check that you are signed in with the same email address you used at checkout, or email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
+</details>
+<details class="faq">
+  <summary>How do refunds work?</summary>
+  <p class="fine">In-app purchases are handled by Apple (<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>) or Google Play (Order history). For purchases made on getearwise.com, email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> within 14 days with your account email and guide name.</p>
+</details>
+<details class="faq">
+  <summary>How do I delete my account or personal data?</summary>
+  <p class="fine">Email <a href="mailto:hello@getearwise.com?subject=Account%20deletion%20request">hello@getearwise.com</a> from your account email address. See our <a href="privacy.html">privacy policy</a> for full details.</p>
+</details>
+<details class="faq">
+  <summary>How do I report a wrong fact or misplaced map pin?</summary>
+  <p class="fine">Email <a href="mailto:hello@getearwise.com?subject=Guide%20feedback">hello@getearwise.com</a> with the guide name and stop number, and we will verify and update it.</p>
+</details>
 </div></main>
 <footer class="site-footer">
   <div class="wrap foot">
@@ -53,4 +88,5 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+<script src="js/nav.js?v=20261122" defer></script>
 </body></html>

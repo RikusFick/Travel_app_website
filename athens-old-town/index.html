@@ -16,7 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../css/style.css?v=20261122">
 <link rel="preload" as="image" href="../img/guides/athens-old-town.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
@@ -152,8 +153,13 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="../">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="../"><img class="brand-logo" src="../favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="../guides/">Audio guides</a>
       <a class="desk-link" href="../#how">How it works</a>
       <a href="../support.html">Support</a>
@@ -183,7 +189,7 @@
     </div>
     <div class="buy-block">
       <a class="btn btn-block" href="mailto:hello@getearwise.com?subject=Athens%20old%20town%20walk%20audio%20guide" aria-describedby="buy-note">Buy — coming soon</a>
-      <p class="fine" id="buy-note">This guide is Free in the app when it launches. Checkout is not open yet; this button is a placeholder. Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
+      <p class="fine" id="buy-note">This guide is Free. Buy is coming soon for paid guides — this button emails <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>. Guides on the website play online in your browser (with the read-along script); offline listening and auto-play by location need the free Earwise app with the same account.</p>
     </div>
     <p class="intro">A 8-stop offline audio guide to Athens old town walk in Athens, recorded in 10 languages and designed to play as you arrive. It covers Monastiraki’s squares, Byzantine lanes of Plaka, and the whitewashed island quarter of Anafiotika. Download once; you will not need a signal on the ground.</p>
 
@@ -229,5 +235,6 @@
 <script type="application/json" id="earwise-audio">{"id":"athens-old-town","mode":"full","base":"https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio","languages":{"en":[1,2,3,4,5,6,7,8],"es":[1,2,3,4,5,6,7,8],"fr":[1,2,3,4,5,6,7,8],"de":[1,2,3,4,5,6,7,8],"it":[1,2,3,4,5,6,7,8],"pt":[1,2,3,4,5,6,7,8],"ru":[1,2,3,4,5,6,7,8],"ja":[1,2,3,4,5,6,7,8],"hi":[1,2,3,4,5,6,7,8],"zh":[1,2,3,4,5,6,7,8]}}</script>
 <script src="../js/guide-audio.js" defer></script>
 <script src="../js/guide-script.js" defer></script>
+<script src="../js/nav.js?v=20261122" defer></script>
 </body>
 </html>

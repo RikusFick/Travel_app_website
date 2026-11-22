@@ -10,7 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../css/style.css">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../css/style.css?v=20261122">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
 </head>
@@ -18,8 +19,13 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="../../">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="../../"><img class="brand-logo" src="../../favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="../../guides/">Audio guides</a>
       <a class="desk-link" href="../../#how">How it works</a>
       <a href="../../support.html">Support</a>
@@ -33,7 +39,7 @@
     <p class="eyebrow">Coming soon</p>
     <h1 class="block-title">United States</h1>
     <div class="soon-panel">
-      <p>Audio guides for United States are not ready yet. Portugal is open now.</p>
+      <p>Audio guides for United States are coming soon. 287 guides across 8 countries (Portugal, Spain, France, Italy, Greece, Turkey, Morocco, and the UAE) are open now.</p>
       <p><a class="btn" href="../">All countries</a></p>
     </div>
   </div>
@@ -51,5 +57,6 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+<script src="../../js/nav.js?v=20261122" defer></script>
 </body>
 </html>

@@ -16,7 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../css/style.css?v=20261122">
 <link rel="preload" as="image" href="../img/guides/eiffel-tower.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
@@ -147,8 +148,13 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="../">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="../"><img class="brand-logo" src="../favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="../guides/">Audio guides</a>
       <a class="desk-link" href="../#how">How it works</a>
       <a href="../support.html">Support</a>
@@ -178,7 +184,7 @@
     </div>
     <div class="buy-block">
       <a class="btn btn-block" href="mailto:hello@getearwise.com?subject=Eiffel%20Tower%20audio%20guide" aria-describedby="buy-note">Buy — coming soon</a>
-      <p class="fine" id="buy-note">The guide price is €2.99. This button is a placeholder. It does not open checkout and does not take payment. Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
+      <p class="fine" id="buy-note">The guide price is €2.99. Buy is coming soon — this button emails <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> and does not take payment. Guides bought on the website play online in your browser (with the read-along script); offline listening and auto-play by location need the free Earwise app with the same account.</p>
     </div>
     <p class="intro">A 7-stop offline audio guide to Eiffel Tower in Paris, recorded in 10 languages and designed to play as you arrive. It covers Gustave Eiffel&#x27;s iron tower from the Champ de Mars and first floor up to the summit views. Download once; you will not need a signal on the ground.</p>
 
@@ -223,5 +229,6 @@
 <script type="application/json" id="earwise-audio">{"id":"eiffel-tower","mode":"sample","base":"https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio","languages":{"en":[1],"es":[1],"fr":[1],"de":[1],"it":[1],"pt":[1],"ru":[1],"ja":[1],"hi":[1],"zh":[1]}}</script>
 <script src="../js/guide-audio.js" defer></script>
 <script src="../js/guide-script.js" defer></script>
+<script src="../js/nav.js?v=20261122" defer></script>
 </body>
 </html>
