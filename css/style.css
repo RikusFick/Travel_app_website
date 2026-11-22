@@ -909,3 +909,73 @@ html:not(.has-audio-js) .player-ui { display: none; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+/* Read-along transcripts (free: every stop; paid: stop 1 only). Works without JS. */
+.read-along {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  background: var(--bg);
+}
+.read-along > summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--teal);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  list-style: none;
+}
+.read-along > summary::-webkit-details-marker,
+.read-along > summary::marker { display: none; }
+.read-along > summary::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+}
+.read-along[open] > summary::after { content: "−"; }
+.read-along .transcript {
+  padding: 4px 14px 16px;
+  max-width: 42rem;
+}
+.stops .read-along .transcript p,
+.read-along .transcript p {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.stops .read-along .transcript p:last-child,
+.read-along .transcript p:last-child { margin-bottom: 0; }
+
+/* Grouped Leaflet pins for indoor/shared stop coordinates. */
+.pin-cluster {
+  background: transparent;
+  border: 0;
+}
+.pin-cluster-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  background: var(--teal);
+  color: var(--on-teal);
+  border: 2px solid var(--on-teal);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  font: 700 13px/1 var(--font);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.pin-popup { margin: 0; min-width: 12rem; max-width: 16rem; }
+.pin-popup p { margin: 0 0 8px; font-weight: 700; }
+.pin-popup ol { margin: 0; padding: 0 0 0 1.2em; }
+.pin-popup li { margin: 0 0 4px; }
