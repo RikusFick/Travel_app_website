@@ -1,0 +1,662 @@
+[
+  {
+    "id": "notre-dame",
+    "title": "Notre-Dame de Paris",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 11,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "sacre-coeur-montmartre",
+    "title": "Sacré-Cœur & Montmartre",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 10,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "louvre",
+    "title": "Louvre",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 22,
+    "minutes": 35,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "eiffel-tower",
+    "title": "Eiffel Tower",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 7,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "musee-orsay",
+    "title": "Musée d'Orsay",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 14,
+    "minutes": 20,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "arc-de-triomphe",
+    "title": "Arc de Triomphe",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 6,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "invalides",
+    "title": "Les Invalides & Musée de l'Armée",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 10,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "quai-branly",
+    "title": "Musée du quai Branly",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 9,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "sainte-chapelle",
+    "title": "Sainte-Chapelle",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 6,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "musee-orangerie",
+    "title": "Musée de l'Orangerie",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 5,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "pantheon-paris",
+    "title": "Panthéon",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 8,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "conciergerie",
+    "title": "Conciergerie",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "musee-rodin",
+    "title": "Musée Rodin",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 8,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "le-marais",
+    "title": "Le Marais",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 9,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "catacombs",
+    "title": "Catacombs of Paris",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 6,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "palais-garnier",
+    "title": "Palais Garnier (Opéra)",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 7,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "pere-lachaise",
+    "title": "Père Lachaise Cemetery",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 12,
+    "minutes": 17,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "hotel-de-la-marine",
+    "title": "Hôtel de la Marine",
+    "place": "Paris",
+    "region": "paris",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "vincennes",
+    "title": "Château de Vincennes",
+    "place": "Vincennes",
+    "region": "paris",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "saint-denis",
+    "title": "Basilica of Saint-Denis",
+    "place": "Saint-Denis",
+    "region": "paris",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "versailles",
+    "title": "Versailles",
+    "place": "Versailles",
+    "region": "france-north",
+    "stops": 22,
+    "minutes": 31,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "mont-saint-michel",
+    "title": "Mont-Saint-Michel",
+    "place": "Mont-Saint-Michel",
+    "region": "france-north",
+    "stops": 13,
+    "minutes": 20,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "fontainebleau",
+    "title": "Château de Fontainebleau",
+    "place": "Fontainebleau",
+    "region": "france-north",
+    "stops": 13,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "chantilly",
+    "title": "Domaine de Chantilly",
+    "place": "Chantilly",
+    "region": "france-north",
+    "stops": 9,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "d-day-beaches",
+    "title": "D-Day Landing Beaches",
+    "place": "Normandy",
+    "region": "france-north",
+    "stops": 9,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "giverny",
+    "title": "Giverny",
+    "place": "Giverny",
+    "region": "france-north",
+    "stops": 6,
+    "minutes": 7,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "etretat",
+    "title": "Étretat Cliffs",
+    "place": "Étretat",
+    "region": "france-north",
+    "stops": 5,
+    "minutes": 7,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "bayeux",
+    "title": "Bayeux",
+    "place": "Bayeux",
+    "region": "france-north",
+    "stops": 5,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "chartres",
+    "title": "Chartres Cathedral",
+    "place": "Chartres",
+    "region": "france-north",
+    "stops": 10,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "reims-cathedral",
+    "title": "Reims Cathedral",
+    "place": "Reims",
+    "region": "france-north",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "pierrefonds",
+    "title": "Château de Pierrefonds",
+    "place": "Pierrefonds",
+    "region": "france-north",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "amiens-cathedral",
+    "title": "Amiens Cathedral",
+    "place": "Amiens",
+    "region": "france-north",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "lourdes",
+    "title": "Lourdes Sanctuary",
+    "place": "Lourdes",
+    "region": "france-south",
+    "stops": 7,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "marseille",
+    "title": "Marseille",
+    "place": "Marseille",
+    "region": "france-south",
+    "stops": 9,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "nice",
+    "title": "Nice",
+    "place": "Nice",
+    "region": "france-south",
+    "stops": 8,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "palais-des-papes",
+    "title": "Palais des Papes",
+    "place": "Avignon",
+    "region": "france-south",
+    "stops": 10,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "carcassonne",
+    "title": "Carcassonne",
+    "place": "Carcassonne",
+    "region": "france-south",
+    "stops": 10,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "pont-du-gard",
+    "title": "Pont du Gard",
+    "place": "Vers-Pont-du-Gard",
+    "region": "france-south",
+    "stops": 5,
+    "minutes": 7,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gorges-du-verdon",
+    "title": "Gorges du Verdon",
+    "place": "Verdon",
+    "region": "france-south",
+    "stops": 6,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "calanques",
+    "title": "Calanques of Marseille",
+    "place": "Marseille",
+    "region": "france-south",
+    "stops": 5,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "arles",
+    "title": "Arles",
+    "place": "Arles",
+    "region": "france-south",
+    "stops": 8,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "nimes",
+    "title": "Nîmes",
+    "place": "Nîmes",
+    "region": "france-south",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "orange-theatre",
+    "title": "Orange Roman Theatre",
+    "place": "Orange",
+    "region": "france-south",
+    "stops": 4,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "albi",
+    "title": "Albi",
+    "place": "Albi",
+    "region": "france-south",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "eze-saint-paul",
+    "title": "Èze & Saint-Paul-de-Vence",
+    "place": "Èze",
+    "region": "france-south",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "aigues-mortes",
+    "title": "Aigues-Mortes",
+    "place": "Aigues-Mortes",
+    "region": "france-south",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chateau-d-if",
+    "title": "Château d'If",
+    "place": "Marseille",
+    "region": "france-south",
+    "stops": 4,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chambord",
+    "title": "Château de Chambord",
+    "place": "Chambord",
+    "region": "loire",
+    "stops": 9,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "chenonceau",
+    "title": "Château de Chenonceau",
+    "place": "Chenonceaux",
+    "region": "loire",
+    "stops": 10,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "amboise",
+    "title": "Amboise & Clos Lucé",
+    "place": "Amboise",
+    "region": "loire",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chateau-angers",
+    "title": "Château d'Angers",
+    "place": "Angers",
+    "region": "loire",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "azay-le-rideau",
+    "title": "Château d'Azay-le-Rideau",
+    "place": "Azay-le-Rideau",
+    "region": "loire",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "villandry",
+    "title": "Château de Villandry",
+    "place": "Villandry",
+    "region": "loire",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "aiguille-du-midi",
+    "title": "Chamonix & Aiguille du Midi",
+    "place": "Chamonix",
+    "region": "france-east",
+    "stops": 6,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "strasbourg",
+    "title": "Strasbourg",
+    "place": "Strasbourg",
+    "region": "france-east",
+    "stops": 8,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "annecy",
+    "title": "Annecy",
+    "place": "Annecy",
+    "region": "france-east",
+    "stops": 6,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "lyon",
+    "title": "Lyon",
+    "place": "Lyon",
+    "region": "france-east",
+    "stops": 10,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "hospices-de-beaune",
+    "title": "Hospices de Beaune",
+    "place": "Beaune",
+    "region": "france-east",
+    "stops": 6,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "colmar",
+    "title": "Colmar old town",
+    "place": "Colmar",
+    "region": "france-east",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "haut-koenigsbourg",
+    "title": "Château du Haut-Kœnigsbourg",
+    "place": "Orschwiller",
+    "region": "france-east",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "vezelay",
+    "title": "Vézelay Abbey",
+    "place": "Vézelay",
+    "region": "france-east",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dune-du-pilat",
+    "title": "Dune du Pilat & Arcachon Bay",
+    "place": "La Teste-de-Buch",
+    "region": "france-west",
+    "stops": 4,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "saint-malo",
+    "title": "Saint-Malo Walled City",
+    "place": "Saint-Malo",
+    "region": "france-west",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "bordeaux",
+    "title": "Bordeaux",
+    "place": "Bordeaux",
+    "region": "france-west",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "rocamadour",
+    "title": "Rocamadour",
+    "place": "Rocamadour",
+    "region": "france-west",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "lascaux-iv",
+    "title": "Lascaux IV",
+    "place": "Montignac",
+    "region": "france-west",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  }
+]
