@@ -4,16 +4,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css?v=20261122">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
-<meta name="robots" content="noindex, nofollow">
-<title>Privacy policy (draft) | Earwise</title></head><body>
+<link rel="canonical" href="https://getearwise.com/privacy.html">
+<title>Privacy policy | Earwise</title>
+<meta name="description" content="How Finick (Pty) Ltd handles personal information on getearwise.com and in the Earwise mobile app under POPIA and the GDPR.">
+</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="index.html">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="index.html"><img class="brand-logo" src="favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="guides/">Audio guides</a>
       <a class="desk-link" href="index.html#how">How it works</a>
       <a href="support.html">Support</a>
@@ -24,44 +32,57 @@
 
 <main id="main" class="doc"><div class="wrap narrow">
 <h1>Privacy policy</h1>
-<div class="draft" role="note"><strong>DRAFT, NOT YET IN FORCE.</strong> This text is a placeholder that still needs legal review. A qualified lawyer must check it before it is published or used in the app stores.</div>
-<p class="muted">Last updated: 14 October 2026</p>
-<p>This policy explains how Finick (Pty) Ltd ("we", "us"), a company registered in South Africa, handles personal information when you use the Earwise app and this website. We aim to collect as little as possible.</p>
+<p class="muted">Last updated: 22 November 2026</p>
+<p>This policy explains how <strong>Finick (Pty) Ltd</strong> (registered in South Africa with CIPC as <strong>FINICK R EN J (Pty) Ltd</strong>, registration number <strong>2025/324909/07</strong>; "we", "us") handles personal information when you use <strong>getearwise.com</strong> and the <strong>Earwise</strong> mobile app. We collect only what is needed to run the guides, accounts, and purchases.</p>
 
 <h2>1. Who is responsible</h2>
-<p>Finick (Pty) Ltd is the "responsible party" under South Africa's Protection of Personal Information Act (POPIA) and the "controller" under the EU General Data Protection Regulation (GDPR). Contact: <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>. Information Officer: <em>[name to be confirmed]</em>. Company registration number: <em>[to be added]</em>. Registered address: <em>[to be added]</em>.</p>
+<p>Finick (Pty) Ltd (FINICK R EN J (Pty) Ltd, reg. 2025/324909/07, South Africa) is the "responsible party" under South Africa's Protection of Personal Information Act (POPIA) and the "controller" under the EU/UK General Data Protection Regulation (GDPR). For any privacy question or deletion request, email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
 
-<h2>2. What we use, and why</h2>
-<table><thead><tr><th>Data</th><th>How it is used</th><th>Legal basis (GDPR)</th></tr></thead><tbody>
-<tr><td><strong>Location</strong> (GPS)</td><td>Used <strong>only on your device</strong> to start a story when you reach a stop and to show you on the offline map. It is not sent to us or stored on our servers. You can turn location off, and then you start stories by hand.</td><td>Your consent through the device permission</td></tr>
-<tr><td><strong>Purchases</strong></td><td>Payments go through Apple App Store or Google Play. We never see your card details. We receive only what is needed to unlock what you bought, such as a purchase receipt or transaction ID.</td><td>Performance of a contract</td></tr>
-<tr><td><strong>Problem reports</strong> (optional)</td><td>If you choose to send a report or contact us, we receive what you send, such as your message, email address, app version, device model and the guide or stop involved. We use it only to reply and to fix the problem.</td><td>Consent and legitimate interest</td></tr>
-<tr><td><strong>App settings</strong></td><td>Your language, appearance, playback speed and downloaded guides are stored on your device.</td><td>Not sent to us</td></tr>
+<h2>2. What data we use, and why</h2>
+<div class="table-scroll">
+<table class="policy-table"><thead><tr><th>Data</th><th>How it is used</th><th>Legal basis (GDPR)</th></tr></thead><tbody>
+<tr><td><strong>Location (GPS, app only)</strong></td><td>Used <strong>only on your device</strong> while the app is open to show you on the map and trigger each stop automatically as you arrive. Your coordinates are not sent to our servers or stored remotely. If you deny location permission, you can still play stops by hand. (Tapping walking directions in the app opens Google Maps outside Earwise.)</td><td data-label="Legal basis">Consent via device permission</td></tr>
+<tr><td><strong>Earwise account (coming)</strong></td><td>An account is optional in the app. When sign-in goes live (via <strong>Firebase Authentication</strong> with email), your email address and user ID tie guides you buy on getearwise.com to your account so you can listen in the browser and unlock offline downloads in the app. (Until Firebase sign-in is switched on, the sign-in preview on <code>account.html</code> stays in your browser's local storage only.)</td><td data-label="Legal basis">Performance of a contract</td></tr>
+<tr><td><strong>Purchases</strong></td><td><strong>In the app:</strong> handled by the Apple App Store or Google Play; we receive only purchase/entitlement status to unlock your guide or pass. <strong>On the website (planned):</strong> handled by <strong>Paystack</strong>, which processes your card details directly. We never see or store your card number; we receive payment confirmation and order records so we can tie the purchase to your Earwise account.</td><td data-label="Legal basis">Performance of a contract and legal accounting duties</td></tr>
+<tr><td><strong>Audio, images, and maps</strong></td><td>Audio files on the website and in the app stream from <strong>Cloudflare R2</strong>. The app may also fetch guide updates from <strong>GitHub / jsDelivr</strong>. Interactive maps on the website load map tiles from <strong>OpenStreetMap</strong> and map scripts from <strong>jsDelivr</strong>, and pages load the <em>Plus Jakarta Sans</em> font from <strong>Google Fonts</strong>. Those providers receive standard request metadata (such as your IP address and browser) needed to deliver the files.</td><td data-label="Legal basis">Legitimate interest in delivering the service</td></tr>
+<tr><td><strong>Device settings &amp; saved notes</strong></td><td>In the app, your chosen language, appearance, playback speed, played stops, downloaded guides, and any fact or pin notes you write are stored locally on your device.</td><td data-label="Legal basis">Stored on your device only</td></tr>
+<tr><td><strong>Support emails</strong></td><td>If you email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>, we use your email address and message only to reply and fix any problem you report.</td><td data-label="Legal basis">Consent and legitimate interest</td></tr>
 </tbody></table>
+</div>
 
 <h2>3. What we do not do</h2>
-<ul><li>No advertising, no ad tracking and no advertising IDs.</li><li>We don't sell or rent personal information.</li><li>We don't build location histories or profiles.</li><li>No account is needed to use the app.</li></ul>
+<ul>
+  <li>No advertising, no third-party ad networks, and no advertising IDs.</li>
+  <li>No website analytics trackers or cross-site tracking cookies.</li>
+  <li>We do not sell, rent, or trade your personal information.</li>
+  <li>We do not track or store your walking route or location history on any server.</li>
+</ul>
 
-<h2>4. Service providers</h2>
-<p>We use a small number of providers that process data for us: Apple and Google (app distribution and payments), <em>[content hosting/CDN, e.g. GitHub/jsDelivr, which receive your IP address when guides are downloaded]</em> and <em>[email/support provider]</em>. Some of them may process data outside South Africa or the EU. Where they do, we rely on appropriate safeguards such as the EU Standard Contractual Clauses or the protections allowed under section 72 of POPIA.</p>
+<h2>4. Hosting and service providers</h2>
+<p>We rely on a small set of infrastructure providers to run Earwise: <strong>GitHub Pages</strong> (website hosting, which may keep standard server logs such as IP addresses for security), <strong>Cloudflare R2</strong> (audio and media delivery), <strong>OpenStreetMap</strong> and <strong>jsDelivr</strong> (website map tiles and Leaflet library), <strong>Google Fonts</strong> (typography), <strong>Firebase</strong> (Google, for upcoming email sign-in and account entitlement sync), <strong>Paystack</strong> (planned website payments), and <strong>Apple</strong> and <strong>Google</strong> (app distribution and in-app purchases). Some providers process data outside South Africa or the EEA; where they do, we rely on safeguards such as standard contractual clauses and POPIA section 72.</p>
 
 <h2>5. How long we keep data</h2>
-<p>We keep problem reports and support emails for up to <em>[24 months]</em> and then delete them. Purchase records are kept by Apple or Google, and by us for as long as tax and accounting law requires.</p>
+<p>We keep support emails for up to 24 months after the issue is closed and then delete them. Account records remain active while you have an account, until you ask us to delete them. Purchase and invoice records are kept for as long as South African tax and accounting laws require.</p>
 
-<h2>6. Your rights</h2>
-<p>Under POPIA and the GDPR you can ask to access, correct or delete your personal information, object to or restrict processing, withdraw consent at any time, and (under the GDPR) receive your data in a portable format. Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>. You may also complain to the <strong>Information Regulator (South Africa)</strong> at inforegulator.org.za, or to the data protection authority in your EU country.</p>
+<h2>6. Your rights (POPIA &amp; GDPR)</h2>
+<p>Under POPIA and the GDPR, you have the right to:</p>
+<ul>
+  <li><strong>Access</strong> the personal information we hold about you and get a copy in a clear, portable format.</li>
+  <li><strong>Correct</strong> inaccurate or out-of-date details.</li>
+  <li><strong>Delete</strong> your Earwise account and support emails (except records we are legally required to keep for tax or fraud prevention).</li>
+  <li><strong>Object to or restrict</strong> processing, or <strong>withdraw consent</strong> (for example, turning off location access in your phone's settings at any time).</li>
+</ul>
+<p><strong>How to delete your account or data:</strong> email <a href="mailto:hello@getearwise.com?subject=Data%20or%20account%20deletion%20request">hello@getearwise.com</a> from the email address linked to your account and tell us what you want deleted. We will confirm once it is done.</p>
+<p>You can also lodge a complaint with the <strong>Information Regulator (South Africa)</strong> (<a href="https://inforegulator.org.za/">inforegulator.org.za</a>) or with your local EU/UK data protection authority.</p>
 
 <h2>7. Children</h2>
-<p>The app is suitable for general audiences and does not knowingly collect personal information from children. <em>[Age threshold to be confirmed: POPIA 18, GDPR 13–16 depending on the country.]</em></p>
+<p>Earwise provides general-interest travel guides and is not aimed at children under 16 (or under 18 without a parent or guardian's consent under POPIA). We do not knowingly collect personal information from children.</p>
 
 <h2>8. Security</h2>
-<p>We use reasonable technical and organisational measures to protect the little data we hold, including encrypted connections (HTTPS).</p>
+<p>Connections to getearwise.com, Cloudflare R2, Firebase, and Paystack use HTTPS encryption. Payment card processing is delegated to Apple, Google, or Paystack so card details are never stored on our servers.</p>
 
-<h2>9. This website</h2>
-<p>This website uses no cookies, analytics or trackers. Our host may keep standard server logs, such as IP addresses, for security.</p>
-
-<h2>10. Changes</h2>
-<p>If we update this policy, we will change the date at the top. If the changes are important, we will tell you in the app.</p>
+<h2>9. Changes</h2>
+<p>When we update this policy—for instance when Firebase sign-in, Paystack checkout, or the mobile apps launch—we will update the date at the top of this page.</p>
 </div></main>
 <footer class="site-footer">
   <div class="wrap foot">
@@ -76,4 +97,5 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+<script src="js/nav.js?v=20261122" defer></script>
 </body></html>

@@ -16,7 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../../css/style.css">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../css/style.css?v=20261122">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
 <script type="application/ld+json">
@@ -139,8 +140,13 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="../../">Earwise</a>
-    <nav aria-label="Main">
+    <a class="brand" href="../../"><img class="brand-logo" src="../../favicon.svg" alt="" width="28" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="../../guides/">Audio guides</a>
       <a class="desk-link" href="../../#how">How it works</a>
       <a href="../../support.html">Support</a>
@@ -152,7 +158,7 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Earwise</a><span aria-hidden="true">/</span><a href="../">Audio guides</a><span aria-hidden="true">/</span><span>United Arab Emirates</span></nav>
     <h1 class="block-title">United Arab Emirates audio guides</h1>
-    <p class="country-lead">13 guides across Dubai, Abu Dhabi, Al Ain and Sharjah, recorded in 10 languages. They play as you arrive and work offline. Checkout is not open yet; prices below are the guide prices (Free, €1.99, or €2.99).</p>
+    <p class="country-lead">13 guides across Dubai, Abu Dhabi, Al Ain and Sharjah, recorded in 10 languages. Guides bought on the website play online in your browser (with the read-along script); offline listening and auto-play at each stop are in the free Earwise app. Checkout is not open yet; prices below are the guide prices (Free, €1.99, or €2.99).</p>
     <form class="search" role="search" action="#" onsubmit="return false">
       <label class="sr" for="q">Filter United Arab Emirates guides</label>
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -299,5 +305,6 @@
   </div>
 </footer>
 <script src="../../js/home.js"></script>
+<script src="../../js/nav.js?v=20261122" defer></script>
 </body>
 </html>
