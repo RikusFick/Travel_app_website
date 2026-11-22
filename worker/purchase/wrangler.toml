@@ -1,0 +1,20 @@
+name = "earwise-purchase"
+main = "src/index.js"
+compatibility_date = "2026-11-22"
+
+# Create a KV namespace and paste its id here before deploy:
+#   wrangler kv namespace create ENTITLEMENTS
+kv_namespaces = [
+  { binding = "ENTITLEMENTS", id = "YOUR_KV_NAMESPACE_ID" }
+]
+
+# Set secrets with wrangler (never commit them):
+#   wrangler secret put PAYSTACK_SECRET_KEY
+#   wrangler secret put FIREBASE_WEB_API_KEY
+# Optional:
+#   wrangler secret put PAYSTACK_WEBHOOK_SECRET
+# Vars that are not secret:
+# [vars]
+# FIREBASE_PROJECT_ID = "YOUR_PROJECT_ID"
+# PAYSTACK_CURRENCY = "EUR"
+# SITE_ORIGIN = "https://getearwise.com"

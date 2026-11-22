@@ -1109,3 +1109,36 @@ html:not(.has-audio-js) .player-ui { display: none; }
   .policy-table td[data-label] { color: var(--secondary); font-size: 14px; margin-top: 2px; }
   .policy-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; color: var(--text); }
 }
+
+/* Header account links and owned-guide buy state */
+.auth-slot { display: inline-flex; align-items: center; gap: 4px; min-width: 0; flex-wrap: wrap; }
+.auth-slot a { white-space: nowrap; }
+.auth-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 600; }
+@media (max-width: 720px) {
+  .auth-email { max-width: 120px; font-size: 15px; }
+}
+.auth-out {
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+.auth-out:hover { color: var(--teal); }
+.btn.is-owned { background: var(--quiet); color: var(--text); cursor: default; filter: none; }
+.auth-banner {
+  background: var(--quiet);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 0 0 18px;
+}
+.my-guide-links { list-style: none; padding: 0; margin: 12px 0 0; }
+.my-guide-links li { margin: 0; border-bottom: 1px solid var(--line); }
+.my-guide-links a { display: flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: none; }
