@@ -1798,5 +1798,124 @@ window.EARWISE_ATTRACTIONS = [
     "country": "Greece",
     "href": "/athos/",
     "q": "mount athos cruise monasteries holy mountain halkidiki greece"
+  },
+  {
+    "title": "Koutoubia & Jemaa el-Fna",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/koutoubia-jemaa-el-fna/",
+    "q": "koutoubia mosque jemaa el fna marrakech minaret square morocco"
+  },
+  {
+    "title": "Marrakech souks and northern medina",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/marrakech-souks/",
+    "q": "marrakech souks rahba kedima medina almoravid qubba dyers morocco"
+  },
+  {
+    "title": "Bahia Palace, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/bahia-palace/",
+    "q": "bahia palace marrakech courtyard zellij cedar ceilings morocco"
+  },
+  {
+    "title": "El Badi Palace",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/el-badi/",
+    "q": "el badi palace marrakech saadian sunken garden ruins morocco"
+  },
+  {
+    "title": "Saadian Tombs, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/saadian-tombs/",
+    "q": "saadian tombs marrakech hall of twelve columns stucco morocco"
+  },
+  {
+    "title": "Ben Youssef Madrasa, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/ben-youssef-madrasa/",
+    "q": "ben youssef madrasa marrakech courtyard stucco cedar tile morocco"
+  },
+  {
+    "title": "Jardin Majorelle, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/majorelle/",
+    "q": "jardin majorelle marrakech cobalt blue garden yves saint laurent morocco"
+  },
+  {
+    "title": "Fes el-Bali medina walk, Fez",
+    "place": "Fez",
+    "country": "Morocco",
+    "href": "/fes-el-bali/",
+    "q": "fes el bali medina bab bou jeloud tanneries qarawiyyin fez morocco"
+  },
+  {
+    "title": "Bou Inania & Al-Attarine Madrasas, Fes",
+    "place": "Fez",
+    "country": "Morocco",
+    "href": "/fes-madrasas/",
+    "q": "fes madrasas bou inania al attarine marinid zellij fez morocco"
+  },
+  {
+    "title": "Meknes Imperial City",
+    "place": "Meknes",
+    "country": "Morocco",
+    "href": "/meknes/",
+    "q": "meknes bab mansour heri es souani moulay ismail imperial city morocco"
+  },
+  {
+    "title": "Volubilis",
+    "place": "Moulay Idriss",
+    "country": "Morocco",
+    "href": "/volubilis/",
+    "q": "volubilis roman ruins mosaics arch of caracalla morocco"
+  },
+  {
+    "title": "Hassan Tower, Rabat",
+    "place": "Rabat",
+    "country": "Morocco",
+    "href": "/hassan-tower/",
+    "q": "hassan tower rabat mohammed v mausoleum almohad minaret morocco"
+  },
+  {
+    "title": "Kasbah of the Udayas",
+    "place": "Rabat",
+    "country": "Morocco",
+    "href": "/udayas/",
+    "q": "kasbah of the udayas rabat blue lanes andalusian garden morocco"
+  },
+  {
+    "title": "Hassan II Mosque, Casablanca",
+    "place": "Casablanca",
+    "country": "Morocco",
+    "href": "/hassan-ii-mosque/",
+    "q": "hassan ii mosque casablanca atlantic minaret prayer hall morocco"
+  },
+  {
+    "title": "Essaouira medina and Skala",
+    "place": "Essaouira",
+    "country": "Morocco",
+    "href": "/essaouira/",
+    "q": "essaouira skala ramparts medina atlantic port mogador morocco"
+  },
+  {
+    "title": "Chefchaouen medina",
+    "place": "Chefchaouen",
+    "country": "Morocco",
+    "href": "/chefchaouen/",
+    "q": "chefchaouen blue pearl rif mountains medina morocco"
+  },
+  {
+    "title": "Ait Benhaddou ksar",
+    "place": "Ouarzazate",
+    "country": "Morocco",
+    "href": "/ait-benhaddou/",
+    "q": "ait benhaddou ksar earthen towers ouarzazate caravan unesco morocco"
   }
 ];
