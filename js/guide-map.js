@@ -11,7 +11,7 @@
   }).addTo(map);
   var bounds = [];
   pins.forEach(function (pin) {
-    L.marker([pin.lat, pin.lon]).addTo(map).bindTooltip(pin.name, { permanent: pins.length > 1, direction: "top" });
+    L.marker([pin.lat, pin.lon]).addTo(map).bindTooltip(pin.name, { permanent: pins.length > 1 && pins.length <= 5, direction: "top" });
     bounds.push([pin.lat, pin.lon]);
   });
   if (bounds.length === 1) map.setView(bounds[0], 17);
