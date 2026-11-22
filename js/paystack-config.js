@@ -5,5 +5,5 @@
    Charge currency lives in js/currency.js (and data/currency.json), not here. */
 window.EARWISE_PAYSTACK = {
   publicKey: "pk_test_22ecdf07cdec2000b3cee4cfc9c592b3db4253a1",
-  verifyUrl: "YOUR_PURCHASE_WORKER_URL"
+  verifyUrl: "https://earwise-purchase.earwise.workers.dev"
 };

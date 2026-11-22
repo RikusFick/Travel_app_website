@@ -33,9 +33,9 @@ Purchases are stored in Cloudflare KV, key `user:<firebaseUid>`, as:
 
 The app does not have Firebase or a cloud purchase store yet (unlocks today live only on the phone). Once the app signs in with the same Firebase email account, it should call `GET /me` with the ID token and grant those guides locally. Offline download stays app-only.
 
-## Deploy later (not done in this branch)
+## Deploy
 
-Do not deploy until the test keys are in place.
+Deployed to `https://earwise-purchase.earwise.workers.dev`. Paystack test webhook URL: `https://earwise-purchase.earwise.workers.dev/webhook`.
 
 1. Copy `../../data/prices.json` to `src/prices.json` and `../../data/currency.json` to `src/currency.json` if either has changed. Checkout is billed in ZAR at the day’s EUR to ZAR rate; `fallbackRate` (19.25) is used only if the rate fetch and the KV cache both fail.
 2. Create KV: `wrangler kv namespace create ENTITLEMENTS` and paste the id into `wrangler.toml`.

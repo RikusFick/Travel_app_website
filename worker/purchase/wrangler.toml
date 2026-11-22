@@ -5,7 +5,7 @@ compatibility_date = "2026-11-22"
 # Create a KV namespace and paste its id here before deploy:
 #   wrangler kv namespace create ENTITLEMENTS
 kv_namespaces = [
-  { binding = "ENTITLEMENTS", id = "YOUR_KV_NAMESPACE_ID" }
+  { binding = "ENTITLEMENTS", id = "ae8e9a1c8f2c472e82fa2c099fd95dd5" }
 ]
 
 # Set secrets with wrangler (never commit them):
@@ -15,7 +15,7 @@ kv_namespaces = [
 # Optional:
 #   wrangler secret put PAYSTACK_WEBHOOK_SECRET
 # Vars that are not secret:
-# [vars]
-# FIREBASE_PROJECT_ID = "earwise-app"
-# SITE_ORIGIN = "https://getearwise.com"
+[vars]
+FIREBASE_PROJECT_ID = "earwise-app"
+SITE_ORIGIN = "https://getearwise.com"
 # Charge currency is ZAR at a daily EUR to ZAR rate (see src/currency.json). 19.25 is only a fallback.
