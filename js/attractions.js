@@ -1126,5 +1126,887 @@ window.EARWISE_ATTRACTIONS = [
     "country": "France",
     "href": "/lascaux-iv/",
     "q": "lascaux iv cave paintings montignac dordogne bulls facsimile france"
+  },
+  {
+    "title": "Hagia Sophia",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/hagia-sophia/",
+    "q": "hagia sophia istanbul justinian dome mosaics sultanahmet turkey"
+  },
+  {
+    "title": "Blue Mosque",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/blue-mosque/",
+    "q": "blue mosque sultan ahmed istanbul iznik tiles hippodrome turkey"
+  },
+  {
+    "title": "Basilica Cistern",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/basilica-cistern/",
+    "q": "basilica cistern yerebatan istanbul medusa columns byzantine turkey"
+  },
+  {
+    "title": "Topkapı Palace",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/topkapi-palace/",
+    "q": "topkapi palace istanbul harem courtyards treasury ottoman turkey"
+  },
+  {
+    "title": "Galata Tower",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/galata-tower/",
+    "q": "galata tower istanbul genoese karakoy golden horn view turkey"
+  },
+  {
+    "title": "Grand Bazaar",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/grand-bazaar/",
+    "q": "grand bazaar kapalicarsi istanbul market bedesten hans turkey"
+  },
+  {
+    "title": "Bosphorus",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/bosphorus-cruise/",
+    "q": "bosphorus cruise istanbul strait palaces rumeli fortress yali turkey"
+  },
+  {
+    "title": "Dolmabahçe",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/dolmabahce-palace/",
+    "q": "dolmabahce palace istanbul bosphorus ataturk ceremonial hall turkey"
+  },
+  {
+    "title": "Süleymaniye Mosque",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/suleymaniye-mosque/",
+    "q": "suleymaniye mosque mimar sinan istanbul golden horn turkey"
+  },
+  {
+    "title": "Chora (Kariye)",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/chora-kariye/",
+    "q": "chora kariye mosque museum istanbul byzantine mosaics frescoes turkey"
+  },
+  {
+    "title": "Istanbul Archaeological Museums",
+    "place": "Istanbul",
+    "country": "Turkey",
+    "href": "/istanbul-archaeological-museums/",
+    "q": "istanbul archaeological museums alexander sarcophagus kadesh treaty turkey"
+  },
+  {
+    "title": "Göreme",
+    "place": "Göreme",
+    "country": "Turkey",
+    "href": "/goreme-open-air-museum/",
+    "q": "goreme open air museum cappadocia rock churches frescoes unesco turkey"
+  },
+  {
+    "title": "Uçhisar & valleys",
+    "place": "Uçhisar",
+    "country": "Turkey",
+    "href": "/cappadocia-valleys-uchisar/",
+    "q": "uchisar castle cappadocia pigeon love rose valleys fairy chimneys turkey"
+  },
+  {
+    "title": "Kaymaklı",
+    "place": "Kaymaklı",
+    "country": "Turkey",
+    "href": "/kaymakli-underground-city/",
+    "q": "kaymakli underground city cappadocia tunnels stone doors turkey"
+  },
+  {
+    "title": "Derinkuyu",
+    "place": "Derinkuyu",
+    "country": "Turkey",
+    "href": "/derinkuyu-underground-city/",
+    "q": "derinkuyu underground city cappadocia eight levels shafts turkey"
+  },
+  {
+    "title": "Zelve & Paşabağ",
+    "place": "Avanos",
+    "country": "Turkey",
+    "href": "/zelve-pasabag/",
+    "q": "zelve pasabag monks valley fairy chimneys cappadocia turkey"
+  },
+  {
+    "title": "Ihlara & Selime",
+    "place": "Güzelyurt",
+    "country": "Turkey",
+    "href": "/ihlara-selime/",
+    "q": "ihlara valley selime monastery canyon cappadocia painted churches turkey"
+  },
+  {
+    "title": "Ortahisar",
+    "place": "Ortahisar",
+    "country": "Turkey",
+    "href": "/ortahisar/",
+    "q": "ortahisar castle cappadocia stone houses village turkey"
+  },
+  {
+    "title": "Avanos",
+    "place": "Avanos",
+    "country": "Turkey",
+    "href": "/avanos/",
+    "q": "avanos kizilirmak pottery red river cappadocia turkey"
+  },
+  {
+    "title": "Çavuşin",
+    "place": "Çavuşin",
+    "country": "Turkey",
+    "href": "/cavusin/",
+    "q": "cavusin cappadocia cave village john the baptist church turkey"
+  },
+  {
+    "title": "Ephesus",
+    "place": "Selçuk",
+    "country": "Turkey",
+    "href": "/ephesus/",
+    "q": "ephesus selcuk library of celsus great theatre terrace houses turkey"
+  },
+  {
+    "title": "Selçuk",
+    "place": "Selçuk",
+    "country": "Turkey",
+    "href": "/selcuk-sites/",
+    "q": "selcuk temple of artemis st john basilica ayasuluk castle turkey"
+  },
+  {
+    "title": "House of the Virgin Mary",
+    "place": "Selçuk",
+    "country": "Turkey",
+    "href": "/house-of-virgin-mary/",
+    "q": "house of virgin mary meryemana selcuk ephesus turkey"
+  },
+  {
+    "title": "Şirince",
+    "place": "Selçuk",
+    "country": "Turkey",
+    "href": "/sirince/",
+    "q": "sirince village selcuk ephesus stone houses orthodox church turkey"
+  },
+  {
+    "title": "Pamukkale",
+    "place": "Pamukkale",
+    "country": "Turkey",
+    "href": "/pamukkale-hierapolis/",
+    "q": "pamukkale hierapolis travertines roman theatre necropolis turkey"
+  },
+  {
+    "title": "Aphrodisias",
+    "place": "Karacasu",
+    "country": "Turkey",
+    "href": "/aphrodisias/",
+    "q": "aphrodisias tetraphylon sebasteion stadium unesco turkey"
+  },
+  {
+    "title": "Pergamon",
+    "place": "Bergama",
+    "country": "Turkey",
+    "href": "/pergamon/",
+    "q": "pergamon bergama acropolis steep theatre asklepion zeus altar turkey"
+  },
+  {
+    "title": "Bodrum Castle",
+    "place": "Bodrum",
+    "country": "Turkey",
+    "href": "/bodrum-castle/",
+    "q": "bodrum castle st peter museum underwater archaeology halicarnassus turkey"
+  },
+  {
+    "title": "Priene",
+    "place": "Güllübahçe",
+    "country": "Turkey",
+    "href": "/priene/",
+    "q": "priene temple of athena hellenistic grid bouleuterion turkey"
+  },
+  {
+    "title": "Miletus",
+    "place": "Balat",
+    "country": "Turkey",
+    "href": "/miletus/",
+    "q": "miletus ionia roman theatre faustina baths thales turkey"
+  },
+  {
+    "title": "Didyma",
+    "place": "Didim",
+    "country": "Turkey",
+    "href": "/didyma/",
+    "q": "didyma temple of apollo oracle medusa ionic columns turkey"
+  },
+  {
+    "title": "Kaleiçi",
+    "place": "Antalya",
+    "country": "Turkey",
+    "href": "/antalya-kaleici/",
+    "q": "antalya kaleici old town hadrians gate harbour minaret turkey"
+  },
+  {
+    "title": "Perge",
+    "place": "Aksu",
+    "country": "Turkey",
+    "href": "/perge/",
+    "q": "perge antalya roman stadium colonnaded street baths turkey"
+  },
+  {
+    "title": "Aspendos",
+    "place": "Serik",
+    "country": "Turkey",
+    "href": "/aspendos/",
+    "q": "aspendos roman theatre aqueduct antalya acoustics turkey"
+  },
+  {
+    "title": "Side",
+    "place": "Side",
+    "country": "Turkey",
+    "href": "/side/",
+    "q": "side antalya temple of apollo roman theatre harbour turkey"
+  },
+  {
+    "title": "Myra & Kekova",
+    "place": "Demre",
+    "country": "Turkey",
+    "href": "/myra-kekova/",
+    "q": "myra kekova demre lycian rock tombs st nicholas sunken city turkey"
+  },
+  {
+    "title": "Termessos",
+    "place": "Antalya",
+    "country": "Turkey",
+    "href": "/termessos/",
+    "q": "termessos pisidia mountain theatre antalya taurus turkey"
+  },
+  {
+    "title": "Olympos",
+    "place": "Çıralı",
+    "country": "Turkey",
+    "href": "/olympos/",
+    "q": "olympos lycia cirali river ruins tombs beach turkey"
+  },
+  {
+    "title": "Chimaera flames",
+    "place": "Çıralı",
+    "country": "Turkey",
+    "href": "/chimaera/",
+    "q": "chimaera yanartas eternal flames cirali olympus turkey"
+  },
+  {
+    "title": "Phaselis",
+    "place": "Tekirova",
+    "country": "Turkey",
+    "href": "/phaselis/",
+    "q": "phaselis three harbours aqueduct hadrian gate antalya turkey"
+  },
+  {
+    "title": "Amyntas Tombs",
+    "place": "Fethiye",
+    "country": "Turkey",
+    "href": "/fethiye-amyntas-tombs/",
+    "q": "amyntas tombs fethiye lycian rock tombs telmessos turkey"
+  },
+  {
+    "title": "Kayaköy",
+    "place": "Kayaköy",
+    "country": "Turkey",
+    "href": "/fethiye-kayakoy/",
+    "q": "kayakoy fethiye ghost village abandoned stone houses churches turkey"
+  },
+  {
+    "title": "Telmessos",
+    "place": "Fethiye",
+    "country": "Turkey",
+    "href": "/fethiye-telmessos/",
+    "q": "telmessos fethiye roman theatre sarcophagi castle lycia turkey"
+  },
+  {
+    "title": "Ölüdeniz",
+    "place": "Ölüdeniz",
+    "country": "Turkey",
+    "href": "/fethiye-oludeniz/",
+    "q": "oludeniz blue lagoon babadag fethiye beach turkey"
+  },
+  {
+    "title": "Xanthos",
+    "place": "Kınık",
+    "country": "Turkey",
+    "href": "/xanthos/",
+    "q": "xanthos lycia pillar tombs harpy tomb kinik unesco turkey"
+  },
+  {
+    "title": "Letoon",
+    "place": "Kumluova",
+    "country": "Turkey",
+    "href": "/letoon/",
+    "q": "letoon sanctuary leto apollo artemis lycia unesco turkey"
+  },
+  {
+    "title": "Patara",
+    "place": "Gelemiş",
+    "country": "Turkey",
+    "href": "/patara/",
+    "q": "patara lycia bouleuterion arch theatre beach lighthouse turkey"
+  },
+  {
+    "title": "Troy",
+    "place": "Tevfikiye",
+    "country": "Turkey",
+    "href": "/troy/",
+    "q": "troy hisarlik homeric iliad archaeological site canakkale turkey"
+  },
+  {
+    "title": "Gallipoli",
+    "place": "Eceabat",
+    "country": "Turkey",
+    "href": "/gallipoli/",
+    "q": "gallipoli anzac cove lone pine chunuk bair 1915 battlefields turkey"
+  },
+  {
+    "title": "Göbekli Tepe",
+    "place": "Şanlıurfa",
+    "country": "Turkey",
+    "href": "/gobekli-tepe/",
+    "q": "gobekli tepe sanliurfa neolithic t pillars unesco turkey"
+  },
+  {
+    "title": "Sümela",
+    "place": "Maçka",
+    "country": "Turkey",
+    "href": "/sumela-monastery/",
+    "q": "sumela monastery trabzon macka pontic alps frescoes turkey"
+  },
+  {
+    "title": "Mount Nemrut",
+    "place": "Kahta",
+    "country": "Turkey",
+    "href": "/mount-nemrut/",
+    "q": "mount nemrut adiyaman antiochus stone heads sunrise unesco turkey"
+  },
+  {
+    "title": "Konya & Mevlana",
+    "place": "Konya",
+    "country": "Turkey",
+    "href": "/konya-mevlana-seljuk/",
+    "q": "konya mevlana rumi seljuk mosque museum turkey"
+  },
+  {
+    "title": "Ankara: Anatolian Civilizations",
+    "place": "Ankara",
+    "country": "Turkey",
+    "href": "/ankara-anatolian-civilizations/",
+    "q": "ankara museum of anatolian civilizations hittite catalhoyuk phrygian turkey"
+  },
+  {
+    "title": "Anıtkabir",
+    "place": "Ankara",
+    "country": "Turkey",
+    "href": "/anitkabir/",
+    "q": "anitkabir ankara ataturk mausoleum road of lions turkey"
+  },
+  {
+    "title": "Hattusa",
+    "place": "Boğazkale",
+    "country": "Turkey",
+    "href": "/hattusa/",
+    "q": "hattusa bogazkale hittite capital lion gate great temple turkey"
+  },
+  {
+    "title": "Yazılıkaya",
+    "place": "Boğazkale",
+    "country": "Turkey",
+    "href": "/yazilikaya/",
+    "q": "yazilikaya hattusa hittite rock sanctuary reliefs turkey"
+  },
+  {
+    "title": "Çatalhöyük",
+    "place": "Çumra",
+    "country": "Turkey",
+    "href": "/catalhoyuk/",
+    "q": "catalhoyuk neolithic konya mudbrick settlement unesco turkey"
+  },
+  {
+    "title": "Ani",
+    "place": "Kars",
+    "country": "Turkey",
+    "href": "/ani/",
+    "q": "ani kars medieval armenian cathedral churches silk road unesco turkey"
+  },
+  {
+    "title": "Zeugma Mosaic Museum",
+    "place": "Gaziantep",
+    "country": "Turkey",
+    "href": "/zeugma-mosaic-museum/",
+    "q": "zeugma mosaic museum gaziantep gypsy girl roman mosaics turkey"
+  },
+  {
+    "title": "Acropolis of Athens",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/acropolis/",
+    "q": "acropolis athens parthenon erechtheion propylaea athena nike greece"
+  },
+  {
+    "title": "Acropolis Museum",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/acropolis-museum/",
+    "q": "acropolis museum athens caryatids parthenon frieze gallery greece"
+  },
+  {
+    "title": "Ancient Agora of Athens",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/ancient-agora/",
+    "q": "ancient agora athens temple of hephaestus stoa of attalos socrates greece"
+  },
+  {
+    "title": "National Archaeological Museum",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/national-archaeological-museum/",
+    "q": "national archaeological museum athens agamemnon mask antikythera bronze greece"
+  },
+  {
+    "title": "Athens old town walk",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/athens-old-town/",
+    "q": "athens old town plaka monastiraki anafiotika walk greece"
+  },
+  {
+    "title": "Roman Agora",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/roman-agora/",
+    "q": "roman agora athens tower of the winds hadrians library greece"
+  },
+  {
+    "title": "Temple of Olympian Zeus",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/olympieion/",
+    "q": "olympieion temple of olympian zeus hadrians arch athens greece"
+  },
+  {
+    "title": "Kerameikos",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/kerameikos/",
+    "q": "kerameikos athens dipylon gate street of tombs cemetery greece"
+  },
+  {
+    "title": "Temple of Poseidon, Sounion",
+    "place": "Sounion",
+    "country": "Greece",
+    "href": "/sounion/",
+    "q": "cape sounion temple of poseidon attica cliff sunset greece"
+  },
+  {
+    "title": "Delphi",
+    "place": "Delphi",
+    "country": "Greece",
+    "href": "/delphi/",
+    "q": "delphi temple of apollo oracle mount parnassus charioteer greece"
+  },
+  {
+    "title": "Ancient Olympia",
+    "place": "Olympia",
+    "country": "Greece",
+    "href": "/olympia/",
+    "q": "ancient olympia zeus temple stadium olympic games peloponnese greece"
+  },
+  {
+    "title": "Mycenae",
+    "place": "Mycenae",
+    "country": "Greece",
+    "href": "/mycenae/",
+    "q": "mycenae lion gate treasury of atreus agamemnon peloponnese greece"
+  },
+  {
+    "title": "Epidaurus",
+    "place": "Epidaurus",
+    "country": "Greece",
+    "href": "/epidaurus/",
+    "q": "epidaurus ancient theatre asklepios acoustics peloponnese greece"
+  },
+  {
+    "title": "Ancient Corinth & Acrocorinth",
+    "place": "Corinth",
+    "country": "Greece",
+    "href": "/corinth/",
+    "q": "ancient corinth acrocorinth temple of apollo bema st paul greece"
+  },
+  {
+    "title": "Nafplio & Palamidi",
+    "place": "Nafplio",
+    "country": "Greece",
+    "href": "/nafplio/",
+    "q": "nafplio palamidi fortress bourtzi syntagma square peloponnese greece"
+  },
+  {
+    "title": "Mystras",
+    "place": "Mystras",
+    "country": "Greece",
+    "href": "/mystras/",
+    "q": "mystras sparta byzantine churches frescoes despot palace greece"
+  },
+  {
+    "title": "Monemvasia",
+    "place": "Monemvasia",
+    "country": "Greece",
+    "href": "/monemvasia/",
+    "q": "monemvasia rock castle medieval town peloponnese causeway greece"
+  },
+  {
+    "title": "Knossos",
+    "place": "Heraklion",
+    "country": "Greece",
+    "href": "/knossos/",
+    "q": "knossos minoan palace crete heraklion labyrinth minos greece"
+  },
+  {
+    "title": "Heraklion Museum",
+    "place": "Heraklion",
+    "country": "Greece",
+    "href": "/heraklion-museum/",
+    "q": "heraklion archaeological museum minoan frescoes phaistos disc crete greece"
+  },
+  {
+    "title": "Phaistos",
+    "place": "Phaistos",
+    "country": "Greece",
+    "href": "/phaistos/",
+    "q": "phaistos minoan palace messara plain crete greece"
+  },
+  {
+    "title": "Spinalonga",
+    "place": "Elounda",
+    "country": "Greece",
+    "href": "/spinalonga/",
+    "q": "spinalonga island fortress elounda leper colony crete greece"
+  },
+  {
+    "title": "Chania old town",
+    "place": "Chania",
+    "country": "Greece",
+    "href": "/chania/",
+    "q": "chania old town venetian harbour lighthouse crete greece"
+  },
+  {
+    "title": "Santorini caldera walk",
+    "place": "Fira",
+    "country": "Greece",
+    "href": "/santorini/",
+    "q": "santorini caldera walk fira imerovigli oia cyclades greece"
+  },
+  {
+    "title": "Akrotiri",
+    "place": "Santorini",
+    "country": "Greece",
+    "href": "/akrotiri/",
+    "q": "akrotiri santorini bronze age minoan ruins theran eruption greece"
+  },
+  {
+    "title": "Delos",
+    "place": "Delos",
+    "country": "Greece",
+    "href": "/delos/",
+    "q": "delos sacred island lions apollo mosaics cyclades mykonos greece"
+  },
+  {
+    "title": "Acropolis of Lindos",
+    "place": "Lindos",
+    "country": "Greece",
+    "href": "/lindos/",
+    "q": "lindos acropolis athena lindia knights castle rhodes greece"
+  },
+  {
+    "title": "Rhodes Old Town",
+    "place": "Rhodes",
+    "country": "Greece",
+    "href": "/rhodes-old-town/",
+    "q": "rhodes old town street of knights grand master palace walls greece"
+  },
+  {
+    "title": "Corfu Old Town",
+    "place": "Corfu",
+    "country": "Greece",
+    "href": "/corfu/",
+    "q": "corfu old town liston fortress venetian kerkyra ionian greece"
+  },
+  {
+    "title": "Patmos",
+    "place": "Patmos",
+    "country": "Greece",
+    "href": "/patmos/",
+    "q": "patmos cave of apocalypse monastery st john chora dodecanese greece"
+  },
+  {
+    "title": "Meteora",
+    "place": "Kalabaka",
+    "country": "Greece",
+    "href": "/meteora/",
+    "q": "meteora monasteries sandstone pillars kalabaka thessaly unesco greece"
+  },
+  {
+    "title": "Thessaloniki",
+    "place": "Thessaloniki",
+    "country": "Greece",
+    "href": "/thessaloniki/",
+    "q": "thessaloniki white tower rotunda galerius arch hagia sophia greece"
+  },
+  {
+    "title": "Vergina (Aigai) Royal Tombs",
+    "place": "Vergina",
+    "country": "Greece",
+    "href": "/vergina/",
+    "q": "vergina aigai royal tombs philip ii macedonia greece"
+  },
+  {
+    "title": "Dion",
+    "place": "Dion",
+    "country": "Greece",
+    "href": "/dion/",
+    "q": "dion sanctuary isis zeus mount olympus macedonia greece"
+  },
+  {
+    "title": "Pella",
+    "place": "Pella",
+    "country": "Greece",
+    "href": "/pella/",
+    "q": "pella alexander great birthplace pebble mosaics macedonia greece"
+  },
+  {
+    "title": "Philippi",
+    "place": "Kavala",
+    "country": "Greece",
+    "href": "/philippi/",
+    "q": "philippi via egnatia basilica roman forum st paul macedonia greece"
+  },
+  {
+    "title": "Mount Athos cruise",
+    "place": "Ouranoupoli",
+    "country": "Greece",
+    "href": "/athos/",
+    "q": "mount athos cruise monasteries holy mountain halkidiki greece"
+  },
+  {
+    "title": "Koutoubia & Jemaa el-Fna",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/koutoubia-jemaa-el-fna/",
+    "q": "koutoubia mosque jemaa el fna marrakech minaret square morocco"
+  },
+  {
+    "title": "Marrakech souks and northern medina",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/marrakech-souks/",
+    "q": "marrakech souks rahba kedima medina almoravid qubba dyers morocco"
+  },
+  {
+    "title": "Bahia Palace, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/bahia-palace/",
+    "q": "bahia palace marrakech courtyard zellij cedar ceilings morocco"
+  },
+  {
+    "title": "El Badi Palace",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/el-badi/",
+    "q": "el badi palace marrakech saadian sunken garden ruins morocco"
+  },
+  {
+    "title": "Saadian Tombs, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/saadian-tombs/",
+    "q": "saadian tombs marrakech hall of twelve columns stucco morocco"
+  },
+  {
+    "title": "Ben Youssef Madrasa, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/ben-youssef-madrasa/",
+    "q": "ben youssef madrasa marrakech courtyard stucco cedar tile morocco"
+  },
+  {
+    "title": "Jardin Majorelle, Marrakech",
+    "place": "Marrakech",
+    "country": "Morocco",
+    "href": "/majorelle/",
+    "q": "jardin majorelle marrakech cobalt blue garden yves saint laurent morocco"
+  },
+  {
+    "title": "Fes el-Bali medina walk, Fez",
+    "place": "Fez",
+    "country": "Morocco",
+    "href": "/fes-el-bali/",
+    "q": "fes el bali medina bab bou jeloud tanneries qarawiyyin fez morocco"
+  },
+  {
+    "title": "Bou Inania & Al-Attarine Madrasas, Fes",
+    "place": "Fez",
+    "country": "Morocco",
+    "href": "/fes-madrasas/",
+    "q": "fes madrasas bou inania al attarine marinid zellij fez morocco"
+  },
+  {
+    "title": "Meknes Imperial City",
+    "place": "Meknes",
+    "country": "Morocco",
+    "href": "/meknes/",
+    "q": "meknes bab mansour heri es souani moulay ismail imperial city morocco"
+  },
+  {
+    "title": "Volubilis",
+    "place": "Moulay Idriss",
+    "country": "Morocco",
+    "href": "/volubilis/",
+    "q": "volubilis roman ruins mosaics arch of caracalla morocco"
+  },
+  {
+    "title": "Hassan Tower, Rabat",
+    "place": "Rabat",
+    "country": "Morocco",
+    "href": "/hassan-tower/",
+    "q": "hassan tower rabat mohammed v mausoleum almohad minaret morocco"
+  },
+  {
+    "title": "Kasbah of the Udayas",
+    "place": "Rabat",
+    "country": "Morocco",
+    "href": "/udayas/",
+    "q": "kasbah of the udayas rabat blue lanes andalusian garden morocco"
+  },
+  {
+    "title": "Hassan II Mosque, Casablanca",
+    "place": "Casablanca",
+    "country": "Morocco",
+    "href": "/hassan-ii-mosque/",
+    "q": "hassan ii mosque casablanca atlantic minaret prayer hall morocco"
+  },
+  {
+    "title": "Essaouira medina and Skala",
+    "place": "Essaouira",
+    "country": "Morocco",
+    "href": "/essaouira/",
+    "q": "essaouira skala ramparts medina atlantic port mogador morocco"
+  },
+  {
+    "title": "Chefchaouen medina",
+    "place": "Chefchaouen",
+    "country": "Morocco",
+    "href": "/chefchaouen/",
+    "q": "chefchaouen blue pearl rif mountains medina morocco"
+  },
+  {
+    "title": "Ait Benhaddou ksar",
+    "place": "Ouarzazate",
+    "country": "Morocco",
+    "href": "/ait-benhaddou/",
+    "q": "ait benhaddou ksar earthen towers ouarzazate caravan unesco morocco"
+  },
+  {
+    "title": "Al Fahidi and Dubai Creek",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/al-fahidi-dubai-creek/",
+    "q": "al fahidi bastakiya dubai creek wind towers abra heritage uae"
+  },
+  {
+    "title": "Al Shindagha",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/al-shindagha/",
+    "q": "al shindagha museum dubai creek sheikh saeed heritage uae"
+  },
+  {
+    "title": "Jumeirah Mosque & coast",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/jumeirah-mosque-coast/",
+    "q": "jumeirah mosque dubai coast fatimid stone architecture uae"
+  },
+  {
+    "title": "Dubai Desert Conservation Reserve",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/dubai-desert-conservation-reserve/",
+    "q": "dubai desert conservation reserve arabian oryx dunes ecology uae"
+  },
+  {
+    "title": "Sheikh Zayed Grand Mosque",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/sheikh-zayed-grand-mosque/",
+    "q": "sheikh zayed grand mosque abu dhabi white marble domes pools uae"
+  },
+  {
+    "title": "Qasr Al Hosn",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/qasr-al-hosn/",
+    "q": "qasr al hosn abu dhabi old fort watchtower artisans uae"
+  },
+  {
+    "title": "Qasr Al Watan",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/qasr-al-watan/",
+    "q": "qasr al watan abu dhabi presidential palace great hall library uae"
+  },
+  {
+    "title": "Abu Dhabi Corniche & Emirates Palace",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/corniche-heritage-village-emirates-palace/",
+    "q": "abu dhabi corniche heritage village emirates palace promenade uae"
+  },
+  {
+    "title": "Al Ain Oasis",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/al-ain-oasis/",
+    "q": "al ain oasis falaj irrigation date palms unesco uae"
+  },
+  {
+    "title": "Al Jahili Fort & Al Ain Palace Museum",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/al-jahili-fort-al-ain-palace-museum/",
+    "q": "al jahili fort al ain palace museum thesiger mudbrick uae"
+  },
+  {
+    "title": "Hili",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/hili/",
+    "q": "hili archaeological park grand tomb bronze age al ain uae"
+  },
+  {
+    "title": "Jebel Hafit",
+    "place": "Al Ain",
+    "country": "United Arab Emirates",
+    "href": "/jebel-hafit/",
+    "q": "jebel hafit al ain beehive tombs mountain road unesco uae"
+  },
+  {
+    "title": "Heart of Sharjah",
+    "place": "Sharjah",
+    "country": "United Arab Emirates",
+    "href": "/heart-of-sharjah/",
+    "q": "heart of sharjah heritage area al hisn fort creek uae"
   }
 ];

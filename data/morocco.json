@@ -1,0 +1,172 @@
+[
+  {
+    "id": "koutoubia-jemaa-el-fna",
+    "title": "Koutoubia & Jemaa el-Fna",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "marrakech-souks",
+    "title": "Marrakech souks and northern medina",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 5,
+    "minutes": 8,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "bahia-palace",
+    "title": "Bahia Palace, Marrakech",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "el-badi",
+    "title": "El Badi Palace",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "saadian-tombs",
+    "title": "Saadian Tombs, Marrakech",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ben-youssef-madrasa",
+    "title": "Ben Youssef Madrasa, Marrakech",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "majorelle",
+    "title": "Jardin Majorelle, Marrakech",
+    "place": "Marrakech",
+    "region": "marrakech",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "fes-el-bali",
+    "title": "Fes el-Bali medina walk, Fez",
+    "place": "Fez",
+    "region": "fes-meknes",
+    "stops": 8,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "fes-madrasas",
+    "title": "Bou Inania & Al-Attarine Madrasas, Fes",
+    "place": "Fez",
+    "region": "fes-meknes",
+    "stops": 10,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "meknes",
+    "title": "Meknes Imperial City",
+    "place": "Meknes",
+    "region": "fes-meknes",
+    "stops": 10,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "volubilis",
+    "title": "Volubilis",
+    "place": "Moulay Idriss",
+    "region": "fes-meknes",
+    "stops": 15,
+    "minutes": 19,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "hassan-tower",
+    "title": "Hassan Tower, Rabat",
+    "place": "Rabat",
+    "region": "rabat-casablanca",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "udayas",
+    "title": "Kasbah of the Udayas",
+    "place": "Rabat",
+    "region": "rabat-casablanca",
+    "stops": 7,
+    "minutes": 9,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "hassan-ii-mosque",
+    "title": "Hassan II Mosque, Casablanca",
+    "place": "Casablanca",
+    "region": "rabat-casablanca",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "essaouira",
+    "title": "Essaouira medina and Skala",
+    "place": "Essaouira",
+    "region": "atlas-coast",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chefchaouen",
+    "title": "Chefchaouen medina",
+    "place": "Chefchaouen",
+    "region": "atlas-coast",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ait-benhaddou",
+    "title": "Ait Benhaddou ksar",
+    "place": "Ouarzazate",
+    "region": "atlas-coast",
+    "stops": 5,
+    "minutes": 9,
+    "price": 0,
+    "priceLabel": "Free"
+  }
+]

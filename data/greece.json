@@ -1,0 +1,362 @@
+[
+  {
+    "id": "acropolis",
+    "title": "Acropolis of Athens",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 18,
+    "minutes": 25,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "acropolis-museum",
+    "title": "Acropolis Museum",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 12,
+    "minutes": 18,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ancient-agora",
+    "title": "Ancient Agora of Athens",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 12,
+    "minutes": 16,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "national-archaeological-museum",
+    "title": "National Archaeological Museum",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 16,
+    "minutes": 18,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "athens-old-town",
+    "title": "Athens old town walk",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 8,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "roman-agora",
+    "title": "Roman Agora",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 5,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "olympieion",
+    "title": "Temple of Olympian Zeus",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 4,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "kerameikos",
+    "title": "Kerameikos",
+    "place": "Athens",
+    "region": "athens",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "sounion",
+    "title": "Temple of Poseidon, Sounion",
+    "place": "Sounion",
+    "region": "athens",
+    "stops": 4,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "delphi",
+    "title": "Delphi",
+    "place": "Delphi",
+    "region": "peloponnese",
+    "stops": 21,
+    "minutes": 27,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "olympia",
+    "title": "Ancient Olympia",
+    "place": "Olympia",
+    "region": "peloponnese",
+    "stops": 17,
+    "minutes": 24,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "mycenae",
+    "title": "Mycenae",
+    "place": "Mycenae",
+    "region": "peloponnese",
+    "stops": 10,
+    "minutes": 12,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "epidaurus",
+    "title": "Epidaurus",
+    "place": "Epidaurus",
+    "region": "peloponnese",
+    "stops": 9,
+    "minutes": 14,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "corinth",
+    "title": "Ancient Corinth & Acrocorinth",
+    "place": "Corinth",
+    "region": "peloponnese",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "nafplio",
+    "title": "Nafplio & Palamidi",
+    "place": "Nafplio",
+    "region": "peloponnese",
+    "stops": 7,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "mystras",
+    "title": "Mystras",
+    "place": "Mystras",
+    "region": "peloponnese",
+    "stops": 8,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "monemvasia",
+    "title": "Monemvasia",
+    "place": "Monemvasia",
+    "region": "peloponnese",
+    "stops": 7,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "knossos",
+    "title": "Knossos",
+    "place": "Heraklion",
+    "region": "crete",
+    "stops": 12,
+    "minutes": 17,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "heraklion-museum",
+    "title": "Heraklion Museum",
+    "place": "Heraklion",
+    "region": "crete",
+    "stops": 10,
+    "minutes": 18,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "phaistos",
+    "title": "Phaistos",
+    "place": "Phaistos",
+    "region": "crete",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "spinalonga",
+    "title": "Spinalonga",
+    "place": "Elounda",
+    "region": "crete",
+    "stops": 6,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chania",
+    "title": "Chania old town",
+    "place": "Chania",
+    "region": "crete",
+    "stops": 8,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "santorini",
+    "title": "Santorini caldera walk",
+    "place": "Fira",
+    "region": "islands",
+    "stops": 6,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "akrotiri",
+    "title": "Akrotiri",
+    "place": "Santorini",
+    "region": "islands",
+    "stops": 7,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "delos",
+    "title": "Delos",
+    "place": "Delos",
+    "region": "islands",
+    "stops": 13,
+    "minutes": 20,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "lindos",
+    "title": "Acropolis of Lindos",
+    "place": "Lindos",
+    "region": "islands",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "rhodes-old-town",
+    "title": "Rhodes Old Town",
+    "place": "Rhodes",
+    "region": "islands",
+    "stops": 10,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "corfu",
+    "title": "Corfu Old Town",
+    "place": "Corfu",
+    "region": "islands",
+    "stops": 8,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "patmos",
+    "title": "Patmos",
+    "place": "Patmos",
+    "region": "islands",
+    "stops": 5,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "meteora",
+    "title": "Meteora",
+    "place": "Kalabaka",
+    "region": "greece-north",
+    "stops": 8,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "thessaloniki",
+    "title": "Thessaloniki",
+    "place": "Thessaloniki",
+    "region": "greece-north",
+    "stops": 12,
+    "minutes": 17,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "vergina",
+    "title": "Vergina (Aigai) Royal Tombs",
+    "place": "Vergina",
+    "region": "greece-north",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dion",
+    "title": "Dion",
+    "place": "Dion",
+    "region": "greece-north",
+    "stops": 8,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "pella",
+    "title": "Pella",
+    "place": "Pella",
+    "region": "greece-north",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "philippi",
+    "title": "Philippi",
+    "place": "Kavala",
+    "region": "greece-north",
+    "stops": 8,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "athos",
+    "title": "Mount Athos cruise",
+    "place": "Ouranoupoli",
+    "region": "greece-north",
+    "stops": 6,
+    "minutes": 9,
+    "price": 0,
+    "priceLabel": "Free"
+  }
+]

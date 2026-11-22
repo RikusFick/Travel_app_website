@@ -1,0 +1,602 @@
+[
+  {
+    "id": "hagia-sophia",
+    "title": "Hagia Sophia",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 15,
+    "minutes": 24,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "blue-mosque",
+    "title": "Blue Mosque",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 9,
+    "minutes": 13,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "basilica-cistern",
+    "title": "Basilica Cistern",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 5,
+    "minutes": 6,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "topkapi-palace",
+    "title": "Topkapı Palace",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 20,
+    "minutes": 28,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "galata-tower",
+    "title": "Galata Tower",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 6,
+    "minutes": 7,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "grand-bazaar",
+    "title": "Grand Bazaar",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 7,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "bosphorus-cruise",
+    "title": "Bosphorus",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 12,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "dolmabahce-palace",
+    "title": "Dolmabahçe",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 8,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "suleymaniye-mosque",
+    "title": "Süleymaniye Mosque",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 10,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "chora-kariye",
+    "title": "Chora (Kariye)",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 9,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "istanbul-archaeological-museums",
+    "title": "Istanbul Archaeological Museums",
+    "place": "Istanbul",
+    "region": "istanbul",
+    "stops": 8,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "goreme-open-air-museum",
+    "title": "Göreme",
+    "place": "Göreme",
+    "region": "cappadocia",
+    "stops": 11,
+    "minutes": 14,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "cappadocia-valleys-uchisar",
+    "title": "Uçhisar & valleys",
+    "place": "Uçhisar",
+    "region": "cappadocia",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "kaymakli-underground-city",
+    "title": "Kaymaklı",
+    "place": "Kaymaklı",
+    "region": "cappadocia",
+    "stops": 5,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "derinkuyu-underground-city",
+    "title": "Derinkuyu",
+    "place": "Derinkuyu",
+    "region": "cappadocia",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "zelve-pasabag",
+    "title": "Zelve & Paşabağ",
+    "place": "Avanos",
+    "region": "cappadocia",
+    "stops": 6,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ihlara-selime",
+    "title": "Ihlara & Selime",
+    "place": "Güzelyurt",
+    "region": "cappadocia",
+    "stops": 5,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ortahisar",
+    "title": "Ortahisar",
+    "place": "Ortahisar",
+    "region": "cappadocia",
+    "stops": 3,
+    "minutes": 3,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "avanos",
+    "title": "Avanos",
+    "place": "Avanos",
+    "region": "cappadocia",
+    "stops": 3,
+    "minutes": 3,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "cavusin",
+    "title": "Çavuşin",
+    "place": "Çavuşin",
+    "region": "cappadocia",
+    "stops": 3,
+    "minutes": 3,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "ephesus",
+    "title": "Ephesus",
+    "place": "Selçuk",
+    "region": "aegean",
+    "stops": 18,
+    "minutes": 36,
+    "price": 3.99,
+    "priceLabel": "€3.99"
+  },
+  {
+    "id": "selcuk-sites",
+    "title": "Selçuk",
+    "place": "Selçuk",
+    "region": "aegean",
+    "stops": 7,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "house-of-virgin-mary",
+    "title": "House of the Virgin Mary",
+    "place": "Selçuk",
+    "region": "aegean",
+    "stops": 7,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "sirince",
+    "title": "Şirince",
+    "place": "Selçuk",
+    "region": "aegean",
+    "stops": 5,
+    "minutes": 5,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "pamukkale-hierapolis",
+    "title": "Pamukkale",
+    "place": "Pamukkale",
+    "region": "aegean",
+    "stops": 11,
+    "minutes": 13,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "aphrodisias",
+    "title": "Aphrodisias",
+    "place": "Karacasu",
+    "region": "aegean",
+    "stops": 9,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "pergamon",
+    "title": "Pergamon",
+    "place": "Bergama",
+    "region": "aegean",
+    "stops": 12,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "bodrum-castle",
+    "title": "Bodrum Castle",
+    "place": "Bodrum",
+    "region": "aegean",
+    "stops": 7,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "priene",
+    "title": "Priene",
+    "place": "Güllübahçe",
+    "region": "aegean",
+    "stops": 9,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "miletus",
+    "title": "Miletus",
+    "place": "Balat",
+    "region": "aegean",
+    "stops": 11,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "didyma",
+    "title": "Didyma",
+    "place": "Didim",
+    "region": "aegean",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "antalya-kaleici",
+    "title": "Kaleiçi",
+    "place": "Antalya",
+    "region": "antalya",
+    "stops": 5,
+    "minutes": 11,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "perge",
+    "title": "Perge",
+    "place": "Aksu",
+    "region": "antalya",
+    "stops": 11,
+    "minutes": 9,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "aspendos",
+    "title": "Aspendos",
+    "place": "Serik",
+    "region": "antalya",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "side",
+    "title": "Side",
+    "place": "Side",
+    "region": "antalya",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "myra-kekova",
+    "title": "Myra & Kekova",
+    "place": "Demre",
+    "region": "antalya",
+    "stops": 6,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "termessos",
+    "title": "Termessos",
+    "place": "Antalya",
+    "region": "antalya",
+    "stops": 11,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "olympos",
+    "title": "Olympos",
+    "place": "Çıralı",
+    "region": "antalya",
+    "stops": 12,
+    "minutes": 21,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "chimaera",
+    "title": "Chimaera flames",
+    "place": "Çıralı",
+    "region": "antalya",
+    "stops": 4,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "phaselis",
+    "title": "Phaselis",
+    "place": "Tekirova",
+    "region": "antalya",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "fethiye-amyntas-tombs",
+    "title": "Amyntas Tombs",
+    "place": "Fethiye",
+    "region": "fethiye",
+    "stops": 3,
+    "minutes": 3,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "fethiye-kayakoy",
+    "title": "Kayaköy",
+    "place": "Kayaköy",
+    "region": "fethiye",
+    "stops": 4,
+    "minutes": 4,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "fethiye-telmessos",
+    "title": "Telmessos",
+    "place": "Fethiye",
+    "region": "fethiye",
+    "stops": 5,
+    "minutes": 7,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "fethiye-oludeniz",
+    "title": "Ölüdeniz",
+    "place": "Ölüdeniz",
+    "region": "fethiye",
+    "stops": 3,
+    "minutes": 2,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "xanthos",
+    "title": "Xanthos",
+    "place": "Kınık",
+    "region": "fethiye",
+    "stops": 7,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "letoon",
+    "title": "Letoon",
+    "place": "Kumluova",
+    "region": "fethiye",
+    "stops": 9,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "patara",
+    "title": "Patara",
+    "place": "Gelemiş",
+    "region": "fethiye",
+    "stops": 11,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "troy",
+    "title": "Troy",
+    "place": "Tevfikiye",
+    "region": "further",
+    "stops": 9,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gallipoli",
+    "title": "Gallipoli",
+    "place": "Eceabat",
+    "region": "further",
+    "stops": 11,
+    "minutes": 11,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gobekli-tepe",
+    "title": "Göbekli Tepe",
+    "place": "Şanlıurfa",
+    "region": "further",
+    "stops": 6,
+    "minutes": 8,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "sumela-monastery",
+    "title": "Sümela",
+    "place": "Maçka",
+    "region": "further",
+    "stops": 5,
+    "minutes": 7,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "mount-nemrut",
+    "title": "Mount Nemrut",
+    "place": "Kahta",
+    "region": "further",
+    "stops": 9,
+    "minutes": 7,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "konya-mevlana-seljuk",
+    "title": "Konya & Mevlana",
+    "place": "Konya",
+    "region": "further",
+    "stops": 9,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ankara-anatolian-civilizations",
+    "title": "Ankara: Anatolian Civilizations",
+    "place": "Ankara",
+    "region": "further",
+    "stops": 8,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "anitkabir",
+    "title": "Anıtkabir",
+    "place": "Ankara",
+    "region": "further",
+    "stops": 8,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "hattusa",
+    "title": "Hattusa",
+    "place": "Boğazkale",
+    "region": "further",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "yazilikaya",
+    "title": "Yazılıkaya",
+    "place": "Boğazkale",
+    "region": "further",
+    "stops": 3,
+    "minutes": 4,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "catalhoyuk",
+    "title": "Çatalhöyük",
+    "place": "Çumra",
+    "region": "further",
+    "stops": 5,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ani",
+    "title": "Ani",
+    "place": "Kars",
+    "region": "further",
+    "stops": 11,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "zeugma-mosaic-museum",
+    "title": "Zeugma Mosaic Museum",
+    "place": "Gaziantep",
+    "region": "further",
+    "stops": 10,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  }
+]
