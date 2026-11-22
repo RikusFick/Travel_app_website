@@ -1546,5 +1546,257 @@ window.EARWISE_ATTRACTIONS = [
     "country": "Turkey",
     "href": "/zeugma-mosaic-museum/",
     "q": "zeugma mosaic museum gaziantep gypsy girl roman mosaics turkey"
+  },
+  {
+    "title": "Acropolis of Athens",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/acropolis/",
+    "q": "acropolis athens parthenon erechtheion propylaea athena nike greece"
+  },
+  {
+    "title": "Acropolis Museum",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/acropolis-museum/",
+    "q": "acropolis museum athens caryatids parthenon frieze gallery greece"
+  },
+  {
+    "title": "Ancient Agora of Athens",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/ancient-agora/",
+    "q": "ancient agora athens temple of hephaestus stoa of attalos socrates greece"
+  },
+  {
+    "title": "National Archaeological Museum",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/national-archaeological-museum/",
+    "q": "national archaeological museum athens agamemnon mask antikythera bronze greece"
+  },
+  {
+    "title": "Athens old town walk",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/athens-old-town/",
+    "q": "athens old town plaka monastiraki anafiotika walk greece"
+  },
+  {
+    "title": "Roman Agora",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/roman-agora/",
+    "q": "roman agora athens tower of the winds hadrians library greece"
+  },
+  {
+    "title": "Temple of Olympian Zeus",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/olympieion/",
+    "q": "olympieion temple of olympian zeus hadrians arch athens greece"
+  },
+  {
+    "title": "Kerameikos",
+    "place": "Athens",
+    "country": "Greece",
+    "href": "/kerameikos/",
+    "q": "kerameikos athens dipylon gate street of tombs cemetery greece"
+  },
+  {
+    "title": "Temple of Poseidon, Sounion",
+    "place": "Sounion",
+    "country": "Greece",
+    "href": "/sounion/",
+    "q": "cape sounion temple of poseidon attica cliff sunset greece"
+  },
+  {
+    "title": "Delphi",
+    "place": "Delphi",
+    "country": "Greece",
+    "href": "/delphi/",
+    "q": "delphi temple of apollo oracle mount parnassus charioteer greece"
+  },
+  {
+    "title": "Ancient Olympia",
+    "place": "Olympia",
+    "country": "Greece",
+    "href": "/olympia/",
+    "q": "ancient olympia zeus temple stadium olympic games peloponnese greece"
+  },
+  {
+    "title": "Mycenae",
+    "place": "Mycenae",
+    "country": "Greece",
+    "href": "/mycenae/",
+    "q": "mycenae lion gate treasury of atreus agamemnon peloponnese greece"
+  },
+  {
+    "title": "Epidaurus",
+    "place": "Epidaurus",
+    "country": "Greece",
+    "href": "/epidaurus/",
+    "q": "epidaurus ancient theatre asklepios acoustics peloponnese greece"
+  },
+  {
+    "title": "Ancient Corinth & Acrocorinth",
+    "place": "Corinth",
+    "country": "Greece",
+    "href": "/corinth/",
+    "q": "ancient corinth acrocorinth temple of apollo bema st paul greece"
+  },
+  {
+    "title": "Nafplio & Palamidi",
+    "place": "Nafplio",
+    "country": "Greece",
+    "href": "/nafplio/",
+    "q": "nafplio palamidi fortress bourtzi syntagma square peloponnese greece"
+  },
+  {
+    "title": "Mystras",
+    "place": "Mystras",
+    "country": "Greece",
+    "href": "/mystras/",
+    "q": "mystras sparta byzantine churches frescoes despot palace greece"
+  },
+  {
+    "title": "Monemvasia",
+    "place": "Monemvasia",
+    "country": "Greece",
+    "href": "/monemvasia/",
+    "q": "monemvasia rock castle medieval town peloponnese causeway greece"
+  },
+  {
+    "title": "Knossos",
+    "place": "Heraklion",
+    "country": "Greece",
+    "href": "/knossos/",
+    "q": "knossos minoan palace crete heraklion labyrinth minos greece"
+  },
+  {
+    "title": "Heraklion Museum",
+    "place": "Heraklion",
+    "country": "Greece",
+    "href": "/heraklion-museum/",
+    "q": "heraklion archaeological museum minoan frescoes phaistos disc crete greece"
+  },
+  {
+    "title": "Phaistos",
+    "place": "Phaistos",
+    "country": "Greece",
+    "href": "/phaistos/",
+    "q": "phaistos minoan palace messara plain crete greece"
+  },
+  {
+    "title": "Spinalonga",
+    "place": "Elounda",
+    "country": "Greece",
+    "href": "/spinalonga/",
+    "q": "spinalonga island fortress elounda leper colony crete greece"
+  },
+  {
+    "title": "Chania old town",
+    "place": "Chania",
+    "country": "Greece",
+    "href": "/chania/",
+    "q": "chania old town venetian harbour lighthouse crete greece"
+  },
+  {
+    "title": "Santorini caldera walk",
+    "place": "Fira",
+    "country": "Greece",
+    "href": "/santorini/",
+    "q": "santorini caldera walk fira imerovigli oia cyclades greece"
+  },
+  {
+    "title": "Akrotiri",
+    "place": "Santorini",
+    "country": "Greece",
+    "href": "/akrotiri/",
+    "q": "akrotiri santorini bronze age minoan ruins theran eruption greece"
+  },
+  {
+    "title": "Delos",
+    "place": "Delos",
+    "country": "Greece",
+    "href": "/delos/",
+    "q": "delos sacred island lions apollo mosaics cyclades mykonos greece"
+  },
+  {
+    "title": "Acropolis of Lindos",
+    "place": "Lindos",
+    "country": "Greece",
+    "href": "/lindos/",
+    "q": "lindos acropolis athena lindia knights castle rhodes greece"
+  },
+  {
+    "title": "Rhodes Old Town",
+    "place": "Rhodes",
+    "country": "Greece",
+    "href": "/rhodes-old-town/",
+    "q": "rhodes old town street of knights grand master palace walls greece"
+  },
+  {
+    "title": "Corfu Old Town",
+    "place": "Corfu",
+    "country": "Greece",
+    "href": "/corfu/",
+    "q": "corfu old town liston fortress venetian kerkyra ionian greece"
+  },
+  {
+    "title": "Patmos",
+    "place": "Patmos",
+    "country": "Greece",
+    "href": "/patmos/",
+    "q": "patmos cave of apocalypse monastery st john chora dodecanese greece"
+  },
+  {
+    "title": "Meteora",
+    "place": "Kalabaka",
+    "country": "Greece",
+    "href": "/meteora/",
+    "q": "meteora monasteries sandstone pillars kalabaka thessaly unesco greece"
+  },
+  {
+    "title": "Thessaloniki",
+    "place": "Thessaloniki",
+    "country": "Greece",
+    "href": "/thessaloniki/",
+    "q": "thessaloniki white tower rotunda galerius arch hagia sophia greece"
+  },
+  {
+    "title": "Vergina (Aigai) Royal Tombs",
+    "place": "Vergina",
+    "country": "Greece",
+    "href": "/vergina/",
+    "q": "vergina aigai royal tombs philip ii macedonia greece"
+  },
+  {
+    "title": "Dion",
+    "place": "Dion",
+    "country": "Greece",
+    "href": "/dion/",
+    "q": "dion sanctuary isis zeus mount olympus macedonia greece"
+  },
+  {
+    "title": "Pella",
+    "place": "Pella",
+    "country": "Greece",
+    "href": "/pella/",
+    "q": "pella alexander great birthplace pebble mosaics macedonia greece"
+  },
+  {
+    "title": "Philippi",
+    "place": "Kavala",
+    "country": "Greece",
+    "href": "/philippi/",
+    "q": "philippi via egnatia basilica roman forum st paul macedonia greece"
+  },
+  {
+    "title": "Mount Athos cruise",
+    "place": "Ouranoupoli",
+    "country": "Greece",
+    "href": "/athos/",
+    "q": "mount athos cruise monasteries holy mountain halkidiki greece"
   }
 ];
