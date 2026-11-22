@@ -57,8 +57,12 @@
     }
   }
 
-  function verifyUrl() {
-    return String((window.EARWISE_PAYSTACK || {}).verifyUrl || "").replace(/\/+$/, "").replace(/\/verify$/i, "") + "/verify";
+  function workerBase() {
+    return String((window.EARWISE_PAYSTACK || {}).verifyUrl || "").replace(/\/+$/, "").replace(/\/(verify|quote)$/i, "");
+  }
+
+  function workerUrl(path) {
+    return workerBase() + path;
   }
 
   async function audioInfo(guideId) {
@@ -130,10 +134,32 @@
       return;
     }
     const cfg = window.EARWISE_PAYSTACK;
-    const charge = window.earwiseCharge ? window.earwiseCharge(price) : { currency: "USD", amount: price, minor: Math.round(price * 100) };
-    const amount = charge.minor;
-    const currency = charge.currency;
-    const ref = "ew_" + user.uid.slice(0, 12) + "_" + guideId.replace(/[^a-z0-9-]/gi, "") + "_" + Date.now();
+    const token = auth.idToken ? await auth.idToken() : null;
+    if (!token) {
+      location.href = accountUrl();
+      return;
+    }
+    setNote("Preparing checkout…");
+    var quote;
+    try {
+      const res = await fetch(workerUrl("/quote"), {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + token
+        },
+        body: JSON.stringify({ guideId: guideId })
+      });
+      quote = await res.json().catch(function () { return {}; });
+      if (!res.ok || !quote.ok || !quote.reference || !quote.amount) {
+        setNote((quote && quote.message) || "Checkout could not be prepared. Please try again.");
+        return;
+      }
+    } catch (err) {
+      setNote("Checkout could not be prepared. Please try again.");
+      return;
+    }
     try {
       await loadPaystack();
     } catch (err) {
@@ -143,9 +169,9 @@
     const handler = window.PaystackPop.setup({
       key: cfg.publicKey,
       email: user.email,
-      amount: amount,
-      currency: currency,
-      ref: ref,
+      amount: quote.amount,
+      currency: quote.currency || "ZAR",
+      ref: quote.reference,
       metadata: {
         custom_fields: [],
         guideId: guideId,
@@ -169,7 +195,7 @@
       return;
     }
     try {
-      const res = await fetch(verifyUrl(), {
+      const res = await fetch(workerUrl("/verify"), {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -215,9 +241,7 @@
     btn.className = "btn btn-block";
     btn.id = "buy-btn";
     btn.setAttribute("aria-describedby", "charge-note buy-note");
-    const charge = price && window.earwiseCharge ? window.earwiseCharge(price) : null;
     const euro = price && window.earwiseFormatEuro ? window.earwiseFormatEuro(price) : (price ? ("€" + price.toFixed(2)) : "");
-    const chargedAs = charge && window.earwiseFormatCharge ? window.earwiseFormatCharge(charge) : "";
     const label = euro ? ("Buy — " + euro + " (test)") : "Buy (test)";
     btn.textContent = label;
     btn.addEventListener("click", function () {
@@ -235,12 +259,11 @@
       chargeNote.id = "charge-note";
       btn.insertAdjacentElement("afterend", chargeNote);
     }
-    if (chargedAs) chargeNote.textContent = "Charged as " + chargedAs + " at checkout";
+    chargeNote.textContent = "Billed in ZAR";
     const note = document.getElementById("buy-note");
     if (note) {
       note.textContent = (euro ? ("The guide price is " + euro + ". ") : "") +
-        (chargedAs ? ("Paystack charges " + chargedAs + " at checkout. ") : "") +
-        "This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.";
+        "Checkout is billed in South African rand at the day's exchange rate; your bank converts. This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.";
     }
   }
 

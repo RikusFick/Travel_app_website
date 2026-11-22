@@ -37,23 +37,80 @@ function guideCatalog() {
   return map;
 }
 
-function chargeFor(eurPrice) {
-  const rules = currencyRules || {};
-  const cur = String(rules.chargeCurrency || "USD").toUpperCase();
-  const eur = Math.round(Number(eurPrice) * 100) / 100;
-  const key = eur.toFixed(2);
-  let amount;
-  if (rules.tiers && rules.tiers[key] && rules.tiers[key][cur] != null) {
-    amount = Number(rules.tiers[key][cur]);
-  } else if (cur === "USD") {
-    amount = Math.round(eur * Number((rules.rates && rules.rates.USD) || 1.1) * 100) / 100;
-  } else if (cur === "ZAR") {
-    const raw = eur * Number((rules.rates && rules.rates.ZAR) || 19.25);
-    amount = raw === Math.floor(raw) ? raw - 0.01 : Math.floor(raw) + 0.99;
-  } else {
-    return { currency: "EUR", amount: eur, minor: Math.round(eur * 100) };
+const FX_KEY = "fx:EURZAR";
+const FX_TTL = 86400; // ~24h
+const QUOTE_TTL = 1800; // 30 minutes
+const FALLBACK_RATE = Number((currencyRules && currencyRules.fallbackRate) || 19.25);
+const CHARGE_CURRENCY = "ZAR";
+
+function isSaneRate(rate) {
+  return Number.isFinite(rate) && rate >= 10 && rate <= 40;
+}
+
+async function fetchJson(url) {
+  const res = await fetch(url, { headers: { Accept: "application/json" }, cf: { cacheTtl: 0 } });
+  if (!res.ok) throw new Error("rate fetch failed");
+  return await res.json();
+}
+
+async function fetchDailyRate() {
+  try {
+    const data = await fetchJson("https://api.frankfurter.dev/v1/latest?from=EUR&to=ZAR");
+    const rate = Number(data && data.rates && data.rates.ZAR);
+    if (isSaneRate(rate)) {
+      return { rate: rate, date: data.date || "", source: "frankfurter.app" };
+    }
+  } catch (err) { /* try fallback */ }
+  try {
+    const data = await fetchJson("https://open.er-api.com/v6/latest/EUR");
+    const rate = Number(data && data.rates && data.rates.ZAR);
+    if (isSaneRate(rate) && (!data.result || data.result === "success")) {
+      return { rate: rate, date: data.time_last_update_utc || data.date || "", source: "open.er-api.com" };
+    }
+  } catch (err) { /* use cache or constant */ }
+  return null;
+}
+
+async function getDailyRate(env) {
+  const raw = await env.ENTITLEMENTS.get(FX_KEY);
+  if (raw) {
+    try {
+      const cached = JSON.parse(raw);
+      if (isSaneRate(Number(cached.rate))) {
+        return { rate: Number(cached.rate), date: cached.date || "", source: cached.source || "cache", cached: true };
+      }
+    } catch (err) { /* refetch */ }
   }
-  return { currency: cur, amount: Math.round(amount * 100) / 100, minor: Math.round(amount * 100) };
+  const fresh = await fetchDailyRate();
+  if (fresh) {
+    await env.ENTITLEMENTS.put(FX_KEY, JSON.stringify({
+      rate: fresh.rate,
+      date: fresh.date,
+      source: fresh.source,
+      fetchedAt: new Date().toISOString()
+    }), { expirationTtl: FX_TTL });
+    return fresh;
+  }
+  return { rate: FALLBACK_RATE, date: "", source: "fallback", fallback: true };
+}
+
+function zarCents(eurPrice, rate) {
+  const eur = Math.round(Number(eurPrice) * 100) / 100;
+  return Math.round(eur * Number(rate) * 100);
+}
+
+async function saveQuote(env, reference, quote) {
+  await env.ENTITLEMENTS.put("quote:" + reference, JSON.stringify(quote), { expirationTtl: QUOTE_TTL });
+}
+
+async function loadQuote(env, reference) {
+  const raw = await env.ENTITLEMENTS.get("quote:" + reference);
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    return null;
+  }
 }
 
 async function lookupFirebaseUser(idToken, env) {
@@ -109,28 +166,35 @@ async function verifyPaystack(reference, env) {
   return { ok: true, tx: data.data };
 }
 
-function purchaseFromTx(tx, expected) {
+function purchaseFromTx(tx, expected, quote) {
   const meta = tx.metadata || {};
-  const guideId = expected.guideId || meta.guideId;
+  const guideId = (quote && quote.guideId) || expected.guideId || meta.guideId;
   if (!guideId) return { ok: false, message: "Missing guide." };
   if (String(tx.status).toLowerCase() !== "success") {
     return { ok: false, message: "Payment is not complete." };
   }
+  if (!quote) {
+    return { ok: false, message: "This checkout expired. Please try again." };
+  }
+  if (expected.uid && quote.uid && quote.uid !== expected.uid) {
+    return { ok: false, message: "This payment belongs to a different account." };
+  }
   if (expected.uid && meta.uid && meta.uid !== expected.uid) {
     return { ok: false, message: "This payment belongs to a different account." };
+  }
+  if (quote.guideId && quote.guideId !== guideId) {
+    return { ok: false, message: "Payment does not match this guide." };
   }
   const catalog = guideCatalog().get(guideId);
   if (!catalog || catalog.free) {
     return { ok: false, message: "Unknown or free guide." };
   }
-  const charge = chargeFor(catalog.price);
-  const currency = charge.currency;
   const txCurrency = String(tx.currency || "").toUpperCase();
-  if (txCurrency && txCurrency !== currency) {
+  if (txCurrency && txCurrency !== CHARGE_CURRENCY) {
     return { ok: false, message: "Payment currency does not match." };
   }
-  if (Number(tx.amount) !== charge.minor) {
-    return { ok: false, message: "Payment amount does not match the guide price." };
+  if (Number(tx.amount) !== Number(quote.amount)) {
+    return { ok: false, message: "Payment amount does not match the quoted price." };
   }
   return {
     ok: true,
@@ -142,11 +206,58 @@ function purchaseFromTx(tx, expected) {
       amount: tx.amount,
       sourceAmount: catalog.price,
       sourceCurrency: "EUR",
-      currency: txCurrency || currency,
+      currency: txCurrency || CHARGE_CURRENCY,
+      rate: quote.rate,
+      rateDate: quote.rateDate || "",
+      rateSource: quote.rateSource || "",
       purchasedAt: tx.paid_at || new Date().toISOString(),
       test: String(tx.domain || "") === "test" || String(expected.secretHint || "").indexOf("sk_test_") === 0
     }
   };
+}
+
+async function handleQuote(request, env) {
+  const user = await lookupFirebaseUser(bearer(request), env);
+  if (!user) return json(request, { ok: false, message: "Please sign in and try again." }, 401);
+  let body;
+  try {
+    body = await request.json();
+  } catch (err) {
+    return json(request, { ok: false, message: "Invalid request." }, 400);
+  }
+  const guideId = String((body && body.guideId) || "").trim();
+  if (!guideId) return json(request, { ok: false, message: "Missing guide." }, 400);
+  const catalog = guideCatalog().get(guideId);
+  if (!catalog || catalog.free) {
+    return json(request, { ok: false, message: "Unknown or free guide." }, 400);
+  }
+  const fx = await getDailyRate(env);
+  const amount = zarCents(catalog.price, fx.rate);
+  if (!amount || amount < 100) {
+    return json(request, { ok: false, message: "Could not price this guide." }, 500);
+  }
+  const safeGuide = guideId.replace(/[^a-z0-9-]/gi, "");
+  const reference = "ew_" + user.uid.slice(0, 12) + "_" + safeGuide + "_" + Date.now();
+  const quote = {
+    uid: user.uid,
+    email: user.email || "",
+    guideId: guideId,
+    title: catalog.title,
+    eurPrice: catalog.price,
+    amount: amount,
+    currency: CHARGE_CURRENCY,
+    rate: fx.rate,
+    rateDate: fx.date || "",
+    rateSource: fx.source || "",
+    createdAt: new Date().toISOString()
+  };
+  await saveQuote(env, reference, quote);
+  return json(request, {
+    ok: true,
+    reference: reference,
+    amount: amount,
+    currency: CHARGE_CURRENCY
+  });
 }
 
 async function handleVerify(request, env) {
@@ -163,11 +274,12 @@ async function handleVerify(request, env) {
   if (!reference) return json(request, { ok: false, message: "Missing payment reference." }, 400);
   const verified = await verifyPaystack(reference, env);
   if (!verified.ok) return json(request, { ok: false, message: verified.message }, 400);
+  const quote = await loadQuote(env, reference);
   const built = purchaseFromTx(verified.tx, {
     uid: user.uid,
     guideId: guideId,
     secretHint: env.PAYSTACK_SECRET_KEY || ""
-  });
+  }, quote);
   if (!built.ok) return json(request, { ok: false, message: built.message }, 400);
   const saved = await writePurchase(env, user.uid, built.purchase);
   return json(request, { ok: true, purchase: saved });
@@ -198,12 +310,13 @@ async function handleWebhook(request, env) {
   }
   const tx = payload.data || {};
   const meta = tx.metadata || {};
-  const uid = meta.uid;
+  const quote = await loadQuote(env, tx.reference || "");
+  const uid = (quote && quote.uid) || meta.uid;
   const built = purchaseFromTx(tx, {
     uid: uid,
-    guideId: meta.guideId,
+    guideId: (quote && quote.guideId) || meta.guideId,
     secretHint: env.PAYSTACK_SECRET_KEY || ""
-  });
+  }, quote);
   if (!built.ok || !uid) return json(request, { ok: false, message: built.message || "Missing account." }, 400);
   const saved = await writePurchase(env, uid, built.purchase);
   return json(request, { ok: true, purchase: saved });
@@ -229,6 +342,9 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, "") || "/";
     try {
+      if (request.method === "POST" && (path === "/quote" || path.endsWith("/quote"))) {
+        return await handleQuote(request, env);
+      }
       if (request.method === "POST" && (path === "/verify" || path.endsWith("/verify"))) {
         return await handleVerify(request, env);
       }

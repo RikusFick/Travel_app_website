@@ -18,5 +18,4 @@ kv_namespaces = [
 # [vars]
 # FIREBASE_PROJECT_ID = "earwise-app"
 # SITE_ORIGIN = "https://getearwise.com"
-# Charge currency is data/currency.json (copied to src/currency.json), not a wrangler var.
-# Charging in ZAR (Rikus, 22 Nov 2026). Switch chargeCurrency to "USD" only if Paystack later enables it.
+# Charge currency is ZAR at a daily EUR to ZAR rate (see src/currency.json). 19.25 is only a fallback.
