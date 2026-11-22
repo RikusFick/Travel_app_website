@@ -75,6 +75,15 @@
         "priceCurrency": "EUR",
         "price": "0.00"
       }
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Douro Valley audio guide — stop 1",
+      "contentUrl": "https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/douro-valley-1.mp3",
+      "encodingFormat": "audio/mpeg",
+      "inLanguage": "en",
+      "url": "https://getearwise.com/douro-valley/",
+      "description": "An audio guide to the Douro Valley. The signed script has 4 stops. Offline, in 10 languages. Stories play as you arrive."
     }
   ]
 }
@@ -118,8 +127,9 @@
       <p class="fine" id="buy-note">This guide is Free in the app when it launches. Checkout is not open yet; this button is a placeholder. Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
     </div>
     <p class="intro">An audio guide to the Douro Valley. The signed script has 4 stops. It works offline, in 10 languages, and plays as you arrive.</p>
-    
-    
+    <h2 class="block-title">Stops</h2>
+    <div class="audio-toolbar"><p class="audio-toolbar-note">Play every stop in this guide.</p><div class="audio-lang"><label for="audio-lang-select">Language</label><select id="audio-lang-select" autocomplete="off"><option value="en" selected>English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="pt">Portuguese</option><option value="ru">Russian</option><option value="ja">Japanese</option><option value="hi">Hindi</option><option value="zh">Chinese</option></select></div></div>
+    <ol class="stops"><li><span class="num">1</span><div><h3>Peso da Régua and the Douro Museum</h3><p>On the riverside terrace in front of the Douro Museum at Peso da Régua.</p><div class="stop-audio" data-stop="1" data-title="stop 1: Peso da Régua and the Douro Museum"><div class="player"><button type="button" class="player-toggle" aria-label="Play stop 1: Peso da Régua and the Douro Museum"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg></button><div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div><audio preload="none" controls src="https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/douro-valley-1.mp3"></audio></div></div></div></li><li><span class="num">2</span><div><h3>The Vineyard Slopes</h3><p>At the Miradouro de São Leonardo de Galafura, high above the river.</p><div class="stop-audio" data-stop="2" data-title="stop 2: The Vineyard Slopes"><div class="player"><button type="button" class="player-toggle" aria-label="Play stop 2: The Vineyard Slopes"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg></button><div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div><audio preload="none" controls src="https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/douro-valley-2.mp3"></audio></div></div></div></li><li><span class="num">3</span><div><h3>Pinhão Station</h3><p>On the platform of Pinhão railway station.</p><div class="stop-audio" data-stop="3" data-title="stop 3: Pinhão Station"><div class="player"><button type="button" class="player-toggle" aria-label="Play stop 3: Pinhão Station"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg></button><div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div><audio preload="none" controls src="https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/douro-valley-3.mp3"></audio></div></div></div></li><li><span class="num">4</span><div><h3>Casal de Loivos</h3><p>In the village of Casal de Loivos, on the slope above Pinhão.</p><div class="stop-audio" data-stop="4" data-title="stop 4: Casal de Loivos"><div class="player"><button type="button" class="player-toggle" aria-label="Play stop 4: Casal de Loivos"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg></button><div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div><audio preload="none" controls src="https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/douro-valley-4.mp3"></audio></div></div></div></li></ol>
   </div>
 </main>
 <footer class="site-footer">
@@ -135,5 +145,7 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+<script type="application/json" id="earwise-audio">{"id":"douro-valley","mode":"full","base":"https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio","languages":{"en":[1,2,3,4],"es":[1,2,3,4],"fr":[1,2,3,4],"de":[1,2,3,4],"it":[1,2,3,4],"pt":[1,2,3,4],"ru":[1,2,3,4],"ja":[1,2,3,4],"hi":[1,2,3,4],"zh":[1,2,3,4]}}</script>
+<script src="../js/guide-audio.js" defer></script>
 </body>
 </html>

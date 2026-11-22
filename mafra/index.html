@@ -75,6 +75,15 @@
         "priceCurrency": "EUR",
         "price": "1.99"
       }
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Mafra Palace audio guide — free sample: stop 1",
+      "contentUrl": "https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/mafra-1.mp3",
+      "encodingFormat": "audio/mpeg",
+      "inLanguage": "en",
+      "url": "https://getearwise.com/mafra/",
+      "description": "An audio guide to Mafra Palace, its basilica and library. Offline, in 10 languages. Stories play as you arrive."
     }
   ]
 }
@@ -118,8 +127,9 @@
       <p class="fine" id="buy-note">The guide price is €1.99. This button is a placeholder. It does not open checkout and does not take payment. Email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>.</p>
     </div>
     <p class="intro">An audio guide to Mafra Palace, its basilica and library. It works offline, in 10 languages, and plays as you arrive.</p>
-    
-    
+    <h2 class="block-title">Stops</h2>
+    <div class="audio-toolbar"><p class="audio-toolbar-note">Free sample: stop 1. Later stops are locked until you buy.</p><div class="audio-lang"><label for="audio-lang-select">Language</label><select id="audio-lang-select" autocomplete="off"><option value="en" selected>English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="pt">Portuguese</option><option value="ru">Russian</option><option value="ja">Japanese</option><option value="hi">Hindi</option><option value="zh">Chinese</option></select></div></div>
+    <ol class="stops"><li><span class="num">1</span><div><h3>The Façade</h3><p>In the square in front of the basilica, facing the long façade.</p><div class="stop-audio" data-stop="1" data-title="stop 1: The Façade"><p class="audio-sample-label">Free sample: stop 1</p><div class="player"><button type="button" class="player-toggle" aria-label="Play stop 1: The Façade"><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg></button><div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div><audio preload="none" controls src="https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio/en/mafra-1.mp3"></audio></div></div></div></li><li><span class="num">2</span><div><h3>The Basilica</h3><p>Inside the basilica, looking towards the altar.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li><li><span class="num">3</span><div><h3>The Carillons</h3><p>In front of the basilica, looking up at the two bell towers.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li><li><span class="num">4</span><div><h3>The Throne Room</h3><p>In the Throne Room.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li><li><span class="num">5</span><div><h3>The Royal Apartments</h3><p>In the royal apartments.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li><li><span class="num">6</span><div><h3>The Convent</h3><p>In the convent wing behind the palace.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li><li><span class="num">7</span><div><h3>The Library</h3><p>At the entrance to the library.</p><div class="stop-locked"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>Locked — included when you buy</span></div></div></li></ol>
   </div>
 </main>
 <footer class="site-footer">
@@ -135,5 +145,7 @@
     <p class="fine">© 2026 Finick (Pty) Ltd, South Africa.</p>
   </div>
 </footer>
+<script type="application/json" id="earwise-audio">{"id":"mafra","mode":"sample","base":"https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio","languages":{"en":[1],"es":[1],"fr":[1],"de":[1],"it":[1],"pt":[1],"ru":[1],"ja":[1],"hi":[1],"zh":[1]}}</script>
+<script src="../js/guide-audio.js" defer></script>
 </body>
 </html>
