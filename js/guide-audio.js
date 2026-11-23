@@ -93,10 +93,15 @@
       if (!audio) return;
       audio.pause();
       audio.removeAttribute('controls');
-      audio.preload = 'none';
       if (ok) {
-        audio.src = clipUrl(lang, stop);
+        audio.preload = 'metadata';
+        if (audio.src !== clipUrl(lang, stop)) audio.src = clipUrl(lang, stop);
+        else if (audio.readyState >= 1) {
+          var durationEl = wrap.querySelector('.t-duration');
+          if (durationEl && isFinite(audio.duration) && audio.duration > 0) durationEl.textContent = fmt(audio.duration);
+        }
       } else {
+        audio.preload = 'none';
         audio.removeAttribute('src');
         audio.load();
       }
@@ -149,6 +154,46 @@
 
   applyLang(initial);
 
+  function allStopNumbers(count) {
+    var n = Number(count) || 0;
+    if (!n) {
+      document.querySelectorAll(".stops li .num").forEach(function (el) {
+        var num = Number(el.textContent);
+        if (num > n) n = num;
+      });
+    }
+    var list = [];
+    for (var i = 1; i <= n; i++) list.push(i);
+    return list;
+  }
+
+  function expandLanguages(langs, count) {
+    var all = allStopNumbers(count);
+    var out = {};
+    var src = langs || {};
+    Object.keys(src).forEach(function (code) {
+      if (Array.isArray(src[code]) && src[code].length) out[code] = all.slice();
+    });
+    if (!Object.keys(out).length && all.length) out.en = all;
+    return out;
+  }
+
+  function adoptCatalog(info) {
+    if (!info) return;
+    if (info.id) data.id = info.id;
+    if (info.base) data.base = info.base;
+    data.mode = info.mode || data.mode || "full";
+    if (info.languages) data.languages = info.languages;
+    if (dataEl) {
+      dataEl.textContent = JSON.stringify({
+        id: data.id,
+        mode: data.mode,
+        base: data.base,
+        languages: data.languages
+      });
+    }
+  }
+
   window.earwiseBindAudioPlayers = function () {
     wraps = Array.prototype.slice.call(document.querySelectorAll('.stop-audio'));
     wraps.forEach(function (wrap) {
@@ -160,7 +205,7 @@
       var duration = wrap.querySelector('.t-duration');
       if (!audio || !btn) return;
       audio.removeAttribute('controls');
-      audio.preload = 'none';
+      audio.preload = 'metadata';
       audio.autoplay = false;
       btn.addEventListener('click', function () {
         if (audio.paused) {
@@ -187,48 +232,39 @@
     });
     if (select) applyLang(select.value || initial);
   };
-})();
 
-
-window.earwiseUnlockGuideAudio = function (info) {
-  if (!info || !info.id || !info.base) return;
-  var toolbar = document.querySelector(".audio-toolbar-note");
-  if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. Offline listening stays in the app.";
-  var dataEl = document.getElementById("earwise-audio");
-  if (dataEl) {
-    var current = {};
-    try { current = JSON.parse(dataEl.textContent); } catch (err) { current = {}; }
-    current.mode = "full";
-    current.languages = info.languages || current.languages;
-    dataEl.textContent = JSON.stringify(current);
-  }
-  var langSelect = document.getElementById("audio-lang-select");
-  var lang = (langSelect && langSelect.value) || "en";
-  var stops = (info.languages && info.languages[lang]) || (info.languages && info.languages.en) || [];
-  document.querySelectorAll(".stop-locked").forEach(function (lock) {
-    var item = lock.closest("li");
-    if (!item) return;
-    var numEl = item.querySelector(".num");
-    var titleEl = item.querySelector("h3");
-    var stop = numEl ? Number(numEl.textContent) : 0;
-    if (!stop) return;
-    var title = titleEl ? titleEl.textContent : ("Stop " + stop);
-    var wrap = document.createElement("div");
-    wrap.className = "stop-audio";
-    wrap.setAttribute("data-stop", String(stop));
-    wrap.setAttribute("data-title", "stop " + stop + ": " + title);
-    var src = info.base + "/" + lang + "/" + info.id + "-" + stop + ".mp3";
-    wrap.innerHTML =
-      '<div class="player">' +
-      '<button type="button" class="player-toggle" aria-label="Play stop ' + stop + ": " + title.replace(/"/g, "&quot;") + '">' +
-      '<svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg>' +
-      '<svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg>' +
-      "</button>" +
-      '<div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div>' +
-      '<audio preload="none" controls src="' + src + '"></audio></div>';
-    lock.replaceWith(wrap);
-  });
-  if (typeof window.earwiseBindAudioPlayers === "function") {
+  window.earwiseUnlockGuideAudio = function (info) {
+    if (!info || !info.id || !info.base) return;
+    var toolbar = document.querySelector(".audio-toolbar-note");
+    if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. Offline listening stays in the app.";
+    document.querySelectorAll(".audio-sample-label").forEach(function (el) { el.remove(); });
+    var langs = expandLanguages(info.languages || data.languages, info.stops);
+    adoptCatalog({ id: info.id, base: info.base, mode: "full", languages: langs });
+    var langSelect = document.getElementById("audio-lang-select");
+    var lang = (langSelect && langSelect.value) || "en";
+    document.querySelectorAll(".stop-locked").forEach(function (lock) {
+      var item = lock.closest("li");
+      if (!item) return;
+      var numEl = item.querySelector(".num");
+      var titleEl = item.querySelector("h3");
+      var stop = numEl ? Number(numEl.textContent) : 0;
+      if (!stop) return;
+      var title = titleEl ? titleEl.textContent : ("Stop " + stop);
+      var wrap = document.createElement("div");
+      wrap.className = "stop-audio";
+      wrap.setAttribute("data-stop", String(stop));
+      wrap.setAttribute("data-title", "stop " + stop + ": " + title);
+      var src = info.base + "/" + lang + "/" + info.id + "-" + stop + ".mp3";
+      wrap.innerHTML =
+        '<div class="player">' +
+        '<button type="button" class="player-toggle" aria-label="Play stop ' + stop + ": " + title.replace(/"/g, "&quot;") + '">' +
+        '<svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg>' +
+        '<svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg>' +
+        "</button>" +
+        '<div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div>' +
+        '<audio preload="metadata" controls src="' + src + '"></audio></div>';
+      lock.replaceWith(wrap);
+    });
     window.earwiseBindAudioPlayers();
-  }
-};
+  };
+})();
