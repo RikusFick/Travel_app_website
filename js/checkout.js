@@ -74,11 +74,21 @@
       const all = await res.json();
       const row = all.guides && all.guides[guideId];
       if (row) {
+        const stopCount = Number(row.stops) || 0;
+        const allStops = [];
+        for (let i = 1; i <= stopCount; i++) allStops.push(i);
+        const languages = {};
+        const src = row.languages || current.languages || {};
+        Object.keys(src).forEach(function (code) {
+          if (Array.isArray(src[code]) && src[code].length) {
+            languages[code] = allStops.length ? allStops.slice() : src[code].slice();
+          }
+        });
         return {
           id: guideId,
           base: all.base || current.base,
-          languages: row.languages,
-          stops: row.stops,
+          languages: languages,
+          stops: stopCount || allStops.length,
           mode: "full"
         };
       }
