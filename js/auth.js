@@ -38,6 +38,11 @@ function esc(text) {
 }
 
 function accountHref() {
+  if (window.earwiseSession && window.earwiseSession.accountHref) {
+    return window.earwiseSession.accountHref();
+  }
+  const slot = document.querySelector("#site-nav .auth-slot, .auth-slot");
+  if (slot && slot.getAttribute("data-account-href")) return slot.getAttribute("data-account-href");
   const link = document.querySelector("#site-nav a[href$='account.html']") ||
     document.querySelector(".auth-slot a[href$='account.html']") ||
     document.querySelector("a[data-auth-link]");
@@ -70,7 +75,11 @@ function afterSignIn() {
   location.replace(nextDestination());
 }
 
-function paintHeader(user) {
+function paintHeader(user, opts) {
+  if (window.earwiseSession && window.earwiseSession.paintHeader) {
+    window.earwiseSession.paintHeader(user, opts || { pending: false });
+    return;
+  }
   const nav = document.getElementById("site-nav");
   if (!nav) return;
   const accountUrl = accountHref();
@@ -121,6 +130,11 @@ function paintHeader(user) {
 }
 
 function doSignOut() {
+  if (window.earwiseSession) window.earwiseSession.clearHint();
+  if (window.earwisePurchases && window.earwisePurchases.clear) window.earwisePurchases.clear();
+  currentUser = null;
+  paintHeader(null, { pending: false });
+  showGuides(null);
   if (!auth) return;
   signOut(auth).catch(function (err) {
     const msg = document.getElementById("authMsg");
@@ -294,20 +308,37 @@ function showGuides(user) {
   }
   if (banner) banner.hidden = true;
   if (!user) {
+    if (!authReady) {
+      const hint = window.earwiseSession && window.earwiseSession.readHint && window.earwiseSession.readHint();
+      if (hint) {
+        who.textContent = hint.email ? ("Signed in as " + hint.email) : "Signed in";
+        if (out) out.hidden = false;
+        if (list) list.hidden = false;
+        return;
+      }
+      who.textContent = "Checking your account…";
+      if (out) out.hidden = true;
+      if (list) list.hidden = true;
+      return;
+    }
     who.innerHTML = 'You are not signed in. <a href="account.html">Log in</a> to see your guides.';
     if (out) out.hidden = true;
     if (list) list.hidden = true;
     return;
   }
-  who.textContent = "Signed in as " + user.email;
+  who.textContent = "Signed in as " + (user.email || "your account");
   if (out) out.hidden = false;
   if (list) list.hidden = false;
 }
 
 function notify(user) {
   currentUser = user || null;
+  if (window.earwiseSession) {
+    if (currentUser) window.earwiseSession.writeHint(currentUser);
+    else window.earwiseSession.clearHint();
+  }
   markReady();
-  paintHeader(currentUser);
+  paintHeader(currentUser, { pending: false });
   showGuides(currentUser);
   listeners.forEach(function (fn) { fn(currentUser); });
   if (currentUser) afterSignIn();
@@ -319,6 +350,7 @@ window.earwiseAuth = {
   configured: firebaseConfigured,
   currentUser: function () { return currentUser; },
   ready: function () { return readyPromise; },
+  isReady: function () { return authReady; },
   onUser: function (fn) {
     listeners.push(fn);
     if (authReady) fn(currentUser);

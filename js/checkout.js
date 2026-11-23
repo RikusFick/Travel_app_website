@@ -44,7 +44,8 @@
   function accountUrl() {
     const link = document.querySelector("#site-nav a[href$='account.html']") ||
       document.querySelector("a[data-auth-link]");
-    const href = link ? link.getAttribute("href") : "../account.html";
+    const href = (window.earwiseSession && window.earwiseSession.accountHref && window.earwiseSession.accountHref()) ||
+      (link ? link.getAttribute("href") : "../account.html");
     const next = location.pathname + location.search + location.hash;
     const sep = href.indexOf("?") >= 0 ? "&" : "?";
     return href + sep + "next=" + encodeURIComponent(next);
@@ -96,7 +97,24 @@
     return current.id ? current : null;
   }
 
+  function markOwned() {
+    const block = document.querySelector(".buy-block");
+    if (!block) return;
+    const btn = block.querySelector(".btn");
+    if (btn) {
+      btn.textContent = "You own this guide";
+      btn.setAttribute("aria-disabled", "true");
+      if (btn.tagName === "A") {
+        btn.removeAttribute("href");
+        btn.setAttribute("role", "button");
+      }
+      btn.classList.add("is-owned");
+    }
+    setNote("This guide is unlocked on your account. Play every stop here in the browser. Offline listening and GPS auto-play stay in the Earwise app, signed in with the same account.");
+  }
+
   async function unlockGuide(guideId) {
+    markOwned();
     const info = await audioInfo(guideId);
     if (info && typeof window.earwiseUnlockGuideAudio === "function") {
       window.earwiseUnlockGuideAudio(info);
@@ -104,20 +122,6 @@
     const lang = (document.getElementById("audio-lang-select") || {}).value || "en";
     if (typeof window.earwiseLoadPurchasedScript === "function") {
       window.earwiseLoadPurchasedScript(guideId, lang);
-    }
-    const block = document.querySelector(".buy-block");
-    if (block) {
-      const btn = block.querySelector(".btn");
-      if (btn) {
-        btn.textContent = "You own this guide";
-        btn.setAttribute("aria-disabled", "true");
-        if (btn.tagName === "A") {
-          btn.removeAttribute("href");
-          btn.setAttribute("role", "button");
-        }
-        btn.classList.add("is-owned");
-      }
-      setNote("This guide is unlocked on your account. Play every stop here in the browser. Offline listening and GPS auto-play stay in the Earwise app, signed in with the same account.");
     }
   }
 
@@ -302,15 +306,33 @@
     if (!list) return;
     const auth = window.earwiseAuth;
     const user = auth && auth.currentUser && auth.currentUser();
-    if (!user) {
+    const ready = auth && auth.isReady ? auth.isReady() : !!(user);
+    const hint = window.earwiseSession && window.earwiseSession.readHint && window.earwiseSession.readHint();
+    if (ready && !user) {
       list.hidden = true;
       return;
+    }
+    if (!user && !hint) {
+      list.hidden = true;
+      return;
+    }
+    if (window.earwisePurchases && window.earwisePurchases.hydrate) {
+      window.earwisePurchases.hydrate((user && user.uid) || (hint && hint.uid));
     }
     list.hidden = false;
     const guides = (window.earwisePurchases && window.earwisePurchases.list()) || {};
     const ids = Object.keys(guides);
+    const fresh = window.earwisePurchases && window.earwisePurchases.isFresh && window.earwisePurchases.isFresh();
     if (!ids.length) {
+      if (!fresh) {
+        list.innerHTML = "<p class=\"muted\">Loading your guides…</p>";
+        return;
+      }
       list.innerHTML = "<p><strong>No guides yet.</strong></p><p class=\"muted\">Guides you buy on this website will show here, and unlock in the Earwise app when you sign in with the same account.</p>";
+      return;
+    }
+    if (window.earwiseSession && window.earwiseSession.renderGuideList) {
+      window.earwiseSession.renderGuideList(list, guides);
       return;
     }
     list.innerHTML = "<ul class=\"my-guide-links\">" + ids.map(function (id) {
@@ -321,22 +343,28 @@
     }).join("") + "</ul>";
   }
 
+  function applyPurchases(user) {
+    const purchases = window.earwisePurchases;
+    const task = purchases && purchases.load ? purchases.load() : Promise.resolve();
+    task.then(function () {
+      enhanceBuyBlock(user);
+      fillMyGuides();
+    }).catch(function () {
+      enhanceBuyBlock(user);
+      fillMyGuides();
+    });
+  }
+
   function start() {
-    const auth = window.earwiseAuth;
-    if (!auth || !auth.onUser) {
-      enhanceBuyBlock(null);
-      return;
+    if (window.earwisePurchases && window.earwisePurchases.hydrate) {
+      window.earwisePurchases.hydrate();
     }
+    enhanceBuyBlock(null);
+    fillMyGuides();
+    const auth = window.earwiseAuth;
+    if (!auth || !auth.onUser) return;
     auth.onUser(function (user) {
-      const purchases = window.earwisePurchases;
-      const task = purchases && purchases.load ? purchases.load() : Promise.resolve();
-      task.then(function () {
-        enhanceBuyBlock(user);
-        fillMyGuides();
-      }).catch(function () {
-        enhanceBuyBlock(user);
-        fillMyGuides();
-      });
+      applyPurchases(user);
     });
   }
 

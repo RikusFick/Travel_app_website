@@ -1131,6 +1131,8 @@ html:not(.has-audio-js) .player-ui { display: none; }
 /* Header account links and owned-guide buy state */
 .auth-slot { display: inline-flex; align-items: center; gap: 4px; min-width: 0; flex-wrap: wrap; }
 .auth-slot a { white-space: nowrap; }
+.auth-pending { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; }
+.auth-pending-icon { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--quiet); box-sizing: border-box; opacity: 0.55; }
 .auth-email { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 600; }
 @media (max-width: 720px) {
   .auth-email { max-width: 120px; font-size: 15px; }
