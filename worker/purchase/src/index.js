@@ -285,6 +285,52 @@ async function handleVerify(request, env) {
   return json(request, { ok: true, purchase: saved });
 }
 
+async function handleScript(request, env) {
+  const url = new URL(request.url);
+  const guideId = String(url.searchParams.get("guide") || "").trim();
+  const requested = String(url.searchParams.get("lang") || "en").trim().toLowerCase();
+  const lang = requested === "zh-hans" || requested === "zh-cn" ? "zh" : requested;
+  if (!guideId || !/^[a-z0-9-]+$/i.test(guideId)) {
+    return json(request, { ok: false, message: "Missing guide." }, 400);
+  }
+  if (!/^[a-z]{2,8}$/.test(lang)) {
+    return json(request, { ok: false, message: "Missing language." }, 400);
+  }
+  const catalog = guideCatalog().get(guideId);
+  if (!catalog) return json(request, { ok: false, message: "Unknown guide." }, 404);
+  if (!catalog.free) {
+    const user = await lookupFirebaseUser(bearer(request), env);
+    if (!user) return json(request, { ok: false, message: "Please sign in." }, 401);
+    const entitlements = await readEntitlements(env, user.uid);
+    if (!entitlements.guides || !entitlements.guides[guideId]) {
+      return json(request, { ok: false, message: "This guide is not on your account." }, 403);
+    }
+  }
+  let used = lang;
+  let fallback = false;
+  let raw = await env.ENTITLEMENTS.get("script:" + guideId + ":" + lang);
+  if (!raw && lang !== "en") {
+    raw = await env.ENTITLEMENTS.get("script:" + guideId + ":en");
+    used = "en";
+    fallback = true;
+  }
+  if (!raw) return json(request, { ok: false, message: "Script not available." }, 404);
+  let data;
+  try {
+    data = JSON.parse(raw);
+  } catch (err) {
+    return json(request, { ok: false, message: "Script not available." }, 500);
+  }
+  return json(request, {
+    ok: true,
+    guideId: guideId,
+    lang: used,
+    requested: lang,
+    fallback: fallback,
+    stops: data.stops || []
+  });
+}
+
 async function handleMe(request, env) {
   const user = await lookupFirebaseUser(bearer(request), env);
   if (!user) return json(request, { ok: false, message: "Please sign in." }, 401);
@@ -347,6 +393,9 @@ export default {
       }
       if (request.method === "POST" && (path === "/verify" || path.endsWith("/verify"))) {
         return await handleVerify(request, env);
+      }
+      if (request.method === "GET" && (path === "/script" || path.endsWith("/script"))) {
+        return await handleScript(request, env);
       }
       if (request.method === "GET" && (path === "/me" || path.endsWith("/me"))) {
         return await handleMe(request, env);
