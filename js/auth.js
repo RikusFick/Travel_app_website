@@ -91,10 +91,33 @@ function paintHeader(user) {
   }
   const email = user.email || "Signed in";
   slot.innerHTML =
-    '<a href="' + esc(base + "my-guides.html") + '" class="auth-email" title="' + esc(email) + '">' + esc(email) + "</a>" +
-    '<button type="button" class="auth-out" data-auth-logout>Sign out</button>';
+    '<span class="acct">' +
+    '<button type="button" class="acct-btn" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="Account">' +
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></button>' +
+    '<span class="acct-menu" hidden>' +
+    '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
+    '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
+    '<a href="' + esc(base + "account.html") + '">Account</a>' +
+    '<button type="button" class="auth-out" data-auth-logout>Sign out</button>' +
+    "</span></span>";
   const button = slot.querySelector("[data-auth-logout]");
   if (button) button.addEventListener("click", doSignOut);
+  const toggle = slot.querySelector(".acct-btn");
+  const menu = slot.querySelector(".acct-menu");
+  if (toggle && menu) {
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const open = menu.hidden;
+      menu.hidden = !open;
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function (e) {
+      if (!menu.hidden && !slot.contains(e.target)) { menu.hidden = true; toggle.setAttribute("aria-expanded", "false"); }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.hidden) { menu.hidden = true; toggle.setAttribute("aria-expanded", "false"); toggle.focus(); }
+    });
+  }
 }
 
 function doSignOut() {

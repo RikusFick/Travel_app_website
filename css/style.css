@@ -1162,3 +1162,14 @@ html:not(.has-audio-js) .player-ui { display: none; }
 .my-guide-links a { display: flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: none; }
 
 .buy-block .charge-note { margin: 8px 0 0; color: var(--secondary); }
+
+/* Account icon menu in header */
+.acct { position: relative; display: inline-flex; }
+.acct-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--quiet); color: var(--text); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+.acct-btn:hover, .acct-btn[aria-expanded="true"] { color: var(--teal); border-color: var(--teal); }
+.acct-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.acct-menu { position: absolute; right: 0; top: calc(100% + 8px); min-width: 220px; max-width: 280px; background: var(--bg); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.12); padding: 8px; display: flex; flex-direction: column; z-index: 1000; }
+.acct-menu a, .acct-menu .auth-out { display: block; text-align: left; padding: 10px 12px; border-radius: 10px; min-height: 0; font-size: 15px; font-weight: 600; color: var(--text); text-decoration: none; width: 100%; }
+.acct-menu a:hover, .acct-menu .auth-out:hover { background: var(--quiet); color: var(--teal); }
+.acct-who { display: block; padding: 8px 12px 10px; font-size: 13px; color: var(--secondary); border-bottom: 1px solid var(--line); margin-bottom: 4px; overflow-wrap: anywhere; }
+.acct-who strong { color: var(--text); font-weight: 600; }
