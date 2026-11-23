@@ -71,26 +71,57 @@ async function fetchDailyRate() {
   return null;
 }
 
-async function getDailyRate(env) {
-  const raw = await env.ENTITLEMENTS.get(FX_KEY);
-  if (raw) {
-    try {
-      const cached = JSON.parse(raw);
-      if (isSaneRate(Number(cached.rate))) {
-        return { rate: Number(cached.rate), date: cached.date || "", source: cached.source || "cache", cached: true };
-      }
-    } catch (err) { /* refetch */ }
-  }
-  const fresh = await fetchDailyRate();
-  if (fresh) {
-    await env.ENTITLEMENTS.put(FX_KEY, JSON.stringify({
+const FX_CACHE_URL = "https://earwise-purchase.internal/fx/EURZAR";
+
+async function readRateFromCacheApi() {
+  try {
+    const res = await caches.default.match(new Request(FX_CACHE_URL));
+    if (!res) return null;
+    const cached = await res.json();
+    if (isSaneRate(Number(cached.rate))) {
+      return { rate: Number(cached.rate), date: cached.date || "", source: cached.source || "cache", cached: true };
+    }
+  } catch (err) { /* miss */ }
+  return null;
+}
+
+async function writeRateToCacheApi(fresh) {
+  try {
+    const body = JSON.stringify({
       rate: fresh.rate,
       date: fresh.date,
       source: fresh.source,
       fetchedAt: new Date().toISOString()
-    }), { expirationTtl: FX_TTL });
+    });
+    const res = new Response(body, {
+      headers: { "Content-Type": "application/json", "Cache-Control": "max-age=" + FX_TTL }
+    });
+    await caches.default.put(new Request(FX_CACHE_URL), res);
+  } catch (err) { /* still return the fresh rate */ }
+}
+
+async function readRateFromKv(env) {
+  const raw = await env.ENTITLEMENTS.get(FX_KEY);
+  if (!raw) return null;
+  try {
+    const cached = JSON.parse(raw);
+    if (isSaneRate(Number(cached.rate))) {
+      return { rate: Number(cached.rate), date: cached.date || "", source: cached.source || "kv", cached: true };
+    }
+  } catch (err) { /* ignore */ }
+  return null;
+}
+
+async function getDailyRate(env) {
+  const fromCache = await readRateFromCacheApi();
+  if (fromCache) return fromCache;
+  const fresh = await fetchDailyRate();
+  if (fresh) {
+    await writeRateToCacheApi(fresh);
     return fresh;
   }
+  const fromKv = await readRateFromKv(env);
+  if (fromKv) return fromKv;
   return { rate: FALLBACK_RATE, date: "", source: "fallback", fallback: true };
 }
 
@@ -99,18 +130,87 @@ function zarCents(eurPrice, rate) {
   return Math.round(eur * Number(rate) * 100);
 }
 
-async function saveQuote(env, reference, quote) {
-  await env.ENTITLEMENTS.put("quote:" + reference, JSON.stringify(quote), { expirationTtl: QUOTE_TTL });
+function timingSafeEqual(a, b) {
+  const x = String(a || "");
+  const y = String(b || "");
+  if (x.length !== y.length) return false;
+  let out = 0;
+  for (let i = 0; i < x.length; i++) out |= x.charCodeAt(i) ^ y.charCodeAt(i);
+  return out === 0;
 }
 
-async function loadQuote(env, reference) {
+async function hmacSha256Hex(secret, text) {
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"]
+  );
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(text));
+  return [...new Uint8Array(sig)].map(function (b) { return b.toString(16).padStart(2, "0"); }).join("");
+}
+
+function quoteMacMessage(parts) {
+  return ["v1", parts.guideId, String(parts.eurCents), String(parts.amount), String(parts.rateMicros), parts.uid, String(parts.exp)].join("|");
+}
+
+async function signQuoteReference(env, parts) {
+  const secret = env.QUOTE_SIGNING_KEY;
+  if (!secret) return null;
+  const mac = (await hmacSha256Hex(secret, quoteMacMessage(parts))).slice(0, 16);
+  return ["ewq1", parts.guideId, String(parts.amount), String(parts.eurCents), String(parts.rateMicros), String(parts.exp), mac].join(".");
+}
+
+async function parseSignedQuote(env, reference, uid) {
+  const secret = env.QUOTE_SIGNING_KEY;
+  const text = String(reference || "");
+  const m = text.match(/^ewq1\.([a-z0-9-]+)\.(\d+)\.(\d+)\.(\d+)\.(\d+)\.([0-9a-f]{16})$/i);
+  if (!secret || !m || !uid) return null;
+  const parts = {
+    guideId: m[1],
+    amount: Number(m[2]),
+    eurCents: Number(m[3]),
+    rateMicros: Number(m[4]),
+    exp: Number(m[5]),
+    uid: String(uid)
+  };
+  if (!parts.amount || !parts.eurCents || !parts.rateMicros || !parts.exp) return null;
+  if (parts.exp < Math.floor(Date.now() / 1000)) return null;
+  const expected = (await hmacSha256Hex(secret, quoteMacMessage(parts))).slice(0, 16);
+  if (!timingSafeEqual(expected, m[6].toLowerCase())) return null;
+  const catalog = guideCatalog().get(parts.guideId);
+  return {
+    uid: parts.uid,
+    guideId: parts.guideId,
+    title: catalog && catalog.title,
+    eurPrice: parts.eurCents / 100,
+    amount: parts.amount,
+    currency: CHARGE_CURRENCY,
+    rate: parts.rateMicros / 1e6,
+    rateDate: "",
+    rateSource: "",
+    signed: true,
+    exp: parts.exp
+  };
+}
+
+async function loadQuote(env, reference, ctx) {
   const raw = await env.ENTITLEMENTS.get("quote:" + reference);
-  if (!raw) return null;
-  try {
-    return JSON.parse(raw);
-  } catch (err) {
-    return null;
+  if (raw) {
+    try {
+      return JSON.parse(raw);
+    } catch (err) { /* try signed quote */ }
   }
+  const uid = ctx && ctx.uid;
+  const signed = await parseSignedQuote(env, reference, uid);
+  if (signed) return signed;
+  const token = ctx && (ctx.token || (ctx.metadata && (ctx.metadata.quote || ctx.metadata.quoteRef)));
+  if (token && token !== reference) {
+    const fromToken = await parseSignedQuote(env, token, uid);
+    if (fromToken) return fromToken;
+  }
+  return null;
 }
 
 async function lookupFirebaseUser(idToken, env) {
@@ -147,6 +247,10 @@ async function readEntitlements(env, uid) {
 
 async function writePurchase(env, uid, purchase) {
   const current = await readEntitlements(env, uid);
+  const existing = current.guides[purchase.guideId];
+  if (existing && existing.reference && existing.reference === purchase.reference) {
+    return existing;
+  }
   current.guides[purchase.guideId] = purchase;
   current.updatedAt = new Date().toISOString();
   await env.ENTITLEMENTS.put("user:" + uid, JSON.stringify(current));
@@ -236,22 +340,20 @@ async function handleQuote(request, env) {
   if (!amount || amount < 100) {
     return json(request, { ok: false, message: "Could not price this guide." }, 500);
   }
-  const safeGuide = guideId.replace(/[^a-z0-9-]/gi, "");
-  const reference = "ew_" + user.uid.slice(0, 12) + "_" + safeGuide + "_" + Date.now();
-  const quote = {
-    uid: user.uid,
-    email: user.email || "",
+  const eurCents = Math.round(Number(catalog.price) * 100);
+  const rateMicros = Math.round(Number(fx.rate) * 1e6);
+  const exp = Math.floor(Date.now() / 1000) + QUOTE_TTL;
+  const reference = await signQuoteReference(env, {
     guideId: guideId,
-    title: catalog.title,
-    eurPrice: catalog.price,
     amount: amount,
-    currency: CHARGE_CURRENCY,
-    rate: fx.rate,
-    rateDate: fx.date || "",
-    rateSource: fx.source || "",
-    createdAt: new Date().toISOString()
-  };
-  await saveQuote(env, reference, quote);
+    eurCents: eurCents,
+    rateMicros: rateMicros,
+    uid: user.uid,
+    exp: exp
+  });
+  if (!reference) {
+    return json(request, { ok: false, message: "Checkout could not be prepared." }, 500);
+  }
   return json(request, {
     ok: true,
     reference: reference,
@@ -274,7 +376,7 @@ async function handleVerify(request, env) {
   if (!reference) return json(request, { ok: false, message: "Missing payment reference." }, 400);
   const verified = await verifyPaystack(reference, env);
   if (!verified.ok) return json(request, { ok: false, message: verified.message }, 400);
-  const quote = await loadQuote(env, reference);
+  const quote = await loadQuote(env, reference, { uid: user.uid, token: body && body.quote });
   const built = purchaseFromTx(verified.tx, {
     uid: user.uid,
     guideId: guideId,
@@ -356,15 +458,16 @@ async function handleWebhook(request, env) {
   }
   const tx = payload.data || {};
   const meta = tx.metadata || {};
-  const quote = await loadQuote(env, tx.reference || "");
-  const uid = (quote && quote.uid) || meta.uid;
+  const uid = meta.uid || "";
+  const quote = await loadQuote(env, tx.reference || "", { uid: uid, metadata: meta });
+  const account = (quote && quote.uid) || uid;
   const built = purchaseFromTx(tx, {
-    uid: uid,
+    uid: account,
     guideId: (quote && quote.guideId) || meta.guideId,
     secretHint: env.PAYSTACK_SECRET_KEY || ""
   }, quote);
-  if (!built.ok || !uid) return json(request, { ok: false, message: built.message || "Missing account." }, 400);
-  const saved = await writePurchase(env, uid, built.purchase);
+  if (!built.ok || !account) return json(request, { ok: false, message: built.message || "Missing account." }, 400);
+  const saved = await writePurchase(env, account, built.purchase);
   return json(request, { ok: true, purchase: saved });
 }
 
