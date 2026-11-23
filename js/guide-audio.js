@@ -150,6 +150,7 @@
   var initial = syncSelect(select.value);
   select.addEventListener('change', function () {
     applyLang(select.value);
+    window.dispatchEvent(new CustomEvent('earwise-audio-lang', { detail: { lang: select.value } }));
   });
 
   applyLang(initial);

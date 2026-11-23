@@ -7,6 +7,7 @@ It does four jobs:
 1. `POST /quote` — the website sends a Firebase ID token and a `guideId`. The Worker looks up the euro price, fetches (or reuses a 24-hour KV cache of) the day’s EUR to ZAR rate from frankfurter.app (ECB) with a fallback to open.er-api.com, computes `ZAR cents = round(EUR price × rate × 100)`, stores a short-lived quote in KV, and returns `{ reference, amount, currency }`. If the rate fetch fails and there is no cache, it uses the fallback rate 19.25 in `src/currency.json`.
 2. `POST /verify` — the website sends the Paystack reference, `guideId`, and a Firebase ID token. The Worker checks the payment with Paystack, checks the signed-in user, and checks that the paid amount and currency match the stored quote, then stores the purchase.
 3. `GET /me` — the website or the app sends a Firebase ID token and receives the list of guides that account owns.
+5. `GET /script?guide=&lang=` — returns the read-along script for a guide in the requested language (falls back to English). Free guides are public; paid guides require a Firebase ID token and a stored purchase. Scripts live in the ENTITLEMENTS KV under `script:<guideId>:<lang>`, not in the public website.
 4. `POST /webhook` — optional Paystack webhook (`charge.success`) so a purchase is still saved if the browser closes after payment (same quote check as `/verify`).
 
 Purchases are stored in Cloudflare KV, key `user:<firebaseUid>`, as:
