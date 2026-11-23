@@ -12,6 +12,8 @@ kv_namespaces = [
 #   wrangler secret put PAYSTACK_SECRET_KEY
 #     (value is the test secret in box env PAYSTACK_TEST_SECRET_KEY — do not print it)
 #   wrangler secret put FIREBASE_WEB_API_KEY
+#   wrangler secret put QUOTE_SIGNING_KEY
+#     (random HMAC-SHA256 key for stateless checkout quotes; pipe from stdin, never print or commit)
 # Optional:
 #   wrangler secret put PAYSTACK_WEBHOOK_SECRET
 # Vars that are not secret:
