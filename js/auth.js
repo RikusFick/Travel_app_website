@@ -1,10 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 import {
-  getAuth,
+  initializeAuth,
+  browserLocalPersistence,
+  indexedDBLocalPersistence,
+  browserPopupRedirectResolver,
   GoogleAuthProvider,
   signInWithPopup,
-  signInWithRedirect,
-  getRedirectResult,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
@@ -15,7 +16,12 @@ import {
 const cfg = window.EARWISE_FIREBASE || {};
 let auth = null;
 let currentUser = null;
+let authReady = false;
+let signingIn = false;
+let redirected = false;
 const listeners = [];
+let resolveReady = function () {};
+const readyPromise = new Promise(function (resolve) { resolveReady = resolve; });
 
 function firebaseConfigured() {
   const needed = ["apiKey", "authDomain", "projectId", "appId"];
@@ -40,6 +46,28 @@ function accountHref() {
 
 function hrefBase(accountUrl) {
   return String(accountUrl || "account.html").replace(/account\.html(?:#.*)?$/, "");
+}
+
+function markReady() {
+  if (authReady) return;
+  authReady = true;
+  resolveReady();
+}
+
+function nextDestination() {
+  const next = new URLSearchParams(location.search).get("next");
+  if (next && next.charAt(0) === "/" && next.indexOf("//") === -1 && next.indexOf("\\") === -1) {
+    return next;
+  }
+  return "my-guides.html";
+}
+
+function afterSignIn() {
+  if (redirected) return;
+  if (!document.getElementById("authForm")) return;
+  if (!currentUser) return;
+  redirected = true;
+  location.replace(nextDestination());
 }
 
 function paintHeader(user) {
@@ -88,6 +116,7 @@ function friendly(err) {
   }
   if (code === "auth/too-many-requests") return "Too many tries. Wait a moment and try again.";
   if (code === "auth/network-request-failed") return "Network problem. Check your connection and try again.";
+  if (code === "auth/popup-blocked") return "Please allow pop-ups for getearwise.com and try again.";
   if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return "Google sign-in was cancelled.";
   if (code === "auth/account-exists-with-different-credential") {
     return "That email already has an Earwise account. Log in with email and password.";
@@ -97,41 +126,20 @@ function friendly(err) {
   return "Something went wrong. Try again.";
 }
 
-
-function afterSignIn() {
-  const next = new URLSearchParams(location.search).get("next");
-  if (next && next.charAt(0) === "/" && next.indexOf("//") === -1) {
-    location.href = next;
-  } else {
-    location.href = "my-guides.html";
-  }
-}
-
-function shouldUseGoogleRedirect() {
-  const ua = navigator.userAgent || "";
-  const iOS = /iP(ad|hone|od)/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  const webkit = /WebKit/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Chrome/.test(ua);
-  return iOS && webkit;
-}
-
 function googleProvider() {
   const provider = new GoogleAuthProvider();
   provider.setCustomParameters({ prompt: "select_account" });
   return provider;
 }
 
-function signInWithGoogle() {
-  if (!auth) return Promise.reject(new Error("not configured"));
-  const provider = googleProvider();
-  if (shouldUseGoogleRedirect()) {
-    return signInWithRedirect(auth, provider);
+function setSigningIn(on) {
+  signingIn = on;
+  const form = document.getElementById("authForm");
+  if (form) {
+    form.querySelectorAll("input, button").forEach(function (el) { el.disabled = on; });
   }
-  return signInWithPopup(auth, provider).catch(function (err) {
-    if (err && (err.code === "auth/popup-blocked" || err.code === "auth/operation-not-supported-in-this-environment")) {
-      return signInWithRedirect(auth, provider);
-    }
-    throw err;
-  });
+  const googleBtn = document.getElementById("googleSignIn");
+  if (googleBtn) googleBtn.disabled = on;
 }
 
 function wireAccount() {
@@ -191,8 +199,11 @@ function wireAccount() {
   if (googleBtn && !googleBtn.dataset.wired) {
     googleBtn.dataset.wired = "1";
     googleBtn.addEventListener("click", function () {
+      if (signingIn || !auth) return;
+      setSigningIn(true);
       if (msg) msg.textContent = "Opening Google…";
-      signInWithGoogle().then(afterSignIn).catch(function (err) {
+      signInWithPopup(auth, googleProvider()).catch(function (err) {
+        setSigningIn(false);
         if (msg) msg.textContent = friendly(err);
       });
     });
@@ -200,6 +211,7 @@ function wireAccount() {
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
+    if (signingIn || !auth) return;
     const email = $("email").value.trim();
     const password = $("password").value;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
@@ -214,17 +226,20 @@ function wireAccount() {
       msg.textContent = "Enter your password.";
       return;
     }
+    setSigningIn(true);
     msg.textContent = mode === "signup" ? "Creating your account…" : "Signing in…";
     const task = mode === "signup"
       ? createUserWithEmailAndPassword(auth, email, password)
       : signInWithEmailAndPassword(auth, email, password);
-    task.then(afterSignIn).catch(function (err) {
+    task.catch(function (err) {
+      setSigningIn(false);
       msg.textContent = friendly(err);
     });
   });
 
   $("forgot").addEventListener("click", function (event) {
     event.preventDefault();
+    if (signingIn) return;
     const email = $("email").value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
       msg.textContent = "Enter your email address first.";
@@ -243,6 +258,7 @@ function showGuides(user) {
   if (!who) return;
   const banner = document.getElementById("authBanner");
   const out = document.getElementById("signOut");
+  const list = document.getElementById("my-guide-list");
   if (out && !out.dataset.wired) {
     out.dataset.wired = "1";
     out.addEventListener("click", doSignOut);
@@ -255,27 +271,23 @@ function showGuides(user) {
   }
   if (banner) banner.hidden = true;
   if (!user) {
-    location.replace("account.html");
+    who.innerHTML = 'You are not signed in. <a href="account.html">Log in</a> to see your guides.';
+    if (out) out.hidden = true;
+    if (list) list.hidden = true;
     return;
   }
   who.textContent = "Signed in as " + user.email;
   if (out) out.hidden = false;
+  if (list) list.hidden = false;
 }
 
 function notify(user) {
   currentUser = user || null;
+  markReady();
   paintHeader(currentUser);
-  if (document.getElementById("authForm") && currentUser) {
-    const next = new URLSearchParams(location.search).get("next");
-    if (next && next.charAt(0) === "/" && next.indexOf("//") === -1) {
-      location.href = next;
-      return;
-    }
-    location.replace("my-guides.html");
-    return;
-  }
   showGuides(currentUser);
   listeners.forEach(function (fn) { fn(currentUser); });
+  if (currentUser) afterSignIn();
 }
 
 wireAccount();
@@ -283,15 +295,17 @@ wireAccount();
 window.earwiseAuth = {
   configured: firebaseConfigured,
   currentUser: function () { return currentUser; },
+  ready: function () { return readyPromise; },
   onUser: function (fn) {
     listeners.push(fn);
-    fn(currentUser);
+    if (authReady) fn(currentUser);
     return function () {
       const i = listeners.indexOf(fn);
       if (i >= 0) listeners.splice(i, 1);
     };
   },
   idToken: async function () {
+    await readyPromise;
     if (!currentUser) return null;
     return currentUser.getIdToken();
   },
@@ -303,14 +317,9 @@ if (!firebaseConfigured()) {
   notify(null);
 } else {
   const app = initializeApp(cfg);
-  auth = getAuth(app);
-  getRedirectResult(auth).then(function (result) {
-    if (result && result.user && document.getElementById("authForm")) {
-      afterSignIn();
-    }
-  }).catch(function (err) {
-    const msg = document.getElementById("authMsg");
-    if (msg) msg.textContent = friendly(err);
+  auth = initializeAuth(app, {
+    persistence: [browserLocalPersistence, indexedDBLocalPersistence],
+    popupRedirectResolver: browserPopupRedirectResolver
   });
   onAuthStateChanged(auth, notify);
 }

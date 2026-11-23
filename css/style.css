@@ -1,4 +1,5 @@
 /* Earwise marketing site. Tokens match the app theme (Plus Jakarta Sans, teal, light/dark). */
+[hidden] { display: none !important; }
 :root {
   --page: #ffffff;
   --bg: #ffffff;
