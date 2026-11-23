@@ -14,6 +14,7 @@
 
   async function load() {
     const auth = window.earwiseAuth;
+    if (auth && auth.ready) await auth.ready();
     const user = auth && auth.currentUser && auth.currentUser();
     if (!user || !configured()) {
       cache = { uid: user ? user.uid : null, guides: {} };
@@ -25,6 +26,14 @@
       headers: { Accept: "application/json", Authorization: "Bearer " + token }
     });
     const json = await res.json().catch(function () { return {}; });
+    if (!res.ok) {
+      cache = {
+        uid: user.uid,
+        guides: cache.uid === user.uid ? (cache.guides || {}) : {},
+        loaded: false
+      };
+      return cache;
+    }
     const guides = (json && json.guides) || {};
     cache = { uid: user.uid, guides: guides, loaded: true };
     return cache;

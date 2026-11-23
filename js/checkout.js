@@ -122,20 +122,37 @@
     });
   }
 
+  let buying = false;
+
   async function startBuy(guideId, price, title) {
+    if (buying) return;
+    buying = true;
+    const btn = document.getElementById("buy-btn");
+    if (btn) btn.disabled = true;
+    const noteEl = document.getElementById("buy-note");
+    const previousNote = noteEl ? noteEl.textContent : "";
+    let paid = false;
+    function release() {
+      buying = false;
+      if (btn) btn.disabled = false;
+    }
     const auth = window.earwiseAuth;
+    if (auth && auth.ready) await auth.ready();
     const user = auth && auth.currentUser && auth.currentUser();
     if (!user) {
+      release();
       location.href = accountUrl();
       return;
     }
     if (!paystackConfigured()) {
       setNote("Test checkout is not connected yet. The Paystack public key and the purchase Worker URL still need to be set.");
+      release();
       return;
     }
     const cfg = window.EARWISE_PAYSTACK;
     const token = auth.idToken ? await auth.idToken() : null;
     if (!token) {
+      release();
       location.href = accountUrl();
       return;
     }
@@ -154,16 +171,19 @@
       quote = await res.json().catch(function () { return {}; });
       if (!res.ok || !quote.ok || !quote.reference || !quote.amount) {
         setNote((quote && quote.message) || "Checkout could not be prepared. Please try again.");
+        release();
         return;
       }
     } catch (err) {
       setNote("Checkout could not be prepared. Please try again.");
+      release();
       return;
     }
     try {
       await loadPaystack();
     } catch (err) {
       setNote("Could not load Paystack. Check your connection and try again.");
+      release();
       return;
     }
     const handler = window.PaystackPop.setup({
@@ -179,9 +199,13 @@
         title: title || guideId
       },
       callback: function (response) {
+        paid = true;
         verifyAndUnlock(guideId, response && response.reference);
       },
-      onClose: function () { /* buyer closed the popup */ }
+      onClose: function () {
+        if (!paid) setNote(previousNote);
+        release();
+      }
     });
     handler.openIframe();
   }
@@ -245,10 +269,6 @@
     const label = euro ? ("Buy — " + euro + " (test)") : "Buy (test)";
     btn.textContent = label;
     btn.addEventListener("click", function () {
-      if (!user) {
-        location.href = accountUrl();
-        return;
-      }
       startBuy(guideId, price, title);
     });
     link.replaceWith(btn);
@@ -270,6 +290,13 @@
   function fillMyGuides() {
     const list = document.getElementById("my-guide-list");
     if (!list) return;
+    const auth = window.earwiseAuth;
+    const user = auth && auth.currentUser && auth.currentUser();
+    if (!user) {
+      list.hidden = true;
+      return;
+    }
+    list.hidden = false;
     const guides = (window.earwisePurchases && window.earwisePurchases.list()) || {};
     const ids = Object.keys(guides);
     if (!ids.length) {
