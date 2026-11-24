@@ -1,0 +1,132 @@
+[
+  {
+    "id": "amman-citadel",
+    "title": "Amman Citadel",
+    "place": "Amman",
+    "region": "amman",
+    "stops": 8,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "amman-downtown",
+    "title": "Amman Roman Theatre & Downtown",
+    "place": "Amman",
+    "region": "amman",
+    "stops": 8,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "jerash",
+    "title": "Jerash",
+    "place": "Jerash",
+    "region": "jerash",
+    "stops": 20,
+    "minutes": 23,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "madaba",
+    "title": "Madaba",
+    "place": "Madaba",
+    "region": "madaba",
+    "stops": 8,
+    "minutes": 9,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "mount-nebo",
+    "title": "Mount Nebo",
+    "place": "Mount Nebo",
+    "region": "madaba",
+    "stops": 6,
+    "minutes": 11,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "baptism-site",
+    "title": "Baptism Site",
+    "place": "Bethany Beyond the Jordan",
+    "region": "jordan-valley",
+    "stops": 7,
+    "minutes": 10,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "dead-sea",
+    "title": "The Dead Sea",
+    "place": "Dead Sea",
+    "region": "jordan-valley",
+    "stops": 5,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "petra-main-trail",
+    "title": "Petra: Main Trail",
+    "place": "Petra",
+    "region": "petra",
+    "stops": 16,
+    "minutes": 21,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "petra-monastery",
+    "title": "Petra: The Monastery",
+    "place": "Petra",
+    "region": "petra",
+    "stops": 6,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "petra-royal-tombs",
+    "title": "Petra: Royal Tombs",
+    "place": "Petra",
+    "region": "petra",
+    "stops": 8,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "petra-high-place",
+    "title": "Petra: High Place of Sacrifice",
+    "place": "Petra",
+    "region": "petra",
+    "stops": 8,
+    "minutes": 10,
+    "price": 0,
+    "priceLabel": "Free"
+  },
+  {
+    "id": "little-petra",
+    "title": "Little Petra & Beidha",
+    "place": "Little Petra",
+    "region": "petra",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "wadi-rum",
+    "title": "Wadi Rum",
+    "place": "Wadi Rum",
+    "region": "wadi-rum",
+    "stops": 10,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  }
+]

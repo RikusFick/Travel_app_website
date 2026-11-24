@@ -2008,5 +2008,117 @@ window.EARWISE_ATTRACTIONS = [
     "country": "United Arab Emirates",
     "href": "/heart-of-sharjah/",
     "q": "heart of sharjah heritage area al hisn fort creek uae"
+  },
+  {
+    "title": "Burj Khalifa",
+    "place": "Dubai",
+    "country": "United Arab Emirates",
+    "href": "/burj-khalifa/",
+    "q": "burj khalifa downtown dubai fountain tallest tower uae"
+  },
+  {
+    "title": "Louvre Abu Dhabi",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/louvre-abu-dhabi/",
+    "q": "louvre abu dhabi dome saadiyat museum uae"
+  },
+  {
+    "title": "Saadiyat Cultural District",
+    "place": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "href": "/saadiyat-cultural-district/",
+    "q": "saadiyat cultural district abrahamic family house zayed museum abu dhabi uae"
+  },
+  {
+    "title": "Amman Citadel",
+    "place": "Amman",
+    "country": "Jordan",
+    "href": "/amman-citadel/",
+    "q": "amman citadel jebel qal'a temple hercules umayyad palace jordan"
+  },
+  {
+    "title": "Amman Roman Theatre & Downtown",
+    "place": "Amman",
+    "country": "Jordan",
+    "href": "/amman-downtown/",
+    "q": "amman downtown roman theatre theater hashemite plaza jordan"
+  },
+  {
+    "title": "Jerash",
+    "place": "Jerash",
+    "country": "Jordan",
+    "href": "/jerash/",
+    "q": "jerash gerasa roman oval plaza cardo hadrian jordan"
+  },
+  {
+    "title": "Madaba",
+    "place": "Madaba",
+    "country": "Jordan",
+    "href": "/madaba/",
+    "q": "madaba map mosaic saint george church jordan"
+  },
+  {
+    "title": "Mount Nebo",
+    "place": "Mount Nebo",
+    "country": "Jordan",
+    "href": "/mount-nebo/",
+    "q": "mount nebo moses promised land siyagha jordan"
+  },
+  {
+    "title": "Baptism Site",
+    "place": "Bethany Beyond the Jordan",
+    "country": "Jordan",
+    "href": "/baptism-site/",
+    "q": "baptism site bethany beyond the jordan al maghtas john jesus"
+  },
+  {
+    "title": "The Dead Sea",
+    "place": "Dead Sea",
+    "country": "Jordan",
+    "href": "/dead-sea/",
+    "q": "dead sea jordan float panorama lot cave"
+  },
+  {
+    "title": "Petra: Main Trail",
+    "place": "Petra",
+    "country": "Jordan",
+    "href": "/petra-main-trail/",
+    "q": "petra main trail siq treasury khazneh nabataean jordan"
+  },
+  {
+    "title": "Petra: The Monastery",
+    "place": "Petra",
+    "country": "Jordan",
+    "href": "/petra-monastery/",
+    "q": "petra monastery ad-deir ad deir climb jordan"
+  },
+  {
+    "title": "Petra: Royal Tombs",
+    "place": "Petra",
+    "country": "Jordan",
+    "href": "/petra-royal-tombs/",
+    "q": "petra royal tombs urn tomb khubtha byzantine churches jordan"
+  },
+  {
+    "title": "Petra: High Place of Sacrifice",
+    "place": "Petra",
+    "country": "Jordan",
+    "href": "/petra-high-place/",
+    "q": "petra high place of sacrifice wadi farasa jordan"
+  },
+  {
+    "title": "Little Petra & Beidha",
+    "place": "Little Petra",
+    "country": "Jordan",
+    "href": "/little-petra/",
+    "q": "little petra siq al-barid beidha nabataean jordan"
+  },
+  {
+    "title": "Wadi Rum",
+    "place": "Wadi Rum",
+    "country": "Jordan",
+    "href": "/wadi-rum/",
+    "q": "wadi rum desert jeep inscriptions jordan"
   }
 ];

@@ -1175,3 +1175,12 @@ html:not(.has-audio-js) .player-ui { display: none; }
 .acct-menu a:hover, .acct-menu .auth-out:hover { background: var(--quiet); color: var(--teal); }
 .acct-who { display: block; padding: 8px 12px 10px; font-size: 13px; color: var(--secondary); border-bottom: 1px solid var(--line); margin-bottom: 4px; overflow-wrap: anywhere; }
 .acct-who strong { color: var(--text); font-weight: 600; }
+
+
+/* Guides published without a free-licence cover photo. */
+.photo.no-cover,
+.hero-frame.no-cover {
+  background: #1c2430;
+}
+.photo.no-cover { aspect-ratio: 3 / 2; }
+.hero-frame.no-cover { min-height: 280px; }
