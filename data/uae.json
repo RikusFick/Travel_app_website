@@ -40,6 +40,16 @@
     "priceLabel": "€1.99"
   },
   {
+    "id": "burj-khalifa",
+    "title": "Burj Khalifa",
+    "place": "Dubai",
+    "region": "dubai",
+    "stops": 8,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
     "id": "sheikh-zayed-grand-mosque",
     "title": "Sheikh Zayed Grand Mosque",
     "place": "Abu Dhabi",
@@ -66,6 +76,26 @@
     "region": "abu-dhabi",
     "stops": 9,
     "minutes": 20,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "louvre-abu-dhabi",
+    "title": "Louvre Abu Dhabi",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "saadiyat-cultural-district",
+    "title": "Saadiyat Cultural District",
+    "place": "Abu Dhabi",
+    "region": "abu-dhabi",
+    "stops": 9,
+    "minutes": 14,
     "price": 2.99,
     "priceLabel": "€2.99"
   },
