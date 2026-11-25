@@ -45,6 +45,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 body { margin: 0; background: var(--page); }
 img { max-width: 100%; display: block; }
 a { color: var(--teal); }
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font: inherit !important;
+  pointer-events: none;
+}
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible {
   outline: 3px solid var(--teal);
   outline-offset: 2px;
@@ -319,7 +325,98 @@ h1.brand { margin: 0; font-size: 24px; }
     color: var(--on-teal);
     filter: brightness(1.06);
   }
+
+  /* Mobile: Account is a full menu row; options expand inline inside the panel. */
+  .topbar nav .auth-slot,
+  .topbar nav .acct {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    position: static;
+    min-width: 0;
+  }
+  .topbar nav .acct-btn {
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+    border-radius: 12px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0 14px;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .topbar nav .acct-btn:hover,
+  .topbar nav .acct-btn:focus-visible,
+  .topbar nav .acct-btn[aria-expanded="true"] {
+    background: var(--soft);
+    color: var(--teal);
+    border: 0;
+  }
+  .topbar nav .acct-btn-in,
+  .topbar nav .acct-btn-in:hover,
+  .topbar nav .acct-btn-in[aria-expanded="true"] {
+    background: transparent;
+    color: var(--text);
+    border: 0;
+  }
+  .topbar nav .acct-btn-in:hover,
+  .topbar nav .acct-btn-in:focus-visible,
+  .topbar nav .acct-btn-in[aria-expanded="true"] {
+    background: var(--soft);
+    color: var(--teal);
+  }
+  .topbar nav .acct-label { display: inline; }
+  .topbar nav .acct-btn .acct-initial {
+    width: 32px;
+    height: 32px;
+    flex: none;
+    border-radius: 50%;
+    background: var(--teal);
+    color: var(--on-teal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .topbar nav .acct-btn svg {
+    width: 32px;
+    height: 32px;
+    flex: none;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--quiet);
+    border: 1px solid var(--line);
+  }
+  .topbar nav .acct-menu {
+    position: static;
+    right: auto;
+    top: auto;
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 12px;
+    background: var(--quiet);
+    z-index: auto;
+  }
+  .topbar nav .acct-menu a,
+  .topbar nav .acct-menu .auth-out {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
 }
+
 
 h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; scroll-margin-top: 76px; }
 .fine, .muted { color: var(--secondary); font-size: 15px; }
@@ -1247,7 +1344,8 @@ html:not(.has-audio-js) .player-ui { display: none; }
 .buy-block .charge-note { margin: 8px 0 0; color: var(--secondary); }
 
 /* Account icon menu in header */
-.acct { position: relative; display: inline-flex; }
+.acct { position: relative; display: inline-flex; align-items: center; }
+.acct-label { display: none; }
 .acct-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--quiet); color: var(--text); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; text-decoration: none; }
 .acct-btn:hover, .acct-btn[aria-expanded="true"] { color: var(--teal); border-color: var(--teal); }
 .acct-btn-in, .acct-btn-in:hover, .acct-btn-in[aria-expanded="true"] { background: var(--teal); color: var(--on-teal); border-color: var(--teal); }
@@ -1389,7 +1487,7 @@ body:has(.site-hero) main::before {
       var(--hero-fade-mid) 92vh,
       var(--hero-fade-soft) 160vh,
       var(--hero-fade-soft) 100%),
-    url("../img/hero-fade.webp?v=20261125j") 50% 48vh / 100% 70vh no-repeat;
+    url("../img/hero-fade.webp?v=20261125k") 50% 48vh / 100% 70vh no-repeat;
 }
 body:has(.site-hero) main > * {
   position: relative;
@@ -1430,7 +1528,7 @@ body:has(.site-hero) main > * {
         var(--hero-fade-mid) 92vh,
         var(--hero-fade-soft) 150vh,
         var(--hero-fade-soft) 100%),
-      url("../img/hero-fade.webp?v=20261125j") 50% 48vh / 100% 70vh no-repeat;
+      url("../img/hero-fade.webp?v=20261125k") 50% 48vh / 100% 70vh no-repeat;
   }
 }
 @media (min-width: 900px) {

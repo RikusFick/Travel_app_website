@@ -132,7 +132,7 @@
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
     slot.innerHTML =
       '<a class="acct-btn" href="' + esc(accountUrl) + '" data-auth-link aria-label="Log in" title="Log in">' +
-      personSvg() + "</a>";
+      personSvg() + '<span class="acct-label">Log in</span></a>';
   }
 
   function wireAcctMenu(slot) {
@@ -177,7 +177,7 @@
     slot.innerHTML =
       '<span class="acct">' +
       '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(email) + '" title="' + esc(email) + '">' +
-      '<span class="acct-initial">' + esc(initial) + "</span></button>" +
+      '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
       '<span class="acct-menu" hidden>' +
       '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
       '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
