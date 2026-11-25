@@ -119,12 +119,20 @@
       '<span class="auth-pending-icon" aria-hidden="true"></span></span>';
   }
 
+  function personSvg() {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>';
+  }
+
+  function initialOf(email) {
+    var ch = String(email || "").trim().charAt(0).toUpperCase();
+    return /[A-Z0-9]/.test(ch) ? ch : "•";
+  }
+
   function paintSignedOut(slot) {
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
-    var base = hrefBase(accountUrl);
     slot.innerHTML =
-      '<a href="' + esc(base + "account.html") + '" data-auth-link>Log in</a>' +
-      '<a href="' + esc(base + "account.html#signup") + '">Create account</a>';
+      '<a class="acct-btn" href="' + esc(accountUrl) + '" data-auth-link aria-label="Log in" title="Log in">' +
+      personSvg() + "</a>";
   }
 
   function wireAcctMenu(slot) {
@@ -165,10 +173,11 @@
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
     var base = hrefBase(accountUrl);
     var email = (user && user.email) || "Signed in";
+    var initial = initialOf(email);
     slot.innerHTML =
       '<span class="acct">' +
-      '<button type="button" class="acct-btn" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="Account">' +
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></button>' +
+      '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(email) + '" title="' + esc(email) + '">' +
+      '<span class="acct-initial">' + esc(initial) + "</span></button>" +
       '<span class="acct-menu" hidden>' +
       '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
       '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
@@ -199,18 +208,62 @@
     paintSignedIn(slot, user);
   }
 
+  var catalogPromise = null;
+
+  function countryName(code) {
+    var names = {
+      uae: "UAE",
+      usa: "United States",
+      uk: "United Kingdom"
+    };
+    var raw = String(code || "");
+    if (names[raw]) return names[raw];
+    return raw.replace(/-/g, " ").replace(/\b\w/g, function (ch) { return ch.toUpperCase(); });
+  }
+
+  function loadCatalog() {
+    if (!catalogPromise) {
+      catalogPromise = fetch("/data/prices.json", { headers: { Accept: "application/json" } })
+        .then(function (res) { return res.ok ? res.json() : { guides: [] }; })
+        .then(function (data) {
+          var map = {};
+          ((data && data.guides) || []).forEach(function (row) {
+            if (row && row.id) map[row.id] = row;
+          });
+          return map;
+        })
+        .catch(function () { return {}; });
+    }
+    return catalogPromise;
+  }
+
   function renderGuideList(list, guides) {
     var ids = Object.keys(guides || {});
+    var strip = document.getElementById("next-strip");
+    if (strip) strip.hidden = false;
     if (!ids.length) {
-      list.innerHTML = "<p><strong>No guides yet.</strong></p><p class=\"muted\">Guides you buy on this website will show here, and unlock in the Earwise app when you sign in with the same account.</p>";
+      list.innerHTML =
+        '<div class="empty-guides">' +
+        "<p><strong>Nothing here yet.</strong></p>" +
+        "<p>Your next story is one tap away.</p>" +
+        '<a class="btn" href="guides/">Browse guides</a></div>';
       return;
     }
-    list.innerHTML = "<ul class=\"my-guide-links\">" + ids.map(function (id) {
-      var rec = guides[id] || {};
-      var href = "/" + encodeURIComponent(id) + "/";
-      var label = rec.title || id;
-      return "<li><a href=\"" + href + "\">" + esc(label) + "</a></li>";
-    }).join("") + "</ul>";
+    loadCatalog().then(function (catalog) {
+      list.innerHTML = ids.map(function (id) {
+        var rec = guides[id] || {};
+        var meta = catalog[id] || {};
+        var title = rec.title || meta.title || id;
+        var place = [countryName(meta.country), meta.place].filter(Boolean).join(" · ");
+        var href = "/" + encodeURIComponent(id) + "/";
+        return '<article class="own-card">' +
+          '<a class="own-photo" href="' + href + '"><img src="/img/guides/' + encodeURIComponent(id) + '.jpg" alt="" onerror="this.remove()"></a>' +
+          '<div class="own-copy"><h2>' + esc(title) + "</h2>" +
+          (place ? '<p class="fine">' + esc(place) + "</p>" : "") +
+          '<div class="own-actions"><a class="btn" href="' + href + '">Open guide</a>' +
+          '<a class="btn btn-ghost" href="index.html#download">Listen in the app</a></div></div></article>';
+      }).join("");
+    });
   }
 
   function paintMyGuides() {
@@ -219,16 +272,27 @@
     var out = document.getElementById("signOut");
     if (!who && !list) return;
     var hint = readHint();
+    var hello = document.getElementById("guides-hello");
+    var gate = document.getElementById("guides-gate");
+    var strip = document.getElementById("next-strip");
     if (!hint) {
-      if (who) who.textContent = "Checking your account…";
+      if (hello) hello.textContent = "Log in to see your guides.";
+      if (who) who.textContent = "";
+      if (gate) {
+        gate.hidden = false;
+        gate.innerHTML = '<a class="btn" href="account.html">Log in</a>';
+      }
       if (list) {
         list.hidden = true;
         list.innerHTML = "";
       }
+      if (strip) strip.hidden = true;
       if (out) out.hidden = true;
       return;
     }
-    if (who) who.textContent = hint.email ? ("Signed in as " + hint.email) : "Signed in";
+    if (hello) hello.textContent = "Ready when you are.";
+    if (gate) gate.hidden = true;
+    if (who) who.textContent = hint.email || "";
     if (out) out.hidden = false;
     if (!list) return;
     var stored = readMe(hint.uid);

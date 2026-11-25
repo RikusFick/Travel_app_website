@@ -92,17 +92,18 @@ function paintHeader(user, opts) {
     if (login) login.replaceWith(slot);
     else nav.appendChild(slot);
   }
-  if (!user) {
+    if (!user) {
     slot.innerHTML =
-      '<a href="' + esc(base + "account.html") + '" data-auth-link>Log in</a>' +
-      '<a href="' + esc(base + "account.html#signup") + '">Create account</a>';
+      '<a class="acct-btn" href="' + esc(base + "account.html") + '" data-auth-link aria-label="Log in" title="Log in">' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></a>';
     return;
   }
   const email = user.email || "Signed in";
+  const initial = (String(email).trim().charAt(0) || "•").toUpperCase();
   slot.innerHTML =
     '<span class="acct">' +
-    '<button type="button" class="acct-btn" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="Account">' +
-    '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></button>' +
+    '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="' + esc(email) + '">' +
+    '<span class="acct-initial">' + esc(initial) + "</span></button>" +
     '<span class="acct-menu" hidden>' +
     '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
     '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
@@ -311,9 +312,13 @@ function showGuides(user) {
     if (!authReady) {
       const hint = window.earwiseSession && window.earwiseSession.readHint && window.earwiseSession.readHint();
       if (hint) {
-        who.textContent = hint.email ? ("Signed in as " + hint.email) : "Signed in";
+        var helloHint = document.getElementById("guides-hello");
+        if (helloHint) helloHint.textContent = "Ready when you are.";
+        who.textContent = hint.email || "";
         if (out) out.hidden = false;
         if (list) list.hidden = false;
+        var stripHint = document.getElementById("next-strip");
+        if (stripHint) stripHint.hidden = false;
         return;
       }
       who.textContent = "Checking your account…";
@@ -321,14 +326,29 @@ function showGuides(user) {
       if (list) list.hidden = true;
       return;
     }
-    who.innerHTML = 'You are not signed in. <a href="account.html">Log in</a> to see your guides.';
+    var hello = document.getElementById("guides-hello");
+    var gate = document.getElementById("guides-gate");
+    if (hello) hello.textContent = "Log in to see your guides.";
+    who.textContent = "";
+    if (gate) {
+      gate.hidden = false;
+      gate.innerHTML = '<a class="btn" href="account.html">Log in</a>';
+    }
     if (out) out.hidden = true;
     if (list) list.hidden = true;
+    var stripOut = document.getElementById("next-strip");
+    if (stripOut) stripOut.hidden = true;
     return;
   }
-  who.textContent = "Signed in as " + (user.email || "your account");
+  var helloIn = document.getElementById("guides-hello");
+  var gateIn = document.getElementById("guides-gate");
+  if (helloIn) helloIn.textContent = "Ready when you are.";
+  if (gateIn) gateIn.hidden = true;
+  who.textContent = user.email || "";
   if (out) out.hidden = false;
   if (list) list.hidden = false;
+  var stripIn = document.getElementById("next-strip");
+  if (stripIn) stripIn.hidden = false;
 }
 
 function notify(user) {

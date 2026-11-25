@@ -20,12 +20,13 @@
     return null;
   }
 
-  function isFreeGuide(info) {
-    if (info && info.mode === "full") return true;
+  function isFreeGuide() {
+    var block = document.querySelector(".buy-block");
+    if (block && block.classList.contains("buy-free")) return true;
     var note = document.getElementById("buy-note");
     if (note && /this guide is free/i.test(note.textContent)) return true;
-    var price = document.querySelector(".hero-copy .price, p.price, .price");
-    if (price && /free/i.test(price.textContent)) return true;
+    var price = document.querySelector(".hero-copy .price");
+    if (price && /^\s*free\s*$/i.test(price.textContent)) return true;
     return false;
   }
 
@@ -97,7 +98,7 @@
     var code = lang || (document.getElementById("audio-lang-select") || {}).value || "en";
     var key = id + ":" + code;
     if (!force && loadedFor === key) return null;
-    var free = isFreeGuide(info);
+    var free = isFreeGuide();
     var owned = window.earwisePurchases && window.earwisePurchases.owns(id);
     if (!free && !owned) {
       clearReadAlong();

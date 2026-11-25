@@ -26,19 +26,40 @@
     return m ? Number(m[1]) : 0;
   }
 
+  let priceById = null;
+
+  function loadPriceCatalog() {
+    if (priceById) return Promise.resolve(priceById);
+    return fetch("/data/prices.json", { headers: { Accept: "application/json" } })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        priceById = {};
+        ((data && data.guides) || []).forEach(function (row) {
+          if (row && row.id) priceById[row.id] = row;
+        });
+        return priceById;
+      })
+      .catch(function () {
+        priceById = {};
+        return priceById;
+      });
+  }
+
   function isFreeGuide() {
+    const block = document.querySelector(".buy-block");
+    if (block && block.classList.contains("buy-free")) return true;
     const note = document.getElementById("buy-note");
     if (note && /this guide is free/i.test(note.textContent)) return true;
-    const price = document.querySelector(".hero-copy .price, p.price, .price");
-    if (price && /free/i.test(price.textContent)) return true;
-    const dataEl = document.getElementById("earwise-audio");
-    if (dataEl) {
-      try {
-        const data = JSON.parse(dataEl.textContent);
-        if (data && data.mode === "full") return true;
-      } catch (err) { /* ignore */ }
-    }
+    const price = document.querySelector(".hero-copy .price");
+    if (price && /^\s*free\s*$/i.test(price.textContent)) return true;
+    const row = priceById && priceById[pageGuideId()];
+    if (row && (row.free === true || Number(row.price) === 0)) return true;
     return false;
+  }
+
+  function siteHref(file) {
+    const account = (window.earwiseSession && window.earwiseSession.accountHref && window.earwiseSession.accountHref()) || "account.html";
+    return String(account).replace(/account\.html(?:[?#].*)?$/, file);
   }
 
   function accountUrl() {
@@ -110,7 +131,25 @@
       }
       btn.classList.add("is-owned");
     }
-    setNote("This guide is unlocked on your account. Play every stop here in the browser. Offline listening and GPS auto-play stay in the Earwise app, signed in with the same account.");
+    const mine = siteHref("my-guides.html");
+    setNote("Play every stop here.");
+    setStatus('You own this guide. <a href="' + mine + '">My guides</a>');
+  }
+
+  function setStatus(html, isError) {
+    let el = document.getElementById("buy-status");
+    const block = document.querySelector(".buy-block");
+    if (!el && block) {
+      el = document.createElement("p");
+      el.id = "buy-status";
+      el.className = "buy-status";
+      el.setAttribute("role", "status");
+      block.appendChild(el);
+    }
+    if (!el) return;
+    el.hidden = !html;
+    el.classList.toggle("is-error", !!isError);
+    el.innerHTML = html || "";
   }
 
   async function unlockGuide(guideId) {
@@ -143,8 +182,6 @@
     buying = true;
     const btn = document.getElementById("buy-btn");
     if (btn) btn.disabled = true;
-    const noteEl = document.getElementById("buy-note");
-    const previousNote = noteEl ? noteEl.textContent : "";
     let paid = false;
     function release() {
       buying = false;
@@ -184,19 +221,19 @@
       });
       quote = await res.json().catch(function () { return {}; });
       if (!res.ok || !quote.ok || !quote.reference || !quote.amount) {
-        setNote((quote && quote.message) || "Checkout could not be prepared. Please try again.");
+        setStatus((quote && quote.message) || "Checkout could not start. Try again.", true);
         release();
         return;
       }
     } catch (err) {
-      setNote("Checkout could not be prepared. Please try again.");
+      setStatus("Checkout could not start. Check your connection and try again.", true);
       release();
       return;
     }
     try {
       await loadPaystack();
     } catch (err) {
-      setNote("Could not load Paystack. Check your connection and try again.");
+      setStatus("Could not open Paystack. Check your connection and try again.", true);
       release();
       return;
     }
@@ -217,8 +254,11 @@
         verifyAndUnlock(guideId, response && response.reference);
       },
       onClose: function () {
-        if (!paid) setNote(previousNote);
-        release();
+        if (!paid) {
+          const fail = siteHref("purchase-failed.html") + "?guide=" + encodeURIComponent(guideId);
+          setStatus('Payment was not completed. Try again, or <a href="' + fail + '">see what to do</a>.', true);
+          release();
+        }
       }
     });
     handler.openIframe();
@@ -229,7 +269,11 @@
     const auth = window.earwiseAuth;
     const token = auth && auth.idToken ? await auth.idToken() : null;
     if (!token || !reference) {
-      setNote("Payment could not be confirmed. Please email hello@getearwise.com.");
+      const fail = siteHref("purchase-failed.html") + "?guide=" + encodeURIComponent(guideId);
+      setStatus('Payment could not be confirmed. <a href="' + fail + '">Try again</a>.', true);
+      buying = false;
+      const btn = document.getElementById("buy-btn");
+      if (btn) btn.disabled = false;
       return;
     }
     try {
@@ -244,60 +288,104 @@
       });
       const json = await res.json().catch(function () { return {}; });
       if (!res.ok || !json.ok) {
-        setNote((json && json.message) || "Payment could not be confirmed. Please email hello@getearwise.com.");
+        const fail = siteHref("purchase-failed.html") + "?guide=" + encodeURIComponent(guideId);
+        setStatus(((json && json.message) || "Payment could not be confirmed.") + ' <a href="' + fail + '">Try again</a>.', true);
+        buying = false;
+        const btn = document.getElementById("buy-btn");
+        if (btn) btn.disabled = false;
         return;
       }
-      if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, reference: reference });
+      if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, title: titleFromPage(), reference: reference });
       await unlockGuide(guideId);
+      const done = siteHref("purchase-success.html") + "?guide=" + encodeURIComponent(guideId) + "&reference=" + encodeURIComponent(reference);
+      setStatus('Payment received (test mode). <a href="' + done + '">View receipt</a>');
     } catch (err) {
-      setNote("Payment could not be confirmed. Please email hello@getearwise.com.");
+      const fail = siteHref("purchase-failed.html") + "?guide=" + encodeURIComponent(guideId);
+      setStatus('Payment could not be confirmed. <a href="' + fail + '">Try again</a>.', true);
+      buying = false;
+      const btn = document.getElementById("buy-btn");
+      if (btn) btn.disabled = false;
     }
   }
 
-  function enhanceBuyBlock(user) {
+  function titleFromPage() {
+    const titleEl = document.querySelector(".hero-copy h1, h1");
+    return titleEl ? titleEl.textContent.replace(/\s+audio guide$/i, "").trim() : pageGuideId();
+  }
+
+  function showFree(block) {
+    block.classList.add("buy-free");
+    ["buy-btn", "test-mode-note", "charge-note"].forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    });
+    const link = block.querySelector("a[href^='mailto:']");
+    if (link) link.remove();
+    if (!block.querySelector(".free-state")) {
+      const line = document.createElement("p");
+      line.className = "free-state";
+      line.textContent = "This guide is free";
+      block.insertBefore(line, block.firstChild);
+    }
+    const note = document.getElementById("buy-note");
+    if (note) note.textContent = "Every recorded stop plays here.";
+  }
+
+  function enhanceBuyBlock() {
     const block = document.querySelector(".buy-block");
-    if (!block || isFreeGuide()) return;
+    if (!block) return;
     const guideId = pageGuideId();
     if (!guideId) return;
-    const price = parseEuroPrice();
-    const titleEl = document.querySelector(".hero-copy h1, h1");
-    const title = titleEl ? titleEl.textContent.replace(/\s+audio guide$/i, "").trim() : guideId;
-    const link = block.querySelector("a.btn, button.btn");
-    if (!link) return;
-
+    if (isFreeGuide()) {
+      showFree(block);
+      return;
+    }
     if (window.earwisePurchases && window.earwisePurchases.owns(guideId)) {
       unlockGuide(guideId);
       return;
     }
-
-    if (!paystackConfigured()) return;
-    if (block.dataset.enhanced === "1") return;
-    block.dataset.enhanced = "1";
-
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "btn btn-block";
-    btn.id = "buy-btn";
-    btn.setAttribute("aria-describedby", "charge-note buy-note");
-    const euro = price && window.earwiseFormatEuro ? window.earwiseFormatEuro(price) : (price ? ("€" + price.toFixed(2)) : "");
-    const label = euro ? ("Buy — " + euro + " (test)") : "Buy (test)";
-    btn.textContent = label;
-    btn.addEventListener("click", function () {
-      startBuy(guideId, price, title);
-    });
-    link.replaceWith(btn);
-    var chargeNote = document.getElementById("charge-note");
-    if (!chargeNote) {
-      chargeNote = document.createElement("p");
-      chargeNote.className = "fine charge-note";
-      chargeNote.id = "charge-note";
-      btn.insertAdjacentElement("afterend", chargeNote);
+    const price = parseEuroPrice();
+    const row = priceById && priceById[guideId];
+    const amount = price || (row && Number(row.price)) || 0;
+    const euro = amount && window.earwiseFormatEuro ? window.earwiseFormatEuro(amount) : (amount ? ("€" + amount.toFixed(2)) : "");
+    const title = titleFromPage();
+    let btn = document.getElementById("buy-btn");
+    const link = block.querySelector("a.btn, a[href^='mailto:']");
+    if (!btn) {
+      btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "btn btn-block";
+      btn.id = "buy-btn";
+      if (link) link.replaceWith(btn);
+      else block.insertBefore(btn, block.firstChild);
+    } else if (link) {
+      link.remove();
     }
-    chargeNote.textContent = "Billed in ZAR";
-    const note = document.getElementById("buy-note");
-    if (note) {
-      note.textContent = (euro ? ("The guide price is " + euro + ". ") : "") +
-        "Checkout is billed in South African rand at the day's exchange rate; your bank converts. This is Paystack test checkout — no live charge. After payment, the full guide unlocks here in your browser. Offline listening stays in the Earwise app, signed in with the same account.";
+    if (euro) btn.textContent = "Buy — " + euro;
+    btn.setAttribute("aria-describedby", "test-mode-note charge-note buy-note");
+    if (!document.getElementById("test-mode-note")) {
+      const badge = document.createElement("p");
+      badge.className = "test-badge";
+      badge.id = "test-mode-note";
+      badge.textContent = "Test mode — Paystack test checkout, no live charge.";
+      btn.insertAdjacentElement("afterend", badge);
+    }
+    if (!document.getElementById("charge-note")) {
+      const charge = document.createElement("p");
+      charge.className = "fine charge-note";
+      charge.id = "charge-note";
+      charge.textContent = "Billed in ZAR";
+      const badge = document.getElementById("test-mode-note");
+      (badge || btn).insertAdjacentElement("afterend", charge);
+    }
+    if (block.dataset.enhanced !== "1") {
+      block.dataset.enhanced = "1";
+      btn.addEventListener("click", function () {
+        startBuy(guideId, amount, title);
+      });
+    }
+    if (!priceById) {
+      loadPriceCatalog().then(function () { enhanceBuyBlock(); });
     }
   }
 
@@ -324,12 +412,18 @@
     const ids = Object.keys(guides);
     const fresh = window.earwisePurchases && window.earwisePurchases.isFresh && window.earwisePurchases.isFresh();
     if (!ids.length) {
+      if (!fresh && !(window.earwiseSession && window.earwiseSession.renderGuideList)) {
+        list.innerHTML = "<p class=\"muted\">Loading your guides…</p>";
+        return;
+      }
+      if (window.earwiseSession && window.earwiseSession.renderGuideList && fresh) {
+        window.earwiseSession.renderGuideList(list, {});
+        return;
+      }
       if (!fresh) {
         list.innerHTML = "<p class=\"muted\">Loading your guides…</p>";
         return;
       }
-      list.innerHTML = "<p><strong>No guides yet.</strong></p><p class=\"muted\">Guides you buy on this website will show here, and unlock in the Earwise app when you sign in with the same account.</p>";
-      return;
     }
     if (window.earwiseSession && window.earwiseSession.renderGuideList) {
       window.earwiseSession.renderGuideList(list, guides);
@@ -355,26 +449,75 @@
     });
   }
 
+  function hookAuth() {
+    const auth = window.earwiseAuth;
+    if (!auth || !auth.onUser) return;
+    auth.onUser(function () {
+      applyPurchases();
+    });
+  }
+
+  async function handleReceiptPage() {
+    const root = document.getElementById("purchase-result");
+    if (!root) return;
+    const params = new URLSearchParams(location.search);
+    const guideId = params.get("guide") || "";
+    const reference = params.get("reference") || "";
+    const failed = root.getAttribute("data-kind") === "failed";
+    await loadPriceCatalog();
+    const row = priceById && priceById[guideId];
+    const title = (row && row.title) || guideId || "this guide";
+    const play = guideId ? ("/" + encodeURIComponent(guideId) + "/") : "guides/";
+    function show(html) { root.innerHTML = html; }
+    if (failed) {
+      show('<h1>Payment was not completed</h1><p>No live charge was made. You can try again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p><p class="fine">Still stuck? <a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>');
+      return;
+    }
+    if (!reference) {
+      show('<h1>Payment received (test mode)</h1><p>Open the guide to confirm it is unlocked.</p><p><a class="btn" href="' + play + '">Play ' + title.replace(/[&<>]/g, "") + '</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+      return;
+    }
+    const auth = window.earwiseAuth;
+    if (auth && auth.ready) await auth.ready();
+    const user = auth && auth.currentUser && auth.currentUser();
+    const token = user && auth.idToken ? await auth.idToken() : null;
+    if (!token) {
+      const next = location.pathname + location.search;
+      show('<h1>Log in to confirm payment</h1><p><a class="btn" href="' + siteHref("account.html") + "?next=" + encodeURIComponent(next) + '">Log in</a></p>');
+      return;
+    }
+    try {
+      const res = await fetch(workerUrl("/verify"), {
+        method: "POST",
+        headers: { Accept: "application/json", "Content-Type": "application/json", Authorization: "Bearer " + token },
+        body: JSON.stringify({ reference: reference, guideId: guideId })
+      });
+      const json = await res.json().catch(function () { return {}; });
+      if (!res.ok || !json.ok) {
+        show('<h1>Payment was not completed</h1><p>' + ((json && json.message) || "We could not confirm this payment.") + '</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+        return;
+      }
+      if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, title: title, reference: reference });
+      show('<h1>Payment received (test mode)</h1><p>' + title.replace(/[&<>]/g, "") + ' is ready to play.</p><p><a class="btn" href="' + play + '">Play it</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+    } catch (err) {
+      show('<h1>Payment was not completed</h1><p>We could not reach the payment check. Try the guide again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+    }
+  }
+
   function start() {
     if (window.earwisePurchases && window.earwisePurchases.hydrate) {
       window.earwisePurchases.hydrate();
     }
-    enhanceBuyBlock(null);
+    handleReceiptPage();
+    enhanceBuyBlock();
     fillMyGuides();
-    const auth = window.earwiseAuth;
-    if (!auth || !auth.onUser) return;
-    auth.onUser(function (user) {
-      applyPurchases(user);
-    });
+    hookAuth();
   }
 
-  function whenAuthReady(fn) {
-    if (window.earwiseAuth) fn();
-    else window.addEventListener("earwise-auth-ready", fn, { once: true });
-  }
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () { whenAuthReady(start); });
+    document.addEventListener("DOMContentLoaded", start);
   } else {
-    whenAuthReady(start);
+    start();
+    if (!window.earwiseAuth) window.addEventListener("earwise-auth-ready", hookAuth, { once: true });
   }
 })();
