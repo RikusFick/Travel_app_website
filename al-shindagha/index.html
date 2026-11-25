@@ -19,9 +19,9 @@
 <link rel="preconnect" href="https://earwise-app.firebaseapp.com">
 <link rel="preconnect" href="https://earwise-purchase.earwise.workers.dev">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="../favicon.svg?v=20261123d" type="image/svg+xml">
-<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=20261123d">
-<link rel="stylesheet" href="../css/style.css?v=20261123d">
+<link rel="icon" href="../favicon.svg?v=20261125a" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=20261125a">
+<link rel="stylesheet" href="../css/style.css?v=20261125a">
 <link rel="preload" as="image" href="../img/guides/al-shindagha.jpg">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
@@ -168,7 +168,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap topbar">
-    <a class="brand" href="../"><img class="brand-logo" src="../logo.svg?v=20261123d" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <a class="brand" href="../"><img class="brand-logo" src="../logo.svg?v=20261125a" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></a>
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
@@ -203,8 +203,12 @@
       </div>
     </div>
     <div class="buy-block">
-      <a class="btn btn-block" href="mailto:hello@getearwise.com?subject=Al%20Shindagha%20audio%20guide" aria-describedby="buy-note">Buy — coming soon</a>
-      <p class="fine" id="buy-note">The guide price is €2.99. Buy is coming soon — this button emails <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> and does not take payment. Guides bought on the website play online in your browser (with the read-along script); offline listening and auto-play by location need the free Earwise app with the same account.</p>
+      <button type="button" class="btn btn-block" id="buy-btn" aria-describedby="test-mode-note charge-note buy-note">Buy — €2.99</button>
+      <p class="test-badge" id="test-mode-note">Test mode — Paystack test checkout, no live charge.</p>
+      <p class="fine charge-note" id="charge-note">Billed in ZAR</p>
+      <p class="fine" id="buy-note">Unlocks in this browser after payment.</p>
+      <p class="buy-status" id="buy-status" role="status" hidden></p>
+      <noscript><p class="fine"><a href="mailto:hello@getearwise.com">Email hello@getearwise.com</a> if the button does not appear.</p></noscript>
     </div>
     <p class="intro">A 12-stop offline audio guide to Al Shindagha in Dubai, designed to play as you arrive. recorded in 10 languages and designed to play as you arrive. It covers Sheikh Saeed Al Maktoum’s creekside residence, perfume traditions, and early Dubai port life. Download once; you will not need a signal on the ground.</p>
 
@@ -249,7 +253,7 @@
 </main>
 <footer class="site-footer">
   <div class="wrap foot">
-    <div class="foot-brand"><p class="brand"><img class="brand-logo" src="../logo.svg?v=20261123d" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></p><p class="fine">Offline audio guides that play as you arrive.</p></div>
+    <div class="foot-brand"><p class="brand"><img class="brand-logo" src="../logo.svg?v=20261125a" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></p><p class="fine">Offline audio guides that play as you arrive.</p></div>
     <nav aria-label="Footer">
       <a href="../privacy.html">Privacy</a>
       <a href="../terms.html">Terms</a>
@@ -260,17 +264,17 @@
     <p class="fine">© 2026 FINICK R EN J (Pty) Ltd (reg. 2025/324909/07), South Africa.</p>
   </div>
 </footer>
-<script src="../js/guide-script.js?v=20261123d" defer></script>
+<script src="../js/guide-script.js?v=20261125a" defer></script>
 <script type="application/json" id="earwise-audio">{"id":"al-shindagha","mode":"full","base":"https://pub-462529bd23f5417884a111776a18ebeb.r2.dev/audio","languages":{"en":[1,2,3,4,5,6,7,8,9,10,11,12],"es":[1,2,3,4,5,6,7,8,9,10,11,12],"fr":[1,2,3,4,5,6,7,8,9,10,11,12],"de":[1,2,3,4,5,6,7,8,9,10,11,12],"it":[1,2,3,4,5,6,7,8,9,10,11,12],"pt":[1,2,3,4,5,6,7,8,9,10,11,12],"ru":[1,2,3,4,5,6,7,8,9,10,11,12],"ja":[1,2,3,4,5,6,7,8,9,10,11,12],"hi":[1,2,3,4,5,6,7,8,9,10,11,12],"zh":[1,2,3,4,5,6,7,8,9,10,11,12]}}</script>
-<script src="../js/guide-audio.js?v=20261123d" defer></script>
-<script src="../js/guide-script.js?v=20261123d" defer></script>
-<script src="../js/firebase-config.js?v=20261123d"></script>
-<script src="../js/paystack-config.js?v=20261123d"></script>
-<script src="../js/currency.js?v=20261123d"></script>
-<script src="../js/session.js?v=20261123d"></script>
-<script src="../js/purchases.js?v=20261123d"></script>
-<script type="module" src="../js/auth.js?v=20261123d"></script>
-<script src="../js/checkout.js?v=20261123d" defer></script>
-<script src="../js/nav.js?v=20261123d" defer></script>
+<script src="../js/guide-audio.js?v=20261125a" defer></script>
+<script src="../js/guide-script.js?v=20261125a" defer></script>
+<script src="../js/firebase-config.js?v=20261125a"></script>
+<script src="../js/paystack-config.js?v=20261125a"></script>
+<script src="../js/currency.js?v=20261125a"></script>
+<script src="../js/session.js?v=20261125a"></script>
+<script src="../js/purchases.js?v=20261125a"></script>
+<script type="module" src="../js/auth.js?v=20261125a"></script>
+<script src="../js/checkout.js?v=20261125a" defer></script>
+<script src="../js/nav.js?v=20261125a" defer></script>
 </body>
 </html>
