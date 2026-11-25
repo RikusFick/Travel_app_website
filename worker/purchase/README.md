@@ -36,13 +36,13 @@ The app does not have Firebase or a cloud purchase store yet (unlocks today live
 
 ## Deploy
 
-Deployed to `https://earwise-purchase.earwise.workers.dev`. Paystack test webhook URL: `https://earwise-purchase.earwise.workers.dev/webhook`.
+Deployed to `https://earwise-purchase.earwise.workers.dev`. Paystack live webhook URL: `https://earwise-purchase.earwise.workers.dev/webhook`.
 
 1. Copy `../../data/prices.json` to `src/prices.json` and `../../data/currency.json` to `src/currency.json` if either has changed. Checkout is billed in ZAR at the day’s EUR to ZAR rate; `fallbackRate` (19.25) is used only if the rate fetch, the Cache API entry, and the read-only KV fallback all fail.
 2. Create KV: `wrangler kv namespace create ENTITLEMENTS` and paste the id into `wrangler.toml`.
-3. Set secrets: `wrangler secret put PAYSTACK_SECRET_KEY` (use the test secret from the box env `PAYSTACK_TEST_SECRET_KEY`; never print or commit it), `wrangler secret put FIREBASE_WEB_API_KEY`, and `wrangler secret put QUOTE_SIGNING_KEY` (generate a random key and pipe it on stdin; never print or commit it).
+3. Set secrets: `wrangler secret put PAYSTACK_SECRET_KEY` (use the live secret from the box env `PAYSTACK_LIVE_SECRET_KEY`; never print or commit it), `wrangler secret put FIREBASE_WEB_API_KEY`, and `wrangler secret put QUOTE_SIGNING_KEY` (generate a random key and pipe it on stdin; never print or commit it).
 4. Set `[vars]` in `wrangler.toml`: `FIREBASE_PROJECT_ID=earwise-app`, `SITE_ORIGIN=https://getearwise.com`.
 5. `wrangler deploy` and paste the Worker URL into `js/paystack-config.js` as `verifyUrl`.
-6. In the Paystack dashboard (test mode), set the webhook URL to `https://<worker>/webhook` if you want the backup path.
+6. In the Paystack dashboard (live mode), set the webhook URL to `https://<worker>/webhook` if you want the backup path.
 
 Never put the Paystack secret key, a Firebase service account, or `CLOUDFLARE_API_TOKEN` in this repo or in website HTML.
