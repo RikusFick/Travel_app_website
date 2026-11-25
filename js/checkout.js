@@ -1,4 +1,4 @@
-/* Paystack test checkout for a paid guide, then server verify + on-page unlock. */
+/* Paystack checkout for a paid guide, then server verify + on-page unlock. */
 (function () {
   function paystackConfigured() {
     const cfg = window.EARWISE_PAYSTACK || {};
@@ -298,7 +298,7 @@
       if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, title: titleFromPage(), reference: reference });
       await unlockGuide(guideId);
       const done = siteHref("purchase-success.html") + "?guide=" + encodeURIComponent(guideId) + "&reference=" + encodeURIComponent(reference);
-      setStatus('Payment received (test mode). <a href="' + done + '">View receipt</a>');
+      setStatus('Payment received. <a href="' + done + '">View receipt</a>');
     } catch (err) {
       const fail = siteHref("purchase-failed.html") + "?guide=" + encodeURIComponent(guideId);
       setStatus('Payment could not be confirmed. <a href="' + fail + '">Try again</a>.', true);
@@ -362,21 +362,13 @@
       link.remove();
     }
     if (euro) btn.textContent = "Buy — " + euro;
-    btn.setAttribute("aria-describedby", "test-mode-note charge-note buy-note");
-    if (!document.getElementById("test-mode-note")) {
-      const badge = document.createElement("p");
-      badge.className = "test-badge";
-      badge.id = "test-mode-note";
-      badge.textContent = "Test mode — Paystack test checkout, no live charge.";
-      btn.insertAdjacentElement("afterend", badge);
-    }
+    btn.setAttribute("aria-describedby", "charge-note buy-note");
     if (!document.getElementById("charge-note")) {
       const charge = document.createElement("p");
       charge.className = "fine charge-note";
       charge.id = "charge-note";
       charge.textContent = "Billed in ZAR";
-      const badge = document.getElementById("test-mode-note");
-      (badge || btn).insertAdjacentElement("afterend", charge);
+      btn.insertAdjacentElement("afterend", charge);
     }
     if (block.dataset.enhanced !== "1") {
       block.dataset.enhanced = "1";
@@ -470,11 +462,11 @@
     const play = guideId ? ("/" + encodeURIComponent(guideId) + "/") : "guides/";
     function show(html) { root.innerHTML = html; }
     if (failed) {
-      show('<h1>Payment was not completed</h1><p>No live charge was made. You can try again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p><p class="fine">Still stuck? <a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>');
+      show('<h1>Payment not completed</h1><p>You were not charged. You can try again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p><p class="fine">Still stuck? <a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>');
       return;
     }
     if (!reference) {
-      show('<h1>Payment received (test mode)</h1><p>Open the guide to confirm it is unlocked.</p><p><a class="btn" href="' + play + '">Play ' + title.replace(/[&<>]/g, "") + '</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+      show('<h1>Payment received</h1><p>Open the guide to confirm it is unlocked.</p><p><a class="btn" href="' + play + '">Play ' + title.replace(/[&<>]/g, "") + '</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
       return;
     }
     const auth = window.earwiseAuth;
@@ -494,13 +486,13 @@
       });
       const json = await res.json().catch(function () { return {}; });
       if (!res.ok || !json.ok) {
-        show('<h1>Payment was not completed</h1><p>' + ((json && json.message) || "We could not confirm this payment.") + '</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+        show('<h1>Payment not completed</h1><p>' + ((json && json.message) || "We could not confirm this payment.") + ' You were not charged.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
         return;
       }
       if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, title: title, reference: reference });
-      show('<h1>Payment received (test mode)</h1><p>' + title.replace(/[&<>]/g, "") + ' is ready to play.</p><p><a class="btn" href="' + play + '">Play it</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+      show('<h1>Payment received</h1><p>' + title.replace(/[&<>]/g, "") + ' is ready to play.</p><p><a class="btn" href="' + play + '">Play it</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
     } catch (err) {
-      show('<h1>Payment was not completed</h1><p>We could not reach the payment check. Try the guide again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+      show('<h1>Payment not completed</h1><p>We could not reach the payment check. You were not charged. Try the guide again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
     }
   }
 
