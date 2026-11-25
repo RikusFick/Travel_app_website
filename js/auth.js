@@ -95,7 +95,7 @@ function paintHeader(user, opts) {
     if (!user) {
     slot.innerHTML =
       '<a class="acct-btn" href="' + esc(base + "account.html") + '" data-auth-link aria-label="Log in" title="Log in">' +
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></a>';
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span class="acct-label">Log in</span></a>';
     return;
   }
   const email = user.email || "Signed in";
@@ -103,7 +103,7 @@ function paintHeader(user, opts) {
   slot.innerHTML =
     '<span class="acct">' +
     '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="' + esc(email) + '">' +
-    '<span class="acct-initial">' + esc(initial) + "</span></button>" +
+    '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
     '<span class="acct-menu" hidden>' +
     '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
     '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
