@@ -73,7 +73,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-hero h1, .site-hero .lede { text-shadow: 0 1px 12px rgba(0,0,0,.35); }
 .site-hero .wrap { position: relative; z-index: 1; padding-top: 88px; padding-bottom: 48px; width: 100%; }
 .site-hero h1 { font-size: clamp(34px, 5vw, 60px); font-weight: 800; letter-spacing: -0.03em; max-width: 16ch; color: #fff; }
-.site-hero .lede { color: rgba(255,255,255,.92); font-size: 18px; margin: 12px 0 18px; }
+.site-hero .lede { color: rgba(255,255,255,.92); font-size: 18px; margin: 12px 0 24px; }
 .site-hero .stores {
   display: flex;
   flex-wrap: wrap;
@@ -682,6 +682,18 @@ section[hidden] { display: none !important; }
   align-items: center;
 }
 .foot nav a:hover { color: var(--teal); }
+
+.foot-legal {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: color-mix(in srgb, var(--secondary) 90%, #ffffff);
+}
+@media (min-width: 800px) {
+  .foot-legal { flex-basis: 100%; margin-top: 4px; }
+}
 
 /* Legal, support, account */
 .doc { padding: 8px 0 28px; }
@@ -1377,7 +1389,7 @@ body:has(.site-hero) main::before {
       var(--hero-fade-mid) 92vh,
       var(--hero-fade-soft) 160vh,
       var(--hero-fade-soft) 100%),
-    url("../img/hero-fade.webp?v=20261125g") 50% 48vh / 100% 70vh no-repeat;
+    url("../img/hero-fade.webp?v=20261125j") 50% 48vh / 100% 70vh no-repeat;
 }
 body:has(.site-hero) main > * {
   position: relative;
@@ -1418,7 +1430,7 @@ body:has(.site-hero) main > * {
         var(--hero-fade-mid) 92vh,
         var(--hero-fade-soft) 150vh,
         var(--hero-fade-soft) 100%),
-      url("../img/hero-fade.webp?v=20261125g") 50% 48vh / 100% 70vh no-repeat;
+      url("../img/hero-fade.webp?v=20261125j") 50% 48vh / 100% 70vh no-repeat;
   }
 }
 @media (min-width: 900px) {
