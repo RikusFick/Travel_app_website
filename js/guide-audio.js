@@ -237,7 +237,7 @@
   window.earwiseUnlockGuideAudio = function (info) {
     if (!info || !info.id || !info.base) return;
     var toolbar = document.querySelector(".audio-toolbar-note");
-    if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. Offline listening stays in the app.";
+    if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. You can also play it in the Earwise app.";
     document.querySelectorAll(".audio-sample-label").forEach(function (el) { el.remove(); });
     var langs = expandLanguages(info.languages || data.languages, info.stops);
     adoptCatalog({ id: info.id, base: info.base, mode: "full", languages: langs });
