@@ -380,5 +380,12 @@
  "Your next story is one tap away.": "Следующая история — в одно касание.",
  "stop {n}": "остановка {n}",
  "stop {n}: {title}": "остановка {n}: {title}",
- "{title} is ready to play.": "«{title}» — можно слушать."
+ "{title} is ready to play.": "«{title}» — можно слушать.",
+ "Travel tips": "Советы путешественникам",
+ "Read before you go": "Прочитайте перед поездкой",
+ "Filter by country": "Фильтр по стране",
+ "Short, practical articles to help you plan a visit, written from our checked audio guides.": "Короткие практические статьи, которые помогут спланировать визит, — по нашим проверенным аудиогидам.",
+ "No articles for this country.": "Для этой страны статей нет.",
+ "Travel tips | Earwise": "Советы путешественникам | Earwise",
+ "Short, practical articles to help you plan a visit, written from our checked Earwise audio guides.": "Короткие практические статьи, которые помогут спланировать визит, — по проверенным аудиогидам Earwise."
 }

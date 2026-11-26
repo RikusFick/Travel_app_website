@@ -380,5 +380,12 @@
  "Your next story is one tap away.": "Tu próxima historia está a un toque.",
  "stop {n}": "parada {n}",
  "stop {n}: {title}": "parada {n}: {title}",
- "{title} is ready to play.": "{title} está lista para escuchar."
+ "{title} is ready to play.": "{title} está lista para escuchar.",
+ "Travel tips": "Consejos de viaje",
+ "Read before you go": "Léelo antes de ir",
+ "Filter by country": "Filtrar por país",
+ "Short, practical articles to help you plan a visit, written from our checked audio guides.": "Artículos breves y prácticos para planear tu visita, escritos a partir de nuestras audioguías comprobadas.",
+ "No articles for this country.": "No hay artículos para este país.",
+ "Travel tips | Earwise": "Consejos de viaje | Earwise",
+ "Short, practical articles to help you plan a visit, written from our checked Earwise audio guides.": "Artículos breves y prácticos para planear tu visita, escritos a partir de nuestras audioguías Earwise comprobadas."
 }

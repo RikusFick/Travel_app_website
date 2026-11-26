@@ -380,5 +380,12 @@
  "Your next story is one tap away.": "次の物語はワンタップで。",
  "stop {n}": "スポット{n}",
  "stop {n}: {title}": "スポット{n}：{title}",
- "{title} is ready to play.": "{title}を再生できます。"
+ "{title} is ready to play.": "{title}を再生できます。",
+ "Travel tips": "旅行のヒント",
+ "Read before you go": "行く前に読む",
+ "Filter by country": "国で絞り込む",
+ "Short, practical articles to help you plan a visit, written from our checked audio guides.": "確認済みのオーディオガイドをもとにした、見学の計画に役立つ短い実用記事です。",
+ "No articles for this country.": "この国の記事はありません。",
+ "Travel tips | Earwise": "旅行のヒント | Earwise",
+ "Short, practical articles to help you plan a visit, written from our checked Earwise audio guides.": "確認済みのEarwiseオーディオガイドをもとにした、見学の計画に役立つ短い実用記事です。"
 }

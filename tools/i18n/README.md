@@ -27,7 +27,15 @@ Each guide's stop text and read-along come from the translated script for that l
 
 The privacy, terms and credits pages keep their English body. They get a short translated note saying so. `404.html` stays English.
 
-Pages under `tips/` also keep their English article body in every language, with a short note that the page is in English. The header, footer and language picker are still translated, and the pages are listed in every language in `sitemap.xml`.
+Pages under `tips/<article>/` keep their English article body in every language, with a short note that the page is in English. The Travel tips hub at `/tips/` is translated as a normal page. The header, footer and language picker are translated, and the pages are listed in every language in `sitemap.xml`.
+
+## Adding a travel-tips article
+
+1. Write the English article at `tips/<id>/index.html`, using the same header, footer and layout as the existing tips pages.
+2. Add one object to `data/tips.json`: `id`, `href`, `title`, `teaser`, `country`, `image`, `imageAlt`, and `guides` (the guide folder names that should show a “Read before you go” card).
+3. Run `python3 tools/i18n/build.py`. This rebuilds the hub grid and country filter from the JSON, adds or updates the card on the mapped English guide pages, generates every language, and updates `sitemap.xml`.
+
+Country names on the hub should already have a translation in `i18n/strings/<lang>.json`. Interface phrases such as “Travel tips” and “Read before you go” are already in those files.
 
 ## Picker
 

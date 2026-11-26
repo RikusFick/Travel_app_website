@@ -90,7 +90,7 @@
  "Audio guides across {country}, in many languages.": "{country}语音导览，多种语言。",
  "Audio guides for {country} are coming soon.": "{country}语音导览即将推出。",
  "Earwise audio guides for {country} are coming soon.": "Earwise {country}语音导览即将推出。",
- "All countries": "所有国家",
+ "All countries": "全部国家",
  "Pick a country. Press play.": "选择国家，按下播放。",
  "Search an attraction": "搜索景点",
  "Search an attraction…": "搜索景点…",
@@ -380,5 +380,12 @@
  "Your next story is one tap away.": "下一个故事，一点即听。",
  "stop {n}": "第 {n} 站",
  "stop {n}: {title}": "第 {n} 站：{title}",
- "{title} is ready to play.": "{title}已可播放。"
+ "{title} is ready to play.": "{title}已可播放。",
+ "Travel tips": "旅行提示",
+ "Read before you go": "出发前阅读",
+ "Filter by country": "按国家筛选",
+ "Short, practical articles to help you plan a visit, written from our checked audio guides.": "根据我们核实过的语音导览写成的简短实用文章，帮你安排行程。",
+ "No articles for this country.": "这个国家暂无文章。",
+ "Travel tips | Earwise": "旅行提示 | Earwise",
+ "Short, practical articles to help you plan a visit, written from our checked Earwise audio guides.": "根据我们核实过的 Earwise 语音导览写成的简短实用文章，帮你安排行程。"
 }

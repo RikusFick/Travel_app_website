@@ -41,7 +41,8 @@ SKIP_FILES = {"404.html"}
 ENGLISH_BODY = {"privacy.html", "terms.html", "credits.html"}
 
 def is_english_body(rel: str) -> bool:
-    return rel in ENGLISH_BODY or rel.startswith("tips/")
+    # Article pages stay in English; the /tips/ hub is translated as usual.
+    return rel in ENGLISH_BODY or (rel.startswith("tips/") and rel != "tips/index.html")
 TEXT_ATTRS = ("alt", "aria-label", "placeholder", "title", "data-title")
 BLOCKS = ("p", "li", "summary", "label", "h1", "h2", "h3", "h4", "span", "small", "a", "button", "td", "th", "dd", "dt", "strong", "figcaption", "div", "option")
 PICKER_RE = re.compile(r"<!--i18n:picker-->.*?<!--/i18n:picker-->\s*", re.S)
@@ -578,6 +579,13 @@ def main():
     LANGS = {l["code"]: l for l in conf["languages"]}
     ORDER = [l["code"] for l in conf["languages"]]
     LANG_PATHS = {l["path"] for l in conf["languages"] if l["path"]}
+    # Refresh the Travel tips hub and "Read before you go" cards from data/tips.json.
+    import importlib.util
+    _tips_spec = importlib.util.spec_from_file_location("earwise_tips", Path(__file__).with_name("tips.py"))
+    _tips = importlib.util.module_from_spec(_tips_spec)
+    _tips_spec.loader.exec_module(_tips)
+    _tips.sync(ROOT, languages=False)
+
     pages = page_files()
     PAGE_SET = set(pages)
     home = (ROOT / "index.html").read_text(encoding="utf-8")
