@@ -2,6 +2,7 @@
    Paid scripts come from the purchase Worker (GET /script) so they are not public static files.
    The free sample stop's baked-in read-along is removed from paid pages; audio still plays. */
 (function () {
+  var T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
   var loadedFor = "";
 
   function esc(text) {
@@ -51,7 +52,7 @@
     else if (existing) return;
     var details = document.createElement("details");
     details.className = "read-along";
-    details.innerHTML = "<summary>Read along</summary><div class=\"transcript\">" + paragraphsToHtml(paragraphs) + "</div>";
+    details.innerHTML = "<summary>" + T("Read along") + "</summary><div class=\"transcript\">" + paragraphsToHtml(paragraphs) + "</div>";
     var audio = stopNode.querySelector(".stop-audio");
     if (audio) audio.insertAdjacentElement("afterend", details);
     else stopNode.appendChild(details);

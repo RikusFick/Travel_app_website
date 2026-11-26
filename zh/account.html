@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html data-lang="zh" data-lang-root="/zh" lang="zh-Hans"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link crossorigin="" href="https://www.gstatic.com" rel="preconnect"/>
+<link href="https://identitytoolkit.googleapis.com" rel="preconnect"/>
+<link href="https://earwise-app.firebaseapp.com" rel="preconnect"/>
+<link href="https://earwise-purchase.earwise.workers.dev" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="/favicon.svg?v=20261125a" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png?v=20261125a" rel="apple-touch-icon"/>
+<link href="/css/style.css?v=20261126d" rel="stylesheet"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#101218" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>登录或注册 | Earwise</title><meta content="登录或创建 Earwise 账户。" name="description"/><!--i18n:head--><script src="/js/i18n/zh.js?v=20261126d"></script><script src="/js/lang.js?v=20261126d"></script><!--/i18n:head-->
+</head><body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+<div class="wrap topbar">
+<a class="brand" href="index.html"><img alt="" aria-hidden="true" class="brand-logo" height="28" src="/logo.svg?v=20261125a" width="34"/><span>Earwise</span></a>
+    <!--i18n:picker--><details class="lang-pick"><summary aria-label="语言: 中文（简体）" title="语言"><img src="/img/flags/cn.svg" alt="" width="22" height="16"><span class="lang-code">中文</span><svg class="lang-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><ul class="lang-menu"><li><a href="/account.html" hreflang="en" lang="en" data-lang="en"><img src="/img/flags/gb.svg" alt="" width="20" height="14"><span>English</span></a></li><li><a href="/de/account.html" hreflang="de" lang="de" data-lang="de"><img src="/img/flags/de.svg" alt="" width="20" height="14"><span>Deutsch</span></a></li><li><a href="/fr/account.html" hreflang="fr" lang="fr" data-lang="fr"><img src="/img/flags/fr.svg" alt="" width="20" height="14"><span>Français</span></a></li><li><a href="/es/account.html" hreflang="es" lang="es" data-lang="es"><img src="/img/flags/es.svg" alt="" width="20" height="14"><span>Español</span></a></li><li><a href="/it/account.html" hreflang="it" lang="it" data-lang="it"><img src="/img/flags/it.svg" alt="" width="20" height="14"><span>Italiano</span></a></li><li><a href="/pt/account.html" hreflang="pt-PT" lang="pt-PT" data-lang="pt"><img src="/img/flags/pt.svg" alt="" width="20" height="14"><span>Português</span></a></li><li><a href="/ru/account.html" hreflang="ru" lang="ru" data-lang="ru"><img src="/img/flags/ru.svg" alt="" width="20" height="14"><span>Русский</span></a></li><li><a href="/ja/account.html" hreflang="ja" lang="ja" data-lang="ja"><img src="/img/flags/jp.svg" alt="" width="20" height="14"><span>日本語</span></a></li><li><a href="/zh/account.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh" aria-current="true"><img src="/img/flags/cn.svg" alt="" width="20" height="14"><span>中文（简体）</span></a></li><li><a href="/hi/account.html" hreflang="hi" lang="hi" data-lang="hi"><img src="/img/flags/in.svg" alt="" width="20" height="14"><span>हिन्दी</span></a></li></ul></details><!--/i18n:picker-->
+<button aria-controls="site-nav" aria-expanded="false" aria-label="菜单" class="nav-toggle" type="button">
+<svg aria-hidden="true" class="icon-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+<svg aria-hidden="true" class="icon-close" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+<span>菜单</span>
+</button>
+<nav aria-label="主导航" id="site-nav">
+<a class="nav-cta mob-only" href="index.html#download">下载应用</a>
+<a href="guides/">语音导览</a>
+<a class="desk-link" href="index.html#how">使用方法</a>
+<a href="support.html">帮助</a>
+<span class="auth-slot" data-account-href="account.html"><span aria-label="正在检查账户" class="auth-pending"><span aria-hidden="true" class="auth-pending-icon"></span></span><noscript><a href="account.html">登录</a></noscript></span>
+</nav>
+</div>
+</header>
+<main class="doc" id="main"><div class="wrap auth-wrap" id="authWrap">
+<div id="authGate">
+<h1 id="authTitle">欢迎回来</h1>
+<p class="muted">您的账户会将在此购买的导览同步到 Earwise 应用。用同一邮箱登录应用即可解锁。可在浏览器或应用中收听。</p>
+<div class="auth-banner" hidden="" id="authBanner">
+<p><strong>Sign-in is not connected yet.</strong></p>
+<p class="muted">Email and password login will use Firebase Auth once the public web config is pasted into the site. The form stays off until then, and no account is created.</p>
+</div>
+<div aria-label="登录或注册" class="auth-toggle" role="tablist">
+<button aria-selected="true" id="tabLogin" role="tab" type="button">登录</button>
+<button aria-selected="false" id="tabSignup" role="tab" type="button">注册</button>
+</div>
+<button class="btn-social" data-provider="google" id="googleSignIn" type="button">
+<svg aria-hidden="true" height="20" viewbox="0 0 24 24" width="20">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.26 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+  使用 Google 继续
+</button>
+<div class="auth-or"><span>或</span></div>
+<form class="form auth-form" id="authForm" novalidate="">
+<div hidden="" id="firstNameRow"><label for="firstName">名 <span class="muted">（选填）</span></label><input autocomplete="given-name" id="firstName" maxlength="40" name="given-name" type="text"/></div>
+<div><label for="email">邮箱</label><input autocomplete="email" id="email" name="email" required="" type="email"/></div>
+<div><label for="password">密码</label><div class="pw-wrap"><input autocomplete="current-password" id="password" name="password" required="" type="password"/><button aria-label="显示密码" aria-pressed="false" class="pw-eye" id="pwEye" type="button"><svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="20"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div>
+<p class="muted auth-hint" hidden="" id="pwHint">至少 8 个字符。</p></div>
+<p aria-live="polite" class="auth-msg" id="authMsg" role="status"></p>
+<button class="btn auth-submit" id="submitBtn" type="submit">登录</button>
+<a class="auth-forgot" href="#" id="forgot">忘记密码？</a>
+</form>
+</div>
+<div hidden="" id="accountPanel">
+<h1>您的账户</h1>
+<p class="lede">您的资料、购买记录和收听方式。</p>
+<section aria-labelledby="profileHeading" class="acct-card">
+<h2 id="profileHeading">个人资料</h2>
+<form class="form" id="profileForm">
+<div class="form-row">
+<div><label for="profileFirst">名</label><input autocomplete="given-name" id="profileFirst" maxlength="40" name="given-name" type="text"/></div>
+<div><label for="profileLast">姓</label><input autocomplete="family-name" id="profileLast" maxlength="40" name="family-name" type="text"/></div>
+</div>
+<p class="auth-msg" id="profileMsg" role="status"></p>
+<button class="btn" type="submit">保存姓名</button>
+</form>
+</section>
+<section aria-labelledby="emailHeading" class="acct-card">
+<h2 id="emailHeading">邮箱</h2>
+<p>您当前的邮箱是 <strong id="accountEmail"></strong>。</p>
+<form class="form" id="emailForm">
+<div><label for="newEmail">新邮箱</label><input autocomplete="email" id="newEmail" name="email" type="email"/></div>
+<div id="emailPasswordRow"><label for="emailPassword">当前密码</label><input autocomplete="current-password" id="emailPassword" name="current-password" type="password"/></div>
+<p class="fine" hidden="" id="emailReauthNote">发送邮件前，我们会请您通过 Google 确认。</p>
+<p class="auth-msg" id="emailMsg" role="status"></p>
+<button class="btn" id="emailSubmit" type="submit">发送验证邮件</button>
+</form>
+</section>
+<section aria-labelledby="passwordHeading" class="acct-card">
+<h2 id="passwordHeading">密码</h2>
+<p class="fine" hidden="" id="passwordFederated"></p>
+<form class="form" id="passwordForm">
+<div><label for="currentPassword">当前密码</label><input autocomplete="current-password" id="currentPassword" name="current-password" type="password"/></div>
+<div><label for="newPassword">新密码</label><input autocomplete="new-password" id="newPassword" minlength="8" name="new-password" type="password"/></div>
+<p class="muted auth-hint">至少 8 个字符。</p>
+<p class="auth-msg" id="passwordMsg" role="status"></p>
+<button class="btn" type="submit">修改密码</button>
+</form>
+</section>
+<section aria-labelledby="listenHeading" class="acct-card">
+<h2 id="listenHeading">收听偏好</h2>
+<form class="form" id="prefsForm">
+<div><label for="playSpeed">播放速度</label>
+<select id="playSpeed">
+<option value="0.75">0.75×</option>
+<option selected="" value="1">1×</option>
+<option value="1.25">1.25×</option>
+<option value="1.5">1.5×</option>
+</select>
+</div>
+<div><label for="prefLang">首选导览语言</label>
+<select id="prefLang"></select>
+</div>
+<p class="fine">当导览有该语言的音频时，网站播放器会使用这些设置。</p>
+<p class="auth-msg" id="prefsMsg" role="status"></p>
+<button class="btn" type="submit">保存偏好</button>
+</form>
+</section>
+<section aria-labelledby="purchasesHeading" class="acct-card">
+<h2 id="purchasesHeading">购买记录</h2>
+<div id="purchaseList"><p class="muted">正在加载您的购买记录…</p></div>
+</section>
+<section aria-labelledby="newsHeading" class="acct-card">
+<h2 id="newsHeading">邮件偏好</h2>
+<label class="check-row" for="newsOptIn">
+<input id="newsOptIn" type="checkbox"/>
+<span>有新导览时发邮件通知我</span>
+</label>
+<p class="fine">仅在邮件更新就绪时使用。您可以随时更改。</p>
+<p class="auth-msg" id="newsMsg" role="status"></p>
+</section>
+<section aria-labelledby="signoutHeading" class="acct-card">
+<h2 id="signoutHeading">退出登录</h2>
+<p class="fine">这会在此设备上退出登录。其他设备保持登录。</p>
+<button class="btn btn-ghost" id="signOutHere" type="button">在此设备上退出登录</button>
+</section>
+<section aria-labelledby="deleteHeading" class="acct-card acct-card-danger">
+<h2 id="deleteHeading">删除账户</h2>
+<p>这将删除您的 Earwise 登录信息。购买记录会按会计要求保留。</p>
+<button class="btn btn-danger" id="deleteAccountBtn" type="button">删除我的账户</button>
+</section>
+</div>
+<dialog aria-labelledby="deleteDialogTitle" class="acct-dialog" id="deleteDialog">
+<form class="form" id="deleteForm" method="dialog">
+<h2 id="deleteDialogTitle">要删除账户吗？</h2>
+<p>您的登录信息将被删除。购买记录会按会计要求保留。</p>
+<div id="deletePasswordRow"><label for="deletePassword">当前密码</label><input autocomplete="current-password" id="deletePassword" type="password"/></div>
+<p class="fine" hidden="" id="deleteFederatedNote">我们会先请您通过 Google 确认。</p>
+<p class="auth-msg" id="deleteMsg" role="status"></p>
+<div class="actions-row">
+<button class="btn btn-danger" id="deleteConfirmBtn" type="submit" value="delete">删除我的账户</button>
+<button class="btn btn-ghost" id="deleteCancelBtn" type="submit" value="cancel">取消</button>
+</div>
+</form>
+</dialog>
+</div></main>
+<footer class="site-footer">
+<div class="wrap foot">
+<div class="foot-brand"><p class="brand"><img alt="" aria-hidden="true" class="brand-logo" height="28" src="/logo.svg?v=20261125a" width="34"/><span>Earwise</span></p><p class="fine">到达即播放的语音导览。</p></div>
+<nav aria-label="页脚">
+<a href="privacy.html">隐私</a>
+<a href="terms.html">条款</a>
+<a href="support.html">帮助</a>
+<a href="credits.html">图片来源</a>
+<a href="mailto:hello@getearwise.com">hello@getearwise.com</a>
+</nav>
+<p class="foot-legal">© 2026 Finick R en J (Pty) Ltd · Reg. 2025/324909/07</p>
+</div>
+</footer>
+<script src="/js/firebase-config.js?v=20261126d"></script>
+<script src="/js/paystack-config.js?v=20261126d"></script>
+<script src="/js/currency.js?v=20261126d"></script>
+<script src="/js/session.js?v=20261126d"></script>
+<script src="/js/purchases.js?v=20261126d"></script>
+<script src="/js/auth.js?v=20261126d" type="module"></script>
+<script src="/js/account-page.js?v=20261126d" type="module"></script>
+<script defer="" src="/js/nav.js?v=20261126d"></script>
+</body></html>

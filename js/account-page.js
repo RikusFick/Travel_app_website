@@ -9,6 +9,7 @@ import {
   GoogleAuthProvider,
   deleteUser
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+const T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
 
 (function () {
   const panel = document.getElementById("accountPanel");
@@ -41,8 +42,8 @@ import {
     if (ids.indexOf("google.com") !== -1) names.push("Google");
     if (ids.indexOf("apple.com") !== -1) names.push("Apple");
     if (!names.length) return "";
-    if (names.length === 1) return "You sign in with " + names[0];
-    return "You sign in with " + names.join(" and ");
+    if (names.length === 1) return T("You sign in with {method}", { method: names[0] });
+    return T("You sign in with {method}", { method: names.join(T(" and ")) });
   }
 
   function hasGoogle(user) {
@@ -51,19 +52,19 @@ import {
 
   function friendly(err) {
     const code = err && err.code;
-    if (code === "auth/invalid-email") return "Enter a valid email address.";
+    if (code === "auth/invalid-email") return T("Enter a valid email address.");
     if (code === "auth/missing-password" || code === "auth/wrong-password" || code === "auth/invalid-credential") {
-      return "That password is wrong.";
+      return T("That password is wrong.");
     }
-    if (code === "auth/weak-password") return "Use at least 8 characters.";
-    if (code === "auth/requires-recent-login") return "Please confirm it's you and try again.";
-    if (code === "auth/email-already-in-use") return "That email already has an account.";
-    if (code === "auth/too-many-requests") return "Too many tries. Wait a moment and try again.";
-    if (code === "auth/network-request-failed") return "Network problem. Check your connection and try again.";
-    if (code === "auth/popup-blocked") return "Please allow pop-ups for getearwise.com and try again.";
-    if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return "That confirmation was cancelled.";
-    if (code === "auth/operation-not-allowed") return "That sign-in method is not enabled yet.";
-    return (err && err.message) ? "Something went wrong. Try again." : "Something went wrong. Try again.";
+    if (code === "auth/weak-password") return T("Use at least 8 characters.");
+    if (code === "auth/requires-recent-login") return T("Please confirm it's you and try again.");
+    if (code === "auth/email-already-in-use") return T("That email already has an account.");
+    if (code === "auth/too-many-requests") return T("Too many tries. Wait a moment and try again.");
+    if (code === "auth/network-request-failed") return T("Network problem. Check your connection and try again.");
+    if (code === "auth/popup-blocked") return T("Please allow pop-ups for getearwise.com and try again.");
+    if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return T("That confirmation was cancelled.");
+    if (code === "auth/operation-not-allowed") return T("That sign-in method is not enabled yet.");
+    return (err && err.message) ? T("Something went wrong. Try again.") : T("Something went wrong. Try again.");
   }
 
   async function reauth(password) {
@@ -119,7 +120,7 @@ import {
     if (emailNote) {
       emailNote.hidden = passwordUser || !label;
       emailNote.textContent = label
-        ? "We'll ask you to confirm with " + (hasGoogle(user) ? "Google" : "your sign-in") + " before we send the email."
+        ? (hasGoogle(user) ? T("We'll ask you to confirm with Google before we send the email.") : T("We'll ask you to confirm with your sign-in before we send the email."))
         : "";
     }
     const deletePasswordRow = $("deletePasswordRow");
@@ -128,7 +129,7 @@ import {
     if (deleteNote) {
       deleteNote.hidden = passwordUser || !label;
       deleteNote.textContent = label
-        ? "We'll ask you to confirm with " + (hasGoogle(user) ? "Google" : "your sign-in") + " first."
+        ? (hasGoogle(user) ? T("We'll ask you to confirm with Google first.") : T("We'll ask you to confirm with your sign-in first."))
         : "";
     }
   }
@@ -163,7 +164,7 @@ import {
     if (!value) return "";
     const date = new Date(value);
     if (isNaN(date.getTime())) return "";
-    return date.toLocaleDateString("en-GB", {
+    return date.toLocaleDateString((document.documentElement.lang || "en") === "en" ? "en-GB" : document.documentElement.lang, {
       day: "numeric",
       month: "short",
       year: "numeric",
@@ -194,16 +195,16 @@ import {
       return String(b.purchasedAt).localeCompare(String(a.purchasedAt));
     });
     if (!rows.length) {
-      root.innerHTML = '<p class="muted">You have not bought any guides yet. <a href="guides/">Browse guides</a></p>';
+      root.innerHTML = '<p class="muted">' + T("You have not bought any guides yet.") + ' <a href="guides/">' + T("Browse guides") + '</a></p>';
       return;
     }
     root.innerHTML = '<ul class="purchase-list">' + rows.map(function (row) {
       const meta = [formatDate(row.purchasedAt), formatAmount(row)].filter(Boolean).join(" · ");
       const receipt = row.receipt
-        ? ' <a class="purchase-receipt" href="' + esc(row.receipt) + '">Receipt</a>'
+        ? ' <a class="purchase-receipt" href="' + esc(row.receipt) + '">' + T("Receipt") + '</a>'
         : "";
-      return '<li><a class="purchase-item" href="/' + esc(row.id) + '/">' +
-        '<img src="img/guides/' + esc(row.id) + '.jpg" alt="" width="96" height="64" onerror="this.remove()">' +
+      return '<li><a class="purchase-item" href="' + esc(window.earwisePath ? window.earwisePath("/" + row.id + "/") : "/" + row.id + "/") + '">' +
+        '<img src="/img/guides/' + esc(row.id) + '.jpg" alt="" width="96" height="64" onerror="this.remove()">' +
         '<span><strong>' + esc(row.title) + "</strong>" +
         (meta ? '<span class="fine">' + esc(meta) + "</span>" : "") +
         "</span></a>" + receipt + "</li>";
@@ -214,7 +215,7 @@ import {
     const root = $("purchaseList");
     const purchases = window.earwisePurchases;
     if (!purchases) {
-      if (root) root.innerHTML = '<p class="muted">Purchases are not available right now.</p>';
+      if (root) root.innerHTML = '<p class="muted">' + T("Purchases are not available right now.") + '</p>';
       return;
     }
     try {
@@ -226,7 +227,7 @@ import {
       }
     } catch (err) {
       if (root && !root.querySelector(".purchase-list")) {
-        root.innerHTML = '<p class="muted">We could not load your purchases just now.</p>';
+        root.innerHTML = '<p class="muted">' + T("We could not load your purchases just now.") + '</p>';
       }
     }
   }
@@ -278,14 +279,14 @@ import {
       if (gate) gate.hidden = true;
       panel.hidden = false;
       if (wrap) wrap.classList.add("is-account");
-      document.title = "Your account | Earwise";
+      document.title = T("Your account | Earwise");
       fillProfile(user);
       paintProviders(user);
     } else {
       panel.hidden = true;
       if (gate) gate.hidden = false;
       if (wrap) wrap.classList.remove("is-account");
-      document.title = "Log in or sign up | Earwise";
+      document.title = T("Log in or sign up | Earwise");
     }
   }
 
@@ -303,14 +304,14 @@ import {
         const first = (($("profileFirst") && $("profileFirst").value) || "").trim();
         const last = (($("profileLast") && $("profileLast").value) || "").trim();
         const displayName = [first, last].filter(Boolean).join(" ");
-        if (msg) msg.textContent = "Saving…";
+        if (msg) msg.textContent = T("Saving…");
         updateProfile(user, { displayName: displayName }).then(function () {
           if (window.earwiseSession) {
             window.earwiseSession.writeHint(user);
             window.earwiseSession.paintHeader(user, { pending: false });
           }
           fillProfile(user);
-          if (msg) msg.textContent = "Saved.";
+          if (msg) msg.textContent = T("Saved.");
         }).catch(function (err) {
           if (msg) msg.textContent = friendly(err);
         });
@@ -326,19 +327,19 @@ import {
         if (!user) return;
         const next = (($("newEmail") && $("newEmail").value) || "").trim();
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(next)) {
-          if (msg) msg.textContent = "Enter a valid email address.";
+          if (msg) msg.textContent = T("Enter a valid email address.");
           return;
         }
         if (next.toLowerCase() === String(user.email || "").toLowerCase()) {
-          if (msg) msg.textContent = "That's already your email.";
+          if (msg) msg.textContent = T("That's already your email.");
           return;
         }
         const password = ($("emailPassword") && $("emailPassword").value) || "";
-        if (msg) msg.textContent = "Sending…";
+        if (msg) msg.textContent = T("Sending…");
         reauth(password).then(function () {
           return verifyBeforeUpdateEmail(user, next);
         }).then(function () {
-          if (msg) msg.textContent = "Check your inbox at " + next + " and click the link to confirm the new address. Your email stays the same until you do.";
+          if (msg) msg.textContent = T("Check your inbox at {email} and click the link to confirm the new address. Your email stays the same until you do.", { email: next });
           if ($("emailPassword")) $("emailPassword").value = "";
         }).catch(function (err) {
           if (msg) msg.textContent = friendly(err);
@@ -356,14 +357,14 @@ import {
         const current = ($("currentPassword") && $("currentPassword").value) || "";
         const next = ($("newPassword") && $("newPassword").value) || "";
         if (next.length < 8) {
-          if (msg) msg.textContent = "Use at least 8 characters.";
+          if (msg) msg.textContent = T("Use at least 8 characters.");
           return;
         }
-        if (msg) msg.textContent = "Saving…";
+        if (msg) msg.textContent = T("Saving…");
         reauth(current).then(function () {
           return updatePassword(user, next);
         }).then(function () {
-          if (msg) msg.textContent = "Password updated.";
+          if (msg) msg.textContent = T("Password updated.");
           if ($("currentPassword")) $("currentPassword").value = "";
           if ($("newPassword")) $("newPassword").value = "";
         }).catch(function (err) {
@@ -380,7 +381,7 @@ import {
         const rate = Number($("playSpeed") && $("playSpeed").value);
         const language = ($("prefLang") && $("prefLang").value) || "en";
         if (window.earwisePrefs) window.earwisePrefs.write({ playbackRate: rate, language: language });
-        if (msg) msg.textContent = "Saved. The website player will use these next time you play a guide.";
+        if (msg) msg.textContent = T("Saved. The website player will use these next time you play a guide.");
       });
     }
 
@@ -389,7 +390,7 @@ import {
       news.addEventListener("change", function () {
         if (window.earwisePrefs) window.earwisePrefs.write({ newsOptIn: news.checked });
         const msg = $("newsMsg");
-        if (msg) msg.textContent = news.checked ? "Saved. We'll only email you when this is ready." : "Saved. You won't be added to guide news.";
+        if (msg) msg.textContent = news.checked ? T("Saved. We'll only email you when this is ready.") : T("Saved. You won't be added to guide news.");
       });
     }
 
@@ -422,7 +423,7 @@ import {
         const msg = $("deleteMsg");
         if (!user) return;
         const password = ($("deletePassword") && $("deletePassword").value) || "";
-        if (msg) msg.textContent = "Deleting…";
+        if (msg) msg.textContent = T("Deleting…");
         const confirmBtn = $("deleteConfirmBtn");
         if (confirmBtn) confirmBtn.disabled = true;
         reauth(password).then(function () {

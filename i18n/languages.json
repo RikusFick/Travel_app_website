@@ -1,0 +1,15 @@
+{
+  "_note": "Site languages, in picker order. English is the source and stays at the current URLs; every other language is built into /<path>/ by tools/i18n/build.py. These are the Earwise app languages. Korean is left out because it has no audio.",
+  "languages": [
+    {"code": "en", "path": "", "html": "en", "name": "English", "flag": "gb", "og": "en_GB"},
+    {"code": "de", "path": "de", "html": "de", "name": "Deutsch", "flag": "de", "og": "de_DE"},
+    {"code": "fr", "path": "fr", "html": "fr", "name": "Français", "flag": "fr", "og": "fr_FR"},
+    {"code": "es", "path": "es", "html": "es", "name": "Español", "flag": "es", "og": "es_ES"},
+    {"code": "it", "path": "it", "html": "it", "name": "Italiano", "flag": "it", "og": "it_IT"},
+    {"code": "pt", "path": "pt", "html": "pt-PT", "name": "Português", "flag": "pt", "og": "pt_PT"},
+    {"code": "ru", "path": "ru", "html": "ru", "name": "Русский", "flag": "ru", "og": "ru_RU"},
+    {"code": "ja", "path": "ja", "html": "ja", "name": "日本語", "flag": "jp", "og": "ja_JP"},
+    {"code": "zh", "path": "zh", "html": "zh-Hans", "name": "中文（简体）", "flag": "cn", "og": "zh_CN"},
+    {"code": "hi", "path": "hi", "html": "hi", "name": "हिन्दी", "flag": "in", "og": "hi_IN"}
+  ]
+}

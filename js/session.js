@@ -2,6 +2,7 @@
    Paints the header and My guides before Firebase Auth is ready.
    Never stores tokens or other secrets. Cached ownership is UI-only. */
 (function () {
+  var T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
   var HINT_KEY = "earwise_auth_hint";
   var ME_PREFIX = "earwise_me_";
   var docWired = false;
@@ -69,7 +70,7 @@
 
   function guidesHello(user) {
     var name = firstNameOf(user);
-    return name ? "Ready when you are, " + name + "." : "Ready when you are.";
+    return name ? T("Ready when you are, {name}.", { name: name }) : T("Ready when you are.");
   }
 
   var PREFS_KEY = "earwise_prefs";
@@ -143,7 +144,7 @@
     var depth = path === "/" ? 0 : path.split("/").filter(Boolean).length;
     if (path.indexOf(".") >= 0 && !/\/$/.test(location.pathname)) depth -= 1;
     if (depth <= 0) return "account.html";
-    if (location.pathname.charAt(0) === "/") return "/account.html";
+    if (location.pathname.charAt(0) === "/") return window.earwisePath ? window.earwisePath("/account.html") : "/account.html";
     var prefix = "";
     for (var i = 0; i < depth; i++) prefix += "../";
     return prefix + "account.html";
@@ -173,7 +174,7 @@
 
   function paintPending(slot) {
     slot.innerHTML =
-      '<span class="auth-pending" aria-label="Checking account">' +
+      '<span class="auth-pending" aria-label="' + T("Checking account") + '">' +
       '<span class="auth-pending-icon" aria-hidden="true"></span></span>';
   }
 
@@ -190,8 +191,8 @@
   function paintSignedOut(slot) {
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
     slot.innerHTML =
-      '<a class="acct-btn" href="' + esc(accountUrl) + '" data-auth-link aria-label="Log in" title="Log in">' +
-      personSvg() + '<span class="acct-label">Log in</span></a>';
+      '<a class="acct-btn" href="' + esc(accountUrl) + '" data-auth-link aria-label="' + T("Log in") + '" title="' + T("Log in") + '">' +
+      personSvg() + '<span class="acct-label">' + T("Log in") + '</span></a>';
   }
 
   function wireAcctMenu(slot) {
@@ -231,19 +232,19 @@
   function paintSignedIn(slot, user) {
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
     var base = hrefBase(accountUrl);
-    var email = (user && user.email) || "Signed in";
+    var email = (user && user.email) || T("Signed in");
     var name = firstNameOf(user);
     var whoLabel = name || email;
     var initial = initialOf(user);
     slot.innerHTML =
       '<span class="acct">' +
-      '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(whoLabel) + '" title="' + esc(whoLabel) + '">' +
-      '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
+      '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="' + esc(T("Account, {name}", { name: whoLabel })) + '" title="' + esc(whoLabel) + '">' +
+      '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">' + T("Account") + '</span></button>' +
       '<span class="acct-menu" hidden>' +
-      '<span class="acct-who">Signed in as<br><strong>' + esc(whoLabel) + "</strong></span>" +
-      '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
-      '<a href="' + esc(base + "account.html") + '">Account</a>' +
-      '<button type="button" class="auth-out" data-auth-logout>Sign out</button>' +
+      '<span class="acct-who">' + T("Signed in as") + '<br><strong>' + esc(whoLabel) + "</strong></span>" +
+      '<a href="' + esc(base + "my-guides.html") + '">' + T("My guides") + '</a>' +
+      '<a href="' + esc(base + "account.html") + '">' + T("Account") + '</a>' +
+      '<button type="button" class="auth-out" data-auth-logout>' + T("Sign out") + '</button>' +
       "</span></span>";
     var button = slot.querySelector("[data-auth-logout]");
     if (button) {
@@ -305,9 +306,9 @@
     if (!ids.length) {
       list.innerHTML =
         '<div class="empty-guides">' +
-        "<p><strong>Nothing here yet.</strong></p>" +
-        "<p>Your next story is one tap away.</p>" +
-        '<a class="btn" href="guides/">Browse guides</a></div>';
+        "<p><strong>" + T("Nothing here yet.") + "</strong></p>" +
+        "<p>" + T("Your next story is one tap away.") + "</p>" +
+        '<a class="btn" href="guides/">' + T("Browse guides") + '</a></div>';
       return;
     }
     loadCatalog().then(function (catalog) {
@@ -315,14 +316,14 @@
         var rec = guides[id] || {};
         var meta = catalog[id] || {};
         var title = rec.title || meta.title || id;
-        var place = [countryName(meta.country), meta.place].filter(Boolean).join(" · ");
-        var href = "/" + encodeURIComponent(id) + "/";
+        var place = [T(countryName(meta.country)), meta.place].filter(Boolean).join(" · ");
+        var href = window.earwisePath ? window.earwisePath("/" + encodeURIComponent(id) + "/") : "/" + encodeURIComponent(id) + "/";
         return '<article class="own-card">' +
           '<a class="own-photo" href="' + href + '"><img src="/img/guides/' + encodeURIComponent(id) + '.jpg" alt="" onerror="this.remove()"></a>' +
           '<div class="own-copy"><h2>' + esc(title) + "</h2>" +
           (place ? '<p class="fine">' + esc(place) + "</p>" : "") +
-          '<div class="own-actions"><a class="btn" href="' + href + '">Open guide</a>' +
-          '<a class="btn btn-ghost" href="index.html#download">Listen in the app</a></div></div></article>';
+          '<div class="own-actions"><a class="btn" href="' + href + '">' + T("Open guide") + '</a>' +
+          '<a class="btn btn-ghost" href="index.html#download">' + T("Listen in the app") + '</a></div></div></article>';
       }).join("");
     });
   }
@@ -337,11 +338,11 @@
     var gate = document.getElementById("guides-gate");
     var strip = document.getElementById("next-strip");
     if (!hint) {
-      if (hello) hello.textContent = "Log in to see your guides.";
+      if (hello) hello.textContent = T("Log in to see your guides.");
       if (who) who.textContent = "";
       if (gate) {
         gate.hidden = false;
-        gate.innerHTML = '<a class="btn" href="account.html">Log in</a>';
+        gate.innerHTML = '<a class="btn" href="account.html">' + T("Log in") + '</a>';
       }
       if (list) {
         list.hidden = true;
@@ -364,7 +365,7 @@
     } else if (guides) {
       renderGuideList(list, {});
     } else {
-      list.innerHTML = "<p class=\"muted\">Loading your guides…</p>";
+      list.innerHTML = "<p class=\"muted\">" + T("Loading your guides…") + "</p>";
     }
   }
 

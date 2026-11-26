@@ -1,5 +1,6 @@
 /* Paint a printable Earwise receipt from Worker GET /me data already on the account. */
 (function () {
+  var T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
   var sheet = document.getElementById("receiptSheet");
   var statusEl = document.getElementById("receiptStatus");
   var printBtn = document.getElementById("printReceipt");
@@ -16,7 +17,7 @@
   }
 
   function loginHref() {
-    var next = "/receipt.html";
+    var next = window.earwisePath ? window.earwisePath("/receipt.html") : "/receipt.html";
     var id = guideId();
     if (id) next += "?guide=" + encodeURIComponent(id);
     return "account.html?next=" + encodeURIComponent(next);
@@ -75,8 +76,8 @@
     var reference = String((row && row.reference) || "").trim();
     var buyer = (user && user.email) || "";
 
-    document.getElementById("receiptGuide").textContent = title || "Audio guide";
-    document.getElementById("receiptAmount").textContent = amount || "Amount was not recorded for this purchase.";
+    document.getElementById("receiptGuide").textContent = title || T("Audio guide");
+    document.getElementById("receiptAmount").textContent = amount || T("Amount was not recorded for this purchase.");
     document.getElementById("receiptDate").textContent = date || "—";
     document.getElementById("receiptBuyer").textContent = buyer || "—";
     document.getElementById("receiptDateRow").hidden = !date;
@@ -93,7 +94,7 @@
       if (note) note.hidden = true;
     }
 
-    document.title = "Receipt" + (title ? " · " + title : "") + " | Earwise";
+    document.title = T("Receipt") + (title ? " · " + title : "") + " | Earwise";
     sheet.hidden = false;
     if (printBtn) printBtn.hidden = false;
     setStatus("");
@@ -103,8 +104,8 @@
     sheet.hidden = true;
     if (printBtn) printBtn.hidden = true;
     setStatus(
-      "<p>Log in to see this receipt.</p>" +
-      '<p><a class="btn" href="' + esc(loginHref()) + '">Log in</a></p>'
+      "<p>" + T("Log in to see this receipt.") + "</p>" +
+      '<p><a class="btn" href="' + esc(loginHref()) + '">' + T("Log in") + '</a></p>'
     );
   }
 
@@ -112,10 +113,10 @@
     sheet.hidden = true;
     if (printBtn) printBtn.hidden = true;
     if (!guideId()) {
-      setStatus('<p class="muted">Choose a purchase from <a href="account.html">your account</a> to see its receipt.</p>');
+      setStatus('<p class="muted">' + T('Choose a purchase from <a href="account.html">your account</a> to see its receipt.') + '</p>');
       return;
     }
-    setStatus('<p class="muted">We couldn\'t find that purchase on this account. <a href="account.html">Back to account</a></p>');
+    setStatus('<p class="muted">' + T("We couldn't find that purchase on this account.") + ' <a href="account.html">' + T("Back to account") + '</a></p>');
   }
 
   async function loadForUser(user) {
@@ -137,7 +138,7 @@
         guides = (data && data.guides) || (purchases.list && purchases.list()) || guides;
       }
     } catch (err) {
-      setStatus('<p class="muted">We could not load this receipt just now. <a href="account.html">Back to account</a></p>');
+      setStatus('<p class="muted">' + T("We could not load this receipt just now.") + ' <a href="account.html">' + T("Back to account") + '</a></p>');
       return;
     }
     var row = findPurchase(guides, guideId());

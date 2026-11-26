@@ -131,8 +131,9 @@
       var n = p.num != null ? p.num + ". " : "";
       return "<li>" + escapeHtml(n + p.title) + "</li>";
     }).join("");
-    var popup = '<div class="pin-popup"><p>Stops ' + escapeHtml(label) + "</p><ol>" + lines + "</ol></div>";
-    L.marker(center, { icon: icon }).addTo(map).bindPopup(popup).bindTooltip("Stops " + label, {
+    var stopsLabel = window.earwiseT ? window.earwiseT("Stops {range}", { range: label }) : "Stops " + label;
+    var popup = '<div class="pin-popup"><p>' + escapeHtml(stopsLabel) + "</p><ol>" + lines + "</ol></div>";
+    L.marker(center, { icon: icon }).addTo(map).bindPopup(popup).bindTooltip(stopsLabel, {
       permanent: groups.length > 1 && groups.length <= 5,
       direction: "top"
     });
@@ -144,9 +145,11 @@
   if (shared) {
     var note = document.querySelector(".map-note");
     if (note) {
+      var count = (note.textContent.match(/\d+/) || [""])[0];
+      var tr = window.earwiseT || function (s, v) { return s.replace("{n}", v.n); };
       note.innerHTML = note.innerHTML.replace(
-        /All (\d+) stop pins for this guide are marked\./,
-        "All $1 stops are marked; some stops share a pin."
+        tr("All {n} stop pins for this guide are marked.", { n: count }),
+        tr("All {n} stops are marked; some stops share a pin.", { n: count })
       );
     }
   }
