@@ -94,13 +94,24 @@
       return row.item;
     });
     active = matches.length ? 0 : -1;
-    if (!matches.length) { hide(); return; }
+    if (!matches.length) {
+      box.innerHTML = '<li class="suggest-empty" role="option" aria-selected="false" aria-disabled="true">No results. Try another name or place.</li>';
+      box.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+      input.removeAttribute("aria-activedescendant");
+      placeBox();
+      return;
+    }
     paint();
   }
 
   input.addEventListener("input", show);
   input.addEventListener("keydown", function (event) {
     if (box.hidden) return;
+    if (!matches.length) {
+      if (event.key === "Escape") hide();
+      return;
+    }
     if (event.key === "ArrowDown") {
       event.preventDefault();
       active = Math.min(matches.length - 1, active + 1);

@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg?v=20261125a" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20261125a">
-<link rel="stylesheet" href="css/style.css?v=20261126b">
+<link rel="stylesheet" href="css/style.css?v=20261126c">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://getearwise.com/privacy.html">
@@ -27,6 +27,7 @@
       <span>Menu</span>
     </button>
     <nav id="site-nav" aria-label="Main">
+      <a class="nav-cta mob-only" href="index.html#download">Get the app</a>
       <a href="guides/">Audio guides</a>
       <a class="desk-link" href="index.html#how">How it works</a>
       <a href="support.html">Support</a>
@@ -37,7 +38,7 @@
 
 <main id="main" class="doc"><div class="wrap narrow">
 <h1>Privacy policy</h1>
-<p class="muted">Last updated: 22 November 2026</p>
+<p class="muted">Last updated: 26 November 2026</p>
 <p>This policy explains how <strong>FINICK R EN J (Pty) Ltd</strong> (registered in South Africa with CIPC, registration number <strong>2025/324909/07</strong>, trading as Earwise; "we", "us") handles personal information when you use <strong>getearwise.com</strong> and the <strong>Earwise</strong> mobile app. We collect only what is needed to run the guides, accounts, and purchases.</p>
 
 <h2>1. Who is responsible</h2>
@@ -48,8 +49,8 @@
 <div class="table-scroll">
 <table class="policy-table"><thead><tr><th>Data</th><th>How it is used</th><th>Legal basis (GDPR)</th></tr></thead><tbody>
 <tr><td><strong>Location (GPS, app only)</strong></td><td>Used <strong>only on your device</strong> while the app is open to show you on the map and trigger each stop automatically as you arrive. Your coordinates are not sent to our servers or stored remotely. If you deny location permission, you can still play stops by hand. (Tapping walking directions in the app opens Google Maps outside Earwise.)</td><td data-label="Legal basis">Consent via device permission</td></tr>
-<tr><td><strong>Earwise account (coming)</strong></td><td>An account is optional in the app. When sign-in goes live (via <strong>Firebase Authentication</strong> with email), your email address and user ID tie guides you buy on getearwise.com to your account so you can listen in the browser and unlock offline downloads in the app. (Until Firebase sign-in is switched on, the sign-in preview on <code>account.html</code> stays in your browser's local storage only.)</td><td data-label="Legal basis">Performance of a contract</td></tr>
-<tr><td><strong>Purchases</strong></td><td><strong>In the app:</strong> handled by the Apple App Store or Google Play; we receive only purchase/entitlement status to unlock your guide or pass. <strong>On the website (planned):</strong> handled by <strong>Paystack</strong>, which processes your card details directly. We never see or store your card number; we receive payment confirmation and order records so we can tie the purchase to your Earwise account.</td><td data-label="Legal basis">Performance of a contract and legal accounting duties</td></tr>
+<tr><td><strong>Earwise account</strong></td><td>An account is optional. When you sign up on getearwise.com (with email and password, or Google), <strong>Firebase Authentication</strong> stores your email address, sign-in method and user ID. We use them to keep you signed in and to tie the guides you buy to your account, so you can listen in the browser and, once the app is out, in the app too.</td><td data-label="Legal basis">Performance of a contract</td></tr>
+<tr><td><strong>Purchases</strong></td><td><strong>On the website:</strong> payments are processed by <strong>Paystack</strong>, which handles your card details directly. We never see or store your card number. Our payment service, a <strong>Cloudflare Worker</strong> with <strong>Cloudflare KV</strong> storage, keeps a purchase record against your Firebase user ID: the guide, the amount and currency, the Paystack payment reference and the date. We use it to unlock your guides and to show your purchases and receipts on your account page. <strong>In the app (coming soon):</strong> purchases will be handled by the Apple App Store or Google Play, and we will receive only the purchase status needed to unlock your guide.</td><td data-label="Legal basis">Performance of a contract and legal accounting duties</td></tr>
 <tr><td><strong>Audio, images, and maps</strong></td><td>Audio files on the website and in the app stream from <strong>Cloudflare R2</strong>. The app may also fetch guide updates from <strong>GitHub / jsDelivr</strong>. Interactive maps on the website load map tiles from <strong>OpenStreetMap</strong> and map scripts from <strong>jsDelivr</strong>, and pages load the <em>Plus Jakarta Sans</em> font from <strong>Google Fonts</strong>. Those providers receive standard request metadata (such as your IP address and browser) needed to deliver the files.</td><td data-label="Legal basis">Legitimate interest in delivering the service</td></tr>
 <tr><td><strong>Device settings &amp; saved notes</strong></td><td>In the app, your chosen language, appearance, playback speed, played stops, downloaded guides, and any fact or pin notes you write are stored locally on your device.</td><td data-label="Legal basis">Stored on your device only</td></tr>
 <tr><td><strong>Support messages</strong></td><td>If you email <a href="mailto:hello@getearwise.com">hello@getearwise.com</a> or send a message through the contact form on our <a href="support.html">support</a> page, we use your name, email address, and message only to reply and fix any problem you report. Form submissions are delivered to us by <strong>Web3Forms</strong>.</td><td data-label="Legal basis">Consent and legitimate interest</td></tr>
@@ -65,7 +66,7 @@
 </ul>
 
 <h2>4. Hosting and service providers</h2>
-<p>We rely on a small set of infrastructure providers to run Earwise: <strong>GitHub Pages</strong> (website hosting, which may keep standard server logs such as IP addresses for security), <strong>Cloudflare R2</strong> (audio and media delivery), <strong>OpenStreetMap</strong> and <strong>jsDelivr</strong> (website map tiles and Leaflet library), <strong>Google Fonts</strong> (typography), <strong>Web3Forms</strong> (website contact form delivery), <strong>Firebase</strong> (Google, for upcoming email sign-in and account entitlement sync), <strong>Paystack</strong> (planned website payments), and <strong>Apple</strong> and <strong>Google</strong> (app distribution and in-app purchases). Some providers process data outside South Africa or the EEA; where they do, we rely on safeguards such as standard contractual clauses and POPIA section 72.</p>
+<p>We rely on a small set of infrastructure providers to run Earwise: <strong>GitHub Pages</strong> (website hosting, which may keep standard server logs such as IP addresses for security), <strong>Cloudflare R2</strong> (audio and media delivery), <strong>OpenStreetMap</strong> and <strong>jsDelivr</strong> (website map tiles and Leaflet library), <strong>Google Fonts</strong> (typography), <strong>Web3Forms</strong> (website contact form delivery), <strong>Firebase Authentication</strong> (Google, for account sign-in), <strong>Cloudflare Workers and KV</strong> (purchase records), <strong>Paystack</strong> (website payments), and <strong>Apple</strong> and <strong>Google</strong> (app distribution and in-app purchases, coming soon). Some providers process data outside South Africa or the EEA; where they do, we rely on safeguards such as standard contractual clauses and POPIA section 72.</p>
 
 <h2>5. How long we keep data</h2>
 <p>We keep support emails and contact-form messages for up to 24 months after the issue is closed and then delete them. Account records remain active while you have an account, until you ask us to delete them. Purchase and invoice records are kept for as long as South African tax and accounting laws require.</p>
@@ -88,7 +89,7 @@
 <p>Connections to getearwise.com, Cloudflare R2, Firebase, and Paystack use HTTPS encryption. Payment card processing is delegated to Apple, Google, or Paystack so card details are never stored on our servers.</p>
 
 <h2>9. Changes</h2>
-<p>When we update this policy—for instance when Firebase sign-in, Paystack checkout, or the mobile apps launch—we will update the date at the top of this page.</p>
+<p>When we update this policy, for instance when the mobile apps launch, we will change the date at the top of this page.</p>
 </div></main>
 <footer class="site-footer">
   <div class="wrap foot">
@@ -103,11 +104,11 @@
     <p class="foot-legal">© 2026 Finick R en J (Pty) Ltd · Reg. 2025/324909/07</p>
   </div>
 </footer>
-<script src="js/firebase-config.js?v=20261126b"></script>
-<script src="js/paystack-config.js?v=20261126b"></script>
-<script src="js/currency.js?v=20261126b"></script>
-<script src="js/session.js?v=20261126b"></script>
-<script src="js/purchases.js?v=20261126b"></script>
-<script type="module" src="js/auth.js?v=20261126b"></script>
-<script src="js/nav.js?v=20261126b" defer></script>
+<script src="js/firebase-config.js?v=20261126c"></script>
+<script src="js/paystack-config.js?v=20261126c"></script>
+<script src="js/currency.js?v=20261126c"></script>
+<script src="js/session.js?v=20261126c"></script>
+<script src="js/purchases.js?v=20261126c"></script>
+<script type="module" src="js/auth.js?v=20261126c"></script>
+<script src="js/nav.js?v=20261126c" defer></script>
 </body></html>
