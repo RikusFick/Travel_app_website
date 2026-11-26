@@ -449,6 +449,43 @@
     });
   }
 
+  function escText(text) {
+    return String(text || "").replace(/[&<>"']/g, function (ch) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch];
+    });
+  }
+
+  function receiptCard(opts) {
+    const title = opts.title || "";
+    const guideId = opts.guideId || "";
+    const fallback = "img/hero-desktop.jpg";
+    const src = guideId ? ("img/guides/" + encodeURIComponent(guideId) + ".jpg") : fallback;
+    const niceTitle = title && title !== "this guide";
+    const alt = niceTitle ? escText(title) : "Mont-Saint-Michel at sunrise";
+    const eyebrow = niceTitle ? '<p class="eyebrow">' + escText(title) + "</p>" : "";
+    return (
+      '<article class="pay-card">' +
+        '<div class="pay-photo"><img src="' + src + '" alt="' + alt + '" width="960" height="640"></div>' +
+        '<div class="pay-copy">' +
+          eyebrow +
+          "<h1>" + opts.heading + "</h1>" +
+          "<p>" + opts.body + "</p>" +
+          (opts.actions ? '<p class="actions-row">' + opts.actions + "</p>" : "") +
+          (opts.extra || "") +
+        "</div>" +
+      "</article>"
+    );
+  }
+
+  function bindReceiptPhoto(root) {
+    const img = root.querySelector(".pay-photo img");
+    if (!img) return;
+    img.addEventListener("error", function () {
+      img.src = "img/hero-desktop.jpg";
+      img.alt = "Mont-Saint-Michel at sunrise";
+    }, { once: true });
+  }
+
   async function handleReceiptPage() {
     const root = document.getElementById("purchase-result");
     if (!root) return;
@@ -460,13 +497,43 @@
     const row = priceById && priceById[guideId];
     const title = (row && row.title) || guideId || "this guide";
     const play = guideId ? ("/" + encodeURIComponent(guideId) + "/") : "guides/";
-    function show(html) { root.innerHTML = html; }
+    const buy = guideId ? (play + "#buy-btn") : "guides/";
+    function show(html) {
+      root.innerHTML = html;
+      bindReceiptPhoto(root);
+    }
+    function failedCard() {
+      const preview = guideId
+        ? '<p class="fine"><a href="' + play + '">Listen to the free preview meanwhile</a></p>'
+        : "";
+      return receiptCard({
+        guideId: guideId,
+        title: title,
+        heading: "No worries, nothing was charged",
+        body: "You weren't charged. You can try again whenever you're ready.",
+        actions:
+          '<a class="btn" href="' + buy + '">Try again</a>' +
+          '<a class="btn btn-ghost" href="' + play + '">Back to the guide</a>',
+        extra: preview + '<p class="fine">Need a hand? <a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>'
+      });
+    }
+    function successCard(body) {
+      return receiptCard({
+        guideId: guideId,
+        title: title,
+        heading: "You're all set",
+        body: body,
+        actions:
+          '<a class="btn" href="' + play + '">Play it</a>' +
+          '<a class="btn btn-ghost" href="' + siteHref("my-guides.html") + '">My guides</a>'
+      });
+    }
     if (failed) {
-      show('<h1>Payment not completed</h1><p>You were not charged. You can try again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p><p class="fine">Still stuck? <a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>');
+      show(failedCard());
       return;
     }
     if (!reference) {
-      show('<h1>Payment received</h1><p>Open the guide to confirm it is unlocked.</p><p><a class="btn" href="' + play + '">Play ' + title.replace(/[&<>]/g, "") + '</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+      show(successCard("Open the guide to start listening."));
       return;
     }
     const auth = window.earwiseAuth;
@@ -475,7 +542,13 @@
     const token = user && auth.idToken ? await auth.idToken() : null;
     if (!token) {
       const next = location.pathname + location.search;
-      show('<h1>Log in to confirm payment</h1><p><a class="btn" href="' + siteHref("account.html") + "?next=" + encodeURIComponent(next) + '">Log in</a></p>');
+      show(receiptCard({
+        guideId: guideId,
+        title: title,
+        heading: "Log in to finish",
+        body: "Log in so we can unlock this guide on this device.",
+        actions: '<a class="btn" href="' + siteHref("account.html") + "?next=" + encodeURIComponent(next) + '">Log in</a>'
+      }));
       return;
     }
     try {
@@ -486,13 +559,13 @@
       });
       const json = await res.json().catch(function () { return {}; });
       if (!res.ok || !json.ok) {
-        show('<h1>Payment not completed</h1><p>' + ((json && json.message) || "We could not confirm this payment.") + ' You were not charged.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+        show(failedCard());
         return;
       }
       if (window.earwisePurchases) window.earwisePurchases.remember(guideId, json.purchase || { guideId: guideId, title: title, reference: reference });
-      show('<h1>Payment received</h1><p>' + title.replace(/[&<>]/g, "") + ' is ready to play.</p><p><a class="btn" href="' + play + '">Play it</a> <a class="btn btn-ghost" href="my-guides.html">My guides</a></p>');
+      show(successCard(escText(title) + " is ready to play."));
     } catch (err) {
-      show('<h1>Payment not completed</h1><p>We could not reach the payment check. You were not charged. Try the guide again.</p><p><a class="btn" href="' + play + '">Back to the guide</a></p>');
+      show(failedCard());
     }
   }
 

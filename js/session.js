@@ -38,7 +38,8 @@
     return {
       signedIn: true,
       uid: String(hint.uid),
-      email: String(hint.email || "")
+      email: String(hint.email || ""),
+      displayName: String(hint.displayName || "")
     };
   }
 
@@ -47,8 +48,65 @@
     writeJson(HINT_KEY, {
       signedIn: true,
       uid: String(user.uid),
-      email: String(user.email || "")
+      email: String(user.email || ""),
+      displayName: String(user.displayName || "")
     });
+  }
+
+  function firstNameOf(user) {
+    var raw = String((user && user.displayName) || "").trim();
+    if (!raw || raw.indexOf("@") !== -1) return "";
+    var word = raw.split(/\s+/)[0].replace(/[,.;:!?]+$/g, "");
+    return word || "";
+  }
+
+  function lastNameOf(user) {
+    var raw = String((user && user.displayName) || "").trim();
+    if (!raw) return "";
+    var parts = raw.split(/\s+/);
+    return parts.length > 1 ? parts.slice(1).join(" ") : "";
+  }
+
+  function guidesHello(user) {
+    var name = firstNameOf(user);
+    return name ? "Ready when you are, " + name + "." : "Ready when you are.";
+  }
+
+  var PREFS_KEY = "earwise_prefs";
+  var SPEED_OPTS = [0.75, 1, 1.25, 1.5];
+
+  function defaultPrefs() {
+    return { playbackRate: 1, language: "en", newsOptIn: false };
+  }
+
+  function readPrefs() {
+    var stored = readJson(PREFS_KEY) || {};
+    var rate = Number(stored.playbackRate);
+    if (SPEED_OPTS.indexOf(rate) === -1) rate = 1;
+    var language = String(stored.language || "en").trim().toLowerCase();
+    if (!/^[a-z]{2,3}$/.test(language)) language = "en";
+    return {
+      playbackRate: rate,
+      language: language,
+      newsOptIn: stored.newsOptIn === true
+    };
+  }
+
+  function writePrefs(partial) {
+    var next = readPrefs();
+    if (partial && typeof partial === "object") {
+      if (partial.playbackRate != null) {
+        var rate = Number(partial.playbackRate);
+        if (SPEED_OPTS.indexOf(rate) !== -1) next.playbackRate = rate;
+      }
+      if (partial.language != null) {
+        var language = String(partial.language || "").trim().toLowerCase();
+        if (/^[a-z]{2,3}$/.test(language)) next.language = language;
+      }
+      if (partial.newsOptIn != null) next.newsOptIn = partial.newsOptIn === true;
+    }
+    writeJson(PREFS_KEY, next);
+    return next;
   }
 
   function clearHint() {
@@ -123,8 +181,9 @@
     return '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>';
   }
 
-  function initialOf(email) {
-    var ch = String(email || "").trim().charAt(0).toUpperCase();
+  function initialOf(user) {
+    var name = firstNameOf(user);
+    var ch = String(name || (user && user.email) || "").trim().charAt(0).toUpperCase();
     return /[A-Z0-9]/.test(ch) ? ch : "•";
   }
 
@@ -173,13 +232,15 @@
     var accountUrl = slot.getAttribute("data-account-href") || accountHref();
     var base = hrefBase(accountUrl);
     var email = (user && user.email) || "Signed in";
-    var initial = initialOf(email);
+    var name = firstNameOf(user);
+    var whoLabel = name || email;
+    var initial = initialOf(user);
     slot.innerHTML =
       '<span class="acct">' +
-      '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(email) + '" title="' + esc(email) + '">' +
+      '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(whoLabel) + '" title="' + esc(whoLabel) + '">' +
       '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
       '<span class="acct-menu" hidden>' +
-      '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
+      '<span class="acct-who">Signed in as<br><strong>' + esc(whoLabel) + "</strong></span>" +
       '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
       '<a href="' + esc(base + "account.html") + '">Account</a>' +
       '<button type="button" class="auth-out" data-auth-logout>Sign out</button>' +
@@ -290,9 +351,9 @@
       if (out) out.hidden = true;
       return;
     }
-    if (hello) hello.textContent = "Ready when you are.";
+    if (hello) hello.textContent = guidesHello(hint);
     if (gate) gate.hidden = true;
-    if (who) who.textContent = hint.email || "";
+    if (who) who.textContent = "";
     if (out) out.hidden = false;
     if (!list) return;
     var stored = readMe(hint.uid);
@@ -315,6 +376,30 @@
       paintHeader(null, { pending: true });
     }
     paintMyGuides();
+    paintAccountShell();
+  }
+
+  function paintAccountShell() {
+    var panel = document.getElementById("accountPanel");
+    var gate = document.getElementById("authGate");
+    if (!panel || !gate) return;
+    if (new URLSearchParams(location.search).get("next")) return;
+    var hint = readHint();
+    if (!hint) {
+      panel.hidden = true;
+      gate.hidden = false;
+      return;
+    }
+    gate.hidden = true;
+    panel.hidden = false;
+    var emailEl = document.getElementById("accountEmail");
+    if (emailEl) emailEl.textContent = hint.email || "";
+    var first = document.getElementById("profileFirst");
+    var last = document.getElementById("profileLast");
+    if (first && document.activeElement !== first && document.activeElement !== last) {
+      first.value = firstNameOf(hint);
+      if (last) last.value = lastNameOf(hint);
+    }
   }
 
   if (document.readyState === "loading") {
@@ -332,7 +417,17 @@
     accountHref: accountHref,
     paintHeader: paintHeader,
     paintMyGuides: paintMyGuides,
+    paintAccountShell: paintAccountShell,
+    firstNameOf: firstNameOf,
+    lastNameOf: lastNameOf,
+    guidesHello: guidesHello,
     renderGuideList: renderGuideList,
     apply: apply
+  };
+
+  window.earwisePrefs = {
+    read: readPrefs,
+    write: writePrefs,
+    speeds: SPEED_OPTS.slice()
   };
 })();

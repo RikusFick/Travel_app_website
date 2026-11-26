@@ -17,6 +17,21 @@
   var LANG_NAMES = {en:'English',es:'Spanish',fr:'French',de:'German',it:'Italian',pt:'Portuguese',ru:'Russian',ja:'Japanese',hi:'Hindi',zh:'Chinese'};
   var LANG_ORDER = ['en','es','fr','de','it','pt','ru','ja','hi','zh'];
 
+  function preferredLang() {
+    var prefs = window.earwisePrefs && window.earwisePrefs.read && window.earwisePrefs.read();
+    return (prefs && prefs.language) || '';
+  }
+
+  function preferredRate() {
+    var prefs = window.earwisePrefs && window.earwisePrefs.read && window.earwisePrefs.read();
+    var rate = prefs && Number(prefs.playbackRate);
+    return (rate === 0.75 || rate === 1 || rate === 1.25 || rate === 1.5) ? rate : 1;
+  }
+
+  function applyRate(audio) {
+    if (audio) audio.playbackRate = preferredRate();
+  }
+
   function langsWithAudio() {
     var codes = LANG_ORDER.filter(function (code) {
       return Array.isArray(data.languages[code]) && data.languages[code].length > 0;
@@ -95,6 +110,7 @@
       audio.removeAttribute('controls');
       if (ok) {
         audio.preload = 'metadata';
+        applyRate(audio);
         if (audio.src !== clipUrl(lang, stop)) audio.src = clipUrl(lang, stop);
         else if (audio.readyState >= 1) {
           var durationEl = wrap.querySelector('.t-duration');
@@ -121,10 +137,12 @@
     audio.removeAttribute('controls');
     audio.preload = 'none';
     audio.autoplay = false;
+    applyRate(audio);
 
     btn.addEventListener('click', function () {
       if (audio.paused) {
         pauseOthers(wrap);
+        applyRate(audio);
         var playPromise = audio.play();
         if (playPromise && playPromise.catch) playPromise.catch(function () {});
       } else {
@@ -147,7 +165,7 @@
     });
   });
 
-  var initial = syncSelect(select.value);
+  var initial = syncSelect(preferredLang() || select.value);
   select.addEventListener('change', function () {
     applyLang(select.value);
     window.dispatchEvent(new CustomEvent('earwise-audio-lang', { detail: { lang: select.value } }));
@@ -208,9 +226,11 @@
       audio.removeAttribute('controls');
       audio.preload = 'metadata';
       audio.autoplay = false;
+      applyRate(audio);
       btn.addEventListener('click', function () {
         if (audio.paused) {
           pauseOthers(wrap);
+          applyRate(audio);
           var playPromise = audio.play();
           if (playPromise && playPromise.catch) playPromise.catch(function () {});
         } else {

@@ -10,7 +10,8 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-  sendPasswordResetEmail
+  sendPasswordResetEmail,
+  updateProfile
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
 const cfg = window.EARWISE_FIREBASE || {};
@@ -18,6 +19,7 @@ let auth = null;
 let currentUser = null;
 let authReady = false;
 let signingIn = false;
+let justAuthenticated = false;
 let redirected = false;
 const listeners = [];
 let resolveReady = function () {};
@@ -67,12 +69,32 @@ function nextDestination() {
   return "my-guides.html";
 }
 
+function firstNameOf(user) {
+  if (window.earwiseSession && window.earwiseSession.firstNameOf) {
+    return window.earwiseSession.firstNameOf(user);
+  }
+  const raw = String((user && user.displayName) || "").trim();
+  if (!raw || raw.indexOf("@") !== -1) return "";
+  return raw.split(/\s+/)[0] || "";
+}
+
+function guidesHello(user) {
+  if (window.earwiseSession && window.earwiseSession.guidesHello) {
+    return window.earwiseSession.guidesHello(user);
+  }
+  const name = firstNameOf(user);
+  return name ? "Ready when you are, " + name + "." : "Ready when you are.";
+}
+
 function afterSignIn() {
   if (redirected) return;
   if (!document.getElementById("authForm")) return;
   if (!currentUser) return;
-  redirected = true;
-  location.replace(nextDestination());
+  const hasNext = !!(new URLSearchParams(location.search).get("next"));
+  if (justAuthenticated || hasNext) {
+    redirected = true;
+    location.replace(nextDestination());
+  }
 }
 
 function paintHeader(user, opts) {
@@ -99,13 +121,15 @@ function paintHeader(user, opts) {
     return;
   }
   const email = user.email || "Signed in";
-  const initial = (String(email).trim().charAt(0) || "•").toUpperCase();
+  const name = firstNameOf(user);
+  const whoLabel = name || email;
+  const initial = (String(name || email).trim().charAt(0) || "•").toUpperCase();
   slot.innerHTML =
     '<span class="acct">' +
-    '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account" title="' + esc(email) + '">' +
+    '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(whoLabel) + '" title="' + esc(whoLabel) + '">' +
     '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
     '<span class="acct-menu" hidden>' +
-    '<span class="acct-who">Signed in as<br><strong>' + esc(email) + "</strong></span>" +
+    '<span class="acct-who">Signed in as<br><strong>' + esc(whoLabel) + "</strong></span>" +
     '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
     '<a href="' + esc(base + "account.html") + '">Account</a>' +
     '<button type="button" class="auth-out" data-auth-logout>Sign out</button>' +
@@ -200,6 +224,8 @@ function wireAccount() {
     $("pwHint").hidden = !signup;
     $("forgot").hidden = signup;
     $("password").autocomplete = signup ? "new-password" : "current-password";
+    const nameRow = $("firstNameRow");
+    if (nameRow) nameRow.hidden = !signup;
     if (msg) msg.textContent = "";
     if (signup && location.hash !== "#signup") history.replaceState(null, "", "#signup");
     if (!signup && location.hash === "#signup") history.replaceState(null, "", "account.html");
@@ -238,9 +264,11 @@ function wireAccount() {
     googleBtn.dataset.wired = "1";
     googleBtn.addEventListener("click", function () {
       if (signingIn || !auth) return;
+      justAuthenticated = true;
       setSigningIn(true);
       if (msg) msg.textContent = "Opening Google…";
       signInWithPopup(auth, googleProvider()).catch(function (err) {
+        justAuthenticated = false;
         setSigningIn(false);
         if (msg) msg.textContent = friendly(err);
       });
@@ -264,12 +292,25 @@ function wireAccount() {
       msg.textContent = "Enter your password.";
       return;
     }
+    justAuthenticated = true;
     setSigningIn(true);
     msg.textContent = mode === "signup" ? "Creating your account…" : "Signing in…";
+    const firstName = mode === "signup" ? (($("firstName") && $("firstName").value) || "").trim() : "";
     const task = mode === "signup"
-      ? createUserWithEmailAndPassword(auth, email, password)
+      ? createUserWithEmailAndPassword(auth, email, password).then(function (cred) {
+          if (firstName && cred && cred.user) {
+            return updateProfile(cred.user, { displayName: firstName }).then(function () {
+              if (window.earwiseSession) window.earwiseSession.writeHint(cred.user);
+              paintHeader(cred.user, { pending: false });
+              showGuides(cred.user);
+              return cred;
+            });
+          }
+          return cred;
+        })
       : signInWithEmailAndPassword(auth, email, password);
     task.catch(function (err) {
+      justAuthenticated = false;
       setSigningIn(false);
       msg.textContent = friendly(err);
     });
@@ -313,8 +354,8 @@ function showGuides(user) {
       const hint = window.earwiseSession && window.earwiseSession.readHint && window.earwiseSession.readHint();
       if (hint) {
         var helloHint = document.getElementById("guides-hello");
-        if (helloHint) helloHint.textContent = "Ready when you are.";
-        who.textContent = hint.email || "";
+        if (helloHint) helloHint.textContent = guidesHello(hint);
+        who.textContent = "";
         if (out) out.hidden = false;
         if (list) list.hidden = false;
         var stripHint = document.getElementById("next-strip");
@@ -342,9 +383,9 @@ function showGuides(user) {
   }
   var helloIn = document.getElementById("guides-hello");
   var gateIn = document.getElementById("guides-gate");
-  if (helloIn) helloIn.textContent = "Ready when you are.";
+  if (helloIn) helloIn.textContent = guidesHello(user);
   if (gateIn) gateIn.hidden = true;
-  who.textContent = user.email || "";
+  who.textContent = "";
   if (out) out.hidden = false;
   if (list) list.hidden = false;
   var stripIn = document.getElementById("next-strip");
@@ -360,6 +401,9 @@ function notify(user) {
   markReady();
   paintHeader(currentUser, { pending: false });
   showGuides(currentUser);
+  if (window.earwiseSession && window.earwiseSession.paintAccountShell) {
+    window.earwiseSession.paintAccountShell();
+  }
   listeners.forEach(function (fn) { fn(currentUser); });
   if (currentUser) afterSignIn();
 }
