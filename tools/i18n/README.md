@@ -27,6 +27,8 @@ Each guide's stop text and read-along come from the translated script for that l
 
 The privacy, terms and credits pages keep their English body. They get a short translated note saying so. `404.html` stays English.
 
+Pages under `tips/` also keep their English article body in every language, with a short note that the page is in English. The header, footer and language picker are still translated, and the pages are listed in every language in `sitemap.xml`.
+
 ## Picker
 
 The flag in the header opens a short list of languages. The choice is saved in `localStorage` (`earwise_lang`) and as the guide player's preferred audio language. On a later visit, English pages send a visitor to their saved language. Add `?lang=en` to a URL to skip that redirect. On a translated guide page, the audio starts in that language when it has audio.

@@ -1879,3 +1879,9 @@ body.pay-page {
   .lang-pick { margin-left: auto; }
   .lang-pick + .nav-toggle { margin-left: 0; }
 }
+
+/* Travel tips articles */
+.doc .lead-photo { margin: 18px 0 8px; border-radius: var(--r-card, 16px); overflow: hidden; }
+.doc .lead-photo img { width: 100%; height: auto; display: block; vertical-align: middle; }
+.doc .tips-guides { margin: 20px 0 8px; }
+.doc cite { font-style: italic; }

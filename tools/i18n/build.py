@@ -39,6 +39,9 @@ SKIP_DIRS = {".git", "worker", "tools", "i18n", "node_modules", ".github"}
 SKIP_FILES = {"404.html"}
 # Legal and credits pages keep their English body; only the page frame is translated.
 ENGLISH_BODY = {"privacy.html", "terms.html", "credits.html"}
+
+def is_english_body(rel: str) -> bool:
+    return rel in ENGLISH_BODY or rel.startswith("tips/")
 TEXT_ATTRS = ("alt", "aria-label", "placeholder", "title", "data-title")
 BLOCKS = ("p", "li", "summary", "label", "h1", "h2", "h3", "h4", "span", "small", "a", "button", "td", "th", "dd", "dt", "strong", "figcaption", "div", "option")
 PICKER_RE = re.compile(r"<!--i18n:picker-->.*?<!--/i18n:picker-->\s*", re.S)
@@ -443,7 +446,7 @@ def build_page(rel: str, code: str, en_text: str, strings: Strings, gdata: dict,
     html_el["lang"] = lang["html"]
     html_el["data-lang-root"] = "/" + lang["path"]
     html_el["data-lang"] = code
-    body_en = rel in ENGLISH_BODY
+    body_en = is_english_body(rel)
     main = soup.find("main")
 
     def skip(el):
@@ -456,7 +459,12 @@ def build_page(rel: str, code: str, en_text: str, strings: Strings, gdata: dict,
         main["lang"] = "en"
         wrap = main.find("div", class_="wrap") or main
         note = soup.new_tag("p", attrs={"class": "lang-note", "lang": lang["html"]})
-        note.string = t("This page is in English. The English version applies." if rel != "credits.html" else "Photo credits are listed in English.")
+        if rel == "credits.html":
+            note.string = t("Photo credits are listed in English.")
+        elif rel.startswith("tips/"):
+            note.string = t("This page is in English.")
+        else:
+            note.string = t("This page is in English. The English version applies.")
         h1 = wrap.find("h1")
         if h1:
             h1.insert_after(note)
