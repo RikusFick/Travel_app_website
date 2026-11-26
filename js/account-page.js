@@ -172,10 +172,9 @@ import {
   }
 
   function receiptHref(row) {
-    if (!row) return "";
-    const url = String(row.receiptUrl || row.receipt_url || row.receipt || "").trim();
-    if (/^https:\/\//i.test(url)) return url;
-    return "";
+    const id = (row && (row.id || row.guideId)) || "";
+    if (!id) return "";
+    return "receipt.html?guide=" + encodeURIComponent(id);
   }
 
   function renderPurchases(guides) {
@@ -201,7 +200,7 @@ import {
     root.innerHTML = '<ul class="purchase-list">' + rows.map(function (row) {
       const meta = [formatDate(row.purchasedAt), formatAmount(row)].filter(Boolean).join(" · ");
       const receipt = row.receipt
-        ? ' <a class="purchase-receipt" href="' + esc(row.receipt) + '" target="_blank" rel="noopener">Receipt</a>'
+        ? ' <a class="purchase-receipt" href="' + esc(row.receipt) + '">Receipt</a>'
         : "";
       return '<li><a class="purchase-item" href="/' + esc(row.id) + '/">' +
         '<img src="img/guides/' + esc(row.id) + '.jpg" alt="" width="96" height="64" onerror="this.remove()">' +

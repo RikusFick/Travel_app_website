@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://identitytoolkit.googleapis.com">
+<link rel="preconnect" href="https://earwise-app.firebaseapp.com">
+<link rel="preconnect" href="https://earwise-purchase.earwise.workers.dev">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg?v=20261125a" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=20261125a">
+<link rel="stylesheet" href="css/style.css?v=20261126b">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex, nofollow">
+<title>Receipt | Earwise</title><meta name="description" content="Your Earwise purchase receipt."></head><body class="receipt-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header no-print">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html"><img class="brand-logo" src="logo.svg?v=20261125a" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main">
+      <a href="guides/">Audio guides</a>
+      <a class="desk-link" href="index.html#how">How it works</a>
+      <a href="support.html">Support</a>
+      <span class="auth-slot" data-account-href="account.html"><span class="auth-pending" aria-label="Checking account"><span class="auth-pending-icon" aria-hidden="true"></span></span><noscript><a href="account.html">Log in</a></noscript></span>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc"><div class="wrap receipt-wrap">
+  <div id="receiptStatus"><p class="muted">Loading your receipt…</p></div>
+  <article class="receipt-sheet" id="receiptSheet" hidden>
+    <header class="receipt-brand">
+      <p class="brand"><img class="brand-logo" src="logo.svg?v=20261125a" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></p>
+      <p class="receipt-kicker">Receipt</p>
+    </header>
+    <div class="receipt-seller">
+      <strong>Finick R en J (Pty) Ltd</strong>
+      <p>Reg. 2025/324909/07</p>
+      <p>Kalkoven LS299, Mara, Vivo, Limpopo, South Africa</p>
+      <p><a href="mailto:hello@getearwise.com">hello@getearwise.com</a></p>
+    </div>
+    <dl class="receipt-meta">
+      <div id="receiptDateRow"><dt>Date</dt><dd id="receiptDate">—</dd></div>
+      <div><dt>Billed to</dt><dd id="receiptBuyer">—</dd></div>
+    </dl>
+    <table class="receipt-lines">
+      <thead><tr><th>Item</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong id="receiptGuide"></strong></td>
+          <td id="receiptAmount"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="receipt-ref" id="receiptRefRow" hidden>Paystack reference: <span id="receiptRef"></span></p>
+    <p class="fine" id="receiptPaystackNote" hidden>Paystack also emails a receipt.</p>
+  </article>
+  <p class="receipt-actions no-print">
+    <button type="button" class="btn" id="printReceipt" hidden>Print / Save as PDF</button>
+    <a class="btn btn-ghost" href="account.html">Back to account</a>
+  </p>
+</div></main>
+<footer class="site-footer no-print">
+  <div class="wrap foot">
+    <div class="foot-brand"><p class="brand"><img class="brand-logo" src="logo.svg?v=20261125a" alt="" width="34" height="28" aria-hidden="true"><span>Earwise</span></p><p class="fine">Audio guides that play as you arrive.</p></div>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+      <a href="credits.html">Photo credits</a>
+      <a href="mailto:hello@getearwise.com">hello@getearwise.com</a>
+    </nav>
+    <p class="foot-legal">© 2026 Finick R en J (Pty) Ltd · Reg. 2025/324909/07</p>
+  </div>
+</footer>
+<script src="js/firebase-config.js?v=20261126b"></script>
+<script src="js/paystack-config.js?v=20261126b"></script>
+<script src="js/currency.js?v=20261126b"></script>
+<script src="js/session.js?v=20261126b"></script>
+<script src="js/purchases.js?v=20261126b"></script>
+<script type="module" src="js/auth.js?v=20261126b"></script>
+<script src="js/receipt.js?v=20261126b" defer></script>
+<script src="js/nav.js?v=20261126b" defer></script>
+</body></html>
