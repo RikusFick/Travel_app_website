@@ -1,5 +1,6 @@
 /* Earwise on-page guide audio: play/pause per stop, no autoplay, preload=none. */
 (function () {
+  var T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
   var dataEl = document.getElementById('earwise-audio');
   if (!dataEl) return;
 
@@ -14,7 +15,7 @@
   var wraps = Array.prototype.slice.call(document.querySelectorAll('.stop-audio'));
   if (!select || !wraps.length) return;
 
-  var LANG_NAMES = {en:'English',es:'Spanish',fr:'French',de:'German',it:'Italian',pt:'Portuguese',ru:'Russian',ja:'Japanese',hi:'Hindi',zh:'Chinese'};
+  var LANG_NAMES = {en:T("English"),es:T("Spanish"),fr:T("French"),de:T("German"),it:T("Italian"),pt:T("Portuguese"),ru:T("Russian"),ja:T("Japanese"),hi:T("Hindi"),zh:T("Chinese")};
   var LANG_ORDER = ['en','es','fr','de','it','pt','ru','ja','hi','zh'];
 
   function preferredLang() {
@@ -74,11 +75,11 @@
   function setPlaying(wrap, playing) {
     var btn = wrap.querySelector('.player-toggle');
     var label = wrap.querySelector('.player-label');
-    var title = wrap.getAttribute('data-title') || ('stop ' + wrap.getAttribute('data-stop'));
+    var title = wrap.getAttribute('data-title') || T('stop {n}', { n: wrap.getAttribute('data-stop') });
     if (!btn) return;
     btn.classList.toggle('is-playing', playing);
-    btn.setAttribute('aria-label', (playing ? 'Pause' : 'Play') + ' ' + title);
-    if (label) label.textContent = playing ? 'Pause' : 'Play';
+    btn.setAttribute('aria-label', T(playing ? 'Pause {title}' : 'Play {title}', { title: title }));
+    if (label) label.textContent = playing ? T("Pause") : T("Play");
   }
 
   function resetTime(wrap) {
@@ -165,7 +166,10 @@
     });
   });
 
-  var initial = syncSelect(preferredLang() || select.value);
+  /* A translated page starts in its own language when that audio exists. */
+  var pageLang = (document.documentElement.getAttribute('lang') || 'en').split('-')[0];
+  var pageHasAudio = pageLang !== 'en' && Array.isArray(data.languages[pageLang]) && data.languages[pageLang].length > 0;
+  var initial = syncSelect(pageHasAudio ? pageLang : (preferredLang() || select.value));
   select.addEventListener('change', function () {
     applyLang(select.value);
     window.dispatchEvent(new CustomEvent('earwise-audio-lang', { detail: { lang: select.value } }));
@@ -257,7 +261,7 @@
   window.earwiseUnlockGuideAudio = function (info) {
     if (!info || !info.id || !info.base) return;
     var toolbar = document.querySelector(".audio-toolbar-note");
-    if (toolbar) toolbar.textContent = "Full guide: every stop is unlocked in this browser. You can also play it in the Earwise app.";
+    if (toolbar) toolbar.textContent = T("Full guide: every stop is unlocked in this browser. You can also play it in the Earwise app.");
     document.querySelectorAll(".audio-sample-label").forEach(function (el) { el.remove(); });
     var langs = expandLanguages(info.languages || data.languages, info.stops);
     adoptCatalog({ id: info.id, base: info.base, mode: "full", languages: langs });
@@ -270,19 +274,19 @@
       var titleEl = item.querySelector("h3");
       var stop = numEl ? Number(numEl.textContent) : 0;
       if (!stop) return;
-      var title = titleEl ? titleEl.textContent : ("Stop " + stop);
+      var title = titleEl ? titleEl.textContent : T("Stop {n}", { n: stop });
       var wrap = document.createElement("div");
       wrap.className = "stop-audio";
       wrap.setAttribute("data-stop", String(stop));
-      wrap.setAttribute("data-title", "stop " + stop + ": " + title);
+      wrap.setAttribute("data-title", T("stop {n}: {title}", { n: stop, title: title }));
       var src = info.base + "/" + lang + "/" + info.id + "-" + stop + ".mp3";
       wrap.innerHTML =
         '<div class="player">' +
-        '<button type="button" class="player-toggle" aria-label="Play stop ' + stop + ": " + title.replace(/"/g, "&quot;") + '">' +
+        '<button type="button" class="player-toggle" aria-label="' + T("Play stop {n}: {title}", { n: stop, title: title }).replace(/"/g, "&quot;") + '">' +
         '<svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13L19 12 8 5.5z"/></svg>' +
         '<svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7V5zm6 0h4v14h-4V5z"/></svg>' +
         "</button>" +
-        '<div class="player-ui"><span class="player-label">Play</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div>' +
+        '<div class="player-ui"><span class="player-label">' + T("Play") + '</span><span class="player-time"><span class="t-elapsed">0:00</span> / <span class="t-duration">–:––</span></span></div>' +
         '<audio preload="metadata" controls src="' + src + '"></audio></div>';
       lock.replaceWith(wrap);
     });

@@ -1,4 +1,5 @@
 (function () {
+  var T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
   var input = document.getElementById("q");
   var list = window.EARWISE_ATTRACTIONS || [];
   if (!input || !list.length) return;
@@ -95,7 +96,7 @@
     });
     active = matches.length ? 0 : -1;
     if (!matches.length) {
-      box.innerHTML = '<li class="suggest-empty" role="option" aria-selected="false" aria-disabled="true">No results. Try another name or place.</li>';
+      box.innerHTML = '<li class="suggest-empty" role="option" aria-selected="false" aria-disabled="true">' + T("No results. Try another name or place.") + '</li>';
       box.hidden = false;
       input.setAttribute("aria-expanded", "true");
       input.removeAttribute("aria-activedescendant");

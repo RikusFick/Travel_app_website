@@ -1813,3 +1813,69 @@ body.pay-page {
 @media (min-width: 720px) {
   .credit-list, .credit-covers { grid-template-columns: 1fr 1fr; }
 }
+
+/* Language picker (flag in the header). Markup is written by tools/i18n/build.py. */
+.lang-pick { position: relative; flex: none; margin-left: auto; }
+.lang-pick > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.lang-pick > summary::-webkit-details-marker { display: none; }
+.lang-pick > summary:hover, .lang-pick[open] > summary { border-color: var(--teal); color: var(--teal); }
+.lang-pick > summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.lang-pick img { display: block; width: 22px; height: 16px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12); }
+.lang-pick .lang-chev { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s ease; }
+.lang-pick[open] .lang-chev { transform: rotate(180deg); }
+.lang-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 1002;
+  min-width: 200px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.lang-menu a:hover, .lang-menu a:focus-visible { background: var(--soft); color: var(--teal); }
+.lang-menu a[aria-current="true"] { color: var(--teal); background: var(--soft); }
+.lang-menu img { width: 20px; height: 14px; }
+.lang-note { padding: 10px 14px; border-radius: 12px; background: var(--quiet); color: var(--secondary); font-size: 15px; }
+@media (min-width: 900px) {
+  .topbar nav { margin-left: auto; }
+  .lang-pick { order: 3; margin-left: 4px; }
+  .lang-pick .lang-code { display: none; }
+  .lang-pick > summary { border-color: transparent; background: transparent; padding: 0 8px; }
+}
+@media (max-width: 899px) {
+  .lang-pick { margin-left: auto; }
+  .lang-pick + .nav-toggle { margin-left: 0; }
+}

@@ -14,6 +14,7 @@ import {
   updateProfile
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
+const T = function (s, v) { return window.earwiseT ? window.earwiseT(s, v) : s; };
 const cfg = window.EARWISE_FIREBASE || {};
 let auth = null;
 let currentUser = null;
@@ -83,7 +84,7 @@ function guidesHello(user) {
     return window.earwiseSession.guidesHello(user);
   }
   const name = firstNameOf(user);
-  return name ? "Ready when you are, " + name + "." : "Ready when you are.";
+  return name ? T("Ready when you are, {name}.", { name: name }) : T("Ready when you are.");
 }
 
 function afterSignIn() {
@@ -116,23 +117,23 @@ function paintHeader(user, opts) {
   }
     if (!user) {
     slot.innerHTML =
-      '<a class="acct-btn" href="' + esc(base + "account.html") + '" data-auth-link aria-label="Log in" title="Log in">' +
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span class="acct-label">Log in</span></a>';
+      '<a class="acct-btn" href="' + esc(base + "account.html") + '" data-auth-link aria-label="' + T("Log in") + '" title="' + T("Log in") + '">' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><span class="acct-label">' + T("Log in") + '</span></a>';
     return;
   }
-  const email = user.email || "Signed in";
+  const email = user.email || T("Signed in");
   const name = firstNameOf(user);
   const whoLabel = name || email;
   const initial = (String(name || email).trim().charAt(0) || "•").toUpperCase();
   slot.innerHTML =
     '<span class="acct">' +
-    '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="Account, ' + esc(whoLabel) + '" title="' + esc(whoLabel) + '">' +
-    '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">Account</span></button>' +
+    '<button type="button" class="acct-btn acct-btn-in" aria-haspopup="true" aria-expanded="false" aria-label="' + esc(T("Account, {name}", { name: whoLabel })) + '" title="' + esc(whoLabel) + '">' +
+    '<span class="acct-initial">' + esc(initial) + '</span><span class="acct-label">' + T("Account") + '</span></button>' +
     '<span class="acct-menu" hidden>' +
-    '<span class="acct-who">Signed in as<br><strong>' + esc(whoLabel) + "</strong></span>" +
-    '<a href="' + esc(base + "my-guides.html") + '">My guides</a>' +
-    '<a href="' + esc(base + "account.html") + '">Account</a>' +
-    '<button type="button" class="auth-out" data-auth-logout>Sign out</button>' +
+    '<span class="acct-who">' + T("Signed in as") + '<br><strong>' + esc(whoLabel) + "</strong></span>" +
+    '<a href="' + esc(base + "my-guides.html") + '">' + T("My guides") + '</a>' +
+    '<a href="' + esc(base + "account.html") + '">' + T("Account") + '</a>' +
+    '<button type="button" class="auth-out" data-auth-logout>' + T("Sign out") + '</button>' +
     "</span></span>";
   const button = slot.querySelector("[data-auth-logout]");
   if (button) button.addEventListener("click", doSignOut);
@@ -169,23 +170,23 @@ function doSignOut() {
 
 function friendly(err) {
   const code = err && err.code;
-  if (code === "auth/invalid-email") return "Enter a valid email address.";
-  if (code === "auth/missing-password") return "Enter your password.";
-  if (code === "auth/weak-password") return "Use at least 8 characters.";
-  if (code === "auth/email-already-in-use") return "That email already has an account. Log in instead.";
+  if (code === "auth/invalid-email") return T("Enter a valid email address.");
+  if (code === "auth/missing-password") return T("Enter your password.");
+  if (code === "auth/weak-password") return T("Use at least 8 characters.");
+  if (code === "auth/email-already-in-use") return T("That email already has an account. Log in instead.");
   if (code === "auth/invalid-credential" || code === "auth/wrong-password" || code === "auth/user-not-found") {
-    return "Email or password is wrong.";
+    return T("Email or password is wrong.");
   }
-  if (code === "auth/too-many-requests") return "Too many tries. Wait a moment and try again.";
-  if (code === "auth/network-request-failed") return "Network problem. Check your connection and try again.";
-  if (code === "auth/popup-blocked") return "Please allow pop-ups for getearwise.com and try again.";
-  if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return "Google sign-in was cancelled.";
+  if (code === "auth/too-many-requests") return T("Too many tries. Wait a moment and try again.");
+  if (code === "auth/network-request-failed") return T("Network problem. Check your connection and try again.");
+  if (code === "auth/popup-blocked") return T("Please allow pop-ups for getearwise.com and try again.");
+  if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return T("Google sign-in was cancelled.");
   if (code === "auth/account-exists-with-different-credential") {
-    return "That email already has an Earwise account. Log in with email and password.";
+    return T("That email already has an Earwise account. Log in with email and password.");
   }
-  if (code === "auth/operation-not-allowed") return "Google sign-in is not enabled yet.";
-  if (code === "auth/unauthorized-domain") return "This site is not on the Firebase authorized domain list.";
-  return "Something went wrong. Try again.";
+  if (code === "auth/operation-not-allowed") return T("Google sign-in is not enabled yet.");
+  if (code === "auth/unauthorized-domain") return T("This site is not on the Firebase authorized domain list.");
+  return T("Something went wrong. Try again.");
 }
 
 function googleProvider() {
@@ -219,8 +220,8 @@ function wireAccount() {
     const signup = next === "signup";
     $("tabLogin").setAttribute("aria-selected", signup ? "false" : "true");
     $("tabSignup").setAttribute("aria-selected", signup ? "true" : "false");
-    $("authTitle").textContent = signup ? "Create your account" : "Welcome back";
-    $("submitBtn").textContent = signup ? "Create account" : "Log in";
+    $("authTitle").textContent = signup ? T("Create your account") : T("Welcome back");
+    $("submitBtn").textContent = signup ? T("Create account") : T("Log in");
     $("pwHint").hidden = !signup;
     $("forgot").hidden = signup;
     $("password").autocomplete = signup ? "new-password" : "current-password";
@@ -242,7 +243,7 @@ function wireAccount() {
     eye.addEventListener("click", function () {
       const show = $("password").type === "password";
       $("password").type = show ? "text" : "password";
-      eye.setAttribute("aria-label", show ? "Hide password" : "Show password");
+      eye.setAttribute("aria-label", show ? T("Hide password") : T("Show password"));
       eye.setAttribute("aria-pressed", show ? "true" : "false");
       eye.innerHTML = show ? shutEye : openEye;
     });
@@ -266,7 +267,7 @@ function wireAccount() {
       if (signingIn || !auth) return;
       justAuthenticated = true;
       setSigningIn(true);
-      if (msg) msg.textContent = "Opening Google…";
+      if (msg) msg.textContent = T("Opening Google…");
       signInWithPopup(auth, googleProvider()).catch(function (err) {
         justAuthenticated = false;
         setSigningIn(false);
@@ -281,20 +282,20 @@ function wireAccount() {
     const email = $("email").value.trim();
     const password = $("password").value;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
-      msg.textContent = "Enter a valid email address.";
+      msg.textContent = T("Enter a valid email address.");
       return;
     }
     if (mode === "signup" && password.length < 8) {
-      msg.textContent = "Use at least 8 characters.";
+      msg.textContent = T("Use at least 8 characters.");
       return;
     }
     if (!password) {
-      msg.textContent = "Enter your password.";
+      msg.textContent = T("Enter your password.");
       return;
     }
     justAuthenticated = true;
     setSigningIn(true);
-    msg.textContent = mode === "signup" ? "Creating your account…" : "Signing in…";
+    msg.textContent = mode === "signup" ? T("Creating your account…") : T("Signing in…");
     const firstName = mode === "signup" ? (($("firstName") && $("firstName").value) || "").trim() : "";
     const task = mode === "signup"
       ? createUserWithEmailAndPassword(auth, email, password).then(function (cred) {
@@ -321,11 +322,11 @@ function wireAccount() {
     if (signingIn) return;
     const email = $("email").value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
-      msg.textContent = "Enter your email address first.";
+      msg.textContent = T("Enter your email address first.");
       return;
     }
     sendPasswordResetEmail(auth, email).then(function () {
-      msg.textContent = "If an account exists, a reset link is on its way.";
+      msg.textContent = T("If an account exists, a reset link is on its way.");
     }).catch(function (err) {
       msg.textContent = friendly(err);
     });
@@ -344,7 +345,7 @@ function showGuides(user) {
   }
   if (!firebaseConfigured()) {
     if (banner) banner.hidden = false;
-    who.textContent = "Sign-in isn’t available until Firebase is configured.";
+    who.textContent = T("Sign-in isn’t available until Firebase is configured.");
     if (out) out.hidden = true;
     return;
   }
@@ -362,18 +363,18 @@ function showGuides(user) {
         if (stripHint) stripHint.hidden = false;
         return;
       }
-      who.textContent = "Checking your account…";
+      who.textContent = T("Checking your account…");
       if (out) out.hidden = true;
       if (list) list.hidden = true;
       return;
     }
     var hello = document.getElementById("guides-hello");
     var gate = document.getElementById("guides-gate");
-    if (hello) hello.textContent = "Log in to see your guides.";
+    if (hello) hello.textContent = T("Log in to see your guides.");
     who.textContent = "";
     if (gate) {
       gate.hidden = false;
-      gate.innerHTML = '<a class="btn" href="account.html">Log in</a>';
+      gate.innerHTML = '<a class="btn" href="account.html">' + T("Log in") + '</a>';
     }
     if (out) out.hidden = true;
     if (list) list.hidden = true;
