@@ -1885,3 +1885,72 @@ body.pay-page {
 .doc .lead-photo img { width: 100%; height: auto; display: block; vertical-align: middle; }
 .doc .tips-guides { margin: 20px 0 8px; }
 .doc cite { font-style: italic; }
+
+/* Travel tips hub and "Read before you go" cards */
+.tips-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 18px; }
+.tips-filters button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  min-height: 44px;
+}
+.tips-filters button:hover, .tips-filters button:focus-visible { border-color: var(--teal); color: var(--teal); }
+.tips-filters button[aria-pressed="true"] {
+  background: var(--teal);
+  color: var(--on-teal);
+  border-color: transparent;
+}
+.tips-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 700px) {
+  .tips-grid { grid-template-columns: 1fr 1fr; }
+}
+.tips-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+a.tips-card:hover { border-color: color-mix(in srgb, var(--teal) 45%, var(--line)); }
+.tips-card .photo { aspect-ratio: 3 / 2; border-radius: 0; }
+.tips-card .photo::after { display: none; }
+.tips-card .body { padding: 14px 16px 16px; }
+.tips-card .tag { margin: 0; color: var(--teal); font-weight: 700; font-size: 13px; letter-spacing: 0.02em; }
+.tips-card h2 { margin: 4px 0 8px; font-size: 20px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.25; }
+.tips-card .teaser { margin: 0; color: var(--secondary); font-size: 15px; }
+.tips-read { margin: 28px 0 8px; }
+.tips-read a {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  gap: 0 14px;
+  align-items: stretch;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  min-height: 104px;
+}
+.tips-read a:hover { border-color: color-mix(in srgb, var(--teal) 45%, var(--line)); }
+.tips-read img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tips-read .body { padding: 12px 14px 12px 0; }
+.tips-read .eyebrow { margin: 0 0 4px; }
+.tips-read h2 { margin: 0 0 4px; font-size: 18px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.25; }
+.tips-read .fine { margin: 0; }
+@media (min-width: 700px) {
+  .tips-read a { grid-template-columns: 140px 1fr; min-height: 120px; }
+  .tips-read .body { padding: 16px 16px 16px 0; }
+}
