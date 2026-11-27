@@ -1,4 +1,184 @@
 {
+ "abu-simbel": {
+  "stops": {
+   "1": {
+    "line": "Fique de frente para o penhasco.",
+    "paragraphs": [
+     "Fique de frente para o penhasco. O templo à sua frente não foi construído com blocos de pedra. Ele foi escavado direto na rocha viva de um penhasco de arenito, na margem oeste do Nilo. Na Antiguidade, aqui era a fronteira sul do Egito, de frente para a Núbia. Fica a uns duzentos e oitenta quilômetros ao sul de Assuã.",
+     "O rei que mandou fazê-lo foi Ramsés Segundo. Ele reinou por uns sessenta e seis anos, de cerca de 1279 a 1213 antes de Cristo.",
+     "Quando o templo foi feito? O Ministério do Turismo e Antiguidades data a escavação de cerca de 1264 antes de Cristo. A obra começou no início do reinado, e os dois templos estavam prontos por volta do vigésimo quinto ano dele. Os estudiosos leem a vida dele de formas diferentes. Então há dois períodos possíveis, de cerca de 1264 a 1244 antes de Cristo, ou de cerca de 1244 a 1224 antes de Cristo. O trabalho levou uns vinte anos.",
+     "O nome antigo significava o Templo de Ramsés, Amado de Amon. Era dedicado a Amon-Rá, Rá-Horakhty e Ptah, e ao próprio rei como deus. Estátuas dos quatro estão sentadas na sala mais interna.",
+     "Repare no contorno da fachada. Ela é trapezoidal, cortada para imitar as torres inclinadas do portal de um templo. Tem cerca de trinta metros de altura e trinta e cinco de comprimento.",
+     "Ela também passava uma mensagem. Para os núbios que a viam, o templo era sinal de que a terra deles estava sob o domínio do faraó.",
+     "O que você vê está num lugar novo, mais alto que o original. Ele foi cortado em blocos e transferido nos anos 1960, e o morro atrás foi feito por engenheiros."
+    ],
+    "title": "Um templo no limite do Egito"
+   },
+   "10": {
+    "line": "O templo se estreita à medida que você avança.",
+    "title": "O segundo salão e as salas laterais"
+   },
+   "11": {
+    "line": "Você está no coração do templo.",
+    "title": "O santuário"
+   },
+   "12": {
+    "line": "Olhe para trás ao longo do templo, em direção à porta.",
+    "title": "O raio de sol"
+   },
+   "13": {
+    "line": "Este templo inteiro já correu o risco de ficar debaixo d’água.",
+    "title": "Cortando o templo da montanha"
+   },
+   "14": {
+    "line": "Os blocos foram remontados num terreno mais alto.",
+    "title": "A nova montanha"
+   },
+   "2": {
+    "line": "Quatro gigantes estão sentados à sua frente, dois de cada lado da entrada.",
+    "title": "Os quatro colossos"
+   },
+   "3": {
+    "line": "Olhe para baixo, para os pés dos gigantes.",
+    "title": "A família aos pés do rei"
+   },
+   "4": {
+    "line": "Olhe as pernas do par de estátuas da esquerda.",
+    "title": "A assinatura de um soldado grego"
+   },
+   "5": {
+    "line": "Olhe acima da entrada.",
+    "title": "Os babuínos e o deus sol no nicho"
+   },
+   "6": {
+    "line": "A frente do templo tem um terraço, uma plataforma elevada ao pé dela.",
+    "title": "O terraço, as estelas e o casamento"
+   },
+   "7": {
+    "line": "Por séculos, o deserto cobriu este templo.",
+    "title": "Enterrado na areia"
+   },
+   "8": {
+    "line": "Entre, e a luz muda.",
+    "title": "O salão dos pilares"
+   },
+   "9": {
+    "line": "Vire-se para a parede norte, à sua direita ao entrar.",
+    "title": "A batalha de Kadesh"
+   }
+  },
+  "tagline": "O templo que Ramsés Segundo escavou na fronteira do Egito",
+  "title": "Abu Simbel: Grande Templo de Ramsés Segundo"
+ },
+ "abu-simbel-small-temple": {
+  "stops": {
+   "1": {
+    "line": "Olhe para a rocha à sua frente.",
+    "paragraphs": [
+     "Olhe para a rocha à sua frente. Este é o templo menor de Abu Simbel, o templo de Hathor e Nefertari. Ele fica logo ao norte do grande templo, a uns cem metros.",
+     "Como o vizinho, ele não foi erguido com blocos. Foi escavado no penhasco, na Núbia, perto da fronteira sul do Egito. O rei que o encomendou foi Ramsés Segundo.",
+     "Ele o dedicou a duas mulheres, uma divina e uma humana. A deusa era Hathor. A mulher era sua Grande Esposa Real, a rainha Nefertari.",
+     "A deusa é Hathor de Abshek, uma forma local da deusa do amor, da beleza e da maternidade. Entre seus dons estão também a música e a alegria. Ela era muitas vezes mostrada como uma vaca.",
+     "Por que aqui? Este lugar era sagrado para Hathor muito antes de qualquer templo ser escavado nele. Acredita-se que Ramsés o escolheu por isso.",
+     "Uma leitura vê um padrão entre os dois templos. Nela, Hathor é a esposa do deus sol. Assim, os dois templos reúnem o rei, a rainha, a deusa e o sol.",
+     "Repare como toda a fachada se inclina para trás. Como o templo maior, ela tem a forma de uma torre de portal recuada, talhada na rocha.",
+     "O que você vê foi transferido. Os dois templos foram cortados e reconstruídos mais acima na década de 1960, quando a Grande Represa ameaçava afogá-los."
+    ],
+    "title": "Um templo para uma rainha"
+   },
+   "10": {
+    "line": "Este templo ficava antes mais abaixo, perto do rio.",
+    "title": "Um templo levado morro acima"
+   },
+   "2": {
+    "line": "Seis gigantes se erguem contra o penhasco, três de cada lado da porta.",
+    "title": "Seis colossos na fachada"
+   },
+   "3": {
+    "line": "Olhe para baixo, para os pés dos colossos.",
+    "title": "Os filhos aos pés do rei"
+   },
+   "4": {
+    "line": "Nas paredes entre as estátuas está o texto que explica este templo.",
+    "title": "Um templo talhado para Nefertari"
+   },
+   "5": {
+    "line": "Por séculos, só os moradores da região conheciam estes templos.",
+    "title": "Encontrado na areia"
+   },
+   "6": {
+    "line": "Entre no salão de pilares.",
+    "title": "Pilares em forma de chocalhos sagrados"
+   },
+   "7": {
+    "line": "Olhe para as paredes do salão.",
+    "title": "Amor e guerra nas paredes"
+   },
+   "8": {
+    "line": "Depois dos pilares há uma sala mais estreita, o vestíbulo.",
+    "title": "O vestíbulo e as deusas"
+   },
+   "9": {
+    "line": "Este é o santuário, o coração do templo.",
+    "title": "Hathor surge da montanha"
+   }
+  },
+  "tagline": "O templo que Ramsés escavou para Nefertari e Hathor",
+  "title": "Abu Simbel: templo menor de Hathor e Nefertari"
+ },
+ "abydos-seti-i": {
+  "stops": {
+   "1": {
+    "line": "Você está onde antes se erguia a entrada principal do templo de Seti Primeiro.",
+    "paragraphs": [
+     "Você está onde antes se erguia a entrada principal do templo de Seti Primeiro. Aqui ficava um grande pilone, um portão ladeado por duas torres enormes. Ele desapareceu, assim como boa parte do primeiro pátio. O rei que começou este templo foi Seti Primeiro.",
+     "Seti reinou de cerca de 1290 até por volta de 1279 antes de Cristo, embora algumas cronologias comecem seu reinado alguns anos antes. Ele iniciou este templo em terreno novo, e a obra estava inacabada quando morreu. Seu filho Ramsés Segundo a concluiu, e seus cartuchos aparecem em partes do edifício. A planta é incomum. Em vez de um eixo reto, o templo tem forma de L, com uma ala que vira atrás dos salões principais. É construído sobretudo em calcário, com um pouco de arenito.",
+     "Por que aqui? Abidos era o local de sepultamento dos primeiros reis do Egito. A partir do fim do Antigo Império, tornou-se o grande centro de culto de Osíris, deus dos mortos. Os egípcios vinham aqui em peregrinação. O templo de Seti era ao mesmo tempo um memorial a ele mesmo e um lugar de reverência aos primeiros faraós, e fazia parte da festa de Osíris.",
+     "Mesmo depois do declínio de seu sacerdócio, o complexo continuou ativo. Já no século sétimo antes de Cristo, cortadores de pedra arrancavam partes dele em busca de calcário. Mas na época greco-romana ele abrigou um oráculo de Bes, e mais tarde os primeiros cristãos se refugiaram ali.",
+     "A UNESCO registra que o viajante francês Granger o trouxe de volta à atenção dos estudiosos em 1731, antes de Auguste Mariette escavar os pátios soterrados pela areia na década de 1860."
+    ],
+    "title": "A fachada do templo"
+   },
+   "10": {
+    "line": "Atrás do templo, num nível mais baixo, fica um dos edifícios mais estranhos do Egito.",
+    "title": "O Osireion"
+   },
+   "2": {
+    "line": "Dois pátios abertos ficavam aqui, um depois do outro.",
+    "title": "Os pátios"
+   },
+   "3": {
+    "line": "Um salão hipostilo é um recinto cujo teto repousa sobre fileiras de colunas, e este é o primeiro de dois.",
+    "title": "O primeiro salão hipostilo"
+   },
+   "4": {
+    "line": "Este é o segundo salão, e é o mais grandioso.",
+    "title": "O segundo salão hipostilo"
+   },
+   "5": {
+    "line": "Sete capelas de aparência abobadada ficam lado a lado ao longo da parede do fundo, cada uma atrás de sua porta.",
+    "title": "As sete capelas"
+   },
+   "6": {
+    "line": "Depois da capela de Osíris, o templo vira de lado para uma área dedicada ao seu culto: dois salões e dois grupos de pequenas capelas.",
+    "title": "As capelas de Osíris"
+   },
+   "7": {
+    "line": "Olhe para cima, para os blocos entalhados do lintel dentro do templo.",
+    "title": "Os hieróglifos do “helicóptero”"
+   },
+   "8": {
+    "line": "Nesta parede, Seti e seu filho Ramsés estão diante de uma longa lista de nomes.",
+    "title": "A galeria dos reis"
+   },
+   "9": {
+    "line": "Ao sul da lista de reis, o templo se abre para salas que o mantinham funcionando.",
+    "title": "A ala sul"
+   }
+  },
+  "tagline": "Sete capelas, uma lista de reis e um túmulo para Osíris",
+  "title": "Abidos: templo de Seti Primeiro e Osireion"
+ },
  "accademia": {
   "stops": {
    "1": {
@@ -1695,6 +1875,44 @@
   },
   "tagline": "Vila de oleiros nas margens do Rio Vermelho"
  },
+ "avenue-of-sphinxes": {
+  "stops": {
+   "1": {
+    "line": "Você está na borda sul de Karnak, a imensa área de templos da antiga Tebas.",
+    "paragraphs": [
+     "Você está na borda sul de Karnak, a imensa área de templos da antiga Tebas. A cidade moderna ao redor é Luxor.",
+     "O alto portal de pedra à sua frente traz o nome de Ptolomeu Terceiro, também chamado Evérgeta. Ele pertencia aos Ptolomeus, a família de língua grega que governou o Egito depois de Alexandre, o Grande. Seu reinado foi no século terceiro antes de Cristo.",
+     "Atrás do portal fica o templo de Khonsu. A construção começou com Ramsés Terceiro, no século décimo segundo antes de Cristo. Ele foi erguido sobre as ruínas de um templo mais antigo, e governantes posteriores continuaram a ampliá-lo. Khonsu era um deus da lua. Era filho de Amon e da deusa Mut, e os três eram cultuados juntos como uma família. Os artistas muitas vezes o mostravam como um menino com uma mecha lateral. Ou ele aparece como uma figura de manto, coroada por uma lua cheia apoiada num crescente. As pessoas rezavam a ele como curandeiro e como um deus capaz de expulsar maus espíritos.",
+     "Agora vire-se e olhe para o sul, de costas para o templo. Uma estrada de estátuas de pedra sai daqui em direção à cidade. Esta é a Avenida das Esfinges. Os moradores também a chamam de estrada do Kebash, da palavra árabe para carneiros. Ela liga Karnak ao templo de Luxor, numa distância de cerca de dois vírgula sete quilômetros. Isso dá mais ou menos uma milha e dois terços. A via tem cerca de setenta e seis metros de largura.",
+     "Perto de Karnak, a maioria das figuras são esfinges com cabeça de carneiro, uma cabeça de carneiro sobre um corpo de leão. O carneiro era o animal sagrado de Amon. Assim, cada estátua mostra o deus guardando a própria estrada. Em muitos carneiros, uma pequena figura de rei fica encostada no peito, entre as patas dianteiras. Esse rei costuma ser identificado como Amenhotep Terceiro, do século décimo quarto antes de Cristo.",
+     "Muitas estátuas estão bem gastas. Faltam cabeças, e algumas são pouco mais que blocos. Por séculos a via ficou sob a areia, e depois sob casas e ruas. Ninguém concorda sobre quantas estátuas havia exatamente. O número que você vai ouvir com mais frequência é mil e cinquenta e sete. Dessas, oitocentas e sete têm cabeça humana e duzentas e cinquenta têm cabeça de carneiro. A placa no extremo de Luxor dá mil e sessenta. Algumas estimativas do total original chegam a cerca de mil trezentas e cinquenta."
+    ],
+    "title": "O portal sul de Karnak: o portal de Ptolomeu Terceiro Evérgeta"
+   },
+   "2": {
+    "line": "Você está entre as figuras com cabeça de carneiro ao sul de Karnak.",
+    "title": "A via processional ao sul de Karnak: Opet e o Kebash"
+   },
+   "3": {
+    "line": "Você está mais ou menos no meio da avenida.",
+    "title": "As estações da barca de Hatshepsut: a via no meio do caminho"
+   },
+   "4": {
+    "line": "Você está na metade sul da via, entre esfinges de rosto humano.",
+    "title": "As esfinges de Nectanebo Primeiro e os vestígios romanos"
+   },
+   "5": {
+    "line": "Perto daqui, junto ao extremo da avenida do lado de Karnak, fica o recinto da deusa Mut.",
+    "title": "Na direção do templo de Mut"
+   },
+   "6": {
+    "line": "Você está no extremo sul da avenida, diante do templo de Luxor.",
+    "title": "O templo de Luxor: o extremo sul da via"
+   }
+  },
+  "tagline": "A estrada dos deuses ladeada de esfinges entre dois templos",
+  "title": "Avenida das Esfinges, de Karnak a Luxor"
+ },
  "avila": {
   "stops": {
    "1": {
@@ -1749,6 +1967,52 @@
    }
   },
   "tagline": "Um castelo renascentista espelhado nas águas do Indre"
+ },
+ "azhar": {
+  "stops": {
+   "1": {
+    "line": "O portal duplo à sua frente é a entrada principal.",
+    "paragraphs": [
+     "O portal duplo à sua frente é a entrada principal. Seu nome, Bab al-Muzayyinin, quer dizer Portão dos Barbeiros.",
+     "Esse portão é jovem perto do edifício que está atrás dele. Ele faz parte das obras de Abd al-Rahman Katkhuda, um grande dignitário mameluco do Egito otomano. As fontes datam suas obras de 1753 ou 1754. Muito depois, em 1982 e 1983, restauradores devolveram ao portão suas cores originais.",
+     "A própria al-Azhar é muito mais antiga. Em 969, a dinastia fatímida tomou o Egito. Seu general, Jawhar al-Siqilli, fundou uma nova cidade ao norte da velha Fustat. Essa cidade era al-Qahira, o Cairo. Sua mesquita era esta, a primeira que os fatímidas construíram ali.",
+     "As obras começaram em quatro de abril de 970 e levaram cerca de dois anos. A mesquita foi inaugurada no Ramadã, em vinte e dois de junho de 972. Naquele ano, o primeiro sermão de sexta-feira foi pregado do seu púlpito.",
+     "De onde vem o nome? Al-Azhar quer dizer a esplêndida ou a radiante. Uma explicação o liga a Fátima al-Zahra, filha do profeta Maomé. Mas nenhum documento antigo confirma isso. O historiador al-Maqrizi conta outra coisa. Os dois palácios fatímidas próximos eram conhecidos juntos como os Palácios Esplêndidos.",
+     "A primeira mesquita era modesta. Media cerca de setenta por oitenta e cinco metros. Ao longo dos séculos, sultões, emires e governadores continuaram ampliando o prédio. Sua área chegou a cerca de cento e vinte por cento e trinta metros. É mais que o dobro. Então, o que você vai percorrer não é um só edifício. São mil anos de construções, unidas entre si."
+    ],
+    "title": "O Portão dos Barbeiros"
+   },
+   "2": {
+    "line": "Este pátio aberto é o coração do conjunto.",
+    "title": "O pátio e as arcadas fatímidas"
+   },
+   "3": {
+    "line": "Esta sala pertence à primeira mesquita fatímida.",
+    "title": "A sala de oração e o primeiro mihrab"
+   },
+   "4": {
+    "line": "Você passou da mesquita fatímida para uma otomana.",
+    "title": "A sala de oração de Katkhuda e os anos de protesto"
+   },
+   "5": {
+    "line": "Junto aos muros externos de al-Azhar, emires mamelucos construíram suas próprias escolas.",
+    "title": "A madraça Aqbughawiyya"
+   },
+   "6": {
+    "line": "Esta é a Taybarsiyya, a mais antiga das duas madraças da entrada.",
+    "title": "A madraça Taybarsiyya e seu mihrab"
+   },
+   "7": {
+    "line": "Este pequeno prédio é a Jawhariyya.",
+    "title": "A madraça Jawhariyya"
+   },
+   "8": {
+    "line": "Estas torres são obra dos últimos grandes sultões mamelucos.",
+    "title": "Os minaretes e a universidade"
+   }
+  },
+  "tagline": "A primeira mesquita do Cairo fatímida, e sua escola desde 988",
+  "title": "Mesquita e Universidade de al-Azhar"
  },
  "bahia-palace": {
   "stops": {
@@ -2137,6 +2401,56 @@
   "tagline": "A casa do Real Madrid: troféus, pele de aço e um relvado que desaparece",
   "title": "Visita ao Estádio Santiago Bernabéu"
  },
+ "bibliotheca-alexandrina": {
+  "stops": {
+   "1": {
+    "line": "Há mais de dois mil anos, Alexandria tinha a biblioteca mais famosa do mundo antigo.",
+    "paragraphs": [
+     "Há mais de dois mil anos, Alexandria tinha a biblioteca mais famosa do mundo antigo.",
+     "Ela fazia parte de uma instituição maior chamada Museion, o santuário das Musas. Ali viviam e trabalhavam estudiosos.",
+     "Sua fundação é ligada a Demétrio de Falero, um ex-político de Atenas. Depois de perder o poder, ele se refugiou na corte do rei Ptolomeu Primeiro. Ptolomeu fez dele seu conselheiro. A fundação é situada por volta de 295 antes de Cristo. A história oficial da biblioteca dá 288 antes de Cristo.",
+     "O objetivo era enorme. Os reis queriam os escritos de todos os povos. A maioria era em grego. Depois do grego, os textos egípcios formavam a maior seção.",
+     "Os Ptolomeus caçavam livros com afinco. Uma história conta que todo navio que entrava no porto era revistado. Qualquer livro a bordo ia para a biblioteca. Lá ele era devolvido ou ficava, e o dono recebia uma cópia feita na hora.",
+     "Outra história vem do médico Galeno. Ptolomeu Terceiro pegou emprestados os textos oficiais dos grandes dramaturgos atenienses, Ésquilo, Sófocles e Eurípides. Deixou quinze talentos de prata como garantia. Depois ficou com os originais, devolveu cópias e abriu mão da prata.",
+     "Grandes mentes trabalharam aqui. Calímaco, o poeta, catalogou os rolos por assunto e autor. Eratóstenes calculou o tamanho da Terra.",
+     "Como ela acabou? A maioria dos estudiosos acha que a biblioteca morreu em etapas. Em 48 antes de Cristo, Júlio César ficou preso no porto durante uma guerra civil. Ele pôs fogo na frota inimiga. Autores posteriores dizem que o fogo se espalhou e destruiu a grande biblioteca.",
+     "Uma biblioteca filha sobreviveu no templo de Serápis. Em 391, um decreto imperial permitiu a destruição dos templos de Alexandria. O Serapeu foi atacado e arrasado.",
+     "Uma história posterior culpou a conquista árabe pela perda. A maioria dos estudiosos modernos a rejeita. A biblioteca já tinha desaparecido muito antes.",
+     "A nova biblioteca diz que este local fica muito perto do antigo bairro real, onde ficava a biblioteca antiga."
+    ],
+    "title": "A Biblioteca perdida de Alexandria"
+   },
+   "2": {
+    "line": "A ideia de uma nova biblioteca nasceu na Universidade de Alexandria.",
+    "title": "O disco inclinado e o muro de granito"
+   },
+   "3": {
+    "line": "Este é o coração da biblioteca.",
+    "title": "A sala de leitura"
+   },
+   "4": {
+    "line": "Este museu nasceu do chão sob os seus pés.",
+    "title": "O Museu de Antiguidades"
+   },
+   "5": {
+    "line": "Livros raros precisam de luz suave, ar estável e mãos cuidadosas.",
+    "title": "O Museu de Manuscritos"
+   },
+   "6": {
+    "line": "Esta exposição não é sobre pintura impressionista.",
+    "title": "Impressões de Alexandria: a coleção Awad"
+   },
+   "7": {
+    "line": "Este pequeno museu é dedicado a Anwar Sadat, presidente do Egito.",
+    "title": "O Museu Sadat"
+   },
+   "8": {
+    "line": "Na praça fica uma grande esfera, bem separada do disco da biblioteca.",
+    "title": "A esfera do Planetário"
+   }
+  },
+  "tagline": "A biblioteca que renasceu à beira-mar"
+ },
  "blue-mosque": {
   "stops": {
    "1": {
@@ -2428,6 +2742,52 @@
    }
   },
   "tagline": "Como o prédio mais alto do mundo se ergueu da areia"
+ },
+ "cairo-citadel": {
+  "stops": {
+   "1": {
+    "line": "Este é Bab al-Azab, o antigo portão principal nas muralhas sul da Cidadela.",
+    "paragraphs": [
+     "Este é Bab al-Azab, o antigo portão principal nas muralhas sul da Cidadela. O portão que você vê foi construído em 1754 por Radwan Katkhuda al-Galfi, um comandante da era otomana.",
+     "A fortaleza acima dele é muito mais antiga. O sultão Salah al-Din, conhecido na Europa como Saladino, mandou construí-la em 1176. Ele escolheu um contraforte das colinas de Muqattam, onde o terreno alto e rochoso dificultava ataques.",
+     "Saladino não viveu para vê-la pronta. Ela foi concluída sob o sultão al-Kamil, que se mudou para lá por volta de 1207. Desde então, foi a residência oficial dos governantes do Egito. Isso durou até meados do século dezenove, quando o quediva Ismail levou a corte para o Palácio de Abdin, na cidade nova lá embaixo.",
+     "Agora imagine a viela estreita e íngreme que sobe atrás deste portão. Em primeiro de março de 1811, Muhammad Ali, o governador otomano do Egito, fez uma cerimônia na Cidadela. Era em homenagem ao seu segundo filho, Ahmad Tusun, que partia para comandar um exército na Arábia. Ele convidou os chefes mamelucos. Eles vieram em traje de gala, em cavalos enfeitados.",
+     "Enquanto desciam esta viela a cavalo no cortejo, tropas fecharam o portão à frente. Soldados no alto das muralhas abriram fogo. O chefe deles, Shahin Bey, morreu na hora, e a maioria dos outros com ele. As estimativas de quantos mamelucos vieram naquele dia variam muito. Algumas contagens falam em vinte e quatro chefes e sessenta seguidores.",
+     "O massacre acabou com os mamelucos como força no Egito. Muhammad Ali se tornou o governante incontestado e fez da Cidadela o centro do seu poder."
+    ],
+    "title": "Bab al-Azab, o antigo portão baixo"
+   },
+   "2": {
+    "line": "Você está no pátio aberto da mesquita de Muhammad Ali.",
+    "title": "O pátio e a torre do relógio"
+   },
+   "3": {
+    "line": "Muhammad Ali construiu esta mesquita no lugar de palácios mamelucos.",
+    "title": "Dentro da mesquita de Muhammad Ali"
+   },
+   "4": {
+    "line": "Esta mesquita foi construída para al-Nasir Muhammad ibn Qalawun, um sultão mameluco.",
+    "title": "A mesquita de al-Nasir Muhammad"
+   },
+   "5": {
+    "line": "Esta é a parte norte da Cidadela.",
+    "title": "O recinto norte: museus da polícia e do exército"
+   },
+   "6": {
+    "line": "Olhe primeiro o minarete.",
+    "title": "A mesquita de Sulayman Paxá"
+   },
+   "7": {
+    "line": "Uma fortaleza num morro precisa de água.",
+    "title": "O Poço de José"
+   },
+   "8": {
+    "line": "O Ministério chama a Cidadela de uma das fortalezas mais impressionantes da Idade Média.",
+    "title": "O terraço sobre o Cairo"
+   }
+  },
+  "tagline": "A fortaleza de Saladino e a mesquita de Muhammad Ali acima do Cairo",
+  "title": "Cidadela do Cairo, Cidadela de Saladino"
  },
  "calanques": {
   "stops": {
@@ -2770,6 +3130,49 @@
   },
   "tagline": "Os ossos de milhões de parisienses em antigas pedreiras",
   "title": "Catacumbas de Paris"
+ },
+ "catacombs-kom-el-shoqafa": {
+  "stops": {
+   "1": {
+    "line": "Kom el-Shoqafa quer dizer, em árabe, monte de cacos.",
+    "paragraphs": [
+     "Kom el-Shoqafa quer dizer, em árabe, monte de cacos. O nome vem das pilhas de cerâmica quebrada que se acumularam aqui.",
+     "Na época romana, este era o limite sudoeste de Alexandria. Os gregos chamavam o bairro de Rhakotis. Bem perto ficava o grande templo de Serápis, onde hoje se ergue a Coluna de Pompeu.",
+     "Sob esta rocha estão as maiores catacumbas de Alexandria. Elas descem três níveis, todos escavados na rocha viva.",
+     "Foram descobertas por acaso, no dia vinte e oito de setembro de 1900. A história popular diz que um burro caiu num buraco no chão.",
+     "Os estudiosos apontam outro herói. Um homem chamado Es-Sayed Aly Gibarah tirava pedra daqui. Ao cavar, abriu o teto de uma passagem soterrada. Ele procurou Giuseppe Botti, fundador e primeiro diretor do museu de antiguidades gregas e egípcias da cidade.",
+     "Arqueólogos alemães, financiados por Ernst Sieglin, chegaram no dia seguinte. Eles abriram o caminho até os túmulos.",
+     "O poço redondo tem cerca de seis metros de diâmetro. Uma escada de uns cem degraus desce girando ao redor dele. A parte de cima foi reconstruída.",
+     "O poço tinha várias funções. Os mortos eram descidos por ele com cordas antes do sepultamento. O entulho da escavação subia pelo mesmo caminho. E ele levava ar fresco e um pouco de luz à escada.",
+     "Mais ou menos a três quartos da descida há uma cisterna. Ela juntava água, para que o túmulo não inundasse. Mais tarde, nichos funerários foram abertos nas suas paredes, e ela virou uma câmara funerária.",
+     "Um teto cônico cobre a entrada. Os construtores antigos talvez tenham colocado uma estrutura em cima.",
+     "Os enlutados da Antiguidade talvez sentissem esta descida como uma viagem ao mundo dos mortos."
+    ],
+    "title": "O monte de cacos e o grande poço"
+   },
+   "2": {
+    "line": "No pé da escada há um pequeno vestíbulo.",
+    "title": "O vestíbulo e a rotunda"
+   },
+   "3": {
+    "line": "Esta sala foi feita para uma refeição entre os mortos.",
+    "title": "O salão de banquetes"
+   },
+   "4": {
+    "line": "Uma escada curta de quinze degraus desce até o coração das catacumbas.",
+    "title": "A fachada em forma de templo do túmulo principal"
+   },
+   "5": {
+    "line": "A câmara funerária é organizada como o salão de banquetes, em triclínio.",
+    "title": "Anúbis de armadura romana"
+   },
+   "6": {
+    "line": "Esta abertura não fazia parte do plano.",
+    "title": "O Salão de Caracala"
+   }
+  },
+  "tagline": "O túmulo romano de Alexandria onde Anúbis veste armadura",
+  "title": "Catacumbas de Kom el-Shoqafa"
  },
  "catalhoyuk": {
   "stops": {
@@ -3456,6 +3859,43 @@
   "tagline": "O grande anfiteatro de Roma: como cinquenta mil pessoas chegavam para ver os jogos",
   "title": "Coliseu"
  },
+ "colossi-memnon": {
+  "stops": {
+   "1": {
+    "line": "Olhe para cima, para as duas grandes figuras sentadas à sua frente.",
+    "paragraphs": [
+     "Olhe para cima, para as duas grandes figuras sentadas à sua frente. Estes são os Colossos de Mêmnon. Os dois mostram o mesmo homem, o faraó Amenhotep Terceiro. Ele reinou por trinta e nove anos, no século quatorze antes de Cristo. Cada figura está sentada bem ereta, com as mãos sobre os joelhos.",
+     "Elas nunca foram feitas para ficar sozinhas num campo. Ficavam no portão do Primeiro Pilone do grande templo do rei, nesta margem do Nilo. Os egípcios chamavam um edifício assim de casa de milhões de anos. A equipe de escavação diz que este é o maior do seu tipo. O muro externo cercava uma área de uns 550 por 700 metros. Dentro dele havia templos menores para outros deuses. Havia caminhos de procissão, jardins, lagos e oficinas. Havia depósitos, tesouros e casas para os sacerdotes.",
+     "Qual a altura deles? Os números publicados variam. Os escavadores falam de quatorze a dezessete metros para os colossos reais dos portões. Alguns relatos arredondam a figura do norte para dezoito.",
+     "Os escavadores incluem esses dois gigantes entre os colossos de quartzito do templo. O quartzito é uma pedra duríssima, muito mais difícil de esculpir que o arenito local.",
+     "Repare como o chão do antigo templo está baixo. Por séculos, a cheia do rio espalhou lama sobre as ruínas. Os escavadores encontraram o piso do templo enterrado sob até três metros de lodo do Nilo. Quando começaram, estas duas figuras eram os únicos monumentos do templo ainda de pé no lugar original."
+    ],
+    "title": "Os dois colossos"
+   },
+   "2": {
+    "line": "Esta é a figura do sul.",
+    "title": "O colosso do sul"
+   },
+   "3": {
+    "line": "Olhe a parte de cima da figura do norte.",
+    "title": "O colosso do norte e a voz do amanhecer"
+   },
+   "4": {
+    "line": "Chegue mais perto da base e das pernas da figura do norte.",
+    "title": "Os visitantes romanos e suas palavras"
+   },
+   "5": {
+    "line": "Daqui da beira da estrada, olhe por cima da cerca, para o lado oposto à estrada.",
+    "title": "Os colossos do Segundo Pilone"
+   },
+   "6": {
+    "line": "Olhe de novo por cima da cerca.",
+    "title": "O pátio peristilo"
+   }
+  },
+  "tagline": "Dois gigantes, uma voz ao amanhecer e um templo desaparecido",
+  "title": "Colossos de Mêmnon e templo de Amenhotep Terceiro"
+ },
  "conciergerie": {
   "stops": {
    "1": {
@@ -3484,6 +3924,97 @@
    }
   },
   "tagline": "Palácio real medieval que se tornou a prisão da Revolução"
+ },
+ "coptic-cairo": {
+  "stops": {
+   "1": {
+    "line": "Antes de existir o Cairo, havia uma fortaleza nesta margem do Nilo.",
+    "paragraphs": [
+     "Antes de existir o Cairo, havia uma fortaleza nesta margem do Nilo. Ela se chamava Babilônia.",
+     "O nome é antigo. Por volta do ano 50 depois de Cristo, o escritor Diodoro Sículo contou como cativos da Babilônia tomaram uma posição forte na margem do rio. Quando foram perdoados, fundaram um povoado e lhe deram o nome da sua terra natal.",
+     "Quem construiu a fortaleza é contado de formas diferentes. O Centro Americano de Pesquisa no Egito diz que o imperador Diocleciano a construiu em 302. A província do Cairo diz que ela foi encomendada pelo imperador Trajano, no século dois. O Patriarcado Ortodoxo Grego diz que três imperadores romanos a reformaram, entre eles Trajano.",
+     "A província diz que pedras de templos faraônicos mais antigos foram usadas nas muralhas. Diz também que, da fortaleza original, só restam o portão sul e suas duas grandes torres.",
+     "As antigas ruas romanas ficam de três a cinco metros abaixo do chão atual. Os arqueólogos as encontraram entre 2000 e 2006, durante um projeto para baixar aqui o lençol freático. Também acharam muralhas romanas, quartéis e obras portuárias.",
+     "Em 641, exércitos árabes tomaram o Egito. Eles cercaram esta fortaleza por sete meses. Depois acamparam a leste, num lugar chamado al-Fustat.",
+     "A fortaleza também tem um nome árabe, Qasr al-Sham. A província o traduz como Palácio de Cera. O Patriarcado dá Palácio das Tochas.",
+     "Dentro das velhas muralhas há igrejas, um convento, uma sinagoga e um museu. O Centro Americano de Pesquisa diz que esses lugares mostram os primeiros anos do Cairo urbano."
+    ],
+    "title": "A fortaleza romana da Babilônia"
+   },
+   "2": {
+    "line": "O Ministério diz que este prédio guarda a maior coleção de objetos coptas do mundo.",
+    "title": "O Museu Copta"
+   },
+   "3": {
+    "line": "Esta é a igreja da Virgem Maria.",
+    "title": "A Igreja Suspensa: a igreja sobre o portão"
+   },
+   "4": {
+    "line": "Olhe primeiro o púlpito de mármore.",
+    "title": "A Igreja Suspensa: púlpito, iconóstases e ícones"
+   },
+   "5": {
+    "line": "Esta é a igreja dos santos Sérgio e Baco.",
+    "title": "Abu Serga e a gruta"
+   },
+   "6": {
+    "line": "Esta igreja é dedicada a Santa Bárbara.",
+    "title": "A igreja de Santa Bárbara"
+   },
+   "7": {
+    "line": "Este é o mosteiro de São Jorge.",
+    "title": "A igreja ortodoxa grega de São Jorge"
+   },
+   "8": {
+    "line": "O Ministério chama a sinagoga Ben Ezra de a mais antiga do Egito.",
+    "title": "A sinagoga Ben Ezra"
+   }
+  },
+  "tagline": "Igrejas construídas dentro de uma fortaleza romana",
+  "title": "Cairo Copta"
+ },
+ "coptic-museum": {
+  "stops": {
+   "1": {
+    "line": "Este museu guarda a maior coleção de objetos coptas do mundo.",
+    "paragraphs": [
+     "Este museu guarda a maior coleção de objetos coptas do mundo. Quem diz isso é o Ministério do Turismo e Antiguidades, e a Igreja Copta Ortodoxa diz o mesmo.",
+     "As regras do Ministério para visitantes não permitem aparelhos de áudio dentro do museu. Por isso cada parada deste guia é ouvida aqui fora. Ouça primeiro, depois entre e veja com seus próprios olhos.",
+     "O museu começou com um só homem, Marcus Simaika Paxá. Ele era uma figura importante da comunidade copta. Comprava e colecionava antiguidades coptas. Também salvou peças entalhadas de igrejas antigas que estavam sendo reformadas. Com elas, construiu o museu e começou sua coleção.",
+     "As obras começaram em 1908, num terreno da Igreja Copta. O museu abriu em 1910. Até 1931, pertenceu ao Patriarcado Copta. Depois passou a ser propriedade do Estado.",
+     "O primeiro prédio é de 1910. Um segundo prédio foi aberto em 1947.",
+     "Olhe a fachada. Ela já foi comparada à mesquita fatímida de al-Aqmar, no Cairo medieval. As duas são decoradas com uma concha entalhada. No museu, a concha traz uma cruz.",
+     "O museu calcula sua coleção em cerca de dezesseis mil objetos. Em 2006, o ex-diretor Gawdat Gabra falou em catorze mil. De todo modo, disse ele, a ideia nunca foi expor tudo."
+    ],
+    "title": "Marcus Simaika e o museu"
+   },
+   "2": {
+    "line": "O que significa a palavra copta?",
+    "title": "O que significa “copta”"
+   },
+   "3": {
+    "line": "Uma das peças mais famosas do museu é uma cortina tecida.",
+    "title": "A cortina do flautista"
+   },
+   "4": {
+    "line": "Algumas esculturas do museu não são nada cristãs.",
+    "title": "Deuses gregos de Ihnasya"
+   },
+   "5": {
+    "line": "Muitos objetos do museu vêm de mosteiros.",
+    "title": "O mosteiro de São Jeremias"
+   },
+   "6": {
+    "line": "O museu também guarda alguns dos livros antigos mais importantes do mundo.",
+    "title": "Os códices de Nag Hammadi"
+   },
+   "7": {
+    "line": "A última parte da coleção em que vale pensar é a madeira e a pintura.",
+    "title": "Ícones e trabalhos em madeira"
+   }
+  },
+  "tagline": "A maior coleção copta do mundo",
+  "title": "Museu Copta"
  },
  "corfu": {
   "stops": {
@@ -3735,6 +4266,93 @@
   "tagline": "Praias, falésias e cemitérios do desembarque na Normandia de 1944",
   "title": "As praias do Desembarque"
  },
+ "dahshur-bent-pyramid": {
+  "stops": {
+   "1": {
+    "line": "Olhe o contorno contra o céu.",
+    "paragraphs": [
+     "Olhe o contorno contra o céu. A parte de baixo desta pirâmide sobe íngreme, a uns cinquenta e quatro ou cinquenta e cinco graus. Depois, mais ou menos no meio, os lados se dobram para dentro e continuam subindo a uns quarenta e três graus. Essa mudança de ângulo dá à pirâmide curvada o seu nome moderno. Nenhuma outra pirâmide do Egito tem uma silhueta assim. A base mede cerca de cento e oitenta e oito metros de lado, e ela tem uns cento e cinco metros de altura.",
+     "Ela foi construída para Snefru, o primeiro rei da quarta dinastia e pai de Quéops. Ele reinou por volta de 2600 antes de Cristo, embora as cronologias variem algumas décadas. Snefru ergueu três grandes pirâmides, em Meidum e aqui em Dahshur, a uns quarenta quilômetros ao sul do Cairo.",
+     "Pronta, ela era revestida de calcário branco polido de Tura. O nome antigo costuma ser traduzido como “Snefru brilha no sul”, ou só “Snefru brilha”. O brilho era literal.",
+     "O Ministério do Turismo e Antiguidades do Egito vê esta pirâmide como um momento de transição. Antes dela veio a pirâmide de degraus do rei Djoser em Saqqara, uma pilha de degraus gigantes. Depois vieram as pirâmides de faces lisas. O primeiro ângulo íngreme daqui faz parte dessa passagem de um modelo para o outro.",
+     "Este campo de pirâmides faz parte do sítio do Patrimônio Mundial que a UNESCO registra para Mênfis e os campos de pirâmides que vão de Gizé a Dahshur."
+    ],
+    "title": "Uma pirâmide que muda de ângulo"
+   },
+   "2": {
+    "line": "Olhe ao longo da encosta de baixo, ao seu lado.",
+    "title": "O revestimento que sobreviveu"
+   },
+   "3": {
+    "line": "Olhe para a linha onde a inclinação muda.",
+    "title": "Por que o ângulo muda"
+   },
+   "4": {
+    "line": "Esta pirâmide tem duas entradas.",
+    "title": "A entrada norte"
+   },
+   "5": {
+    "line": "Se você chegou ao fim da passagem norte, está numa grande antecâmara.",
+    "title": "As câmaras com abóbada em mísulas"
+   },
+   "6": {
+    "line": "Olhe a face oeste.",
+    "title": "A entrada oeste e a câmara superior"
+   },
+   "7": {
+    "line": "À sua frente está uma pirâmide bem menor, ao sul da principal.",
+    "title": "A pirâmide satélite"
+   },
+   "8": {
+    "line": "Neste lado leste da pirâmide ficava um pequeno templo para oferendas ao rei.",
+    "title": "Os templos e a calçada"
+   }
+  },
+  "tagline": "A pirâmide que mudou de ideia no meio do caminho",
+  "title": "Dahshur: pirâmide curvada de Snefru"
+ },
+ "dahshur-red-pyramid": {
+  "stops": {
+   "1": {
+    "line": "Olhe para cima ao longo da longa encosta à sua frente.",
+    "paragraphs": [
+     "Olhe para cima ao longo da longa encosta à sua frente. Esta é a pirâmide vermelha, a pirâmide mais alta de Dahshur. O sítio fica na borda do deserto, a cerca de quarenta quilômetros ao sul do Cairo. Os lados da base medem cerca de duzentos e vinte metros, e ela se eleva a cerca de cento e cinco metros. Em todo o Egito, só as pirâmides de Quéops e Quéfren, em Gizé, são maiores.",
+     "O construtor foi o rei Snefru, fundador da Quarta Dinastia e pai de Quéops. Os estudiosos datam seu reinado por volta de 2600 antes de Cristo, mas os números variam. Uma cronologia comum indica de 2613 a 2589 antes de Cristo. Outra coloca sua subida ao trono mais perto de 2625 antes de Cristo. Snefru construiu três grandes pirâmides. A primeira fica em Meidum. A segunda é a pirâmide curvada, um pouco ao sul. Esta foi a última.",
+     "Repare na inclinação. É suave, cerca de quarenta e três graus, e foi definida assim desde o início. Na pirâmide curvada, os construtores tinham começado bem mais íngremes e precisaram mudar de rumo a meia altura. Aqui não há sinal dessa luta. Os egiptólogos descrevem esta pirâmide como bem planejada, com uso eficiente da pedra. Ela é muitas vezes chamada de primeira pirâmide verdadeira a ser concluída, com faces retas e lisas em vez de degraus.",
+     "A nova forma também tinha um significado. O deus sol Rá ganhou importância durante a Quarta Dinastia. A pirâmide verdadeira é amplamente lida como um símbolo de Rá. Na época de Quéops, filho de Snefru, o rei levava o título de Filho de Rá.",
+     "Seu nome antigo sobrevive em mais de uma tradução: “Snefru brilha”, “Snefru se ergue” ou “Snefru aparece”. As pessoas que vivem perto de Dahshur lhe deram um nome próprio, el haram el watwat, a pirâmide dos morcegos.",
+     "Este campo de pirâmides faz parte do sítio do Patrimônio Mundial que a UNESCO registra como Mênfis e os campos de pirâmides que vão de Gizé a Dahshur."
+    ],
+    "title": "Uma pirâmide com a forma certa"
+   },
+   "2": {
+    "line": "Olhe de perto as pedras à sua frente.",
+    "title": "As pedras vermelhas e a pele branca perdida"
+   },
+   "3": {
+    "line": "Olhe para cima ao longo da face norte.",
+    "title": "A escada e a entrada"
+   },
+   "4": {
+    "line": "Você desceu pelo corredor longo e baixo desde a entrada, sempre em declive.",
+    "title": "O corredor e as duas primeiras câmaras"
+   },
+   "5": {
+    "line": "A terceira câmara fica mais alta que as outras duas.",
+    "title": "A câmara funerária"
+   },
+   "6": {
+    "line": "Deste lado leste ficava o templo onde se faziam oferendas ao rei morto.",
+    "title": "As ruínas do templo funerário"
+   },
+   "7": {
+    "line": "Ao seu lado, sobre um pedestal elevado, está um piramídion, a pedra pontiaguda feita para coroar o topo de uma pirâmide.",
+    "title": "O piramídion reconstruído"
+   }
+  },
+  "tagline": "A pirâmide de faces lisas de Snefru, por dentro e por fora",
+  "title": "Dahshur: pirâmide vermelha de Snefru"
+ },
  "dali-museum": {
   "stops": {
    "1": {
@@ -3804,6 +4422,58 @@
   },
   "tagline": "Flutuar no lugar mais baixo da Terra",
   "title": "O Mar Morto"
+ },
+ "deir-el-medina": {
+  "stops": {
+   "1": {
+    "line": "Os muros baixos à sua volta são o que resta de uma aldeia construída com um único propósito.",
+    "paragraphs": [
+     "Os muros baixos à sua volta são o que resta de uma aldeia construída com um único propósito. Ela abrigava as pessoas que escavavam e pintavam os túmulos dos reis do Egito. Seu nome antigo era Set Maat, geralmente traduzido como o Lugar da Verdade, e seus operários tinham o título de servidores no Lugar da Verdade.",
+     "Repare na localização. O povoado fica escondido numa depressão seca do deserto, perto dos vales reais. Mantê-lo longe das cidades comuns talvez ajudasse a guardar o segredo dos sepultamentos reais. Era também um lugar quente e fechado. A rocha em volta reflete o sol, e uma colina ao norte bloqueia a brisa.",
+     "Os vestígios datáveis mais antigos são mais ou menos do reinado de Tutmés Primeiro, por volta de 1500 antes de Cristo. A comunidade durou, de alguma forma, cerca de quatrocentos a quinhentos anos. As contagens de casas variam. Algumas falam em cerca de sessenta e oito casas no auge. Outras sugerem de quarenta a cento e vinte famílias, conforme o volume de obras reais em andamento.",
+     "A aldeia foi abandonada por volta de 1110 a 1080 antes de Cristo, no fim do Império Novo, quando saques de túmulos, ataques e desordens tornaram o vale mais difícil de defender.",
+     "Este lugar importa para além dos seus túmulos. As escavações, sobretudo de uma equipe francesa liderada por Bernard Bruyère de 1922 a 1951, produziram um dos relatos mais bem documentados da vida cotidiana em todo o mundo antigo."
+    ],
+    "title": "O Lugar da Verdade"
+   },
+   "10": {
+    "line": "Um terceiro túmulo notável pertenceu a Pashedu, um artesão real ativo sob Seti Primeiro e Ramsés Segundo.",
+    "title": "Pashedu sob a palmeira"
+   },
+   "2": {
+    "line": "Imagine a rua onde você está como uma viela estreita, com casas apertadas dos dois lados.",
+    "title": "Dentro da casa de um operário"
+   },
+   "3": {
+    "line": "O que torna Deir el-Medina especial é o papel.",
+    "title": "Uma aldeia que anotava tudo"
+   },
+   "4": {
+    "line": "Os homens daqui eram pagos pelo Estado, em grãos, com outras rações como peixe, legumes e óleo.",
+    "title": "“Estamos com fome”"
+   },
+   "5": {
+    "line": "Este pequeno templo de pedra é mais de mil anos mais novo que a aldeia ao redor.",
+    "title": "O templo de Hathor"
+   },
+   "6": {
+    "line": "O chão dentro deste muro era sagrado muito antes dos Ptolomeus.",
+    "title": "Os deuses da aldeia"
+   },
+   "7": {
+    "line": "Os operários de Deir el-Medina não deixavam os próprios túmulos ao acaso.",
+    "title": "Os túmulos dos próprios construtores de túmulos"
+   },
+   "8": {
+    "line": "Você está numa pequena sala com abóbada de berço, pintada em todas as paredes e no teto.",
+    "title": "A câmara funerária de Sennedjem"
+   },
+   "9": {
+    "line": "Inherkhau trabalhou cerca de um século depois de Sennedjem, chefiando a turma do túmulo real sob Ramsés Terceiro e Ramsés Quarto, no século décimo segundo antes de Cristo.",
+    "title": "O gato e a árvore de persea"
+   }
+  },
+  "tagline": "A aldeia que construiu os túmulos dos reis"
  },
  "delos": {
   "stops": {
@@ -3952,6 +4622,65 @@
   "tagline": "O oráculo de Apolo, o teatro, o estádio e o Auriga",
   "title": "Delfos"
  },
+ "dendera": {
+  "stops": {
+   "1": {
+    "line": "Você está no limite do chão sagrado de Hathor.",
+    "paragraphs": [
+     "Você está no limite do chão sagrado de Hathor. Um grosso muro de adobe o cerca por inteiro. Lá dentro há um recinto de cerca de quarenta mil metros quadrados. Cruzar esta linha era deixar a cidade e entrar na propriedade de uma deusa.",
+     "O registro oficial do Egito na UNESCO atribui este muro de tijolos ao imperador romano Domiciano. O portão de pedra encaixado nele traz o seu nome e o de um imperador posterior, Trajano. Os dois estão esculpidos aqui como faraós. Eles oferecem presentes aos deuses egípcios, como os reis nativos tinham feito por milhares de anos.",
+     "No lintel, procure um escaravelho. Para os egípcios, ele representava o sol ao amanhecer, empurrando a si mesmo para o céu. O Ministério do Turismo e Antiguidades restaurou este portão norte na primeira fase do seu projeto aqui. Esse trabalho devolveu a cor ao lintel e ao teto da passagem.",
+     "A deusa deste lugar tinha amplos poderes. Hathor era uma senhora do céu. Era também deusa da música, da dança, do amor e das mães. Os gregos a identificavam com a sua Afrodite.",
+     "Em egípcio antigo a cidade se chamava Iunet. Autores gregos e romanos a chamavam de Tentyra, um nome encontrado em livros mais antigos.",
+     "Sob os Ptolomeus, ela era a capital da sexta província do Alto Egito.",
+     "O culto aqui é muito mais antigo que o templo de pedra à sua frente. O Ministério aponta vestígios de construções anteriores neste local, que remontam ao Império Antigo."
+    ],
+    "title": "O muro e o portão romano"
+   },
+   "10": {
+    "line": "Ao sul do grande templo fica um menor, construído para Ísis.",
+    "title": "O templo de Ísis"
+   },
+   "11": {
+    "line": "Este tanque de pedra rebaixado é o lago sagrado.",
+    "title": "O lago sagrado"
+   },
+   "2": {
+    "line": "À sua direita, ao entrar, ficam dois pequenos templos.",
+    "title": "As duas casas de nascimento e a basílica"
+   },
+   "3": {
+    "line": "Estas fundações baixas de adobe pertenciam a uma casa de cura.",
+    "title": "O sanatório"
+   },
+   "4": {
+    "line": "Afaste-se e observe a frente do templo.",
+    "title": "A fachada, as colunas e o teto pintado"
+   },
+   "5": {
+    "line": "Depois do salão romano, você entra no núcleo mais antigo do templo, construído sob os Ptolomeus.",
+    "title": "Os salões internos e o santuário"
+   },
+   "6": {
+    "line": "Sob o núcleo do templo corre um conjunto oculto de salas longas e estreitas.",
+    "title": "As criptas"
+   },
+   "7": {
+    "line": "Duas escadas sobem ao telhado, uma no lado oeste e outra no lado leste.",
+    "title": "As escadas processionais e o quiosque"
+   },
+   "8": {
+    "line": "Na outra ponta do telhado, longe do quiosque, ficam dois conjuntos de pequenas capelas.",
+    "title": "As capelas de Osíris e o zodíaco"
+   },
+   "9": {
+    "line": "Esta é a parte de trás do templo, sua parede sul.",
+    "title": "A parede dos fundos: Cleópatra e Cesarião"
+   }
+  },
+  "tagline": "O templo de Hathor mais bem preservado, com telhado e tudo",
+  "title": "Templo de Hathor em Dendera"
+ },
  "derinkuyu-underground-city": {
   "stops": {
    "1": {
@@ -4048,6 +4777,60 @@
    }
   },
   "tagline": "A cidade sagrada de Zeus no sopé do Olimpo"
+ },
+ "djoser-saqqara": {
+  "stops": {
+   "1": {
+    "line": "Você está diante do primeiro grande monumento de pedra do Egito.",
+    "paragraphs": [
+     "Você está diante do primeiro grande monumento de pedra do Egito. O muro claro à sua frente é o muro do recinto do complexo funerário do rei Djoser. Ele data do início da Terceira Dinastia, por volta de 2650 antes de Cristo. As datas exatas variam entre os estudiosos. Em vida, o nome próprio de Djoser era Netjerikhet. O nome Djoser vem de uma tradição posterior.",
+     "Originalmente, o muro tinha cerca de dez metros e meio de altura e mais de um quilômetro e meio de comprimento. Ele cercava uma área de cerca de quinze hectares. O que você vê está em parte restaurado, mas o padrão é antigo.",
+     "Observe a superfície. Ela é esculpida com painéis fundos e recuados, um após o outro, ao longo de todo o muro. O desenho copia a fachada de um palácio real, os mesmos painéis que reis anteriores tinham construído em adobe. Aqui, pela primeira vez, ele foi esculpido em fino calcário branco.",
+     "Agora conte os portões. Ao longo do muro há portas falsas, esculpidas para parecer entradas, mas que não levam a lugar nenhum. Só uma abertura é verdadeira: a passagem estreita perto do canto sudeste, à sua frente. Ela tem só cerca de um metro de largura. Portas de pedra esculpidas dentro da passagem ficam abertas para sempre.",
+     "Por que construir uma cidade com portões falsos? O complexo foi feito para o espírito do rei, o seu ka. Muitos de seus edifícios nunca foram pensados para uso dos vivos, e foram construídos como cópias maciças de pedra. Alguns estudiosos acham que o próprio cortejo fúnebre entrou por uma rampa provisória sobre o muro.",
+     "O homem a quem tudo isso é mais atribuído é Imhotep, alto funcionário de Djoser. Djoser o honrou mandando gravar o nome dele na base de uma de suas próprias estátuas, uma honra rara."
+    ],
+    "title": "O muro do recinto e o único portão verdadeiro"
+   },
+   "10": {
+    "line": "A sudoeste fica uma plataforma de pedra baixa e plana na areia.",
+    "title": "A pirâmide enterrada de Sekhemkhet"
+   },
+   "2": {
+    "line": "Você está dentro da colunata de entrada, um longo corredor ladeado de colunas.",
+    "title": "A colunata de entrada"
+   },
+   "3": {
+    "line": "Você está no grande pátio sul, o maior espaço aberto do complexo.",
+    "title": "O pátio sul e as pedras da corrida"
+   },
+   "4": {
+    "line": "Na ponta sul do pátio há um edifício comprido com uma faixa de najas esculpidas no alto.",
+    "title": "O túmulo sul"
+   },
+   "5": {
+    "line": "Você está no pátio do Heb Sed, um pátio longo e estreito a leste da pirâmide.",
+    "title": "O pátio do Heb Sed e suas capelas falsas"
+   },
+   "6": {
+    "line": "Na ponta do pátio do Heb Sed, uma passagem estreita se abre para mais dois pátios, lado a lado.",
+    "title": "A casa do Sul e a casa do Norte"
+   },
+   "7": {
+    "line": "Agora olhe para cima, para a própria pirâmide de degraus.",
+    "title": "A pirâmide de degraus"
+   },
+   "8": {
+    "line": "No lado norte da pirâmide há uma pequena caixa de pedra lacrada, encostada à rampa.",
+    "title": "O serdab e a estátua de Djoser"
+   },
+   "9": {
+    "line": "Agora olhe para o nordeste, para o monte baixo coberto de entulho fora do canto do muro de Djoser.",
+    "title": "A pirâmide de Userkaf"
+   }
+  },
+  "tagline": "Onde o Egito construiu pela primeira vez em pedra, e um rei correu para sempre",
+  "title": "Saqqara: o complexo da pirâmide de degraus de Djoser"
  },
  "doges-palace": {
   "stops": {
@@ -4262,6 +5045,130 @@
   "tagline": "A duna mais alta da Europa, entre pinhal e oceano",
   "title": "Duna do Pilat e baía de Arcachon"
  },
+ "edfu": {
+  "stops": {
+   "1": {
+    "line": "Você está olhando para um pequeno templo construído para um deus menino.",
+    "paragraphs": [
+     "Você está olhando para um pequeno templo construído para um deus menino. O grande templo atrás dele pertencia a Hórus, o deus falcão de Edfu. Sua esposa divina era Hathor de Dendera, e o filho deles era Harsomtus. Este pequeno templo é um mammisi, ou casa de nascimento.",
+     "O Tell Edfu Project da Universidade Yale explica a ideia. Todo ano, o nascimento e a coroação da criança divina eram encenados aqui. Por extensão, a festa também renovava o poder do rei. Cantores e dançarinos se apresentavam no pátio aberto, onde o povo podia assistir.",
+     "O templo é ptolomaico. Suas inscrições citam Ptolomeu Oitavo e seu filho Ptolomeu Nono.",
+     "Olhe as colunas. Elas têm a forma de feixes de papiro, plantas de pântano e flores. O projeto as liga ao mito de Ísis, que deu à luz Hórus e o escondeu nos pântanos do delta do Nilo. No alto de cada coluna há uma figura esculpida de Bes. Ele era o deus que protegia as mães e os recém-nascidos.",
+     "O edifício está voltado para o leste, porque a criança divina era ligada ao sol nascente. As paredes do santuário interno já foram cobertas de folhas de ouro, para captar a luz. Só foram encontrados poucos vestígios desse ouro, na parede oeste.",
+     "O projeto conta cerca de duzentas cenas rituais neste pequeno edifício. As mais importantes mostram o deus menino nascendo, sendo amamentado e coroado. Deuses protetores e encantamentos cobrem as paredes, para manter mãe e filho em segurança."
+    ],
+    "title": "A casa de nascimento"
+   },
+   "2": {
+    "line": "Olhe para cima.",
+    "title": "O pilone"
+   },
+   "3": {
+    "line": "Você está num grande pátio pavimentado, a céu aberto.",
+    "title": "O grande pátio"
+   },
+   "4": {
+    "line": "Aqui a luz diminui, porque esta parte do templo manteve o seu telhado.",
+    "title": "Os dois salões de colunas"
+   },
+   "5": {
+    "line": "Você saiu dos salões de colunas para um espaço mais calmo e estreito.",
+    "title": "As salas de oferendas e as escadas do telhado"
+   },
+   "6": {
+    "line": "Você chegou ao santo dos santos.",
+    "title": "O santuário de Hórus"
+   },
+   "7": {
+    "line": "Entre o templo e o seu muro externo corre uma longa passagem a céu aberto.",
+    "title": "As paredes do corredor"
+   },
+   "8": {
+    "line": "Um nilômetro é um medidor para o rio.",
+    "title": "O nilômetro"
+   }
+  },
+  "tagline": "O templo mais bem preservado do Egito, casa do deus falcão",
+  "title": "Templo de Hórus em Edfu"
+ },
+ "egyptian-museum-tahrir": {
+  "stops": {
+   "1": {
+    "line": "Este é o Museu Egípcio da Praça Tahrir.",
+    "paragraphs": [
+     "Este é o Museu Egípcio da Praça Tahrir. O Ministério do Turismo e Antiguidades do Egito o chamou de museu arqueológico mais antigo do Oriente Médio. Também afirmou que nenhuma coleção de antiguidades faraônicas no mundo é maior.",
+     "O prédio tem uma história própria. Em 1895 o Egito realizou um concurso internacional para escolher seu arquiteto. Segundo o Ministério, foi o primeiro concurso do gênero. Um arquiteto francês, Marcel Dourgnon, venceu. A pedra fundamental foi lançada em 1897. Foi um dos primeiros prédios da região feitos de concreto armado. O quediva Abbas Hilmi Segundo, governante do Egito, inaugurou o museu em 1902.",
+     "Por que construí-lo? Porque a coleção vivia ficando grande demais para suas sedes. Tudo começou com outro francês, Auguste Mariette. Em 1858 ele se tornou o primeiro diretor do novo serviço de antiguidades do Egito. Guardou suas descobertas num antigo armazém em Bulaq, à beira do Nilo.",
+     "Bulaq era um lugar arriscado para tesouros. Uma forte cheia do Nilo danificou objetos ali em 1878. Muitos desenhos e anotações do próprio Mariette se perderam na água. Depois disso, a coleção foi para uma parte de um palácio do quediva Ismail em Gizé. Só então veio para cá, para um prédio feito para ela.",
+     "Mariette não viveu para ver isso. Morreu em 1881. Seu desejo era ser enterrado no jardim do seu museu. Seu túmulo foi transferido para o jardim daqui quando este prédio foi inaugurado.",
+     "O prédio é um monumento por si só. Está inscrito no registro de patrimônio do Egito por sua arquitetura. Um arqueólogo sênior do Ministério, Magdy Shaker, chamou o museu de testemunha de dois nascimentos. Um é o nascimento da civilização do antigo Egito, contado por seus objetos. O outro é a fundação da egiptologia como disciplina."
+    ],
+    "title": "Um palácio cor-de-rosa para os faraós"
+   },
+   "10": {
+    "line": "Este grupo mostra três figuras de pé, esculpidas num único bloco de pedra cinza-escura.",
+    "title": "Miquerinos entre as deusas"
+   },
+   "11": {
+    "line": "Este rei sentado tem a pele negra e os braços cruzados.",
+    "title": "Mentuhotep Segundo, o rei negro"
+   },
+   "12": {
+    "line": "Este grupo gigante mostra uma família real.",
+    "title": "Amenhotep Terceiro, Tiye e suas filhas"
+   },
+   "13": {
+    "line": "Esta figura imponente é Aquenáton, um rei da Décima Oitava Dinastia.",
+    "title": "O colosso de Aquenáton"
+   },
+   "14": {
+    "line": "Esta alta placa de granito é a estela de Merneptá.",
+    "title": "A estela de Merneptá"
+   },
+   "15": {
+    "line": "Este rosto de ouro pertenceu a Psusenes Primeiro.",
+    "title": "Psusenes e o caixão de prata"
+   },
+   "16": {
+    "line": "Estes objetos pertenceram a um casal que não era da realeza, mas cuja filha se casou com um rei.",
+    "title": "Yuya e Tuya"
+   },
+   "2": {
+    "line": "Por mais de um século, este foi o lugar para ver o antigo Egito no Cairo.",
+    "title": "Um museu que não para de mudar"
+   },
+   "3": {
+    "line": "Esta placa plana de pedra é a Paleta de Narmer.",
+    "title": "A Paleta de Narmer"
+   },
+   "4": {
+    "line": "O rei sentado à sua frente é Djoser.",
+    "title": "Djoser, a estátua em tamanho natural mais antiga"
+   },
+   "5": {
+    "line": "Esta figurinha minúscula é o menor objeto deste guia.",
+    "title": "Quéops, o construtor da Grande Pirâmide, em marfim"
+   },
+   "6": {
+    "line": "Este rei sentado é Quéfren, filho de Quéops.",
+    "title": "Quéfren no trono"
+   },
+   "7": {
+    "line": "Estas duas figuras sentadas são Rahotep e sua esposa Nofret.",
+    "title": "Rahotep e Nofret"
+   },
+   "8": {
+    "line": "Esta faixa de reboco pintado mostra seis gansos.",
+    "title": "Os gansos de Meidum"
+   },
+   "9": {
+    "line": "Este homem em plena passada é de madeira.",
+    "title": "O Sheikh el-Balad"
+   }
+  },
+  "tagline": "De Narmer a Psusenes: o primeiro grande museu do Cairo",
+  "title": "Museu Egípcio, Praça Tahrir, Cairo"
+ },
  "eiffel-tower": {
   "stops": {
    "1": {
@@ -4370,6 +5277,60 @@
    }
   },
   "tagline": "O imenso mosteiro-palácio de Filipe II na serra"
+ },
+ "elephantine-island": {
+  "stops": {
+   "1": {
+    "line": "Você atravessou o Nilo até uma ilha de memória muito longa.",
+    "paragraphs": [
+     "Você atravessou o Nilo até uma ilha de memória muito longa. Elefantina tem cerca de um quilômetro e meio de comprimento e cerca de meio quilômetro de largura. Ela fica na ponta rio abaixo da Primeira Catarata, o trecho de rochas e corredeiras logo ao sul de Assuã.",
+     "Para os antigos egípcios, aqui era a borda do seu país. A cidade da ilha ficava de frente para Assuã, do outro lado da água. Juntas, formavam a cidade de fronteira do Egito, uma base para o comércio rumo ao sul e para incursões militares. O Ministério do Turismo e Antiguidades chama a ilha de porta de entrada do Egito para os comerciantes vindos da Núbia.",
+     "O nome egípcio da ilha era Abu, e os gregos o traduziram como Elefantina. Os dois nomes apontam para o elefante. Estudiosos que mapearam os locais sagrados da ilha acham que o nome provavelmente reflete o comércio de marfim. O marfim era uma das muitas mercadorias que passavam por aqui a caminho do norte.",
+     "As pessoas se fixaram aqui muito cedo. O Instituto Arqueológico Alemão data o início da ocupação de cerca de 3300 antes de Cristo. Outro estudo situa as casas mais antigas por volta de 3500 antes de Cristo. Ou seja, gente vivia aqui desde algum momento entre 3500 e 3300 antes de Cristo.",
+     "O fim veio muito mais tarde. Segundo o instituto alemão, o povoado foi abandonado no século dez ou onze depois de Cristo. Outro estudo admite que alguma vida continuou até o século treze ou catorze. De todo modo, a cidade durou mais de quatro mil anos.",
+     "Em 1969, o Instituto Arqueológico Alemão e o Instituto Suíço começaram aqui uma escavação conjunta. As ruínas da ilha passaram a fazer parte de um bem do Patrimônio Mundial em 1979."
+    ],
+    "title": "A ilha na fronteira"
+   },
+   "10": {
+    "line": "As ruínas terminam aqui, e a ilha continua como bairro.",
+    "title": "As aldeias núbias"
+   },
+   "2": {
+    "line": "A casa branca à sua frente não foi construída como museu.",
+    "title": "A vila do Museu de Assuã"
+   },
+   "3": {
+    "line": "Este prédio moderno e baixo é o anexo do museu.",
+    "title": "O anexo e o carneiro sagrado"
+   },
+   "4": {
+    "line": "Satet era uma deusa da fronteira.",
+    "title": "O templo de Satet"
+   },
+   "5": {
+    "line": "Dois nilômetros sobrevivem em Elefantina.",
+    "title": "O nilômetro de Satet"
+   },
+   "6": {
+    "line": "Aqui está algo raro no antigo Egito.",
+    "title": "O santuário de Heqaib"
+   },
+   "7": {
+    "line": "Khnum era representado como um homem com cabeça de carneiro.",
+    "title": "O templo de Khnum"
+   },
+   "8": {
+    "line": "Este é o segundo nilômetro da ilha, e ele é bem diferente do de escada.",
+    "title": "O nilômetro de Khnum"
+   },
+   "9": {
+    "line": "Ao seu redor não há um monumento, mas uma cidade inteira.",
+    "title": "A antiga cidade de Abu"
+   }
+  },
+  "tagline": "A ilha onde o Egito media o Nilo",
+  "title": "Ilha Elefantina"
  },
  "ephesus": {
   "stops": {
@@ -5197,6 +6158,233 @@
   "tagline": "Campos de batalha, cemitérios e memoriais de 1915",
   "title": "Campos de batalha de Galípoli"
  },
+ "gem-grand-hall": {
+  "stops": {
+   "1": {
+    "line": "Acima de você está um obelisco de Ramsés Segundo, erguido do chão sobre uma plataforma para que você possa olhar para ele por baixo.",
+    "paragraphs": [
+     "Acima de você está um obelisco de Ramsés Segundo, erguido do chão sobre uma plataforma para que você possa olhar para ele por baixo. O museu o chama de único obelisco suspenso do mundo.",
+     "Ele vem de Tânis, uma cidade no leste do delta do Nilo. Segundo o museu, Ramsés ergueu ali mais de dez obeliscos, e este, com cerca de dezesseis metros de altura, foi o mais alto já levantado em Tânis. Pesa cerca de oitenta e sete toneladas. Foi encontrado caído em duas partes, e as metades foram unidas de novo antes de ser erguido aqui.",
+     "Por que suspendê-lo no ar? Na face de baixo da pedra, onde normalmente ficaria escondida sobre a base, há dois cartuchos de Ramsés. Os engenheiros que restauraram o obelisco dizem que essa gravação inspirou a ideia de elevá-lo, para que os visitantes pudessem olhar para cima e vê-la. Eles também sugerem que um nome escondido sob a base podia proteger o direito do rei sobre o monumento, caso um governante posterior tentasse regravar as inscrições visíveis. Essa é a interpretação deles, não um fato comprovado.",
+     "A plataforma se apoia em quatro grandes pernas, e nas laterais aparece a palavra “Egito” em muitas línguas do mundo. Poder ficar embaixo e olhar para cima depende de como o museu organiza o espaço naquele dia."
+    ],
+    "title": "O obelisco suspenso"
+   },
+   "10": {
+    "line": "Este primeiro tema da escadaria é a imagem real: como os reis do Egito escolhiam se mostrar.",
+    "title": "A imagem real"
+   },
+   "11": {
+    "line": "O segundo tema são as casas dos deuses: os edifícios que os reis dedicavam a eles.",
+    "title": "As casas divinas"
+   },
+   "12": {
+    "line": "O terceiro tema são os deuses e os reis.",
+    "title": "Deuses e reis"
+   },
+   "13": {
+    "line": "O último tema é a viagem para a eternidade.",
+    "title": "Viagem para a eternidade"
+   },
+   "14": {
+    "line": "Vire-se no alto da escadaria.",
+    "title": "A vista lá de cima"
+   },
+   "2": {
+    "line": "Você está entrando no Grande Saguão, o enorme espaço de entrada do museu.",
+    "title": "O Grande Saguão"
+   },
+   "3": {
+    "line": "Este gigante de granito vermelho viajou mais de uma vez nos últimos dois séculos.",
+    "title": "O colosso de Ramsés Segundo"
+   },
+   "4": {
+    "line": "Ramsés Segundo reinou tanto tempo que seu filho e sucessor, Merneptá, já era idoso quando finalmente subiu ao trono.",
+    "title": "A coluna da vitória de Merneptá"
+   },
+   "5": {
+    "line": "Imagine estas duas estátuas deitadas no fundo do mar por muitos séculos.",
+    "title": "Um rei e uma rainha ptolomaicos"
+   },
+   "6": {
+    "line": "Procure um grupo de dez estátuas do rei Sesóstris Primeiro.",
+    "title": "As estátuas de Sesóstris Primeiro"
+   },
+   "7": {
+    "line": "Esta laje inscrita é a lista real de Saqqara, feita no tempo de Ramsés Segundo e encontrada em Saqqara.",
+    "title": "A lista real de Saqqara"
+   },
+   "8": {
+    "line": "Comece pelos pés.",
+    "title": "Ramsés Segundo de Tânis"
+   },
+   "9": {
+    "line": "À sua frente começa a Grande Escadaria.",
+    "title": "A subida da Grande Escadaria"
+   }
+  },
+  "tagline": "Um obelisco, colossos e uma escadaria de reis"
+ },
+ "gem-main-galleries": {
+  "stops": {
+   "1": {
+    "line": "Você está no começo de uma história muito longa.",
+    "paragraphs": [
+     "Você está no começo de uma história muito longa. O museu apresenta estas salas como um passeio pela história egípcia, de cerca de 700.000 antes de Cristo até 394 depois de Cristo.",
+     "Elas mostram como reis e pessoas comuns viviam o dia a dia. Também tratam daquilo em que as pessoas acreditavam e de como se preparavam para o sepultamento e a vida após a morte.",
+     "A história passa por quatro grandes períodos. O primeiro vai da pré-história ao fim do Império Antigo e do Primeiro Período Intermediário, até cerca de 2034 antes de Cristo. O segundo abrange o Império Médio e o Segundo Período Intermediário, até cerca de 1550 antes de Cristo. O terceiro é o Império Novo, até cerca de 1069 antes de Cristo. O último vai do Terceiro Período Intermediário, passando pela Época Baixa, até a época greco-romana.",
+     "Três temas atravessam tudo: Sociedade, Realeza e Crenças. Sociedade acompanha as pessoas: caçadores-coletores e agricultores, escribas e sacerdotes, soldados e funcionários. Realeza acompanha os papéis cambiantes de reis e rainhas ao longo de mais de três mil anos de governo real, até o Egito se tornar província romana. Crenças acompanha os deuses e deusas, seus templos e cultos, e os costumes funerários em transformação.",
+     "Os egiptólogos John e Colleen Darnell elogiaram esse projeto. Eles observaram que você pode ver os objetos em ordem cronológica através dos temas. Ou pode seguir um único tema desde os primeiros tempos até o domínio romano, depois voltar e retomar outro.",
+     "O museu destaca certas peças principais, e este guia para numa seleção delas. As exposições mudam. Objetos podem ser movidos, trocados ou enviados para restauro. Se uma peça descrita aqui não estiver onde você espera, simplesmente pule essa parada."
+    ],
+    "title": "As Galerias Principais"
+   },
+   "10": {
+    "line": "Este é um anúncio político gravado em pedra.",
+    "title": "A estela da restauração"
+   },
+   "11": {
+    "line": "Dois deuses estão sentados lado a lado num único trono.",
+    "title": "Amon e Mut"
+   },
+   "12": {
+    "line": "O nome dela significa “a poderosa”.",
+    "title": "Sekhmet"
+   },
+   "13": {
+    "line": "Aqui está uma pequena criança de prata, nua, um pouco inclinada para a frente, com os braços pendendo ao lado do corpo.",
+    "title": "Os tesouros de Dendera"
+   },
+   "14": {
+    "line": "Diante de você está um animal que já foi tratado como sagrado.",
+    "title": "A múmia de crocodilo"
+   },
+   "15": {
+    "line": "Um jovem olha de dentro de uma pequena cabeça de mármore, com apenas 20 centímetros de altura.",
+    "title": "Alexandre, o Grande"
+   },
+   "16": {
+    "line": "Esta é uma pedra com uma reforma do calendário.",
+    "title": "O decreto de Canopo"
+   },
+   "17": {
+    "line": "As Galerias Principais terminam na época greco-romana.",
+    "title": "Palmira e a época romana"
+   },
+   "2": {
+    "line": "Olhe primeiro os olhos.",
+    "title": "Mitri, o escriba"
+   },
+   "3": {
+    "line": "Aqui se expõem joias reais muito antigas, e um dos conjuntos foi achado num lugar que ninguém esperava.",
+    "title": "Braceletes reais"
+   },
+   "4": {
+    "line": "Há mais de quatro mil e quinhentos anos, os móveis de uma rainha foram selados num poço no chão.",
+    "title": "Os móveis da rainha Hetepheres"
+   },
+   "5": {
+    "line": "Quéfren reinou na Quarta Dinastia, em meados do terceiro milênio antes de Cristo.",
+    "title": "Quéfren"
+   },
+   "6": {
+    "line": "Oitenta soldados de madeira estão em dois grupos.",
+    "title": "Os soldados de Mesehti"
+   },
+   "7": {
+    "line": "Em oito de fevereiro de 1936, arqueólogos franceses que escavavam o templo de Montu em Tod, ao sul de Luxor, encontraram um tesouro de arcas de metal com seu conteúdo.",
+    "title": "A taça de prata de Tod"
+   },
+   "8": {
+    "line": "Uma mulher governa o Egito como rei e se faz representar como homem.",
+    "title": "Hatshepsut ajoelhada"
+   },
+   "9": {
+    "line": "O homem desta estátua se tornou rei, mas não começou como um.",
+    "title": "Paramessu, o escriba"
+   }
+  },
+  "tagline": "Reis, deuses e escribas ao longo de 4000 anos",
+  "title": "Grande Museu Egípcio: Galerias Principais"
+ },
+ "gem-tutankhamun": {
+  "stops": {
+   "1": {
+    "line": "Antes do ouro, conheça o menino.",
+    "paragraphs": [
+     "Antes do ouro, conheça o menino. O museu data seu nascimento por volta de 1345 antes de Cristo, e seu reinado mais ou menos de 1336 a 1327 antes de Cristo. Seu nome de nascimento era Tutancáton, que significa “imagem viva de Áton”.",
+     "Áton era o disco solar adorado por Aquenáton, o faraó que reinava quando o menino nasceu. Aquenáton tinha dado as costas à religião tradicional do Egito e construído uma nova capital no deserto, em Amarna.",
+     "Os estudiosos discutem há muito tempo quem eram seus pais. Estudos de DNA identificaram seu pai como a múmia encontrada no túmulo KV55, que muitos estudiosos acreditam ser Aquenáton. Identificaram sua mãe como uma mulher conhecida apenas como a Dama Jovem, cuja múmia foi encontrada no túmulo KV35. Alguns estudiosos duvidam da confiabilidade desses resultados de DNA antigo e propõem outras árvores genealógicas.",
+     "Tutancáton subiu ao trono com oito ou nove anos. Ainda criança, foi prometido a Anquesenpaáton, filha de Aquenáton e Nefertiti, e sua meia-irmã. Mais tarde o casal adotou novos nomes, Tutancâmon e Anquesenamon: em ambos, Áton deu lugar a Amon, o grande deus de Tebas.",
+     "A corte deixou Amarna. O rei e a rainha viveram nas capitais tradicionais, Tebas e Mênfis. Uma estela de seu reinado, conhecida como estela da restauração, descreve um país mergulhado no caos e a restauração dos templos pelo rei.",
+     "Ele morreu jovem, depois de cerca de nove anos de reinado. Ai, um velho funcionário, o sepultou e se tornou rei depois dele, e em seguida veio o general Horemheb. A causa de sua morte nunca foi esclarecida, e o folheto do museu lista entre seus temas as teorias sobre sua saúde e sua morte."
+    ],
+    "title": "Tutancâmon e sua família"
+   },
+   "10": {
+    "line": "Quase todo o ouro do túmulo é uma camada fina sobre madeira.",
+    "title": "O caixão de ouro interno"
+   },
+   "11": {
+    "line": "O museu coloca esta máscara entre os objetos mais famosos do mundo.",
+    "title": "A máscara de ouro"
+   },
+   "12": {
+    "line": "Olhe os olhos e a leve inclinação da cabeça.",
+    "title": "A cabeça sobre a flor de lótus"
+   },
+   "13": {
+    "line": "Este é Anúbis, agachado em preto e dourado sobre um baú.",
+    "title": "Anúbis sobre um baú"
+   },
+   "14": {
+    "line": "Durante a mumificação, os embalsamadores retiravam certos órgãos do corpo e os tratavam separadamente.",
+    "title": "O santuário e o baú canópico"
+   },
+   "15": {
+    "line": "Estas pequenas figuras do rei são ushabtis.",
+    "title": "Os ushabtis"
+   },
+   "16": {
+    "line": "No outono de 1922, o arqueólogo britânico Howard Carter escavava no Vale dos Reis.",
+    "title": "A descoberta do túmulo"
+   },
+   "2": {
+    "line": "Este é o trono de ouro.",
+    "title": "O trono de ouro"
+   },
+   "3": {
+    "line": "Quando a equipe de Howard Carter olhou pela primeira vez para dentro do túmulo em 1922, duas figuras pretas do rei em tamanho natural estavam ali, observando.",
+    "title": "A estátua guardiã"
+   },
+   "4": {
+    "line": "Procure leitos dourados esculpidos em forma de animais.",
+    "title": "Os leitos funerários"
+   },
+   "5": {
+    "line": "Tutancâmon foi sepultado com seis carros.",
+    "title": "Os carros"
+   },
+   "6": {
+    "line": "O folheto do museu agrupa os pertences do rei no tema Estilo de vida: coisas sepultadas com ele para que pudesse manter sua posição real depois da morte, de comida, bebida e roupas até símbolos de poder e riqueza.",
+    "title": "Os pertences de um menino"
+   },
+   "7": {
+    "line": "Duas adagas foram encontradas nas faixas da múmia do rei.",
+    "title": "A adaga de ferro"
+   },
+   "8": {
+    "line": "Na câmara funerária, o sarcófago do rei estava escondido dentro de quatro enormes capelas douradas.",
+    "title": "As quatro capelas douradas"
+   },
+   "9": {
+    "line": "Dentro do sarcófago de pedra havia três caixões, um dentro do outro.",
+    "title": "O caixão externo"
+   }
+  },
+  "tagline": "Ouro, deuses e um rei menino: Tutancâmon no GEM",
+  "title": "Grande Museu Egípcio: as Galerias de Tutancâmon"
+ },
  "giverny": {
   "stops": {
    "1": {
@@ -5553,6 +6741,109 @@
   "tagline": "A rua principal de Veneza de vaporetto, palácio a palácio, da estação a São Marcos",
   "title": "O Grande Canal de vaporetto"
  },
+ "great-pyramid-khufu": {
+  "stops": {
+   "1": {
+    "line": "Dê alguns passos para trás e olhe para cima.",
+    "paragraphs": [
+     "Dê alguns passos para trás e olhe para cima. Esta é a Grande Pirâmide, o túmulo do rei Quéops, da quarta dinastia. Seu nome egípcio era Khufu, e Quéops é a forma grega. Seus construtores a chamavam de Akhet-Khufu, o Horizonte de Khufu.",
+     "Quando ela foi construída? As datas do reinado de Quéops variam entre os estudiosos. Um intervalo muito usado vai de cerca de 2589 a 2566 antes de Cristo. Outros o colocam algumas décadas antes. Então a resposta segura é cerca de quatro mil e quinhentos anos atrás. A obra costuma ser estimada em uns vinte anos.",
+     "Quando ficou pronta, tinha cerca de cento e quarenta e seis metros de altura. Cada lado da base media cerca de duzentos e trinta metros. Ela contém bem mais de dois milhões de blocos de pedra. Por mais de três mil anos, foi a estrutura mais alta feita por mãos humanas. Na Antiguidade, estava entre as Sete Maravilhas do Mundo. É a última delas ainda de pé.",
+     "No início da década de 1880, o agrimensor britânico Flinders Petrie passou dois invernos medindo-a com grande cuidado.",
+     "Quem a construiu? Não foram escravos, dizem as evidências. No sudeste do planalto, arqueólogos encontraram uma cidade onde viviam os construtores das pirâmides. Seus vestígios mais antigos podem datar do reinado de Quéops. Havia ruas, casas, padarias e quatro enormes galerias que talvez fossem alojamentos. No cemitério dos construtores, muitos esqueletos mostram fraturas que se consolidaram corretamente, sinal de ótimos cuidados médicos. Ossos de peixes, aves, bois, ovelhas, cabras e porcos mostram que os trabalhadores eram bem alimentados. Artesãos habilidosos faziam o trabalho de precisão. Grande parte do trabalho pesado era provavelmente feita por camponeses, na estação em que a cheia do Nilo cobria seus campos.",
+     "Como os blocos eram erguidos? A questão é debatida. As rampas são a explicação mais comum, mas nenhuma teoria convenceu todo mundo."
+    ],
+    "title": "Akhet-Khufu, o Horizonte de Khufu"
+   },
+   "10": {
+    "line": "Imagine a areia deste lado sul removida.",
+    "title": "Os barcos do sol"
+   },
+   "2": {
+    "line": "Olhe para baixo, no pé da face norte.",
+    "title": "O que resta do revestimento branco"
+   },
+   "3": {
+    "line": "Olhe bem para o alto na face norte.",
+    "title": "Três portas na pedra"
+   },
+   "4": {
+    "line": "Esta sala simples é a Câmara da Rainha.",
+    "title": "A Câmara da Rainha"
+   },
+   "5": {
+    "line": "Aqui os corredores se abrem de repente num grande salão.",
+    "title": "A Grande Galeria"
+   },
+   "6": {
+    "line": "Esta é a Câmara do Rei, o coração da pirâmide.",
+    "title": "A Câmara do Rei"
+   },
+   "7": {
+    "line": "Olhe para baixo.",
+    "title": "Onde se faziam as oferendas"
+   },
+   "8": {
+    "line": "Três pequenas pirâmides ficam enfileiradas a leste da Grande Pirâmide.",
+    "title": "As pirâmides das rainhas e um poço escondido"
+   },
+   "9": {
+    "line": "A oeste da pirâmide, o terreno é traçado como uma cidade.",
+    "title": "Hemiunu, o vizir"
+   }
+  },
+  "tagline": "A última das maravilhas antigas, ainda de pé em Gizé",
+  "title": "A Grande Pirâmide de Quéops, Gizé"
+ },
+ "greco-roman-museum": {
+  "stops": {
+   "1": {
+    "line": "Acima das colunas há uma única palavra grega gravada: Mouseion.",
+    "paragraphs": [
+     "Acima das colunas há uma única palavra grega gravada: Mouseion. Ela significa o lugar das Musas.",
+     "A palavra lembra o famoso Mouseion da antiga Alexandria. Ele ficava aqui perto e era um ponto de encontro de estudiosos que esperavam ser inspirados pelas Musas.",
+     "Este museu começou com um único homem. Em 1889, o estudioso italiano Giuseppe Botti decidiu proteger as antiguidades da cidade contra a perda e a destruição.",
+     "O museu foi fundado em 1892. Segundo o Ministério, o quediva Abbas Helmi Segundo o inaugurou. Ele começou numa modesta casa alugada. Botti foi seu primeiro diretor.",
+     "Os achados não paravam de chegar, e a casa logo ficou pequena demais. Nubar Paxá lançou a pedra fundamental deste prédio em 1894. Os arquitetos foram Dietrich e Stenon. A obra levou cerca de um ano, e o museu abriu aqui em 1895.",
+     "O Ministério das Antiguidades o chama de primeiro prédio do Egito projetado para ser um museu. É o único museu do país inteiramente dedicado ao Egito sob domínio grego e romano.",
+     "Desde 1953, arqueólogos egípcios o administram.",
+     "Em 2005, o museu fechou para uma longa reforma. A obra manteve a fachada clássica. Estabilizou a estrutura e acrescentou climatização. O prédio também foi ampliado.",
+     "O museu reabriu em outubro de 2023, depois de cerca de dezoito anos. Sua história percorre mais de vinte e cinco salas, dos gregos até o ano 641 depois de Cristo."
+    ],
+    "title": "Um museu chamado Mouseion"
+   },
+   "2": {
+    "line": "A história começa com o homem por trás de tudo.",
+    "title": "Alexandre e sua cidade"
+   },
+   "3": {
+    "line": "Esta imagem é feita de pedrinhas.",
+    "title": "Uma rainha com a proa de um navio"
+   },
+   "4": {
+    "line": "O novo reino precisava de um deus para dois povos, egípcios e gregos.",
+    "title": "Serápis, o touro Ápis e um deus para dois povos"
+   },
+   "5": {
+    "line": "Esta estátua é colossal.",
+    "title": "A rainha que veio do mar"
+   },
+   "6": {
+    "line": "Estas pequenas figuras de barro são chamadas estatuetas de Tânagra.",
+    "title": "Damas de barro e uma casa romana"
+   },
+   "7": {
+    "line": "Em 31 antes de Cristo, Otaviano derrotou Marco Antônio e Cleópatra.",
+    "title": "Roma toma o Egito"
+   },
+   "8": {
+    "line": "A era grega e romana do Egito durou quase mil anos.",
+    "title": "O além, são Menas e a arte copta"
+   }
+  },
+  "tagline": "Alexandre, os Ptolomeus e Roma, na sua própria cidade",
+  "title": "Museu Greco-Romano, Alexandria"
+ },
  "guggenheim-bilbao": {
   "stops": {
    "1": {
@@ -5844,6 +7135,67 @@
   },
   "tagline": "Um gigante almóada inacabado ao lado de um túmulo real",
   "title": "Torre Hassan e Mausoléu de Mohammed Quinto"
+ },
+ "hatshepsut-deir-el-bahri": {
+  "stops": {
+   "1": {
+    "line": "Olhe à frente para os três amplos terraços que sobem em degraus até o pé do penhasco.",
+    "paragraphs": [
+     "Olhe à frente para os três amplos terraços que sobem em degraus até o pé do penhasco. Você está vendo o grande templo de Hatshepsut, na baía chamada Deir el-Bahari. Ele fica na margem oeste do rio, de frente para Karnak, o grande templo de Amon na outra margem. Seus construtores o chamavam de Djeser-djeseru, que significa Santo dos Santos.",
+     "O nome moderno é árabe. Deir el-Bahari significa Mosteiro do Norte. Muito depois dos faraós, cristãos transformaram as ruínas em um mosteiro, e o nome pegou.",
+     "Levante os olhos para os penhascos. Eles envolvem o templo como as paredes de um teatro natural, e o prédio parece brotar da rocha. Acima deles se ergue um pico com forma natural de pirâmide, chamado em árabe de el-Qurn, o Chifre. Do outro lado dessa crista fica o Vale dos Reis.",
+     "Esta baía era sagrada muito antes de Hatshepsut. O ministério de antiguidades do Egito a descreve como consagrada a Hathor, a deusa que amamentava os reis. Acreditava-se que uma forma de Hathor vivia dentro destas colinas. Estelas a mostram como uma vaca saindo da montanha.",
+     "Uns seiscentos anos antes de Hatshepsut, um rei do Império Médio, Mentuhotep Segundo, escolheu este lugar para seu túmulo e seu templo. Os restos do templo dele ficam logo à sua esquerda. Os arquitetos de Hatshepsut aproveitaram a ideia de terraços e rampas, e a fizeram maior."
+    ],
+    "title": "Onde os penhascos encontram o deserto"
+   },
+   "10": {
+    "line": "Dois grupos de salas se abrem para o pátio superior.",
+    "title": "Os complexos do culto real e solar"
+   },
+   "11": {
+    "line": "Você chegou ao fim do eixo central do templo, seu ponto mais sagrado.",
+    "title": "O santuário de Amon"
+   },
+   "12": {
+    "line": "Vire-se e olhe de volta para os terraços.",
+    "title": "Depois dos faraós"
+   },
+   "2": {
+    "line": "Você está no pátio inferior.",
+    "title": "A rainha que se tornou rei"
+   },
+   "3": {
+    "line": "No fundo deste pátio, há uma colunata de cada lado da rampa.",
+    "title": "As colunatas inferiores"
+   },
+   "4": {
+    "line": "Esta é a colunata sul do terraço do meio, conhecida como Pórtico de Punt.",
+    "title": "A colunata de Punt"
+   },
+   "5": {
+    "line": "Do outro lado da rampa fica a colunata norte, o Pórtico do Nascimento.",
+    "title": "A colunata do nascimento"
+   },
+   "6": {
+    "line": "Você está no santuário de Hathor, no lado sul do nível do meio.",
+    "title": "A capela de Hathor"
+   },
+   "7": {
+    "line": "Na ponta norte do terraço há uma capela menor para Anúbis, o deus com cabeça de chacal do embalsamamento e dos cemitérios.",
+    "title": "A capela de Anúbis"
+   },
+   "8": {
+    "line": "No alto da rampa, a frente da colunata superior era ladeada por figuras gigantes de Hatshepsut como Osíris, deus dos mortos.",
+    "title": "O terraço superior e as estátuas osiríacas"
+   },
+   "9": {
+    "line": "Procure nas paredes ao seu redor trechos lisos, ásperos ou estranhamente vazios.",
+    "title": "O apagamento de Hatshepsut"
+   }
+  },
+  "tagline": "A rainha que se tornou rei, e seu templo nos penhascos",
+  "title": "Templo de Hatshepsut, Deir el-Bahari"
  },
  "hattusa": {
   "stops": {
@@ -6177,6 +7529,48 @@
   "tagline": "Capela venerada como a última casa da Virgem Maria",
   "title": "Casa da Virgem Maria"
  },
+ "ibn-tulun": {
+  "stops": {
+   "1": {
+    "line": "O longo muro de tijolos à sua frente já ficou no coração de uma cidade.",
+    "paragraphs": [
+     "O longo muro de tijolos à sua frente já ficou no coração de uma cidade. Essa cidade sumiu. Só esta mesquita sobreviveu a ela.",
+     "A história começa em 868. Naquele ano, um comandante chamado Ahmad ibn Tulun foi enviado ao Egito para governar Fustat em nome dos califas abássidas de Bagdá. Em dois anos ele governava o país inteiro. Então parou de mandar o tributo anual a Bagdá e passou a governar o Egito como se fosse seu.",
+     "Por volta de 870, ele começou uma nova cidade real. Ela se chamava al-Qatai, que quer dizer os bairros. Cada grupo de seguidores recebeu seu próprio lote. Ele escolheu uma elevação rochosa perto das colinas de Muqattam, a nordeste da velha Fustat. O nome dela era Jabal Yashkur. Muitas lendas cercavam essa colina. Acreditava-se que a arca de Noé tinha parado aqui, e que Deus tinha falado com Moisés neste lugar.",
+     "No alto da colina ele construiu sua grande mesquita. As obras começaram em 876 e terminaram em 879. A antiga mesquita de Amr, em Fustat, era pequena demais para as tropas dele, então esta virou o novo local da oração de sexta-feira. O ministério de antiguidades do Egito vê o prédio como mais um passo na ruptura dele com Bagdá. Uma placa de fundação num dos pilares internos traz o nome do patrono e a data. Ela está gravada numa escrita cúfica simples e angulosa.",
+     "Em 905, os abássidas retomaram o Egito. O exército deles destruiu al-Qatai e a arrasou. Quase nada da cidade sobreviveu. A mesquita foi poupada, e é o único monumento que restou da cidade inteira.",
+     "Ibn Tulun tinha se formado como soldado em Samarra, a capital abássida no Iraque. Ele trouxe o estilo de lá."
+    ],
+    "title": "Uma cidade que desapareceu"
+   },
+   "2": {
+    "line": "Você está entre dois muros.",
+    "title": "O recinto externo"
+   },
+   "3": {
+    "line": "Este pátio aberto é um quadrado de uns noventa metros de lado.",
+    "title": "O pátio e a fonte"
+   },
+   "4": {
+    "line": "Você está na sala mais funda, a que fica voltada para Meca.",
+    "title": "A sala de oração e o mihrab"
+   },
+   "5": {
+    "line": "Olhe para a parte de baixo do arco acima de você.",
+    "title": "Estuque, janelas e o friso de madeira"
+   },
+   "6": {
+    "line": "Aqui está a característica mais marcante da mesquita.",
+    "title": "O minarete em espiral"
+   },
+   "7": {
+    "line": "Estas duas casas altas ficam ao lado do muro externo da mesquita.",
+    "title": "As casas junto ao muro"
+   }
+  },
+  "tagline": "Uma mesquita de tijolos de 879 com um minarete em espiral",
+  "title": "Mesquita de Ibn Tulun"
+ },
  "ihlara-selime": {
   "stops": {
    "1": {
@@ -6248,6 +7642,99 @@
   },
   "tagline": "O lar de soldados de Luís XIV, a cúpula dourada e o túmulo de Napoleão",
   "title": "Les Invalides e Musée de l'Armée"
+ },
+ "islamic-cairo-muizz-north": {
+  "stops": {
+   "1": {
+    "line": "Você está no limite norte do Cairo medieval.",
+    "paragraphs": [
+     "Você está no limite norte do Cairo medieval. Esta porta é Bab al-Futuh, a Porta das Conquistas.",
+     "Ela foi construída em 1087 por Badr al-Jamali. Ele era vizir e chefe do exército do califa fatímida al-Mustansir.",
+     "As primeiras muralhas da cidade eram de tijolo. Quem as ergueu foi Jawhar al-Siqilli, o fundador do Cairo. Badr as achava fracas demais. Então construiu novas portas de pedra, mais ao norte. Isso deu à cidade espaço para crescer e defesas mais fortes.",
+     "A inscrição nesta porta a chama de Bab al-Iqbal, a Porta da Prosperidade. Mas o povo manteve o nome da porta mais antiga que ela substituiu.",
+     "Observe as duas torres. Suas frentes são arredondadas. Uma plataforma as liga por cima do arco. Aberturas no piso permitiam aos defensores despejar óleo fervente sobre os atacantes.",
+     "Agora olhe um pouco para leste ao longo da muralha. Aquela é Bab al-Nasr, a Porta da Vitória. Foi construída no mesmo ano. Suas torres são quadradas. Escudos esculpidos decoram sua frente. O ministério sugere que representam o papel das muralhas como escudo da cidade.",
+     "Esta porta também recebeu um novo nome oficial, Bab al-Izz, a Porta da Glória. E mais uma vez o povo manteve o antigo.",
+     "Estas portas, junto com Bab Zuwayla ao sul, são raros exemplos de arquitetura militar do mundo islâmico anteriores às Cruzadas."
+    ],
+    "title": "Bab al-Futuh e Bab al-Nasr: as portas fatímidas"
+   },
+   "2": {
+    "line": "Esta mesquita leva o nome do califa fatímida al-Hakim bi-Amr Allah.",
+    "title": "A mesquita de al-Hakim"
+   },
+   "3": {
+    "line": "Esta mesquita é muito mais nova que os edifícios fatímidas próximos.",
+    "title": "A mesquita de Sulayman Agha al-Silahdar"
+   },
+   "4": {
+    "line": "Atrás desta porta fica Bayt al-Suhaymi.",
+    "title": "Bayt al-Suhaymi: uma casa em duas metades"
+   },
+   "5": {
+    "line": "Esta pequena mesquita é al-Aqmar.",
+    "title": "A mesquita de al-Aqmar"
+   },
+   "6": {
+    "line": "Este edifício isolado é um sabil-kuttab.",
+    "title": "O sabil-kuttab de Abd al-Rahman Katkhuda"
+   },
+   "7": {
+    "line": "Este trecho da rua se chama Bayn al-Qasrayn, entre os dois palácios.",
+    "title": "A madraça e khanqah do sultão Barquq"
+   },
+   "8": {
+    "line": "Este portal gótico pertencia a uma igreja em Acre, na Palestina.",
+    "title": "A madraça e mausoléu de al-Nasir Muhammad"
+   },
+   "9": {
+    "line": "Este é o complexo do sultão al-Mansur Qalawun.",
+    "title": "O complexo de Qalawun"
+   }
+  },
+  "tagline": "Portas fatímidas e monumentos mamelucos no eixo medieval do Cairo"
+ },
+ "islamic-cairo-muizz-south": {
+  "stops": {
+   "1": {
+    "line": "Você está dentro do monumento de um sultão.",
+    "paragraphs": [
+     "Você está dentro do monumento de um sultão. Ele tem duas metades, uma de cada lado da rua.",
+     "Seu fundador foi Qansuh al-Ghuri. Ele subiu ao trono em 1501 e reinou por quinze anos. Foi um dos últimos sultões mamelucos do Egito.",
+     "Seu complexo foi erguido em 1503 e 1504. No lado oeste ficam a mesquita e a madraça, uma escola de direito islâmico e dos ditos do Profeta. No lado leste ficam seu mausoléu, uma casa para sufis, uma fonte pública e, acima dela, uma escola corânica.",
+     "Olhe para cima. Um teto de madeira cobre a rua entre as duas metades. Embaixo dele corre um mercado de tecidos e roupas.",
+     "Agora fique de frente para a mesquita. Sua entrada fica acima da rua, com lojas embaixo. Uma mesquita construída assim é chamada de mesquita suspensa.",
+     "A entrada é coroada por um arco trilobado. Sete fileiras de muqarnas, pedra esculpida em camadas escalonadas, o preenchem. A entrada também traz o brasão do sultão, entre faixas de mármore preto e branco.",
+     "Na esquina ergue-se um minarete quadrado de três andares. Ele termina em cinco remates em forma de bulbo, um desenho singular e raro.",
+     "Al-Ghuri nunca foi enterrado em seu mausoléu. Em 1516 ele morreu na batalha de Marj Dabiq, no norte da Síria, lutando contra os otomanos.",
+     "Um ano depois, o sultão otomano Selim Primeiro tomou o Cairo. Segundo o cronista Ibn Iyas, Selim admirou muito este edifício. Chamou seu salão de maravilhoso e desejou um edifício igual em Istambul.",
+     "Selim também tinha um plano mais sombrio. Ele queria os melhores artesãos do Egito para Istambul. Seus ministros se reuniram nesta mesquita para escolher os mestres de obras e artesãos que seriam mandados embora.",
+     "Há mais uma ligação triste. O último sultão mameluco, Tumanbay, foi enterrado num pátio deste complexo após sua execução. Seus restos foram transferidos mais tarde."
+    ],
+    "title": "A Ghuriya: o complexo duplo de um sultão"
+   },
+   "2": {
+    "line": "Este edifício era um hotel e armazém para mercadores viajantes.",
+    "title": "Wikalat al-Ghuri: a hospedaria dos mercadores"
+   },
+   "3": {
+    "line": "Esta mesquita começou com uma promessa feita numa cela de prisão.",
+    "title": "A mesquita de al-Muayyad Shaykh: de prisão a mesquita"
+   },
+   "4": {
+    "line": "Você está na porta sul do Cairo fatímida.",
+    "title": "Bab Zuwayla: a porta e seus minaretes"
+   },
+   "5": {
+    "line": "Olhe do outro lado da praça para este edifício baixo e elevado.",
+    "title": "A mesquita de al-Salih Talai"
+   },
+   "6": {
+    "line": "Você está na última rua de mercado coberta do Cairo.",
+    "title": "A rua dos fabricantes de tendas"
+   }
+  },
+  "tagline": "Os últimos sultões mamelucos, Bab Zuwayla e os fabricantes de tendas"
  },
  "istanbul-archaeological-museums": {
   "stops": {
@@ -6487,6 +7974,78 @@
   "tagline": "A mesquita mais querida de Dubai e a vela à beira-mar",
   "title": "Mesquita de Jumeirah e a costa"
  },
+ "karnak-amun-ra": {
+  "stops": {
+   "1": {
+    "line": "Você está diante da porta principal do Grande Templo de Amon.",
+    "paragraphs": [
+     "Você está diante da porta principal do Grande Templo de Amon. Na Antiguidade, o conjunto se chamava Ipet-isut, o que se traduz mais ou menos como o mais seleto dos lugares. Pertencia a Amon, o deus principal de Tebas, e os faraós continuaram a ampliá-lo por cerca de dois mil anos.",
+     "Olhe o portal à sua frente. É um pilone, um par de torres maciças com uma passagem entre elas. O Primeiro Pilone tem cerca de 113 metros de largura e cerca de 15 de espessura. Foi construído tarde, sob o rei Nectanebo Primeiro, um dos últimos governantes egípcios nativos. Nunca foi terminado. No lado de dentro se veem rampas de tijolo de barro, deixadas onde os construtores as abandonaram.",
+     "Agora olhe para a avenida à sua frente. Estas esfinges têm corpo de leão e cabeça de carneiro. Amon era ligado ao carneiro, então este é o animal do próprio deus, montando guarda ao longo da entrada. Um caminho processional ladeado de esfinges ligava Karnak ao templo de Luxor, cerca de dois vírgula sete quilômetros ao sul. Uma vez por ano, na Festa de Opet, as estátuas de Amon, de sua esposa Mut e do filho deles, Khonsu, percorriam esse caminho.",
+     "O templo inteiro se organiza em dois eixos. O eixo principal vai de leste a oeste. Como na maioria dos templos egípcios, ele espelha o caminho do sol pelo céu. Um segundo eixo vai de norte a sul e aponta para o templo de Luxor. Você está no começo do primeiro desses eixos, e tudo à sua frente foi construído ao longo dele."
+    ],
+    "title": "As esfinges com cabeça de carneiro e o Primeiro Pilone"
+   },
+   "10": {
+    "line": "Você chegou ao coração do templo.",
+    "title": "O santuário de Filipe Arrideu"
+   },
+   "11": {
+    "line": "Atrás do santuário ergue-se o Akh-menu, construído por Tutmés Terceiro.",
+    "title": "O Akh-menu e o Jardim Botânico de Tutmés Terceiro"
+   },
+   "12": {
+    "line": "Aqui está o Lago Sagrado, um retângulo revestido de pedra de cerca de 120 a 128 metros por 77 a 83.",
+    "title": "O Lago Sagrado e o escaravelho gigante"
+   },
+   "13": {
+    "line": "No início do século vinte, este pátio guardava uma das grandes surpresas da arqueologia egípcia.",
+    "title": "O Pátio da Cachette e a inscrição de Merneptah"
+   },
+   "14": {
+    "line": "Este é o templo de Khonsu, dedicado ao deus da lua, filho de Amon e Mut.",
+    "title": "O templo de Khonsu"
+   },
+   "15": {
+    "line": "Esta última parada é um desvio, no museu ao ar livre.",
+    "title": "O Museu ao Ar Livre: a Capela Branca e a Capela Vermelha"
+   },
+   "2": {
+    "line": "Você entrou no Grande Pátio, o primeiro espaço aberto dentro do templo.",
+    "title": "O Grande Pátio e o quiosque de Taharqa"
+   },
+   "3": {
+    "line": "Escondido no canto norte deste pátio, atrás da ala do Primeiro Pilone, fica um edifício compacto de arenito com três capelas lado a lado.",
+    "title": "Os santuários de Seti Segundo e Ramsés Terceiro"
+   },
+   "4": {
+    "line": "Este portal sul se chama Portal Bubastita porque seus construtores pertenciam à vigésima segunda dinastia, cuja cidade natal era Bubástis, no delta do Nilo.",
+    "title": "O Portal Bubastita"
+   },
+   "5": {
+    "line": "Agora você está diante do Segundo Pilone, o portal da Grande Sala Hipostila.",
+    "title": "O Segundo Pilone e o colosso de Ramsés Segundo"
+   },
+   "6": {
+    "line": "Olhe para cima.",
+    "title": "A Grande Sala Hipostila: a floresta de colunas"
+   },
+   "7": {
+    "line": "Olhe de perto o entalhe nas paredes e colunas.",
+    "title": "Os relevos de Seti Primeiro e Ramsés Segundo e o desabamento de 1899"
+   },
+   "8": {
+    "line": "Fora da sala, o clima passa do ritual à guerra.",
+    "title": "As paredes externas e o tratado com os hititas"
+   },
+   "9": {
+    "line": "Depois da sala, o céu se abre e um único fuste de pedra rosa se ergue acima de você.",
+    "title": "Os obeliscos de Tutmés Primeiro e de Hatshepsut"
+   }
+  },
+  "tagline": "Pilones, colunas e obeliscos no maior templo do Egito",
+  "title": "Karnak: recinto de Amon-Rá"
+ },
  "kaymakli-underground-city": {
   "stops": {
    "1": {
@@ -6543,6 +8102,98 @@
   "tagline": "O bairro dos oleiros, as portas e a necrópole de Atenas",
   "title": "Cerâmico"
  },
+ "khafre-menkaure": {
+  "stops": {
+   "1": {
+    "line": "Olhe para cima.",
+    "paragraphs": [
+     "Olhe para cima. O topo desta pirâmide ainda usa um capuz branco. É o que resta do revestimento original, um fino calcário de Tura, liso e inclinado, e mostra como a pirâmide inteira era antes. Seus construtores chamavam este rei de Khafra, e os gregos o chamaram de Quéfren. Este é o túmulo dele, o do meio entre as três grandes pirâmides de Gizé.",
+     "Ela parece mais alta que a Grande Pirâmide ao lado, mas não é. Quéfren era filho de Quéops, e sua pirâmide é um pouco menor. Ela fica sobre uma rocha cerca de dez metros mais alta, e seus lados são mais inclinados, com cerca de cinquenta e três graus. Juntas, essas coisas lhe dão seu ar imponente. A base mede cerca de duzentos e quinze metros de cada lado. Sua altura original é dada entre cerca de cento e trinta e seis e cerca de cento e quarenta e oito metros, conforme a fonte.",
+     "Agora olhe para baixo. A primeira fiada do revestimento aqui era de granito rosa de Assuã, a centenas de quilômetros ao sul, e acima vinha o calcário branco. Onde o revestimento sumiu, você vê o núcleo bruto, e como as pedras ficam menores à medida que a pirâmide sobe. Os construtores usaram a rocha natural do planalto como parte da estrutura. No canto noroeste a rocha foi cortada, e no sudeste o terreno foi aterrado para nivelá-lo.",
+     "Observe de perto o revestimento que sobrou. As faces externas dos blocos muitas vezes estão desalinhadas alguns milímetros em vez de ficarem rentes. Isso pode significar que os blocos eram talhados no formato antes de serem assentados.",
+     "Aqui, no lado norte, há duas entradas, ambas nesta face. Uma fica no nível do chão, e a outra a cerca de onze metros e meio de altura. Por que duas? Ninguém sabe ao certo, e a explicação habitual é uma mudança de plano durante a construção."
+    ],
+    "title": "A pirâmide de Quéfren: a que tem um capuz"
+   },
+   "2": {
+    "line": "Se você entrou, desceu por uma passagem íngreme e seguiu por outra plana até uma sala longa e simples.",
+    "title": "Dentro da pirâmide de Quéfren: a câmara de Belzoni"
+   },
+   "3": {
+    "line": "À sua volta estão as fundações do templo onde a memória de Quéfren era mantida viva.",
+    "title": "O templo funerário e a calçada"
+   },
+   "4": {
+    "line": "Suba até a crista de areia e vire-se.",
+    "title": "Panorama Point"
+   },
+   "5": {
+    "line": "Aqui está a menor das três grandes pirâmides.",
+    "title": "A pirâmide de Miquerinos e a grande brecha"
+   },
+   "6": {
+    "line": "Você está na plataforma onde ficava o templo funerário de Miquerinos, junto ao lado leste da pirâmide.",
+    "title": "O templo funerário de Miquerinos"
+   },
+   "7": {
+    "line": "Ao sul da pirâmide de Miquerinos ficam três menores, enfileiradas de leste a oeste.",
+    "title": "As três pirâmides das rainhas"
+   },
+   "8": {
+    "line": "À sua frente há um monumento que parece uma pirâmide inacabada.",
+    "title": "A rainha Khentkaus Primeira: a quarta pirâmide"
+   },
+   "9": {
+    "line": "Era aqui que começava o funeral real.",
+    "title": "A calçada e o templo do vale de Miquerinos"
+   }
+  },
+  "tagline": "A pirâmide do meio e a menor de Gizé, e seus templos",
+  "title": "Pirâmides de Quéfren e Miquerinos, Gizé"
+ },
+ "khan-el-khalili-hussein": {
+  "stops": {
+   "1": {
+    "line": "Esta é a mesquita de Sayyidna al-Husayn, que significa nosso senhor Husayn.",
+    "paragraphs": [
+     "Esta é a mesquita de Sayyidna al-Husayn, que significa nosso senhor Husayn. Para muitos egípcios, é a mesquita mais próxima do coração.",
+     "Husayn era neto do profeta Maomé. Seu pai era Ali, genro do Profeta. No ano 680, ele morreu em batalha em Karbala, no Iraque.",
+     "Os muçulmanos xiitas o honram como o mártir supremo. Os muçulmanos sunitas o amam como neto do Profeta. Uns e outros vêm aqui pedir sua intercessão.",
+     "A tradição diz que sua cabeça repousa neste santuário. Em 1153, uma cabeça que se dizia ser a dele chegou ao Cairo.",
+     "Discutiu-se onde guardá-la. Diz-se que o vizir Talai ibn Ruzzik construiu uma nova mesquita para ela. Mas o califa se recusou a transferi-la. Ele queria mantê-la dentro do palácio fatímida, e assim o santuário surgiu aqui, em terreno do palácio.",
+     "Procure o antigo portão no canto sul da mesquita. Ele se chama Bab al-Akhdar, o Portão Verde. Sua parte de baixo pode ser tudo o que resta do santuário fatímida.",
+     "O minarete acima dele é aiúbida, de 1237. Seus painéis de estuque são entalhados com arabescos finos.",
+     "O resto da mesquita é muito mais recente. O quediva Ismail mandou reconstruí-la e ampliá-la no século dezenove. Diz-se que a obra levou cerca de dez anos. Ela foi concluída por volta de 1873. Seus construtores acrescentaram os minaretes em estilo turco.",
+     "Em 1953, o governo ampliou a mesquita outra vez, para cerca de três mil trezentos e quarenta metros quadrados.",
+     "Agora olhe para os postes altos da praça. Às sextas-feiras, eles se abrem como guarda-sóis gigantes. Fazem sombra para a multidão que reza do lado de fora quando a mesquita está cheia.",
+     "No século doze, o viajante Ibn Jubayr observou peregrinos aqui. Ele os viu beijar o túmulo, apertar-se ao redor dele e rezar chorando."
+    ],
+    "title": "A mesquita de al-Husayn e a praça"
+   },
+   "2": {
+    "line": "Khan el-Khalili não é um único edifício.",
+    "title": "Khan el-Khalili: o bazar e sua história mameluca"
+   },
+   "3": {
+    "line": "Este café estreito é o El-Fishawy.",
+    "title": "O café El-Fishawy"
+   },
+   "4": {
+    "line": "Este portão é Bab al-Badistan.",
+    "title": "O café Naguib Mahfouz e Bab al-Badistan"
+   },
+   "5": {
+    "line": "As vitrines aqui brilham com correntes, pulseiras e anéis.",
+    "title": "As ruelas do ouro e da prata"
+   },
+   "6": {
+    "line": "Esta ruela é reconhecida pelo cheiro antes de ser vista.",
+    "title": "As ruelas das especiarias e dos perfumes"
+   }
+  },
+  "tagline": "O grande bazar do Cairo, seus cafés e o santuário de Husayn",
+  "title": "Khan el-Khalili e al-Husayn"
+ },
  "knossos": {
   "stops": {
    "1": {
@@ -6596,6 +8247,52 @@
   },
   "tagline": "O primeiro grande palácio da Europa e a lenda do Labirinto",
   "title": "Cnossos"
+ },
+ "komombo": {
+  "stops": {
+   "1": {
+    "line": "Fique aqui e olhe para o rio.",
+    "paragraphs": [
+     "Fique aqui e olhe para o rio. O templo de Kom Ombo fica num promontório, numa curva do Nilo. Terras férteis de cultivo se espalham ao redor. Imagine crocodilos sagrados tomando sol nesta margem nos tempos antigos.",
+     "O nome é uma pista. Kom quer dizer monte em árabe. Ombo vem do antigo nome egípcio Nubt, que o Ministério do Turismo e das Antiguidades explica como a cidade dourada.",
+     "À sua frente estão os restos de um mammisi, ou casa do nascimento. Aqui, seus relevos mostram, entre outras cenas, um ritual conhecido como o sacudir do papiro.",
+     "Não sobrou muito. O edifício perdeu sua metade oeste. Mas quando os estudiosos da expedição de Napoleão chegaram aqui, encontraram mais. Registraram quatro colunas coroadas com o rosto da deusa Hathor. Também viram paredes entalhadas com relevos do rei Ptolomeu Oitavo.",
+     "Por que tanta perda? O rio é parte da resposta. Parte do pátio de entrada do templo foi desgastada pelo Nilo. Depois, pessoas levaram pedras para outras construções.",
+     "Repare também como a casa do nascimento se aperta contra o portal do templo atrás de você. Talvez o espaço aqui fosse escasso nos tempos antigos. O templo fica no alto de sua rocha, acima da água."
+    ],
+    "title": "A casa do nascimento junto ao rio"
+   },
+   "2": {
+    "line": "Olhe para a cor das colunas.",
+    "title": "O pátio e o portal"
+   },
+   "3": {
+    "line": "Este é um templo para dois deuses.",
+    "title": "A fachada do primeiro salão"
+   },
+   "4": {
+    "line": "Olhe para cima.",
+    "title": "Os dois salões"
+   },
+   "5": {
+    "line": "Aqui terminam os dois caminhos, em dois santuários lado a lado.",
+    "title": "Os santuários gêmeos"
+   },
+   "6": {
+    "line": "Siga pelo corredor externo até os fundos do templo.",
+    "title": "A parede dos fundos: instrumentos e a porta falsa"
+   },
+   "7": {
+    "line": "Esta pequena capela foi construída para Hathor no período romano.",
+    "title": "A capela de Hathor e o poço"
+   },
+   "8": {
+    "line": "A uma curta caminhada do templo fica um museu com um único tema.",
+    "title": "O Museu do Crocodilo"
+   }
+  },
+  "tagline": "O templo duplo do crocodilo e do falcão",
+  "title": "Templo de Kom Ombo"
  },
  "konya-mevlana-seljuk": {
   "stops": {
@@ -6664,6 +8361,50 @@
   },
   "tagline": "O minarete almóada e a praça que nunca dorme",
   "title": "Mesquita Koutoubia e Jemaa el-Fna"
+ },
+ "kv17": {
+  "stops": {
+   "1": {
+    "line": "Você está na entrada do túmulo de Seti Primeiro, um rei da Décima Nona Dinastia do Egito.",
+    "paragraphs": [
+     "Você está na entrada do túmulo de Seti Primeiro, um rei da Décima Nona Dinastia do Egito. Os estudiosos costumam datar seu reinado de cerca de 1294 a 1279 antes de Cristo, embora alguns o coloquem uma década antes. Seu filho foi Ramsés, o Grande. Entre os monumentos do Vale dos Reis, o KV17 se destaca pelo tamanho enorme e pelos relevos pintados quase por inteiro.",
+     "Por mais de três mil anos quase ninguém entrou nele. Então, em outubro de 1817, um explorador italiano chamado Giovanni Belzoni começou a escavar aqui. Belzoni tinha sido homem forte de circo e engenheiro hidráulico antes de se dedicar às antiguidades. Ele reunia peças para o cônsul-geral britânico, Henry Salt. Logo encontrou a entrada do que chamou de um túmulo magnífico, e três dias depois de começar, no dia dezenove, chegou ao sarcófago do rei.",
+     "Nos últimos dois séculos o túmulo ganhou três nomes: KV17 na numeração moderna, Túmulo de Belzoni e Túmulo de Ápis. Este último nome vem de uma descoberta inesperada. Belzoni escreveu que as pinturas pareciam mais perfeitas quanto mais ele avançava, e que mantinham sobre as cores um brilho, como um verniz.",
+     "Olhe para a escada e as paredes em volta da entrada. No ano seguinte à escavação de Belzoni, a água da chuva inundou as câmaras inferiores, porque os diques de proteção que ele tinha começado fora da entrada não estavam prontos. James Burton os concluiu em 1825, e o túmulo nunca mais foi inundado. Em 2001 começaram obras para alterar os muros modernos em volta da entrada e reduzir ainda mais o risco. A água foi inimiga deste túmulo tanto quanto as pessoas."
+    ],
+    "title": "A descoberta de Belzoni"
+   },
+   "2": {
+    "line": "Agora você está lá dentro, e os relevos começam.",
+    "title": "A Litania de Rá"
+   },
+   "3": {
+    "line": "Sob a passarela, um poço foi cavado no chão.",
+    "title": "A sala do poço"
+   },
+   "4": {
+    "line": "Você está numa sala quase quadrada, com duas fileiras de dois pilares, e as paredes são cobertas de alto-relevo pintado.",
+    "title": "A sala dos pilares"
+   },
+   "5": {
+    "line": "Aqui o túmulo vira levemente para a direita, e as paredes mostram algo diferente: a Abertura da Boca.",
+    "title": "A Abertura da Boca"
+   },
+   "6": {
+    "line": "Esta sala é conhecida como a Sala das Belezas, um nome que vem do próprio Giovanni Belzoni.",
+    "title": "A Sala das Belezas"
+   },
+   "7": {
+    "line": "Este é o coração do túmulo.",
+    "title": "A câmara funerária e o teto estrelado"
+   },
+   "8": {
+    "line": "Em volta da câmara funerária há cinco pequenas salas laterais.",
+    "title": "As câmaras laterais e o longo túnel"
+   }
+  },
+  "tagline": "O túmulo de Seti Primeiro, da descoberta de Belzoni à abóbada estrelada",
+  "title": "Vale dos Reis: túmulo de Seti Primeiro, KV17"
  },
  "la-rambla": {
   "stops": {
@@ -7186,6 +8927,144 @@
   },
   "tagline": "Uma cidade-museu sob uma cúpula de luz que cai"
  },
+ "luxor-museum": {
+  "stops": {
+   "1": {
+    "line": "Você está em Luxor, que cresceu no lugar da antiga Tebas.",
+    "paragraphs": [
+     "Você está em Luxor, que cresceu no lugar da antiga Tebas. Tebas foi a capital do Egito durante boa parte do Novo Império, mais ou menos de 1550 a 1070 antes de Cristo. Este museu fica na avenida à beira do rio, de frente para o Nilo. Foi construído em torno de uma ideia simples: mostrar menos, e mostrar bem.",
+     "O museu foi planejado em 1962, quando o arquiteto Mahmoud El Hakim foi chamado para projetá-lo. Ele abriu em 1975. Comparado aos grandes museus do Cairo, o conjunto de objetos aqui é limitado de propósito. A meta eram peças belas, expostas sem excesso, com legendas claras.",
+     "As contagens do acervo variam. Conforme a fonte, as peças selecionadas vão de cerca de mil e duzentas a umas duas mil e duzentas. De qualquer forma, é um tamanho que dá para percorrer com calma.",
+     "Olhe para o jardim. Ele já abrigou estátuas colossais de reis, entre eles Ramsés Segundo, Amenhotep Terceiro e Merenptah. As estátuas às vezes mudam de lugar, então a disposição pode variar de um ano para outro.",
+     "A maioria dos objetos do museu foi encontrada na região da antiga Tebas, nas duas margens do rio, perto de onde você está."
+    ],
+    "title": "Um museu pequeno com uma ideia clara"
+   },
+   "10": {
+    "line": "Esta laje é o relatório de guerra de um rei.",
+    "title": "A estela do rei Kamose"
+   },
+   "11": {
+    "line": "A múmia à sua frente está identificada como Ahmose Primeiro.",
+    "title": "Ahmose Primeiro"
+   },
+   "12": {
+    "line": "Esta múmia fez uma das viagens mais estranhas de um rei.",
+    "title": "A múmia que se acredita ser de Ramsés Primeiro"
+   },
+   "13": {
+    "line": "O caixão monumental à sua frente pesa várias toneladas.",
+    "title": "Um sarcófago real de granito rosa"
+   },
+   "14": {
+    "line": "Nem toda estátua aqui mostra um rei.",
+    "title": "Amenhotep, filho de Hapu, o sábio funcionário"
+   },
+   "2": {
+    "line": "Em janeiro de 1989, operários da manutenção do vizinho Templo de Luxor bateram em algo duro sob o piso do pátio de Amenhotep Terceiro.",
+    "title": "As estátuas que saíram da terra em 1989"
+   },
+   "3": {
+    "line": "Este é Amenhotep Terceiro, que reinou mais ou menos de 1390 a 1350 antes de Cristo, conforme a cronologia.",
+    "title": "Amenhotep Terceiro, de pé e altivo"
+   },
+   "4": {
+    "line": "Tutancâmon reinou de cerca de 1332 a 1323 antes de Cristo e morreu com uns dezenove anos.",
+    "title": "Tutancâmon, a esfinge e o rosto de Amon"
+   },
+   "5": {
+    "line": "Um museu é um bom lugar para ver algo que foi feito para ficar escondido.",
+    "title": "Os selos do túmulo de Tutancâmon"
+   },
+   "6": {
+    "line": "Duas figuras dividem um único bloco de pedra clara.",
+    "title": "Sobek e Amenhotep Terceiro"
+   },
+   "7": {
+    "line": "Repare na escala.",
+    "title": "Horemheb ajoelhado diante de Atum"
+   },
+   "8": {
+    "line": "Esta estátua de Tutmés Terceiro tem cerca de noventa centímetros de altura.",
+    "title": "Tutmés Terceiro, o rei guerreiro"
+   },
+   "9": {
+    "line": "Olhe ao longo deste muro.",
+    "title": "O muro que foi remontado"
+   }
+  },
+  "tagline": "Reis e deuses de Tebas, de perto, num museu pequeno",
+  "title": "Museu de Luxor"
+ },
+ "luxor-temple": {
+  "stops": {
+   "1": {
+    "line": "Você está na margem leste do Nilo, na borda norte do Templo de Luxor.",
+    "paragraphs": [
+     "Você está na margem leste do Nilo, na borda norte do Templo de Luxor. Os antigos egípcios o chamavam de Ipet-resyt, em geral traduzido como o santuário do sul, porque ficava na ponta sul da antiga Tebas, a cerca de dois vírgula sete quilômetros de Karnak.",
+     "A maioria dos templos egípcios vai de leste a oeste, mas este olha para o norte, para Karnak, destino da Festa de Opet. Todo ano, os sacerdotes levavam a tríade divina, Amon, Mut e Khonsu, em procissão por este corredor de cerca de dois vírgula sete quilômetros.",
+     "A avenida ao seu lado tem cerca de 2,7 quilômetros e é ladeada por esfinges de pedra, em geral atribuídas ao governante do século quarto antes de Cristo Nectanebo Primeiro, sobre um caminho mais antigo. Depois de décadas de escavação e restauração, o caminho foi reaberto em novembro de 2021.",
+     "Nenhum faraó construiu sozinho este santuário. Sua capela mais antiga preservada pertence a Hatshepsut, por volta de 1473 a 1458 antes de Cristo, enquanto Amenhotep Terceiro ergueu as salas e os pátios principais.",
+     "Tutancâmon e Horemheb terminaram os relevos da festa, antes que Ramsés Segundo acrescentasse o enorme pilone de entrada. Seu passeio vai desse portão para dentro, até o santuário mais profundo."
+    ],
+    "title": "Onde a avenida encontra o templo"
+   },
+   "10": {
+    "line": "Você está entrando na parte coberta do templo.",
+    "title": "A sala hipostila e a sala romana"
+   },
+   "11": {
+    "line": "Passando a capela romana, você entra na sala das oferendas, sustentada por quatro colunas de pedra, onde os sacerdotes preparavam os presentes rituais para os deuses.",
+    "title": "A sala das oferendas e o santuário de Alexandre"
+   },
+   "12": {
+    "line": "Logo a leste da sala das oferendas fica a pequena câmara conhecida como sala do nascimento, com o nascimento divino de Amenhotep Terceiro esculpido nas paredes.",
+    "title": "A sala do nascimento"
+   },
+   "13": {
+    "line": "Os aposentos mais internos funcionavam quase como um templo próprio, em honra de Amon de Luxor como criador.",
+    "title": "O santuário de Amon"
+   },
+   "14": {
+    "line": "Olhe para a mesquita que fica no alto do primeiro pátio do templo.",
+    "title": "O templo depois de escurecer"
+   },
+   "2": {
+    "line": "O grande portão à sua frente se chama pilone: duas torres inclinadas com uma passagem entre elas.",
+    "title": "O pilone de Ramsés Segundo"
+   },
+   "3": {
+    "line": "Ramsés Segundo ergueu dois obeliscos gêmeos de granito vermelho diante deste portão.",
+    "title": "O obelisco e seu gêmeo ausente"
+   },
+   "4": {
+    "line": "Estátuas reais gigantes de Ramsés Segundo guardavam o pilone.",
+    "title": "Os colossos de Ramsés Segundo"
+   },
+   "5": {
+    "line": "Você entrou no pátio que Ramsés Segundo construiu atrás de seu pilone.",
+    "title": "O grande pátio de Ramsés Segundo"
+   },
+   "6": {
+    "line": "Bem acima de você ergue-se uma mesquita em funcionamento, a cerca de nove metros de altura sobre o muro nordeste do pátio real.",
+    "title": "A mesquita de Abu al-Haggag"
+   },
+   "7": {
+    "line": "Esta é a grande colunata.",
+    "title": "A grande colunata"
+   },
+   "8": {
+    "line": "Depois da colunata abre-se um segundo grande pátio de Amenhotep Terceiro, conhecido como pátio solar.",
+    "title": "O pátio solar de Amenhotep Terceiro"
+   },
+   "9": {
+    "line": "Em vinte e dois de janeiro de 1989, uma limpeza de rotina na borda oeste deste pátio atingiu algo inesperado.",
+    "title": "O esconderijo de Luxor"
+   }
+  },
+  "tagline": "O templo meridional de Amon, dos faraós a uma mesquita",
+  "title": "Templo de Luxor"
+ },
  "lyon": {
   "stops": {
    "1": {
@@ -7642,6 +9521,54 @@
   },
   "tagline": "A cidade-palácio em ruínas dos califas de Córdova"
  },
+ "medinet-habu": {
+  "stops": {
+   "1": {
+    "line": "Olhe para cima.",
+    "paragraphs": [
+     "Olhe para cima. Este portão foi construído para parecer uma fortaleza. Suas torres imitam as portarias fortificadas da Síria, chamadas migdol. Ele ficava numa enorme muralha. O egiptólogo William Murnane, em seu guia do sítio, dá a essa muralha cerca de trinta e cinco pés de espessura e sessenta pés de altura. Era uma barreira séria.",
+     "O templo atrás dele tinha um nome grandioso: Unido à Eternidade. Pertencia a Ramsés Terceiro. O ministério de antiguidades do Egito o coloca em primeiro lugar em fama entre os reis de sua dinastia, a vigésima. Ele reinou por cerca de trinta anos no século doze antes de Cristo. Uma datação comum situa seu reinado de 1187 a 1156 antes de Cristo. Outras datações diferem por alguns anos.",
+     "Olhe as faces externas do portão. Aqui o rei abate inimigos cativos. De um lado estão núbios e líbios. Do outro, príncipes da Ásia ocidental e recém-chegados do mar, entre eles os shardana e os filisteus. Repare como os muros inferiores se inclinam para dentro e a passagem fica recuada num nicho. As duas coisas dificultavam o ataque. Cabeças esculpidas de prisioneiros servem de apoios, uma mensagem para quem se aproximasse.",
+     "Isto era mais que um símbolo. Nos anos conturbados do fim do Império Novo, estes muros abrigaram o povo da Tebas ocidental. O sítio também se tornou o centro administrativo dos construtores dos túmulos reais de Deir el-Medina. Na antiguidade, muitos visitantes chegavam pela água, por um canal até um cais diante deste portão. Nas salas acima do portão, cenas mostram o rei em momentos de lazer com moças. Elas contrastam de modo surpreendente com as cenas de guerra do lado de fora.",
+     "Ninguém sabe ao certo de onde vem o nome Medinet Habu. Pode significar Cidade de Hapu. Alguns estudiosos o ligam a Amenhotep, filho de Hapu, um sábio funcionário real mais tarde venerado como deus. Ele tinha seu próprio templo bem perto."
+    ],
+    "title": "O Portão Alto"
+   },
+   "2": {
+    "line": "Você está diante da fachada do templo em si.",
+    "title": "O primeiro pilone"
+   },
+   "3": {
+    "line": "Você está no primeiro pátio.",
+    "title": "O primeiro pátio e a Janela das Aparições"
+   },
+   "4": {
+    "line": "Olhe para os muros baixos à sua volta.",
+    "title": "O palácio"
+   },
+   "5": {
+    "line": "Este é o segundo pátio.",
+    "title": "O segundo pátio e a igreja copta"
+   },
+   "6": {
+    "line": "Você entrou no que já foi a parte coberta do templo.",
+    "title": "As salas hipostilas e o tesouro"
+   },
+   "7": {
+    "line": "Você está diante de um dos grandes registros históricos do Egito.",
+    "title": "O muro norte: os Povos do Mar"
+   },
+   "8": {
+    "line": "Este templo pequeno é muito mais antigo que o grande templo de Ramsés Terceiro.",
+    "title": "O templo pequeno"
+   },
+   "9": {
+    "line": "Olhe para dois pequenos edifícios pelos quais é fácil passar sem notar.",
+    "title": "As capelas das Esposas Divinas de Amon"
+   }
+  },
+  "tagline": "O templo fortaleza de Ramsés Terceiro e seus relevos de guerra"
+ },
  "meknes": {
   "stops": {
    "1": {
@@ -7687,6 +9614,40 @@
   },
   "tagline": "A capital de portões, celeiros e muralhas de Moulay Ismail",
   "title": "Cidade imperial de Meknès"
+ },
+ "memphis-mit-rahina": {
+  "stops": {
+   "1": {
+    "line": "A aldeia à sua volta se chama Mit Rahina.",
+    "paragraphs": [
+     "A aldeia à sua volta se chama Mit Rahina. Seus palmeirais, seu canal e suas casas baixas ficam em cima de uma cidade real perdida. Isto era Mênfis.",
+     "A tradição egípcia diz que Mênfis foi fundada por Menés, quando ele uniu o Alto e o Baixo Egito. A UNESCO dá como data tradicional cerca de 3000 antes de Cristo. Muitos historiadores veem Menés mais como lenda do que como homem. Ainda assim, aceitam que Mênfis foi a primeira capital de um Egito único e unificado. Ela manteve esse papel durante o Império Antigo, quando as grandes pirâmides foram construídas.",
+     "O lugar foi bem escolhido. Mênfis dominava a entrada do delta do Nilo, onde importantes rotas comerciais se encontravam. A UNESCO escreve que nenhum governante com ambições sérias tinha uma alternativa real.",
+     "O nome mais antigo da cidade era Inebu-hedj, que significa os muros brancos. Mais tarde ela se chamou Men-nefer, estável e bela. O templo de seu deus, Ptah, se chamava Hut-ka-Ptah, o templo do espírito de Ptah. Os falantes de grego ouviram esse nome como Aigyptos. Dele vem a palavra Egito. Então o nome do país inteiro pode começar neste campo.",
+     "Mênfis continuou importante por milhares de anos. Em 196 antes de Cristo, o decreto gravado na Pedra de Roseta foi emitido do templo de Ptah. Mais tarde ela foi a segunda cidade do Egito. Isso durou até 641 depois de Cristo, quando foi fundada Fustat, a cidade que cresceu e virou o Cairo. Daí em diante, Mênfis foi aos poucos transformada em pedreira. Sua pedra foi para novos edifícios, e seus templos foram desmontados.",
+     "Em 1979, a UNESCO inscreveu Mênfis e os campos de pirâmides que vão de Gizé a Dahshur como Patrimônio Mundial. A parte que você pode visitar aqui é um pequeno museu ao ar livre, montado em torno de alguns dos melhores achados."
+    ],
+    "title": "A entrada e a capital perdida"
+   },
+   "2": {
+    "line": "Abaixo de você está Ramsés Segundo, um dos reis mais famosos do antigo Egito.",
+    "title": "O colosso caído de Ramsés Segundo"
+   },
+   "3": {
+    "line": "Esta é a Esfinge de Mênfis.",
+    "title": "A esfinge de alabastro"
+   },
+   "4": {
+    "line": "Espalhadas por este jardim estão pedras do templo que um dia definia Mênfis.",
+    "title": "O templo de Ptah e os pequenos santuários"
+   },
+   "5": {
+    "line": "Estas lajes de pedra pertencem a um lugar muito especial.",
+    "title": "As mesas de embalsamamento de Ápis"
+   }
+  },
+  "tagline": "A primeira capital, debaixo de uma aldeia",
+  "title": "Museu ao ar livre de Mênfis, Mit Rahina"
  },
  "merida": {
   "stops": {
@@ -8197,6 +10158,49 @@
   "tagline": "Túmulo real no cume guardado por cabeças de pedra gigantes",
   "title": "Monte Nemrut"
  },
+ "mount-sinai": {
+  "stops": {
+   "1": {
+    "line": "Olhe para cima, além dos muros do mosteiro.",
+    "paragraphs": [
+     "Olhe para cima, além dos muros do mosteiro. A montanha atrás dele é o Gebel Musa, o Monte de Moisés. Seu cume fica a 2.285 metros acima do mar.",
+     "Cristãos, muçulmanos e judeus honram este lugar. A UNESCO descreve toda a área como sagrada para três religiões. A tradição diz que aqui Moisés recebeu as tábuas de pedra da Lei.",
+     "A Bíblia conta a história no livro do Êxodo. No terceiro mês depois de saírem do Egito, os israelitas chegaram ao deserto do Sinai. Ali acamparam diante do monte. Na terceira manhã vieram trovões, relâmpagos e uma nuvem espessa. O monte inteiro fumegava, diz a Bíblia, e tremia. Então Moisés foi chamado ao topo.",
+     "O Alcorão também honra o monte. Numa sura curta, Deus jura pela figueira e pela oliveira, e pelo monte Sinai. Outra sura conta como Moisés viu um fogo. Ao se aproximar, ouviu que devia tirar as sandálias. Ele estava, disse a voz, no vale sagrado de Tuwa.",
+     "Onde exatamente ficava o monte da Bíblia é discutido. Dizem que cristãos e muçulmanos o identificam há muito tempo com este cume. Dizem que a tradição judaica é mais cautelosa ao apontar um lugar na terra.",
+     "Os peregrinos vieram muito cedo. Por volta do ano 380, uma mulher chamada Egéria atravessou o vale lá embaixo. Ela escrevia cartas às irmãs em casa. Os guias lhe disseram para parar e rezar no ponto em que o monte aparecia pela primeira vez. Ela descreveu um vale enorme, plano e bonito, com o monte sagrado mais adiante. Ali, disseram a ela, os israelitas esperaram enquanto Moisés passava quarenta dias e quarenta noites lá em cima.",
+     "Há dois jeitos de subir. O mais antigo é uma escada de uns 3.750 degraus de pedra, os Degraus do Arrependimento. O outro é o Caminho dos Camelos, mais longo, porém mais suave. A maioria dos visitantes sobe pelo caminho de madrugada, para ver o sol nascer lá do alto. Muitos descem pelos degraus, para conhecer a rota antiga. É esse o circuito que este guia segue. O mosteiro calcula de cinco a sete horas."
+    ],
+    "title": "O início da trilha abaixo do mosteiro"
+   },
+   "2": {
+    "line": "A trilha larga sob seus pés é mais nova do que parece.",
+    "title": "Subindo pelo Caminho dos Camelos"
+   },
+   "3": {
+    "line": "Você chegou ao topo.",
+    "title": "A capela e a mesquita do cume"
+   },
+   "4": {
+    "line": "Encontre um lugar nas rochas, olhe para o leste e espere a luz.",
+    "title": "O nascer do sol e a vista"
+   },
+   "5": {
+    "line": "A última escada, de 750 degraus, leva você até esta depressão.",
+    "title": "A Bacia de Elias"
+   },
+   "6": {
+    "line": "Aqui começa a escada antiga.",
+    "title": "Os dois portões de pedra"
+   },
+   "7": {
+    "line": "Estes são os Degraus do Arrependimento.",
+    "title": "Descendo pelos Degraus do Arrependimento"
+   }
+  },
+  "tagline": "Suba à noite a montanha de Moisés",
+  "title": "O monte Sinai, Gebel Musa"
+ },
  "musee-orangerie": {
   "stops": {
    "1": {
@@ -8354,6 +10358,48 @@
    }
   },
   "tagline": "O museu egípcio mais antigo do mundo, com um túmulo intacto e um templo da Núbia"
+ },
+ "museum-islamic-art": {
+  "stops": {
+   "1": {
+    "line": "Olhe para o prédio à sua frente.",
+    "paragraphs": [
+     "Olhe para o prédio à sua frente. A fachada foi feita no estilo mameluco, inspirada nos edifícios dos sultões medievais do Egito. Ao lado fica a Biblioteca Nacional do Egito.",
+     "A ideia de um museu de arte islâmica surgiu pela primeira vez sob o quediva Ismail, em 1869. Ela foi levada adiante sob seu filho, o quediva Tawfiq.",
+     "Em 1880, um funcionário chamado Franz Paxá começou a reunir objetos do período islâmico. Ele os guardava na ala leste da Mesquita de al-Hakim, na velha cidade murada. A primeira contagem deu cento e onze peças.",
+     "Um ano depois, Tawfiq criou um comitê para estudar e proteger os monumentos islâmicos e coptas do Egito. Muitos prédios estavam virando ruína. O comitê levou peças importantes deles para a mesquita, para guardá-las em segurança. Em 1892, um pequeno prédio foi erguido no pátio da mesquita. Chamava-se Museu Árabe, e Franz Paxá o dirigia.",
+     "O prédio que você vê foi projetado por um arquiteto italiano, Alfonso Manescalo. O quediva Abbas Hilmi Segundo o inaugurou em 28 de dezembro de 1903. Durante meio século, ele foi conhecido como museu de arte árabe. Em 1951 ou 1952, recebeu o nome atual, Museu de Arte Islâmica. A mudança está ligada às muitas peças do mundo islâmico oriental que tinham entrado na coleção.",
+     "O museu se apresenta como o maior museu de arte islâmica do mundo."
+    ],
+    "title": "Um palácio para as artes do Islã"
+   },
+   "2": {
+    "line": "O museu cresceu aos poucos.",
+    "title": "Uma bomba do outro lado da rua"
+   },
+   "3": {
+    "line": "O Ministério cita dois objetos entre os bens mais notáveis do museu.",
+    "title": "A chave da Caaba"
+   },
+   "4": {
+    "line": "O segundo tesouro citado pelo Ministério é um tecido.",
+    "title": "O turbante de Samuil ibn Murqus"
+   },
+   "5": {
+    "line": "Comece por um painel do século nove.",
+    "title": "Madeira entalhada do Egito tulúnida e fatímida"
+   },
+   "6": {
+    "line": "Um mihrab é o nicho da mesquita que indica a direção da oração.",
+    "title": "Um mihrab portátil e um cenotáfio"
+   },
+   "7": {
+    "line": "Nem todo objeto aqui foi feito para um sultão ou um santuário.",
+    "title": "Vida cotidiana: um pente, uma sacada e um tapete"
+   }
+  },
+  "tagline": "Uma chave da Caaba, um turbante e madeira entalhada de palácios",
+  "title": "Museu de Arte Islâmica, Cairo"
  },
  "mycenae": {
   "stops": {
@@ -8688,6 +10734,141 @@
   },
   "tagline": "Uma arena romana, o templo da Maison Carrée e a Tour Magne"
  },
+ "nmec-royal-mummies": {
+  "stops": {
+   "1": {
+    "line": "Este é o Museu Nacional da Civilização Egípcia, conhecido pela sigla em inglês, NMEC.",
+    "paragraphs": [
+     "Este é o Museu Nacional da Civilização Egípcia, conhecido pela sigla em inglês, NMEC. Ele fica em Fustat, no Cairo Antigo, junto ao lago de Ain el-Sira.",
+     "O museu levou muito tempo para ficar pronto. A pedra fundamental foi lançada em 2002. A UNESCO deu ajuda técnica. Uma primeira sala de exposições abriu em 2017, e a inauguração oficial aconteceu no dia três de abril de 2021.",
+     "A ideia vai além de um museu de faraós. Ele se propõe a contar a história da civilização egípcia em todas as suas épocas. Essa história começa na pré-história. Passa pela era dos faraós, depois pelo Egito grego, copta e islâmico, e chega aos dias de hoje. Inclui até a cultura tradicional que os egípcios herdaram, que o museu chama de patrimônio popular.",
+     "O terreno é grande. Sua área total seria de cerca de 138.000 metros quadrados.",
+     "Mas a maioria dos visitantes vem por uma parte só, a Sala das Múmias Reais. O museu a chama de joia da coroa de seu acervo. O projeto quer dar a sensação de um passeio pelo Vale dos Reis. Foi lá que a maioria desses reis e rainhas foi sepultada pela primeira vez.",
+     "O museu lista ali vinte múmias reais, dezoito reis e duas rainhas. Elas vão da décima sétima à vigésima dinastia: o fim de uma era dividida e todo o Novo Império do Egito.",
+     "Não são objetos no sentido comum. São os corpos de pessoas que acreditavam que o corpo precisava sobreviver para que a alma pudesse continuar vivendo. Elas gastaram boa parte de sua riqueza nessa esperança. O museu as apresenta numa sala escura e silenciosa, construída só para elas."
+    ],
+    "title": "O museu de Fustat"
+   },
+   "10": {
+    "line": "Esta é a múmia identificada como Hatshepsut, uma das governantes mais famosas do antigo Egito.",
+    "title": "Hatshepsut, a mulher que se tornou faraó"
+   },
+   "11": {
+    "line": "Este é Tutmés Terceiro, um dos grandes reis guerreiros do Novo Império.",
+    "title": "Tutmés Terceiro, o rei guerreiro"
+   },
+   "12": {
+    "line": "Aqui estão mais um pai e um filho: Amenhotep Segundo e Tutmés Quarto.",
+    "title": "Amenhotep Segundo e Tutmés Quarto"
+   },
+   "13": {
+    "line": "Este é Amenhotep Terceiro.",
+    "title": "Amenhotep Terceiro, a era de ouro"
+   },
+   "14": {
+    "line": "Este é Seti Primeiro, pai de Ramsés, o Grande.",
+    "title": "Seti Primeiro, guerreiro e construtor"
+   },
+   "15": {
+    "line": "Este é Ramsés Segundo, talvez o mais famoso de todos os faraós.",
+    "title": "Ramsés Segundo, Ramsés, o Grande"
+   },
+   "16": {
+    "line": "Estes três reis governaram depois de Ramsés Segundo, quando seu longo reinado deu lugar a anos turbulentos.",
+    "title": "Merenptah, Seti Segundo e Siptah"
+   },
+   "17": {
+    "line": "Este é Ramsés Terceiro.",
+    "title": "Ramsés Terceiro, o último grande rei guerreiro"
+   },
+   "18": {
+    "line": "Depois de Ramsés Terceiro, três de seus sucessores reinaram em cerca de vinte anos.",
+    "title": "Ramsés Quarto, Quinto e Sexto"
+   },
+   "19": {
+    "line": "Este é Ramsés Nono, o rei mais recente desta sala.",
+    "title": "Ramsés Nono e os saques de túmulos"
+   },
+   "2": {
+    "line": "Muito antes dos faraós, pessoas viviam e morriam no vale do Nilo.",
+    "title": "O esqueleto de Nazlet Khater"
+   },
+   "3": {
+    "line": "Este caixão de cores vivas pertenceu a um artesão, não a um rei.",
+    "title": "O caixão de Sennedjem"
+   },
+   "4": {
+    "line": "Os reis e rainhas desta sala chegaram aqui numa das viagens mais incomuns da história dos museus.",
+    "title": "O Desfile Dourado dos Faraós"
+   },
+   "5": {
+    "line": "A maioria desses reis não foi encontrada em seus próprios túmulos.",
+    "title": "Dois esconderijos"
+   },
+   "6": {
+    "line": "Este é Seqenenre Taa Segundo.",
+    "title": "Seqenenre Taa Segundo, o rei que lutou contra os hicsos"
+   },
+   "7": {
+    "line": "Esta é a rainha Ahmose-Nefertari.",
+    "title": "Ahmose-Nefertari, rainha e esposa do deus"
+   },
+   "8": {
+    "line": "Este é Amenhotep Primeiro, o segundo rei da décima oitava dinastia.",
+    "title": "Amenhotep Primeiro, o rei nunca desenfaixado"
+   },
+   "9": {
+    "line": "Aqui estão pai e filho, dois reis chamados Tutmés.",
+    "title": "Tutmés Primeiro e Tutmés Segundo"
+   }
+  },
+  "tagline": "As múmias reais do Egito, de Seqenenre a Ramsés Nono"
+ },
+ "nobles-sheikh-abd-el-qurna": {
+  "stops": {
+   "1": {
+    "line": "Você está numa crista rochosa do outro lado do rio, em frente a Luxor, olhando para uma encosta cheia de portas escavadas, como um favo de mel.",
+    "paragraphs": [
+     "Você está numa crista rochosa do outro lado do rio, em frente a Luxor, olhando para uma encosta cheia de portas escavadas, como um favo de mel. Esta colina é Sheikh Abd el-Qurna, um setor importante da necrópole tebana. O nome vem do santuário de cúpula branca de um santo muçulmano local.",
+     "Junto com Karnak, o Templo de Luxor e os vales reais, estas capelas particulares fazem parte do sítio do Patrimônio Mundial da UNESCO da antiga Tebas. Elas mostram o artesanato do Novo Império em seu auge.",
+     "As pessoas enterradas aqui não eram reis. Eram vizires, prefeitos, escribas, administradores e supervisores. Muitos viveram nos séculos quinze e catorze antes de Cristo, sob reis como Tutmés Terceiro, Amenhotep Segundo e Amenhotep Terceiro. Muitos dos seus túmulos seguem uma planta comum. Há um pátio aberto e uma capela escavada na rocha em forma de T. Um poço ou uma passagem íngreme desce até a câmara funerária.",
+     "O que torna esses pequenos túmulos especiais é o que está pintado e entalhado nas paredes. Em vez de apenas deuses e viagens pelo mundo dos mortos, você encontra campos sendo arados, barcos sendo descarregados, artesãos trabalhando, banquetes com músicos e procissões funerárias. Os donos queriam levar para o além a vida de trabalho, a família e os prazeres. Assim, as paredes registram como um funcionário do Novo Império queria ser lembrado.",
+     "Muitos túmulos são pequenos, e lá dentro podem ser escuros e apertados. Em geral são abertos para grupos pequenos, com ingresso, e quais estão abertos pode mudar de uma temporada para outra. As regras sobre fotografia e sobre o número de pessoas permitidas lá dentro também variam, então siga as placas e as instruções dos guardas. Você pode visitar os túmulos na ordem que quiser."
+    ],
+    "title": "Sheikh Abd el-Qurna: a colina dos nobres"
+   },
+   "2": {
+    "line": "Ramose foi vizir e governador de Tebas.",
+    "title": "O túmulo de Ramose, TT55"
+   },
+   "3": {
+    "line": "Este é o túmulo de Userhat, um escriba real que também tinha títulos ligados ao gado do deus Amon.",
+    "title": "O túmulo de Userhat, TT56"
+   },
+   "4": {
+    "line": "Khaemhat, apelidado de Mahu, serviu sob Amenhotep Terceiro no século catorze antes de Cristo como escriba real e supervisor dos celeiros do Estado egípcio.",
+    "title": "O túmulo de Khaemhat, TT57"
+   },
+   "5": {
+    "line": "Menna trabalhava como escriba que inspecionava campos tanto para a coroa quanto para o templo de Amon.",
+    "title": "O túmulo de Menna, TT69"
+   },
+   "6": {
+    "line": "Nakht serviu o templo de Amon como escriba dos celeiros e como astrônomo, muito provavelmente sob Tutmés Quarto, por volta de 1400 antes de Cristo, embora as datas exatas variem um pouco.",
+    "title": "O túmulo de Nakht, TT52"
+   },
+   "7": {
+    "line": "Este é o túmulo de Sennefer, prefeito de Tebas no reinado de Amenhotep Segundo, no século quinze antes de Cristo.",
+    "title": "O túmulo de Sennefer, TT96, o Túmulo das Videiras"
+   },
+   "8": {
+    "line": "Rekhmire foi vizir, o primeiro-ministro do Estado.",
+    "title": "O túmulo de Rekhmire, TT100"
+   }
+  },
+  "tagline": "Túmulos pintados de vizires, prefeitos e escribas de Tebas",
+  "title": "Túmulos dos Nobres: Sheikh Abd el-Qurna"
+ },
  "notre-dame": {
   "stops": {
    "1": {
@@ -8736,6 +10917,48 @@
    }
   },
   "tagline": "A catedral gótica de Paris, renascida após o incêndio de 2019"
+ },
+ "nubian-museum": {
+  "stops": {
+   "1": {
+    "line": "Você está no Museu Núbio de Assuã, no extremo sul do Egito.",
+    "paragraphs": [
+     "Você está no Museu Núbio de Assuã, no extremo sul do Egito. Ele foi inaugurado em 1997. O prédio fica no alto de uma colina rochosa e é feito de pedra da região. O Ministério do Turismo e Antiguidades descreve paredes revestidas de arenito local e granito rosa.",
+     "O arquiteto foi o egípcio Mahmoud El-Hakim. O Ministério acrescenta que a expografia interna foi projetada pelo arquiteto mexicano Pedro Ramírez Vázquez. A tarefa dele era apresentar a arqueologia, a história, a cultura e o ambiente natural da Núbia.",
+     "Olhe as paredes por fora. Dizem que a planta e a aparência do prédio se inspiram nos templos antigos, nas fortalezas e nas casas de aldeia desta região. As paredes de pedra fazem curvas suaves. Dizem que grupos de janelas triangulares correm ao longo das paredes, coroados por um padrão em zigue-zague de divisas.",
+     "O prédio ganhou um Prêmio Aga Khan de Arquitetura no ciclo de 1999 a 2001. O terreno inteiro tem cerca de 50.000 metros quadrados, e a maior parte é jardim.",
+     "O museu é grande. O Ministério fala em três andares e milhares de objetos. Um guia de museus fala em cerca de 2000 a 3000 peças. Muitas foram salvas ou registradas antes que um novo lago subisse sobre a terra de onde vinham.",
+     "O Ministério lista aqui mais do que galerias. Entre outras coisas, há um teatro ao ar livre para apresentações folclóricas núbias, um auditório, uma biblioteca e um setor educativo. As fotos do prêmio mostram uma sala de aula onde crianças aprendem sobre a cultura núbia. Então o lugar foi pensado como algo mais do que um depósito de coisas antigas. A ideia era ser um centro de uma cultura viva."
+    ],
+    "title": "Um museu sobre uma colina"
+   },
+   "2": {
+    "line": "Para entender este museu, comece pela água.",
+    "title": "Por que Assuã tem um museu núbio"
+   },
+   "3": {
+    "line": "O objeto de que a maioria dos visitantes se lembra é uma estátua colossal de Ramsés Segundo.",
+    "title": "O colosso de Ramsés Segundo"
+   },
+   "4": {
+    "line": "O museu conta sua história em ordem cronológica.",
+    "title": "Antes dos faraós"
+   },
+   "5": {
+    "line": "Por mais de 3000 anos, reinos surgiram ao longo do Nilo, no que hoje é o Sudão.",
+    "title": "Os reinos de Kush"
+   },
+   "6": {
+    "line": "Depois de Méroe, novos reinos tomaram forma.",
+    "title": "A Núbia cristã"
+   },
+   "7": {
+    "line": "Grande parte do terreno do museu é jardim, e o Ministério o chama de museu ao ar livre.",
+    "title": "O jardim"
+   }
+  },
+  "tagline": "A história da Núbia, da arte rupestre ao resgate",
+  "title": "Museu Núbio, Assuã"
  },
  "olympia": {
   "stops": {
@@ -9852,6 +12075,76 @@
   "tagline": "Cidade lícia à beira-mar com três portos e a Porta de Adriano",
   "title": "Fasélis"
  },
+ "philae": {
+  "stops": {
+   "1": {
+    "line": "Bem-vindo a Philae, ou melhor, à ilha que ficou no lugar dela.",
+    "paragraphs": [
+     "Bem-vindo a Philae, ou melhor, à ilha que ficou no lugar dela. Os templos à sua frente ficavam antes numa ilha vizinha chamada Philae, perto da primeira catarata do Nilo. Na campanha dos anos 1960 para salvar os monumentos da Núbia, eles foram trazidos para cá, para a ilha de Agilkia.",
+     "Por que mudá-los de lugar? A ilha antiga já tinha sofrido com a primeira barragem de Assuã. Dizem que os templos ficavam alagados todo ano, de dezembro até mais ou menos março. Nesses meses, os visitantes chegavam de barco, navegando até dentro do pátio do templo. A água levou boa parte da pintura.",
+     "Depois veio a Grande Barragem. A UNESCO chama Philae de o mais famoso dos monumentos atingidos. O resgate teve de começar na água. Construiu-se uma barreira em volta da ilha antiga, e a água foi bombeada para fora. A empreiteira descreve uma parede dupla de estacas-prancha de aço com areia entre elas.",
+     "Cada pedra, cada bloco e cada coluna foi catalogado e numerado. Os templos foram desmontados, levados até aqui e reconstruídos. Agilkia foi remodelada para reproduzir o traçado da ilha antiga.",
+     "Quando isso aconteceu? A empreiteira data seu próprio trabalho de 1974 a 1979. O projeto inteiro é datado de 1972 a 1980. A campanha da UNESCO para toda a Núbia foi de 1960 a 1980.",
+     "Então as pedras são antigas, e a ilha é nova. Lembre-se disso enquanto caminha. Os templos estão na mesma ordem que tinham em Philae."
+    ],
+    "title": "Uma ilha que se mudou"
+   },
+   "10": {
+    "line": "Em algum lugar deste portão há um entalhe pequeno e tosco com poucas linhas de texto.",
+    "title": "Os últimos hieróglifos"
+   },
+   "11": {
+    "line": "Este pequeno templo pertencia a Hathor, deusa do amor, da música e da alegria.",
+    "title": "O templo de Hathor"
+   },
+   "12": {
+    "line": "Este pavilhão aberto é o quiosque de Trajano.",
+    "title": "O quiosque de Trajano"
+   },
+   "13": {
+    "line": "Aqui, no extremo norte da ilha, Roma deixou sua marca.",
+    "title": "Augusto, Diocleciano e a fronteira romana"
+   },
+   "14": {
+    "line": "Olhe as paredes deste salão.",
+    "title": "Do templo à igreja"
+   },
+   "2": {
+    "line": "Este pequeno salão de colunas é o edifício de templo mais antigo ainda de pé em Philae.",
+    "title": "O quiosque de Nectanebo"
+   },
+   "3": {
+    "line": "Você está subindo por um longo pátio, entre duas fileiras de colunas.",
+    "title": "As colunatas e os templos laterais"
+   },
+   "4": {
+    "line": "Dois obeliscos ficavam aqui antes, em frente ao grande portão.",
+    "title": "Os obeliscos que foram para Dorset"
+   },
+   "5": {
+    "line": "Este portão enorme é o primeiro pilone do templo de Ísis.",
+    "title": "O primeiro pilone"
+   },
+   "6": {
+    "line": "No lado oeste do pátio dianteiro fica a casa do nascimento, ou mammisi.",
+    "title": "A casa do nascimento"
+   },
+   "7": {
+    "line": "Você está no coração do templo de Ísis.",
+    "title": "O santuário de Ísis"
+   },
+   "8": {
+    "line": "Acima desta parte do templo, no teto, ficam as salas de Osíris.",
+    "title": "As salas de Osíris"
+   },
+   "9": {
+    "line": "Este portão foi construído pelo imperador romano Adriano.",
+    "title": "O portão de Adriano"
+   }
+  },
+  "tagline": "O templo de Ísis na ilha, transferido pedra por pedra",
+  "title": "Philae: templo de Ísis"
+ },
  "philippi": {
   "stops": {
    "1": {
@@ -10251,6 +12544,49 @@
   },
   "tagline": "Cidade grega em grelha na encosta, com um Templo de Atena"
  },
+ "qaitbay-citadel": {
+  "stops": {
+   "1": {
+    "line": "Este forte fica na ponta leste do que antes era uma ilha.",
+    "paragraphs": [
+     "Este forte fica na ponta leste do que antes era uma ilha. O nome dela era Faros.",
+     "A costa do Egito é baixa e plana. Os marinheiros tinham poucos pontos de referência, e bancos de areia ficavam à espreita. Para Homero, Faros era o único bom porto no longo caminho até o Egito.",
+     "Na Odisseia, o rei grego Menelau fica preso aqui na volta de Troia. A ilha era governada por Proteu, o Velho do Mar que mudava de forma.",
+     "Os primeiros Ptolomeus ligaram a ilha à cidade com um longo aterro. Ele se chamava Heptastádio, porque tinha sete estádios gregos, cerca de três quartos de milha.",
+     "Na ponta leste da ilha, ergueram o farol mais famoso do mundo antigo. Ele tomou o nome da ilha: o Faros.",
+     "Seu construtor foi Sóstrato de Cnido. Os autores antigos dão datas diferentes. Uma enciclopédia bizantina, a Suda, diz 297 antes de Cristo. Jerônimo o situa em 284 ou 283 antes de Cristo. Outros relatos dizem que foi concluído por volta de 280 antes de Cristo, sob Ptolomeu Segundo.",
+     "As estimativas lhe dão mais de 110 metros de altura. Só as pirâmides de Gizé teriam sido mais altas.",
+     "As fontes antigas descrevem três andares, cada um levemente inclinado para dentro. O de baixo era quadrado, o do meio octogonal e o de cima redondo. Uma larga rampa subia em espiral até o topo. Lá, depois do anoitecer, mantinha-se um fogo aceso.",
+     "Alguns relatos dizem que uma estátua gigante o coroava, talvez Alexandre ou Ptolomeu Primeiro como deus do sol.",
+     "O geógrafo grego Estrabão descreve uma torre de mármore branco com muitos andares. Sua inscrição citava Sóstrato, pela segurança dos navegantes.",
+     "Ele se tornou o modelo de todos os faróis que vieram depois. Mesmo assim, só entrou nas listas das Sete Maravilhas no século sexto depois de Cristo."
+    ],
+    "title": "A ilha de Faros e seu farol"
+   },
+   "2": {
+    "line": "O farol ficou de pé por cerca de dezesseis séculos.",
+    "title": "A queda do farol e a decisão de Qaitbay"
+   },
+   "3": {
+    "line": "A grande torre quadrada é a torre de menagem, o coração do forte.",
+    "title": "O pátio e a torre de menagem"
+   },
+   "4": {
+    "line": "Duas inscrições redondas louvam Qaitbay, o fundador, na grande entrada da torre de menagem.",
+    "title": "A sala de oração da torre"
+   },
+   "5": {
+    "line": "Os muros voltados para o mar foram reforçados muitas e muitas vezes.",
+    "title": "Canhões, um bombardeio e uma nova vida"
+   },
+   "6": {
+    "line": "O farol não desapareceu.",
+    "title": "O farol submerso"
+   }
+  },
+  "tagline": "A fortaleza mameluca construída sobre as ruínas do Farol",
+  "title": "Cidadela de Qaitbay, local do Farol"
+ },
  "qasr-al-hosn": {
   "stops": {
    "1": {
@@ -10388,6 +12724,94 @@
   },
   "tagline": "Artes de África, Ásia, Oceânia e Américas atrás de um muro verde",
   "title": "Musée du quai Branly – Jacques Chirac"
+ },
+ "ramesseum": {
+  "stops": {
+   "1": {
+    "line": "Você está diante da entrada monumental do templo memorial de um rei.",
+    "paragraphs": [
+     "Você está diante da entrada monumental do templo memorial de um rei. Os egípcios o chamavam de Casa de Milhões de Anos, e o dedicaram a Ramsés Segundo com seu nome de trono, Usermaatre-setepenre.",
+     "O nome Ramesseum veio muito depois. O decifrador francês Jean-François Champollion o criou depois de visitar as ruínas em 1829 e ler os cartuchos do rei na pedra.",
+     "Diante de você ficava um pilone, o enorme portão afunilado de um templo egípcio. A equipe de escavação francesa lhe dá cerca de 69 metros de comprimento e uns 22 de altura. A equipe acredita que ele provavelmente tinha dois mastros de bandeira em cada uma de suas duas torres. Na Antiguidade, diz ela, um canal provavelmente levava barcos do Nilo até um cais diante deste portão. Tudo o que ficava à frente desapareceu sob as plantações.",
+     "Veja o que sobreviveu. A face voltada para o pátio resistiu melhor ao tempo, e traz a grande história militar deste reinado: a batalha de Kadesh.",
+     "No quinto ano de seu reinado, por volta de 1274 antes de Cristo, Ramsés marchou para o norte, rumo à Síria, para enfrentar o rei Muwatalli dos hititas às margens do Orontes.",
+     "Os relevos mostram o faraó conduzindo pessoalmente seu carro enquanto a fortaleza se rende, celebrando como ele rompeu as fileiras inimigas com sua guarda.",
+     "Esse relato é do próprio rei, e é cheio de bravata. A batalha não foi decisiva. A cidade não foi tomada, e os combates continuaram por vários anos. O mesmo pilone mostra cidades retomadas no oitavo ano. Uma cena registra o saque de uma cidade chamada Shalem no seu oitavo ano. Muitos acham que era Jerusalém, mas isso não é certo.",
+     "Este portão também devia ser uma barreira. A equipe francesa descreve o pilone como a última barreira entre o mundo ordenado dentro do templo e o caos lá fora. Os egípcios viam seus monumentos como carregados de poder mágico."
+    ],
+    "title": "O primeiro pilone e a batalha de Kadesh"
+   },
+   "2": {
+    "line": "À sua volta está o pátio do rei.",
+    "title": "O primeiro pátio e o palácio do rei"
+   },
+   "3": {
+    "line": "Olhe para baixo, para os enormes pedaços de granito quebrado.",
+    "title": "O colosso tombado: Ozymandias"
+   },
+   "4": {
+    "line": "A julgar pelas cenas, este pátio tem um ar mais religioso que o primeiro.",
+    "title": "O segundo pátio e o colosso do British Museum"
+   },
+   "5": {
+    "line": "Você está no coração do templo.",
+    "title": "A sala hipostila"
+   },
+   "6": {
+    "line": "Depois da grande sala, no mesmo eixo, ficavam duas salas menores, cada uma com oito colunas.",
+    "title": "O teto astronômico"
+   },
+   "7": {
+    "line": "Este é o lugar onde ficavam as salas mais sagradas do templo, e a equipe de escavação francesa diz que tudo desapareceu.",
+    "title": "Onde ficava o santuário"
+   },
+   "8": {
+    "line": "Agora passe do templo de pedra para os edifícios comuns ao redor.",
+    "title": "Os depósitos de tijolo de barro e a Casa da Vida"
+   }
+  },
+  "tagline": "Ozymandias, Kadesh e um templo de depósitos",
+  "title": "Ramesseum, templo funerário de Ramsés Segundo"
+ },
+ "ras-mohammed": {
+  "stops": {
+   "1": {
+    "line": "Fique bem longe da beirada, e olhe ao longe.",
+    "paragraphs": [
+     "Fique bem longe da beirada, e olhe ao longe. Você está num esporão de rocha a cerca de 60 metros acima da água, na ponta sul do Sinai. De um lado fica o golfo de Suez, do outro o golfo de Ácaba. Aqui eles encontram o mar Vermelho aberto.",
+     "O nome significa Cabo de Mohammed. Dizem que o perfil da rocha parece um rosto barbudo.",
+     "Olhe para o próprio penhasco. Não é uma pedra comum. É coral antigo, erguido do mar. A parte mais antiga teria se formado no Pleistoceno, uma época que começou há cerca de 1,8 milhão de anos e durou até uns dez mil anos atrás. Em sua proposta à UNESCO, o Egito listou os terraços elevados, os corais fósseis e uma grande falha entre suas atrações geológicas.",
+     "Por que tubarões no nome? Este terraço era um mirante sobre as águas profundas lá embaixo. Dizem que do penhasco raramente se veem tubarões. Venha pela vista, não pela certeza de ver tubarões.",
+     "O encontro dos golfos importa mais debaixo d’água. A península se afina numa ponta, então cada maré empurra a água com força ao redor dela. Essa corrente leva plâncton e alimento pelos recifes, os peixes se reúnem para comer, e os caçadores vêm atrás. Mais de mil espécies de peixes vivem aqui, e mais de 220 espécies de coral.",
+     "As pessoas perceberam. Em setembro de 1975, o fotógrafo David Doubilet e Eugenie Clark, conhecida como a Dama dos Tubarões, publicaram numa revista uma reportagem de capa que mostrou esses recifes ao mundo. Um pioneiro do mergulho, Howard Rosenstein, então pressionou as autoridades egípcias a protegê-los.",
+     "Em 1983, o Egito transformou Ras Mohammed em seu primeiro parque nacional. Ele começou com cerca de 97 quilômetros quadrados. Em 1988 cresceu para cerca de 480, somando a costa norte até Sharm el-Sheikh e as duas ilhas de Tiran e Sanafir. A maior parte dessa área é mar. Segundo relatos, os visitantes só podem entrar em cerca de um décimo do parque. O resto fica fechado para conservação.",
+     "Em 2002, o Egito colocou Ras Mohammed na lista indicativa da UNESCO. É um primeiro passo rumo ao status de Patrimônio Mundial, não uma inscrição."
+    ],
+    "title": "O Observatório dos Tubarões"
+   },
+   "2": {
+    "line": "Estas árvores baixas, verde-acinzentadas, que crescem na água salgada são mangues.",
+    "title": "O canal dos manguezais"
+   },
+   "3": {
+    "line": "Deste lado do parque, o coral fóssil forma quase sempre uma parede.",
+    "title": "Eel Garden"
+   },
+   "4": {
+    "line": "Olhe para a água diante da ponta.",
+    "title": "Shark Reef e o naufrágio do Yolanda"
+   },
+   "5": {
+    "line": "Embaixo deste penhasco corre uma larga estrada de areia debaixo d’água.",
+    "title": "A costa acima de Jackfish Alley"
+   },
+   "6": {
+    "line": "Você está em Main Beach, uma das três praias da costa sul da ponta.",
+    "title": "Main Beach"
+   }
+  },
+  "tagline": "Onde dois golfos se encontram: corais, manguezais e um naufrágio de vasos sanitários",
+  "title": "Parque Nacional de Ras Mohammed, Sinai"
  },
  "regaleira": {
   "stops": {
@@ -10898,6 +13322,53 @@
   },
   "tagline": "A basílica inacabada de Gaudí, em obras desde 1882"
  },
+ "saint-catherines-monastery": {
+  "stops": {
+   "1": {
+    "line": "Dê alguns passos para trás e olhe para as muralhas.",
+    "paragraphs": [
+     "Dê alguns passos para trás e olhe para as muralhas. São de granito, com dez a vinte metros de altura e dois a três metros de espessura. Foram erguidas no século seis, por ordem do imperador Justiniano. O mosteiro aponta como arquiteto Estêvão de Aila, o antigo nome de Eilat.",
+     "Este é um dos mosteiros cristãos mais antigos do mundo. Segundo a UNESCO, é o mais antigo que manteve a sua função original. Monges ortodoxos gregos vivem aqui há quase quinze séculos.",
+     "Por que construir uma fortaleza aqui? Monges e eremitas já se reuniam nestas montanhas muito antes. Em 330, segundo a tradição, santa Helena, mãe do imperador Constantino, mandou erguer uma pequena igreja onde crescia a sarça ardente. Ela acrescentou uma torre onde os monges podiam se abrigar. Dois séculos depois, Justiniano cercou aquele chão sagrado com estas muralhas.",
+     "Procure na muralha oeste uma porta antiga, fechada há muito tempo. Acima dela, segundo o mosteiro, há um versículo dos Salmos gravado na pedra. As palavras são difíceis de ler, a não ser com a melhor luz. Em palavras simples, ele chama esta de porta do Senhor, por onde passam os justos. Acima da porta havia uma janela coberta, para que os defensores pudessem afastar quem tentasse arrombá-la.",
+     "Durante séculos, não havia um jeito simples de entrar. Segundo o mosteiro, entrava-se por um túnel vigiado, ou se era içado num cesto baixado da muralha norte. Dizem que, durante ataques entre os séculos quinze e dezessete, pessoas e mantimentos subiam por corda e roldana. A atual entrada oeste, com suas três portas revestidas de aço, é de por volta de 1862.",
+     "No início, o mosteiro não tinha o nome de Catarina. Ela foi uma mártir de Alexandria do começo do século quatro. A tradição conta que anjos levaram o seu corpo ao cume da montanha que hoje leva o seu nome. Ali, dizem, monges encontraram as suas relíquias no século nove e as levaram para a basílica. Desde então, este é o Mosteiro de Santa Catarina.",
+     "Os monges têm vizinhos há muito tempo. Os beduínos gebeliya da região ligam as suas famílias às pessoas que Justiniano enviou para construir e guardar este lugar. Hoje, um guia gebeliya conta que essas famílias ficaram, se casaram com gente das tribos locais e vivem aqui desde então."
+    ],
+    "title": "Do lado de fora das muralhas"
+   },
+   "2": {
+    "line": "O percurso de visita começa numa porta aberta na muralha norte, que leva direto à área da igreja.",
+    "title": "O portão norte e o poço de Moisés"
+   },
+   "3": {
+    "line": "Este é o coração do mosteiro, a igreja da Transfiguração.",
+    "title": "A basílica da Transfiguração"
+   },
+   "4": {
+    "line": "Atrás da igreja cresce um arbusto verde.",
+    "title": "A sarça ardente"
+   },
+   "5": {
+    "line": "O mosteiro guarda uma das maiores coleções de ícones do mundo.",
+    "title": "Os ícones"
+   },
+   "6": {
+    "line": "Em algum ponto da ala sul, concluída em 1951, fica a biblioteca do mosteiro.",
+    "title": "A biblioteca e o Codex Sinaiticus"
+   },
+   "7": {
+    "line": "Procure um minarete, que se ergue perto do campanário da igreja.",
+    "title": "A mesquita e a carta do Profeta"
+   },
+   "8": {
+    "line": "Saia das muralhas e olhe o jardim.",
+    "title": "O jardim, são Trifão e o ossuário"
+   }
+  },
+  "tagline": "Uma fortaleza do século seis em volta da sarça ardente",
+  "title": "O Mosteiro de Santa Catarina"
+ },
  "saint-denis": {
   "stops": {
    "1": {
@@ -11158,6 +13629,87 @@
   },
   "tagline": "O castelo de Lisboa, de alcáçova moura a paço real",
   "title": "Castelo de São Jorge"
+ },
+ "saqqara-teti": {
+  "stops": {
+   "1": {
+    "line": "Olhe para a colina baixa e sem forma à sua frente.",
+    "paragraphs": [
+     "Olhe para a colina baixa e sem forma à sua frente. É difícil acreditar que um dia foi uma pirâmide, mas foi. Ela pertencia ao rei Teti, o primeiro governante da Sexta Dinastia. O Ministério do Turismo e Antiguidades do Egito data o seu reinado mais ou menos entre 2345 e 2323 antes de Cristo.",
+     "Quando ficou pronta, a pirâmide tinha cerca de cinquenta e dois metros e meio de altura. Era revestida com blocos de calcário fino. Por dentro, porém, o núcleo era feito de pequenos blocos locais e enchimento solto. Quando o revestimento foi levado embora na Antiguidade, o núcleo não conseguiu manter a forma. Ele cedeu, e a pirâmide acabou parecendo uma colina natural.",
+     "Por baixo, a história é outra. As salas sob a pirâmide continuam intactas. Uma passagem inclinada vira um corredor plano e chega a uma antecâmara. À esquerda ficam três depósitos para os objetos funerários. Foram encontrados vazios, porque a pirâmide foi saqueada há muito tempo. No lado oeste fica a câmara funerária. O seu teto é pintado com estrelas douradas sobre um fundo azul-escuro, uma imagem do túmulo como o universo em miniatura.",
+     "As paredes são gravadas com os Textos das Pirâmides. São fórmulas e recitações feitas para levar o rei em segurança ao além. Eles aparecem pela primeira vez na pirâmide de Unas, a uma curta caminhada daqui, e os construtores de Teti fizeram o mesmo. Mas a decoração aqui nunca foi terminada. O Ministério vê nisso um sinal de que Teti morreu de forma inesperada.",
+     "Como ele morreu é uma pergunta antiga. Maneton, sacerdote e historiador egípcio do século três antes de Cristo, escreveu que Teti foi morto pelos seus guarda-costas. O Ministério observa que há poucas provas disso. Então a resposta honesta é que não sabemos.",
+     "A maioria dos blocos do templo funerário foi saqueada na Antiguidade, e só se encontraram fragmentos. O templo do vale não foi localizado. O acesso ao interior varia, então pergunte na entrada."
+    ],
+    "title": "A pirâmide de Teti"
+   },
+   "2": {
+    "line": "Diante da pirâmide fica um grande cemitério para os funcionários de Teti.",
+    "title": "A mastaba de Mereruka"
+   },
+   "3": {
+    "line": "Todo túmulo egípcio era construído em torno de uma necessidade: os mortos precisavam ser alimentados.",
+    "title": "A sala de oferendas e a estátua do nicho"
+   },
+   "4": {
+    "line": "Ao lado de Mereruka fica a mastaba de Kagemni, outro vizir do rei Teti.",
+    "title": "A mastaba de Kagemni"
+   },
+   "5": {
+    "line": "Este túmulo é conhecido como o Túmulo do Médico.",
+    "title": "Ankhmahor, o túmulo do médico"
+   },
+   "6": {
+    "line": "Ao lado do túmulo de Ankhmahor fica uma mastaba menor, pela qual é fácil passar sem perceber.",
+    "title": "Nefer-seshem-Ptah, o túmulo ao lado"
+   }
+  },
+  "tagline": "A colina de um rei e os túmulos pintados dos seus vizires"
+ },
+ "saqqara-unas": {
+  "stops": {
+   "1": {
+    "line": "À primeira vista, isto não parece uma grande pirâmide.",
+    "paragraphs": [
+     "À primeira vista, isto não parece uma grande pirâmide. É um monte de pedras gasto, de contorno irregular. É bem menor do que os monumentos de Gizé. Mas o que existe lá dentro a tornou famosa.",
+     "Esta é a pirâmide de Unas, o nono e último rei da Quinta Dinastia. O Ministério do Turismo e Antiguidades do Egito data o seu reinado mais ou menos entre 2375 e 2345 antes de Cristo. O seu nome também se escreve Wenis. Na Antiguidade, a pirâmide tinha um nome próprio: Belos são os lugares de Unas.",
+     "Apesar do tamanho, o Ministério considera esta pirâmide muito importante. O motivo está debaixo da terra. As suas câmaras funerárias guardam o primeiro exemplo conhecido dos escritos funerários chamados Textos das Pirâmides. Eram fórmulas, gravadas nas paredes para ajudar o rei morto na sua viagem para o além.",
+     "A ideia não acabou com Unas. Textos das Pirâmides foram depois gravados nas pirâmides de Teti, Pepi Primeiro, Merenré e Pepi Segundo, e em várias pequenas pirâmides de rainhas.",
+     "Um enorme muro de pedra cercava antigamente a pirâmide principal e uma pirâmide de culto menor. Ele tinha pelo menos sete metros de altura. Como a maioria das pirâmides reais, esta também tinha dois templos, ligados por uma longa calçada. Neste passeio, você vai seguir essa calçada ladeira abaixo."
+    ],
+    "title": "A pirâmide de Unas"
+   },
+   "2": {
+    "line": "Toda pirâmide tinha um templo encostado na sua face leste.",
+    "title": "O templo funerário"
+   },
+   "3": {
+    "line": "As longas cavidades ao seu lado são fossos de barcos.",
+    "title": "Os fossos de barcos e a calçada"
+   },
+   "4": {
+    "line": "Esta é a entrada das câmaras funerárias.",
+    "title": "Dentro da pirâmide e os Textos das Pirâmides"
+   },
+   "5": {
+    "line": "Abaixo do nível da calçada, no seu lado sul, fica um grupo de túmulos escavados na rocha.",
+    "title": "O túmulo de Irukaptah, o mestre açougueiro"
+   },
+   "6": {
+    "line": "Dois homens dividem este túmulo, Niankhkhnum e Khnumhotep.",
+    "title": "Niankhkhnum e Khnumhotep"
+   },
+   "7": {
+    "line": "Este túmulo é escavado na parede de uma antiga pedreira voltada para a calçada.",
+    "title": "O túmulo de Nefer e Kahay"
+   },
+   "8": {
+    "line": "Esta mastaba fica no lado norte da calçada, entre os túmulos de Mehu e de Unas-ankh.",
+    "title": "A mastaba da princesa Idut"
+   }
+  },
+  "tagline": "A primeira pirâmide que fala, e as suas vizinhas"
  },
  "segovia": {
   "stops": {
@@ -11533,6 +14085,44 @@
   "tagline": "Aldeia na encosta de casas de pedra e igrejas gregas",
   "title": "A vila de Şirince"
  },
+ "siwa-oracle-aghurmi": {
+  "stops": {
+   "1": {
+    "line": "Nesta colina rochosa ficava um oráculo famoso do mundo antigo.",
+    "paragraphs": [
+     "Nesta colina rochosa ficava um oráculo famoso do mundo antigo. As pessoas atravessavam centenas de quilômetros de deserto para fazer uma pergunta ao seu deus.",
+     "Siwa fica bem longe, no Deserto Ocidental. Dependendo da rota, calcula-se que esteja de quinhentos a setecentos quilômetros a oeste do Nilo.",
+     "O deus daqui começou como uma divindade líbia. Os egípcios viram nele o seu próprio grande deus Amon. Deram a ele um título: Amon de Siwa, o senhor do bom conselho. Como o lugar era tão difícil de alcançar, uma resposta desse deus parecia algo raro, e por isso mesmo confiável.",
+     "Os primeiros gregos a chegar aqui vinham de Cirene, uma cidade grega no litoral da Líbia. Conheciam o oásis pelo comércio das caravanas. Chamavam o deus de Zeus Ámon. A palavra grega ammos quer dizer areia. Então, para ouvidos gregos, ele era algo como o Zeus da areia.",
+     "Como o oráculo começou? Heródoto ouviu duas histórias no século cinco antes de Cristo. Os sacerdotes de Tebas lhe contaram que fenícios tinham raptado duas sacerdotisas. Uma foi vendida na Líbia e outra na Grécia, e cada uma fundou um oráculo. As sacerdotisas de Dodona, na Grécia, contavam de outro jeito. Duas pombas pretas saíram voando de Tebas. Uma pousou em Dodona. A outra chegou à Líbia e mandou o povo fundar um oráculo de Ámon.",
+     "A colina em si é parte rocha e parte barro seco, com uns trinta metros de altura. O historiador grego Diodoro descreve uma fortaleza no coração do oásis, com três anéis de muralhas. O mais interno guardava o palácio dos antigos governantes. O anel do meio abrigava as famílias, os guardas e o santuário do deus, com sua fonte sagrada. O anel externo tinha os quartéis da guarda real."
+    ],
+    "title": "A colina de Aghurmi"
+   },
+   "2": {
+    "line": "Este pequeno edifício de pedra é o templo do Oráculo.",
+    "title": "O templo do Oráculo"
+   },
+   "3": {
+    "line": "Em 332 ou 331 antes de Cristo, Alexandre, o Grande, veio a este templo.",
+    "title": "A visita de Alexandre, o Grande"
+   },
+   "4": {
+    "line": "Daqui você vê por que este lugar era tão importante.",
+    "title": "A vista de Siwa"
+   },
+   "5": {
+    "line": "O templo não está sozinho.",
+    "title": "A aldeia de adobe de Aghurmi"
+   },
+   "6": {
+    "line": "Este muro quebrado é tudo o que resta de pé de um segundo templo de Amon.",
+    "title": "O templo de Umm Ubayda"
+   }
+  },
+  "tagline": "O oráculo do deserto que Alexandre atravessou as areias para consultar",
+  "title": "Siwa: o templo do Oráculo de Aghurmi e Alexandre"
+ },
  "sounion": {
   "stops": {
    "1": {
@@ -11554,6 +14144,48 @@
   },
   "tagline": "O templo de Poseidon na falésia, na ponta da Ática",
   "title": "Templo de Posídon, Súnio"
+ },
+ "sphinx-valley-temples": {
+  "stops": {
+   "1": {
+    "line": "Você está na entrada de um dos edifícios mais bem preservados do Império Antigo.",
+    "paragraphs": [
+     "Você está na entrada de um dos edifícios mais bem preservados do Império Antigo. Ele tem cerca de quarenta e cinco séculos. Era a parte mais baixa e mais a leste do complexo funerário do faraó Quéfren, o construtor da segunda pirâmide de Gizé. Daqui, uma calçada de pedra com quase quinhentos metros sobe para o oeste até a sua pirâmide. O templo do vale ficava embaixo, onde o planalto do deserto encontrava as terras cultivadas.",
+     "Repare na pedra. O núcleo das paredes é feito de enormes blocos de calcário, revestidos de granito vermelho. Por dentro, o piso era de alabastro polido, e duas portas na parede leste dão para um corredor que vai de norte a sul.",
+     "Desse corredor, uma porta leva para o oeste, a um salão em forma de letra T. Dezesseis pilares quadrados de granito maciço, cada um talhado num único bloco, sustentam o teto. Aberturas estreitas no alto das paredes deixavam a luz cair sobre as estátuas que ficavam aqui.",
+     "Conte as estátuas, se conseguir. Encaixes no piso mostram que vinte e três estátuas do rei ficavam neste salão. Um encaixe é mais largo que os outros, então talvez tenha sustentado duas figuras.",
+     "A maioria das estátuas foi retirada ainda na Antiguidade. No século dezenove, o arqueólogo francês Auguste Mariette escavou aqui. Ele encontrou estátuas de Quéfren, entre elas uma das estátuas mais famosas do Egito antigo. A mais conhecida mostra o rei sentado no trono, esculpido em pedra escura, com o deus falcão Hórus atrás da cabeça. As estátuas foram para o Cairo, mas os encaixes vazios aqui mostram onde o rei ficava.",
+     "Este templo ficou pronto antes de começarem as obras da Esfinge, ao lado. Os construtores deram a ele, no lado norte, um muro que respeita o revestimento de granito. Quando, mais tarde, o vizinho templo da Esfinge foi construído, esse muro foi derrubado e sua linha foi incorporada ao novo templo. Essa ordem, primeiro o templo do vale e depois a Esfinge, faz parte das provas que os egiptólogos usam para situar a Esfinge no reinado de Quéfren."
+    ],
+    "title": "O templo do vale de Quéfren"
+   },
+   "2": {
+    "line": "Bem à sua frente está a Grande Esfinge.",
+    "title": "A Esfinge vista do terraço"
+   },
+   "3": {
+    "line": "Olhe o corpo e você vai ver que ele não é uma superfície lisa.",
+    "title": "O corpo, as patas e as restaurações da Esfinge"
+   },
+   "4": {
+    "line": "Entre as patas dianteiras da Esfinge você vê uma laje alta de granito.",
+    "title": "A Estela do Sonho de Tutmés Quarto"
+   },
+   "5": {
+    "line": "Diante da Esfinge, num terraço mais baixo, estão as ruínas de um templo.",
+    "title": "O templo da Esfinge"
+   },
+   "6": {
+    "line": "Além do canto noroeste do templo da Esfinge, num terreno um pouco mais alto, estão os restos baixos de outro templo.",
+    "title": "O templo de Amenhotep Segundo"
+   },
+   "7": {
+    "line": "Olhe para baixo, para a vala em volta da Esfinge.",
+    "title": "O recinto da Esfinge e a pedreira"
+   }
+  },
+  "tagline": "Frente a frente com a Esfinge e seus templos",
+  "title": "A Grande Esfinge e os templos do vale, Gizé"
  },
  "spinalonga": {
   "stops": {
@@ -11747,6 +14379,49 @@
   },
   "tagline": "A obra-prima de Sinan para Solimão, o Magnífico",
   "title": "Complexo da Mesquita de Süleymaniye"
+ },
+ "sultan-hassan": {
+  "stops": {
+   "1": {
+    "line": "Vire-se.",
+    "paragraphs": [
+     "Vire-se. A colina atrás de você abriga a Cidadela, a sede dos sultões mamelucos. Esta enorme massa de pedra fica abaixo dela, num terreno inclinado.",
+     "Na Idade Média, este espaço aberto era o Maydan Rumayla, uma praça ao pé da Cidadela. Um palácio ocupava antes o terreno da mesquita.",
+     "O homem que mandou construir o edifício foi o sultão Hassan. Seu pai era o sultão al-Nasir Muhammad, e seu avô, o grande sultão Qalawun.",
+     "Hassan subiu ao trono em 1347. Era um menino de onze ou doze anos; as fontes divergem. Durante anos, o poder de verdade ficou com grupos rivais de emires, os comandantes militares. No seu primeiro reinado, a peste negra chegou ao Egito. Foi a pior epidemia do período, e matou muitos dos soldados mamelucos.",
+     "Depois os emires o afastaram. O irmão mais velho, Salih, assumiu o trono. Em 1354 foi a vez de Salih ser deposto, e Hassan voltou. Dois anos depois, em 1356, começaram as obras deste complexo.",
+     "Era mais que uma mesquita. Reunia uma mesquita de sexta-feira, quatro escolas de direito e um mausoléu. Os aluguéis de um mercado próximo ajudavam a pagar tudo.",
+     "O historiador al-Maqrizi escreveu que não se conhecia nenhuma mesquita dos muçulmanos parecida com ela. Um historiador moderno a chama de a maior e mais magnífica mesquita do Cairo. Ele também vê no seu tamanho enorme uma máscara para a fraqueza do sultão que a construiu."
+    ],
+    "title": "Um sultão jovem e uma praça para exércitos"
+   },
+   "2": {
+    "line": "Incline a cabeça para trás.",
+    "title": "O portal que nunca foi terminado"
+   },
+   "3": {
+    "line": "O barulho da praça fica para trás.",
+    "title": "O vestíbulo e a escritura de fundação"
+   },
+   "4": {
+    "line": "Você está no coração da planta.",
+    "title": "O pátio dos quatro salões"
+   },
+   "5": {
+    "line": "Este é o maior dos quatro iwans.",
+    "title": "O grande salão da qibla"
+   },
+   "6": {
+    "line": "O mausoléu fica logo atrás do iwan da qibla, o grande salão voltado para Meca.",
+    "title": "O mausoléu"
+   },
+   "7": {
+    "line": "Os dois minaretes não são gêmeos.",
+    "title": "Os minaretes e os canhões da Cidadela"
+   }
+  },
+  "tagline": "Uma gigantesca mesquita e escola mameluca ao pé da Cidadela",
+  "title": "Mesquita-madraça do sultão Hassan"
  },
  "sumela-monastery": {
   "stops": {
@@ -12417,6 +15092,47 @@
   "tagline": "Botticelli, Leonardo, Michelangelo e Caravaggio na galeria dos Médici",
   "title": "Galeria Uffizi"
  },
+ "unfinished-obelisk": {
+  "stops": {
+   "1": {
+    "line": "Você está na beira de um grande depósito de pedra do mundo antigo.",
+    "paragraphs": [
+     "Você está na beira de um grande depósito de pedra do mundo antigo. Na Antiguidade, a cidade desta margem se chamava Siene. Ficava logo ao norte da primeira catarata do Nilo e era a cidade de fronteira do antigo Egito. Além dela ficava a Núbia.",
+     "A rocha sob seus pés é granito. As pedreiras de Assuã eram famosas pela pedra dura e de alta qualidade, sobretudo o granito. Delas saíam estátuas, blocos de templos, obeliscos e colossos para lugares bem longe, rio abaixo. A UNESCO as descreve como pedreiras de granito usadas pelos faraós desde a Antiguidade remota, e monumentos, colossos e obeliscos inacabados ainda estão no lugar.",
+     "Por que tanto esforço por essa pedra? O granito é duro e dura muito. Isso combinava com um rei que queria que seu nome sobrevivesse a ele. Mas essa mesma dureza o tornava muito difícil de trabalhar. Os canteiros não tinham ferramentas de aço capazes de cortá-lo. Usavam bolas de uma pedra ainda mais resistente, fogo e cunhas. O fosso à sua frente guarda as marcas dos três.",
+     "Esta pedreira fica na margem leste do Nilo, dentro da cidade moderna. Em 2002, o órgão de antiguidades do Egito começou escavações aqui para preparar o local para visitantes. Essas escavações revelaram mais do piso da pedreira e das superfícies de trabalho em volta do obelisco.",
+     "A pedreira é uma das dez partes de um único sítio do Patrimônio Mundial, os Monumentos Núbios de Abu Simbel a Philae, inscrito em 1979. Para a UNESCO, essas pedreiras, com seu obelisco inacabado, são a base do que sabemos sobre a extração de pedra no antigo Egito. Então o lugar importa por causa de um fracasso. Aqui você vê a obra antes de ela ficar pronta."
+    ],
+    "title": "De onde vinha o granito do Egito"
+   },
+   "2": {
+    "line": "Olhe ao longo da pedra.",
+    "title": "O fuste"
+   },
+   "3": {
+    "line": "Olhe para baixo, para a vala ao lado da pedra.",
+    "title": "A vala e as bolas de pedra"
+   },
+   "4": {
+    "line": "Antes de começar a vala, era preciso rebaixar a rocha acima do obelisco até o nível certo.",
+    "title": "Fogo e cunhas"
+   },
+   "5": {
+    "line": "Olhe de perto as paredes da vala.",
+    "title": "Marcas deixadas pelos trabalhadores"
+   },
+   "6": {
+    "line": "Foi aqui que tudo deu errado.",
+    "title": "A rachadura"
+   },
+   "7": {
+    "line": "Imagine que a rocha estivesse boa.",
+    "title": "Como tirá-lo dali, e o que volta hoje"
+   }
+  },
+  "tagline": "O maior obelisco já começado, e deixado para trás",
+  "title": "O obelisco inacabado e as pedreiras de granito de Assuã"
+ },
  "valencia-old-town": {
   "stops": {
    "1": {
@@ -12450,6 +15166,185 @@
   },
   "tagline": "A Lonja da Seda, a catedral e o centro antigo de Valência",
   "title": "Centro histórico de Valência"
+ },
+ "valley-of-kings-kv62": {
+  "stops": {
+   "1": {
+    "line": "Você está no alto de uma escada que desce para o chão do vale.",
+    "paragraphs": [
+     "Você está no alto de uma escada que desce para o chão do vale. A maioria dos túmulos reais daqui foi escavada no pé de um penhasco ou na encosta de um barranco. Este foi escavado na vertical no chão do vale, e isso ajuda a explicar por que ele sobreviveu.",
+     "De cerca de 1550 a 1070 antes de Cristo, os reis do Novo Império do Egito foram sepultados neste vale. Tutancâmon foi enterrado aqui no século quatorze antes de Cristo, depois de um reinado de uns nove ou dez anos. As datas do reinado variam um pouco, mas todas o colocam no fim da décima oitava dinastia.",
+     "Gerações depois, trabalhadores escavaram bem perto um enorme túmulo novo na rocha. Ele é conhecido como KV9 e pertenceu aos reis Ramsés Quinto e Ramsés Sexto. O calcário retirado foi jogado morro abaixo, sobre a entrada do pequeno túmulo lá embaixo. Depois, cabanas para os trabalhadores dos túmulos foram construídas sobre esse entulho, e a escada sumiu de vista.",
+     "Então o túmulo foi esquecido. Ondas de saques em séculos posteriores esvaziaram os túmulos maiores do vale, mas ninguém achou este. Os arqueólogos do começo do século vinte também não procuraram aqui. Theodore Davis, o financista americano que teve a licença de escavação até 1914, revelou vários achados pequenos ali perto. Dizem que ele não encontrou o túmulo de Tutancâmon porque duvidava que alguém escavasse um túmulo na vertical no chão do vale. Howard Carter escreveu depois que ele também evitou por anos escavar ao lado de KV9 para não impedir os visitantes de entrar naquele túmulo.",
+     "O abrigo acima de você é moderno. Depois que enchentes atingiram o vale nos anos 1990, engenheiros o construíram para manter a água fora. Portões de metal modernos fecham as duas pontas da passagem, e os visitantes descem por uma escada de aço."
+    ],
+    "title": "Um túmulo escondido sob o entulho de outro"
+   },
+   "10": {
+    "line": "A parede à sua frente mostra duas cenas.",
+    "title": "Parede norte: Ay e o rei"
+   },
+   "11": {
+    "line": "Outras três paredes cercam a sala, e cada uma tem um tema diferente.",
+    "title": "Paredes leste, oeste e sul"
+   },
+   "12": {
+    "line": "A caixa de pedra no meio do chão é o sarcófago.",
+    "title": "O sarcófago e o caixão externo"
+   },
+   "13": {
+    "line": "Em novembro de 1925, especialistas examinaram a múmia de Tutancâmon.",
+    "title": "O desenfaixamento de 1925"
+   },
+   "14": {
+    "line": "A vitrine no túmulo guarda a múmia de Tutancâmon.",
+    "title": "O rei em sua vitrine"
+   },
+   "15": {
+    "line": "No lado leste da câmara funerária há uma porta baixa com um degrau para baixo.",
+    "title": "O tesouro"
+   },
+   "16": {
+    "line": "Olhe as paredes pintadas e você verá pequenas manchas marrons.",
+    "title": "Manchas marrons e o resgate do túmulo"
+   },
+   "17": {
+    "line": "Em 2015, o arqueólogo Nicholas Reeves estudou escaneamentos de alta resolução destas superfícies pintadas.",
+    "title": "Salas escondidas: uma pergunta ainda aberta"
+   },
+   "2": {
+    "line": "Foi aqui que, em novembro de 1922, o arqueólogo Howard Carter encontrou o primeiro degrau.",
+    "title": "O primeiro degrau, novembro de 1922"
+   },
+   "3": {
+    "line": "Dezesseis degraus descem pela rocha até a primeira porta.",
+    "title": "Dezesseis degraus e a primeira porta selada"
+   },
+   "4": {
+    "line": "Você está num corredor de uns oito metros de comprimento e 1,7 metro de largura, escavado na mesma rocha.",
+    "title": "O corredor e a vela"
+   },
+   "5": {
+    "line": "Esta é a antecâmara.",
+    "title": "A antecâmara"
+   },
+   "6": {
+    "line": "Para um rei cujo nome é conhecido no mundo inteiro, este túmulo é pequeno.",
+    "title": "Um túmulo pequeno demais para um rei"
+   },
+   "7": {
+    "line": "No canto sudoeste da antecâmara, na ponta esquerda da parede do fundo, uma abertura baixa leva a uma pequena sala lateral.",
+    "title": "O anexo"
+   },
+   "8": {
+    "line": "Você está diante da entrada da câmara funerária.",
+    "title": "A entrada selada da câmara funerária"
+   },
+   "9": {
+    "line": "À sua frente está a câmara funerária, com cerca de 6,4 metros de leste a oeste e 4 metros de norte a sul.",
+    "title": "A câmara funerária"
+   }
+  },
+  "tagline": "O túmulo achado em 1922, do primeiro degrau às salas escondidas",
+  "title": "Vale dos Reis: O túmulo de Tutancâmon"
+ },
+ "valley-of-kings-open-tombs": {
+  "stops": {
+   "1": {
+    "line": "Este é o Vale dos Reis.",
+    "paragraphs": [
+     "Este é o Vale dos Reis. Ele fica do outro lado do Nilo em relação à antiga Tebas, a cidade que chamamos de Luxor, na margem oeste do rio. Aqui foram escavadas tumbas durante quase quinhentos anos, ao longo das dinastias dezoito, dezenove e vinte. Elas foram feitas para os faraós e os nobres poderosos do Novo Império. A UNESCO inscreveu o vale em 1979 como parte da antiga Tebas e de sua necrópole.",
+     "Olhe para os penhascos ao seu redor. Algumas tumbas foram escavadas em fendas naturais do calcário. Outras foram abertas atrás de encostas de cascalho, ou na borda de esporões de rocha deixados por antigos canais de enchente. O vale tem duas partes principais: o Vale Leste, onde fica a maioria das tumbas reais, e um Vale Oeste. Mais de sessenta tumbas estão numeradas aqui, do simples poço da KV54 ao enorme labirinto da KV5.",
+     "Aqui chove pouco, mas quando vem uma tempestade, ela vem com violência. As enxurradas despejam toneladas de detritos em qualquer tumba aberta. As inundações são um dos grandes perigos para as tumbas abertas.",
+     "O que resta desses sepultamentos é sobretudo a decoração. As paredes trazem textos que acompanham o deus sol pela noite. Um deles é o Livro dos Portões. Outro é a Litania de Rá, que invoca o sol em setenta e cinco formas. O rei morto devia participar dessa viagem para poder renascer ao amanhecer.",
+     "Muitas dessas tumbas estão abertas desde a Antiguidade. Visitantes gregos e romanos riscaram seus nomes nas paredes. Mais tarde, cristãos coptas deixaram cruzes e orações. As autoridades de antiguidades fazem um rodízio das tumbas abertas, então a seleção muda de um dia para o outro."
+    ],
+    "title": "O Vale dos Reis"
+   },
+   "10": {
+    "line": "A KV15 é a tumba de Seti Segundo, da décima nona dinastia.",
+    "title": "KV15, a tumba de Seti Segundo"
+   },
+   "11": {
+    "line": "A KV43 é mais antiga que suas vizinhas ramessidas.",
+    "title": "KV43, a tumba de Tutmés Quarto"
+   },
+   "12": {
+    "line": "A KV9 é dividida por dois reis da vigésima dinastia: Ramsés Quinto e seu tio, Ramsés Sexto, que tomou a tumba para si e reinou cerca de oito anos.",
+    "title": "KV9, a tumba de Ramsés Quinto e Ramsés Sexto"
+   },
+   "2": {
+    "line": "Esta é a KV1, e o “1” não é por acaso.",
+    "title": "KV1, a tumba de Ramsés Sétimo"
+   },
+   "3": {
+    "line": "A KV2 é a tumba de Ramsés Quarto, que reinou cerca de seis anos.",
+    "title": "KV2, a tumba de Ramsés Quarto"
+   },
+   "4": {
+    "line": "Olhe para a entrada.",
+    "title": "KV6, a tumba de Ramsés Nono"
+   },
+   "5": {
+    "line": "A KV8 é a tumba de Merenptah, um rei da décima nona dinastia.",
+    "title": "KV8, a tumba de Merenptah"
+   },
+   "6": {
+    "line": "A KV11 tem dois apelidos.",
+    "title": "KV11, a tumba de Ramsés Terceiro"
+   },
+   "7": {
+    "line": "Esta pequena tumba pertence a Ramsés Primeiro, fundador da décima nona dinastia e avô de Ramsés, o Grande.",
+    "title": "KV16, a tumba de Ramsés Primeiro"
+   },
+   "8": {
+    "line": "A KV14 é uma tumba que foi usada duas vezes.",
+    "title": "KV14, a tumba de Tausert e Setnakht"
+   },
+   "9": {
+    "line": "A KV47 pertence a Siptah, um rei da décima nona dinastia.",
+    "title": "KV47, a tumba de Siptah"
+   }
+  },
+  "tagline": "Dez tumbas reais com o ingresso padrão, e suas histórias",
+  "title": "Vale dos Reis: as tumbas abertas"
+ },
+ "valley-of-queens": {
+  "stops": {
+   "1": {
+    "line": "Você está num vale de deserto seco na margem oeste de Tebas, de frente para a Luxor moderna, do outro lado do Nilo.",
+    "paragraphs": [
+     "Você está num vale de deserto seco na margem oeste de Tebas, de frente para a Luxor moderna, do outro lado do Nilo. O nome antigo dele era Ta Set Neferu. Costuma ser traduzido como o Lugar da Beleza. Às vezes, o nome é ligado aos filhos reais.",
+     "As duas leituras combinam com os mortos que estão aqui. No começo, o vale serviu a funcionários da corte. Mais tarde, recebeu esposas reais, junto com príncipes e princesas.",
+     "Os sepultamentos aqui abrangem uns quatro ou cinco séculos. As datas vão de cerca de 1550 a 1080 antes de Cristo, embora alguns as desloquem algumas décadas. Só o vale principal guarda noventa e uma tumbas. Os vales laterais têm mais.",
+     "Isto não é uma cópia menor do Vale dos Reis, logo depois das colinas. Ele servia a outro círculo real. As tumbas são menores e mais íntimas, e a história que contam é sobre família.",
+     "A tumba mais famosa daqui é a de Nefertari. Ela foi uma rainha de Ramsés Segundo. As pinturas dela estão entre as mais belas que restaram do Egito antigo. De 1986 a 1992, restauradores egípcios e internacionais trabalharam juntos nelas.",
+     "Essa tumba foi fechada aos visitantes em março de 2024, para que a umidade lá dentro pudesse ser monitorada. Relatos do fim de 2026 a descreviam como fechada, sem data de reabertura anunciada. Por isso, ela não é uma das paradas deste roteiro.",
+     "Olhe ao longo das encostas as entradas fechadas com tábuas e cobertas por telhados. Ao longo dos séculos, enxurradas e quedas de rocha destruíram boa parte do reboco pintado destas tumbas.",
+     "O vale é uma parte do sítio da antiga Tebas inscrito como Patrimônio Mundial.",
+     "As escavações modernas começaram aqui em 1903, com uma missão italiana. O líder dela era Ernesto Schiaparelli, que dirigia o Museu Egípcio de Turim."
+    ],
+    "title": "Ta Set Neferu, o Lugar da Beleza"
+   },
+   "2": {
+    "line": "Esta tumba pertence a um príncipe, Amenherkhepshef, filho de Ramsés Terceiro.",
+    "title": "QV55, a tumba do príncipe Amenherkhepshef"
+   },
+   "3": {
+    "line": "O príncipe Khaemwaset, outro filho de Ramsés Terceiro, foi sepultado aqui.",
+    "title": "QV44, a tumba do príncipe Khaemwaset"
+   },
+   "4": {
+    "line": "Esta é a tumba da rainha Tyti.",
+    "title": "QV52, a tumba da rainha Tyti"
+   },
+   "5": {
+    "line": "Os grandes sepultamentos reais aqui terminaram com o Novo Império.",
+    "title": "Depois dos faraós: enchentes, eremitas e conservação"
+   }
+  },
+  "tagline": "Onde o Egito enterrava suas esposas e filhos reais",
+  "title": "Vale das Rainhas"
  },
  "valley-of-the-temples": {
   "stops": {
@@ -12826,6 +15721,46 @@
   "tagline": "Uma cidade romana de azeite e mosaicos ao pé do Zerhoun",
   "title": "Volúbilis"
  },
+ "wadi-el-hitan": {
+  "stops": {
+   "1": {
+    "line": "Olhe ao redor.",
+    "paragraphs": [
+     "Olhe ao redor. Areia, rocha clara e céu. Nenhuma casa, nenhuma árvore, nenhuma água. E, no entanto, isto já foi o fundo de um mar.",
+     "Há cerca de trinta e sete a quarenta milhões de anos, um mar quente e raso cobria todo o norte do Egito. Os cientistas o chamam de Tétis. Nele nadavam baleias, e muitas morreram aqui. Os ossos delas estão na areia ao seu redor.",
+     "O nome árabe, Wadi El-Hitan, significa Vale das Baleias. Dizem que o nome é uma piscadela para o cemitério mais famoso do Egito, o Vale dos Reis. A UNESCO o declarou Patrimônio Mundial em 2005. A zona protegida cobre cerca de duzentos quilômetros quadrados. Ela fica dentro de uma reserva maior, a Área Protegida de Wadi El-Rayan.",
+     "Por que este lugar importa tanto? A UNESCO o coloca em primeiro lugar no mundo para mostrar como as baleias evoluíram. As baleias respiram ar. São mamíferos. Seus antepassados distantes andavam em terra firme.",
+     "Um pesquisador de destaque imagina esses antepassados como carniceiros parecidos com cervos ou porcos, que viviam à beira-mar. Há cerca de cinquenta e cinco milhões de anos, segundo ele, eles começaram a passar mais tempo na água. Fósseis mais antigos da Índia mostram baleias primitivas que ainda andavam, entrando e saindo da água sobre as patas. Com o tempo, a cauda assumiu o nado. As patas atrapalhavam, e encolheram.",
+     "As baleias deste vale chegam perto do fim dessa história. A UNESCO diz que elas são as mais jovens entre as baleias primitivas, com as patas traseiras quase sumidas.",
+     "Quantas são? As estimativas chegam a cerca de mil indivíduos. Os próprios artigos dos pesquisadores falam em centenas de esqueletos de cada um dos dois tipos principais. De qualquer forma, poucos lugares no mundo guardam tantas, tão juntas e tão bem preservadas.",
+     "Por isso as regras são rígidas. A lei egípcia protege o local, incluindo suas rochas e fósseis. Veículos não podem entrar na zona dos fósseis. As visitas seguem uma trilha fixa. Fique no caminho, não toque em nada e não leve nada."
+    ],
+    "title": "A entrada e a história das baleias"
+   },
+   "2": {
+    "line": "Antes de sair para ver os ossos na areia, entre.",
+    "title": "O Museu dos Fósseis e da Mudança Climática"
+   },
+   "3": {
+    "line": "Agora saia para ver os próprios ossos.",
+    "title": "Basilosaurus, o lagarto-rei"
+   },
+   "4": {
+    "line": "Procure os esqueletos menores.",
+    "title": "Dorudon e o mar lotado"
+   },
+   "5": {
+    "line": "Observe a parede de rocha.",
+    "title": "A Camp White Layer: raízes ou tocas?"
+   },
+   "6": {
+    "line": "Gire devagar e observe o vale inteiro.",
+    "title": "O mirante do deserto"
+   }
+  },
+  "tagline": "O deserto onde as baleias perderam as patas",
+  "title": "Wadi El-Hitan, o Vale das Baleias, Faium"
+ },
  "wadi-rum": {
   "stops": {
    "1": {
@@ -12875,6 +15810,50 @@
    }
   },
   "tagline": "Montanhas do deserto e antigas inscrições na rocha"
+ },
+ "white-desert-farafra": {
+  "stops": {
+   "1": {
+    "line": "Indo de carro para o sul a partir de Bahariya, a maioria das viagens para aqui.",
+    "paragraphs": [
+     "Indo de carro para o sul a partir de Bahariya, a maioria das viagens para aqui. É uma crista baixa e clara à beira da estrada. Não é alta nem larga. O que ela faz é capturar o sol.",
+     "O nome local é Gebel el-Izzaz. Quer dizer mais ou menos montanha de vidro. Procure o arco natural. Ele tem mais ou menos a altura de uma pessoa. Suas faces internas são forradas de lâminas de cristal.",
+     "O que são? Os cartões-postais muitas vezes dizem quartzo. As fontes divergem. Algumas dizem barita e calcita, e outras acrescentam quartzo. Um estudo das rochas do parque, publicado numa revista de geologia, diz que os cristais de calcita ficam bem expostos aqui. Então a calcita é o único nome que todas compartilham.",
+     "A diferença importa por um motivo. A barita e a calcita são moles. Ficam em cerca de três a três e meio na escala de dureza usada pelos geólogos. O quartzo fica em sete. Uma lâmina de aço riscaria estes cristais.",
+     "Como eles cresceram? A história básica é simples. Água quente, rica em minerais dissolvidos, circulou pela rocha debaixo da terra. Ao esfriar, deixou cristais em rachaduras e cavidades. O vento e o tempo depois removeram a pedra mais mole ao redor.",
+     "O estudo geológico encaixa esta crista num quadro maior. Ele cita a Montanha de Cristal como uma das depressões cársticas do planalto entre os dois oásis. Carste é a rocha que a água dissolveu lentamente. Em outros pontos da área, diz o estudo, os cristais de calcita chegam a vinte centímetros. Alguns crescem em formas ramificadas, curvas ou em espiral.",
+     "Esta crista pagou pela sua beleza. Dizem que ela foi cortada quando a estrada foi construída, e que parte dela foi parar no leito da estrada. Relatos locais falam de anos de extração depois disso. Os visitantes fizeram o resto. Dizem que eles já levaram a maior parte dos cristais grandes.",
+     "O Egito protege suas áreas naturais pela Lei 102 de 1983. Essa lei proíbe danificar ou remover elementos naturais numa área protegida. Então olhe de perto, tire uma foto e deixe cada cristal onde está."
+    ],
+    "title": "A Montanha de Cristal"
+   },
+   "2": {
+    "line": "Um pouco mais ao sul, a oeste da estrada, o terreno se abre no vale de Agabat.",
+    "title": "Agabat"
+   },
+   "3": {
+    "line": "Quase tudo aqui é seco.",
+    "title": "Wadi Hennis e as nascentes"
+   },
+   "4": {
+    "line": "A maioria dos visitantes passa a noite aqui fora.",
+    "title": "Uma noite de acampamento entre o giz"
+   },
+   "5": {
+    "line": "Com a luz do dia, o campo principal se abre.",
+    "title": "Os monólitos de giz"
+   },
+   "6": {
+    "line": "Esta é a forma que a maioria das pessoas imagina quando pensa no Deserto Branco.",
+    "title": "O Cogumelo"
+   },
+   "7": {
+    "line": "Nenhum oásis fica mais perto do Deserto Branco que este.",
+    "title": "Qasr el-Farafra"
+   }
+  },
+  "tagline": "Gigantes de giz esculpidos de um mar desaparecido",
+  "title": "Parque Nacional do Deserto Branco, Farafra"
  },
  "xanthos": {
   "stops": {

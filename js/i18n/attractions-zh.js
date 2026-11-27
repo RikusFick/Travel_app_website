@@ -2120,5 +2120,411 @@ window.EARWISE_ATTRACTIONS = [
   "country": "约旦",
   "href": "/zh/wadi-rum/",
   "q": "wadi rum desert jeep inscriptions jordan wadi rum 瓦迪拉姆 约旦"
+ },
+ {
+  "title": "吉萨胡夫大金字塔",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/great-pyramid-khufu/",
+  "q": "the great pyramid of khufu giza egypt the great pyramid of khufu, giza 吉萨胡夫大金字塔 埃及"
+ },
+ {
+  "title": "哈夫拉金字塔与孟卡拉金字塔，吉萨",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/khafre-menkaure/",
+  "q": "pyramids of khafre and menkaure giza egypt pyramids of khafre and menkaure, giza 哈夫拉金字塔与孟卡拉金字塔，吉萨 埃及"
+ },
+ {
+  "title": "吉萨狮身人面像与河谷神庙",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/sphinx-valley-temples/",
+  "q": "great sphinx and valley temples giza egypt great sphinx and valley temples, giza 吉萨狮身人面像与河谷神庙 埃及"
+ },
+ {
+  "title": "大埃及博物馆：大厅与大阶梯",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/gem-grand-hall/",
+  "q": "grand egyptian museum hall staircase giza egypt grand egyptian museum: grand hall & staircase 大埃及博物馆：大厅与大阶梯 埃及"
+ },
+ {
+  "title": "大埃及博物馆：主展厅",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/gem-main-galleries/",
+  "q": "grand egyptian museum main galleries giza egypt grand egyptian museum: main galleries 大埃及博物馆：主展厅 埃及"
+ },
+ {
+  "title": "大埃及博物馆：图坦卡蒙展厅",
+  "place": "Giza",
+  "country": "埃及",
+  "href": "/zh/gem-tutankhamun/",
+  "q": "grand egyptian museum tutankhamun galleries giza egypt grand egyptian museum: tutankhamun galleries 大埃及博物馆：图坦卡蒙展厅 埃及"
+ },
+ {
+  "title": "埃及博物馆，解放广场，开罗",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/egyptian-museum-tahrir/",
+  "q": "egyptian museum tahrir square cairo egypt egyptian museum, tahrir square, cairo 埃及博物馆，解放广场，开罗 埃及"
+ },
+ {
+  "title": "埃及文明国家博物馆与王室木乃伊厅",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/nmec-royal-mummies/",
+  "q": "nmec the royal mummies hall cairo egypt nmec: the royal mummies hall 埃及文明国家博物馆与王室木乃伊厅 埃及"
+ },
+ {
+  "title": "汗哈利利与侯赛因清真寺",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/khan-el-khalili-hussein/",
+  "q": "khan el khalili and al hussein cairo egypt khan el-khalili and al-hussein 汗哈利利与侯赛因清真寺 埃及"
+ },
+ {
+  "title": "爱资哈尔清真寺与爱资哈尔大学",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/azhar/",
+  "q": "al azhar mosque university cairo egypt al-azhar mosque & university 爱资哈尔清真寺与爱资哈尔大学 埃及"
+ },
+ {
+  "title": "开罗城堡 萨拉丁城堡",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/cairo-citadel/",
+  "q": "cairo citadel of salah al din egypt cairo citadel (citadel of salah al-din) 开罗城堡 萨拉丁城堡 埃及"
+ },
+ {
+  "title": "伊本·图伦清真寺",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/ibn-tulun/",
+  "q": "mosque of ibn tulun cairo egypt mosque of ibn tulun 伊本·图伦清真寺 埃及"
+ },
+ {
+  "title": "苏丹哈桑清真寺与经学院",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/sultan-hassan/",
+  "q": "sultan hassan mosque madrasa cairo egypt sultan hassan mosque-madrasa 苏丹哈桑清真寺与经学院 埃及"
+ },
+ {
+  "title": "伊斯兰开罗：穆伊兹街北段，从征服门到两宫之间",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/islamic-cairo-muizz-north/",
+  "q": "al muizz street north islamic cairo egypt al-muizz street north, islamic cairo 伊斯兰开罗：穆伊兹街北段，从征服门到两宫之间 埃及"
+ },
+ {
+  "title": "伊斯兰开罗：穆伊兹街南段，从古里亚到帐篷匠街",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/islamic-cairo-muizz-south/",
+  "q": "al muizz street south islamic cairo egypt al-muizz street south, islamic cairo 伊斯兰开罗：穆伊兹街南段，从古里亚到帐篷匠街 埃及"
+ },
+ {
+  "title": "开罗伊斯兰艺术博物馆",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/museum-islamic-art/",
+  "q": "museum of islamic art cairo egypt museum of islamic art, cairo 开罗伊斯兰艺术博物馆 埃及"
+ },
+ {
+  "title": "科普特开罗",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/coptic-cairo/",
+  "q": "coptic cairo egypt coptic cairo 科普特开罗 埃及"
+ },
+ {
+  "title": "科普特博物馆",
+  "place": "Cairo",
+  "country": "埃及",
+  "href": "/zh/coptic-museum/",
+  "q": "coptic museum cairo egypt coptic museum 科普特博物馆 埃及"
+ },
+ {
+  "title": "萨卡拉：左塞尔阶梯金字塔建筑群",
+  "place": "Saqqara",
+  "country": "埃及",
+  "href": "/zh/djoser-saqqara/",
+  "q": "saqqara step pyramid of djoser complex egypt saqqara: step pyramid of djoser complex 萨卡拉：左塞尔阶梯金字塔建筑群 埃及"
+ },
+ {
+  "title": "萨卡拉：特提金字塔与梅雷鲁卡、卡盖姆尼",
+  "place": "Saqqara",
+  "country": "埃及",
+  "href": "/zh/saqqara-teti/",
+  "q": "saqqara pyramid of teti nobles tombs egypt saqqara: pyramid of teti & nobles' tombs 萨卡拉：特提金字塔与梅雷鲁卡、卡盖姆尼 埃及"
+ },
+ {
+  "title": "萨卡拉：乌纳斯金字塔与堤道旁的墓",
+  "place": "Saqqara",
+  "country": "埃及",
+  "href": "/zh/saqqara-unas/",
+  "q": "saqqara pyramid of unas causeway tombs egypt saqqara: pyramid of unas & causeway tombs 萨卡拉：乌纳斯金字塔与堤道旁的墓 埃及"
+ },
+ {
+  "title": "孟菲斯露天博物馆，米特拉希纳",
+  "place": "Memphis",
+  "country": "埃及",
+  "href": "/zh/memphis-mit-rahina/",
+  "q": "memphis mit rahina open air museum egypt memphis (mit rahina) open-air museum 孟菲斯露天博物馆，米特拉希纳 埃及"
+ },
+ {
+  "title": "达赫舒尔：斯尼夫鲁的弯曲金字塔",
+  "place": "Dahshur",
+  "country": "埃及",
+  "href": "/zh/dahshur-bent-pyramid/",
+  "q": "dahshur bent pyramid of sneferu egypt dahshur: bent pyramid of sneferu 达赫舒尔：斯尼夫鲁的弯曲金字塔 埃及"
+ },
+ {
+  "title": "达赫舒尔：斯尼夫鲁的红色金字塔",
+  "place": "Dahshur",
+  "country": "埃及",
+  "href": "/zh/dahshur-red-pyramid/",
+  "q": "dahshur red pyramid of sneferu egypt dahshur: red pyramid of sneferu 达赫舒尔：斯尼夫鲁的红色金字塔 埃及"
+ },
+ {
+  "title": "卡纳克：阿蒙-拉神域",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/karnak-amun-ra/",
+  "q": "karnak precinct of amun ra luxor egypt karnak: precinct of amun-ra 卡纳克：阿蒙-拉神域 埃及"
+ },
+ {
+  "title": "卢克索神庙",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/luxor-temple/",
+  "q": "luxor temple egypt luxor temple 卢克索神庙 埃及"
+ },
+ {
+  "title": "斯芬克斯大道 从卡纳克到卢克索",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/avenue-of-sphinxes/",
+  "q": "avenue of sphinxes karnak to luxor egypt avenue of sphinxes (karnak to luxor) 斯芬克斯大道 从卡纳克到卢克索 埃及"
+ },
+ {
+  "title": "卢克索博物馆",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/luxor-museum/",
+  "q": "luxor museum egypt luxor museum 卢克索博物馆 埃及"
+ },
+ {
+  "title": "帝王谷：图坦卡蒙墓",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/valley-of-kings-kv62/",
+  "q": "valley of the kings tutankhamun s tomb kv62 luxor egypt valley of the kings: tutankhamun's tomb (kv62) 帝王谷：图坦卡蒙墓 埃及"
+ },
+ {
+  "title": "帝王谷：开放的陵墓",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/valley-of-kings-open-tombs/",
+  "q": "valley of the kings open tombs luxor egypt valley of the kings: the open tombs 帝王谷：开放的陵墓 埃及"
+ },
+ {
+  "title": "帝王谷：塞提一世墓，帝王谷第17号墓",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/kv17/",
+  "q": "valley of the kings tomb seti i kv17 luxor egypt valley of the kings: tomb of seti i (kv17) 帝王谷：塞提一世墓，帝王谷第17号墓 埃及"
+ },
+ {
+  "title": "哈特谢普苏特神庙，代尔拜赫里",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/hatshepsut-deir-el-bahri/",
+  "q": "temple of hatshepsut deir el bahri luxor egypt temple of hatshepsut (deir el-bahri) 哈特谢普苏特神庙，代尔拜赫里 埃及"
+ },
+ {
+  "title": "王后谷",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/valley-of-queens/",
+  "q": "valley of the queens luxor egypt valley of the queens 王后谷 埃及"
+ },
+ {
+  "title": "代尔麦地那",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/deir-el-medina/",
+  "q": "deir el medina luxor egypt deir el-medina 代尔麦地那 埃及"
+ },
+ {
+  "title": "贵族墓：谢赫阿卜杜勒古尔纳",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/nobles-sheikh-abd-el-qurna/",
+  "q": "tombs of the nobles sheikh abd el qurna luxor egypt tombs of the nobles: sheikh abd el-qurna 贵族墓：谢赫阿卜杜勒古尔纳 埃及"
+ },
+ {
+  "title": "梅迪内特哈布",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/medinet-habu/",
+  "q": "medinet habu luxor egypt medinet habu 梅迪内特哈布 埃及"
+ },
+ {
+  "title": "拉美西姆，拉美西斯二世祭庙",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/ramesseum/",
+  "q": "ramesseum mortuary temple of ramesses ii luxor egypt ramesseum (mortuary temple of ramesses ii) 拉美西姆，拉美西斯二世祭庙 埃及"
+ },
+ {
+  "title": "门农巨像与阿蒙霍特普三世神庙 语音导览脚本",
+  "place": "Luxor",
+  "country": "埃及",
+  "href": "/zh/colossi-memnon/",
+  "q": "colossi of memnon temple amenhotep iii luxor egypt colossi of memnon & temple of amenhotep iii 门农巨像与阿蒙霍特普三世神庙 语音导览脚本 埃及"
+ },
+ {
+  "title": "阿拜多斯：塞提一世神庙与奥西里翁",
+  "place": "Abydos",
+  "country": "埃及",
+  "href": "/zh/abydos-seti-i/",
+  "q": "abydos temple of seti i the osireion egypt abydos: temple of seti i & the osireion 阿拜多斯：塞提一世神庙与奥西里翁 埃及"
+ },
+ {
+  "title": "丹德拉哈托尔神庙",
+  "place": "Dendera",
+  "country": "埃及",
+  "href": "/zh/dendera/",
+  "q": "temple of hathor at dendera egypt temple of hathor at dendera 丹德拉哈托尔神庙 埃及"
+ },
+ {
+  "title": "埃德富荷鲁斯神庙",
+  "place": "Edfu",
+  "country": "埃及",
+  "href": "/zh/edfu/",
+  "q": "temple of horus at edfu egypt temple of horus at edfu 埃德富荷鲁斯神庙 埃及"
+ },
+ {
+  "title": "康翁布神庙",
+  "place": "Kom Ombo",
+  "country": "埃及",
+  "href": "/zh/komombo/",
+  "q": "temple of kom ombo egypt temple of kom ombo 康翁布神庙 埃及"
+ },
+ {
+  "title": "菲莱：伊西斯神庙",
+  "place": "Aswan",
+  "country": "埃及",
+  "href": "/zh/philae/",
+  "q": "philae temple of isis aswan egypt philae: temple of isis 菲莱：伊西斯神庙 埃及"
+ },
+ {
+  "title": "未完成方尖碑与阿斯旺花岗岩采石场",
+  "place": "Aswan",
+  "country": "埃及",
+  "href": "/zh/unfinished-obelisk/",
+  "q": "unfinished obelisk aswan granite quarries egypt unfinished obelisk & aswan granite quarries 未完成方尖碑与阿斯旺花岗岩采石场 埃及"
+ },
+ {
+  "title": "象岛",
+  "place": "Aswan",
+  "country": "埃及",
+  "href": "/zh/elephantine-island/",
+  "q": "elephantine island aswan egypt elephantine island 象岛 埃及"
+ },
+ {
+  "title": "努比亚博物馆，阿斯旺",
+  "place": "Aswan",
+  "country": "埃及",
+  "href": "/zh/nubian-museum/",
+  "q": "nubian museum aswan egypt nubian museum, aswan 努比亚博物馆，阿斯旺 埃及"
+ },
+ {
+  "title": "阿布辛贝：拉美西斯二世大神庙",
+  "place": "Abu Simbel",
+  "country": "埃及",
+  "href": "/zh/abu-simbel/",
+  "q": "abu simbel great temple of ramesses ii egypt abu simbel: great temple of ramesses ii 阿布辛贝：拉美西斯二世大神庙 埃及"
+ },
+ {
+  "title": "阿布辛贝：哈托尔与奈费尔塔利小神庙",
+  "place": "Abu Simbel",
+  "country": "埃及",
+  "href": "/zh/abu-simbel-small-temple/",
+  "q": "abu simbel small temple of nefertari egypt abu simbel: small temple of nefertari 阿布辛贝：哈托尔与奈费尔塔利小神庙 埃及"
+ },
+ {
+  "title": "亚历山大图书馆",
+  "place": "Alexandria",
+  "country": "埃及",
+  "href": "/zh/bibliotheca-alexandrina/",
+  "q": "bibliotheca alexandrina alexandria egypt bibliotheca alexandrina 亚历山大图书馆 埃及"
+ },
+ {
+  "title": "盖特贝城堡，法罗斯灯塔遗址",
+  "place": "Alexandria",
+  "country": "埃及",
+  "href": "/zh/qaitbay-citadel/",
+  "q": "citadel of qaitbay pharos site alexandria egypt citadel of qaitbay (pharos site) 盖特贝城堡，法罗斯灯塔遗址 埃及"
+ },
+ {
+  "title": "孔姆舒卡法地下墓穴 语音导览脚本",
+  "place": "Alexandria",
+  "country": "埃及",
+  "href": "/zh/catacombs-kom-el-shoqafa/",
+  "q": "catacombs of kom el shoqafa alexandria egypt catacombs of kom el-shoqafa 孔姆舒卡法地下墓穴 语音导览脚本 埃及"
+ },
+ {
+  "title": "希腊罗马博物馆，亚历山大",
+  "place": "Alexandria",
+  "country": "埃及",
+  "href": "/zh/greco-roman-museum/",
+  "q": "graeco roman museum alexandria egypt graeco-roman museum, alexandria 希腊罗马博物馆，亚历山大 埃及"
+ },
+ {
+  "title": "西奈山，穆萨山",
+  "place": "Sinai",
+  "country": "埃及",
+  "href": "/zh/mount-sinai/",
+  "q": "mount sinai gebel musa egypt mount sinai (gebel musa) 西奈山，穆萨山 埃及"
+ },
+ {
+  "title": "圣凯瑟琳修道院",
+  "place": "Sinai",
+  "country": "埃及",
+  "href": "/zh/saint-catherines-monastery/",
+  "q": "saint catherine s monastery sinai egypt saint catherine's monastery 圣凯瑟琳修道院 埃及"
+ },
+ {
+  "title": "拉斯穆罕默德国家公园，西奈",
+  "place": "Sinai",
+  "country": "埃及",
+  "href": "/zh/ras-mohammed/",
+  "q": "ras mohammed national park sinai egypt ras mohammed national park, sinai 拉斯穆罕默德国家公园，西奈 埃及"
+ },
+ {
+  "title": "锡瓦：阿古尔米神谕神庙与亚历山大大帝",
+  "place": "Siwa",
+  "country": "埃及",
+  "href": "/zh/siwa-oracle-aghurmi/",
+  "q": "siwa temple of the oracle egypt siwa: temple of the oracle 锡瓦：阿古尔米神谕神庙与亚历山大大帝 埃及"
+ },
+ {
+  "title": "白沙漠国家公园，费拉费拉",
+  "place": "Farafra",
+  "country": "埃及",
+  "href": "/zh/white-desert-farafra/",
+  "q": "white desert national park farafra egypt white desert national park (farafra) 白沙漠国家公园，费拉费拉 埃及"
+ },
+ {
+  "title": "瓦迪希坦鲸鱼谷，法尤姆",
+  "place": "Fayoum",
+  "country": "埃及",
+  "href": "/zh/wadi-el-hitan/",
+  "q": "wadi el hitan valley of the whales fayoum egypt wadi el-hitan (valley of the whales), fayoum 瓦迪希坦鲸鱼谷，法尤姆 埃及"
  }
 ];

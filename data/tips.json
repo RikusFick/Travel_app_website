@@ -9,7 +9,13 @@
       "country": "Jordan",
       "image": "/img/guides/petra-main-trail.jpg",
       "imageAlt": "Al-Khazneh, the Treasury, at the end of the Siq in Petra",
-      "guides": ["petra-main-trail", "petra-monastery", "petra-royal-tombs", "petra-high-place", "little-petra"]
+      "guides": [
+        "petra-main-trail",
+        "petra-monastery",
+        "petra-royal-tombs",
+        "petra-high-place",
+        "little-petra"
+      ]
     },
     {
       "id": "kusadasi",
@@ -19,7 +25,35 @@
       "country": "Turkey",
       "image": "/img/guides/ephesus.jpg",
       "imageAlt": "Marble facade of the Library of Celsus along the street of Ephesus",
-      "guides": ["ephesus", "selcuk-sites", "house-of-virgin-mary", "sirince", "priene", "miletus", "didyma"]
+      "guides": [
+        "ephesus",
+        "selcuk-sites",
+        "house-of-virgin-mary",
+        "sirince",
+        "priene",
+        "miletus",
+        "didyma"
+      ]
+    },
+    {
+      "id": "rome",
+      "href": "/tips/rome/",
+      "title": "What to do in Rome",
+      "teaser": "The Colosseum and the Forum, the Pantheon, a free walk past Navona, Trevi and the Spanish Steps, the Vatican, and a day trip to Tivoli.",
+      "country": "Italy",
+      "image": "/img/guides/colosseum.jpg",
+      "imageAlt": "The Colosseum in Rome seen from outside in warm afternoon light",
+      "guides": [
+        "colosseum",
+        "roman-forum-palatine",
+        "pantheon",
+        "trevi-spanish-steps-navona-walk",
+        "vatican-museums-sistine-chapel",
+        "st-peters-basilica",
+        "castel-sant-angelo",
+        "galleria-borghese",
+        "tivoli-villas"
+      ]
     }
   ]
 }
