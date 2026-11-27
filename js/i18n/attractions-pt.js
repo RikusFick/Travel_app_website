@@ -2120,5 +2120,411 @@ window.EARWISE_ATTRACTIONS = [
   "country": "Jordânia",
   "href": "/pt/wadi-rum/",
   "q": "wadi rum desert jeep inscriptions jordan wadi rum wadi rum jordânia"
+ },
+ {
+  "title": "A Grande Pirâmide de Quéops, Gizé",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/great-pyramid-khufu/",
+  "q": "the great pyramid of khufu giza egypt the great pyramid of khufu, giza a grande pirâmide de quéops, gizé egito"
+ },
+ {
+  "title": "Pirâmides de Quéfren e Miquerinos, Gizé",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/khafre-menkaure/",
+  "q": "pyramids of khafre and menkaure giza egypt pyramids of khafre and menkaure, giza pirâmides de quéfren e miquerinos, gizé egito"
+ },
+ {
+  "title": "A Grande Esfinge e os templos do vale, Gizé",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/sphinx-valley-temples/",
+  "q": "great sphinx and valley temples giza egypt great sphinx and valley temples, giza a grande esfinge e os templos do vale, gizé egito"
+ },
+ {
+  "title": "Grand Egyptian Museum: Grand Hall & Staircase",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/gem-grand-hall/",
+  "q": "grand egyptian museum hall staircase giza egypt grand egyptian museum: grand hall & staircase grand egyptian museum: grand hall & staircase egito"
+ },
+ {
+  "title": "Grande Museu Egípcio: Galerias Principais",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/gem-main-galleries/",
+  "q": "grand egyptian museum main galleries giza egypt grand egyptian museum: main galleries grande museu egípcio: galerias principais egito"
+ },
+ {
+  "title": "Grande Museu Egípcio: as Galerias de Tutancâmon",
+  "place": "Giza",
+  "country": "Egito",
+  "href": "/pt/gem-tutankhamun/",
+  "q": "grand egyptian museum tutankhamun galleries giza egypt grand egyptian museum: tutankhamun galleries grande museu egípcio: as galerias de tutancâmon egito"
+ },
+ {
+  "title": "Museu Egípcio, Praça Tahrir, Cairo",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/egyptian-museum-tahrir/",
+  "q": "egyptian museum tahrir square cairo egypt egyptian museum, tahrir square, cairo museu egípcio, praça tahrir, cairo egito"
+ },
+ {
+  "title": "NMEC: The Royal Mummies Hall",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/nmec-royal-mummies/",
+  "q": "nmec the royal mummies hall cairo egypt nmec: the royal mummies hall nmec: the royal mummies hall egito"
+ },
+ {
+  "title": "Khan el-Khalili e al-Husayn",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/khan-el-khalili-hussein/",
+  "q": "khan el khalili and al hussein cairo egypt khan el-khalili and al-hussein khan el-khalili e al-husayn egito"
+ },
+ {
+  "title": "Mesquita e Universidade de al-Azhar",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/azhar/",
+  "q": "al azhar mosque university cairo egypt al-azhar mosque & university mesquita e universidade de al-azhar egito"
+ },
+ {
+  "title": "Cidadela do Cairo, Cidadela de Saladino",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/cairo-citadel/",
+  "q": "cairo citadel of salah al din egypt cairo citadel (citadel of salah al-din) cidadela do cairo, cidadela de saladino egito"
+ },
+ {
+  "title": "Mesquita de Ibn Tulun",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/ibn-tulun/",
+  "q": "mosque of ibn tulun cairo egypt mosque of ibn tulun mesquita de ibn tulun egito"
+ },
+ {
+  "title": "Mesquita-madraça do sultão Hassan",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/sultan-hassan/",
+  "q": "sultan hassan mosque madrasa cairo egypt sultan hassan mosque-madrasa mesquita-madraça do sultão hassan egito"
+ },
+ {
+  "title": "Al-Muizz Street North, Islamic Cairo",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/islamic-cairo-muizz-north/",
+  "q": "al muizz street north islamic cairo egypt al-muizz street north, islamic cairo al-muizz street north, islamic cairo egito"
+ },
+ {
+  "title": "Al-Muizz Street South, Islamic Cairo",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/islamic-cairo-muizz-south/",
+  "q": "al muizz street south islamic cairo egypt al-muizz street south, islamic cairo al-muizz street south, islamic cairo egito"
+ },
+ {
+  "title": "Museu de Arte Islâmica, Cairo",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/museum-islamic-art/",
+  "q": "museum of islamic art cairo egypt museum of islamic art, cairo museu de arte islâmica, cairo egito"
+ },
+ {
+  "title": "Cairo Copta",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/coptic-cairo/",
+  "q": "coptic cairo egypt coptic cairo cairo copta egito"
+ },
+ {
+  "title": "Museu Copta",
+  "place": "Cairo",
+  "country": "Egito",
+  "href": "/pt/coptic-museum/",
+  "q": "coptic museum cairo egypt coptic museum museu copta egito"
+ },
+ {
+  "title": "Saqqara: o complexo da pirâmide de degraus de Djoser",
+  "place": "Saqqara",
+  "country": "Egito",
+  "href": "/pt/djoser-saqqara/",
+  "q": "saqqara step pyramid of djoser complex egypt saqqara: step pyramid of djoser complex saqqara: o complexo da pirâmide de degraus de djoser egito"
+ },
+ {
+  "title": "Saqqara: Pyramid of Teti & Nobles' Tombs",
+  "place": "Saqqara",
+  "country": "Egito",
+  "href": "/pt/saqqara-teti/",
+  "q": "saqqara pyramid of teti nobles tombs egypt saqqara: pyramid of teti & nobles' tombs saqqara: pyramid of teti & nobles' tombs egito"
+ },
+ {
+  "title": "Saqqara: Pyramid of Unas & Causeway Tombs",
+  "place": "Saqqara",
+  "country": "Egito",
+  "href": "/pt/saqqara-unas/",
+  "q": "saqqara pyramid of unas causeway tombs egypt saqqara: pyramid of unas & causeway tombs saqqara: pyramid of unas & causeway tombs egito"
+ },
+ {
+  "title": "Museu ao ar livre de Mênfis, Mit Rahina",
+  "place": "Memphis",
+  "country": "Egito",
+  "href": "/pt/memphis-mit-rahina/",
+  "q": "memphis mit rahina open air museum egypt memphis (mit rahina) open-air museum museu ao ar livre de mênfis, mit rahina egito"
+ },
+ {
+  "title": "Dahshur: pirâmide curvada de Snefru",
+  "place": "Dahshur",
+  "country": "Egito",
+  "href": "/pt/dahshur-bent-pyramid/",
+  "q": "dahshur bent pyramid of sneferu egypt dahshur: bent pyramid of sneferu dahshur: pirâmide curvada de snefru egito"
+ },
+ {
+  "title": "Dahshur: pirâmide vermelha de Snefru",
+  "place": "Dahshur",
+  "country": "Egito",
+  "href": "/pt/dahshur-red-pyramid/",
+  "q": "dahshur red pyramid of sneferu egypt dahshur: red pyramid of sneferu dahshur: pirâmide vermelha de snefru egito"
+ },
+ {
+  "title": "Karnak: recinto de Amon-Rá",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/karnak-amun-ra/",
+  "q": "karnak precinct of amun ra luxor egypt karnak: precinct of amun-ra karnak: recinto de amon-rá egito"
+ },
+ {
+  "title": "Templo de Luxor",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/luxor-temple/",
+  "q": "luxor temple egypt luxor temple templo de luxor egito"
+ },
+ {
+  "title": "Avenida das Esfinges, de Karnak a Luxor",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/avenue-of-sphinxes/",
+  "q": "avenue of sphinxes karnak to luxor egypt avenue of sphinxes (karnak to luxor) avenida das esfinges, de karnak a luxor egito"
+ },
+ {
+  "title": "Museu de Luxor",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/luxor-museum/",
+  "q": "luxor museum egypt luxor museum museu de luxor egito"
+ },
+ {
+  "title": "Vale dos Reis: O túmulo de Tutancâmon",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/valley-of-kings-kv62/",
+  "q": "valley of the kings tutankhamun s tomb kv62 luxor egypt valley of the kings: tutankhamun's tomb (kv62) vale dos reis: o túmulo de tutancâmon egito"
+ },
+ {
+  "title": "Vale dos Reis: as tumbas abertas",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/valley-of-kings-open-tombs/",
+  "q": "valley of the kings open tombs luxor egypt valley of the kings: the open tombs vale dos reis: as tumbas abertas egito"
+ },
+ {
+  "title": "Vale dos Reis: túmulo de Seti Primeiro, KV17",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/kv17/",
+  "q": "valley of the kings tomb seti i kv17 luxor egypt valley of the kings: tomb of seti i (kv17) vale dos reis: túmulo de seti primeiro, kv17 egito"
+ },
+ {
+  "title": "Templo de Hatshepsut, Deir el-Bahari",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/hatshepsut-deir-el-bahri/",
+  "q": "temple of hatshepsut deir el bahri luxor egypt temple of hatshepsut (deir el-bahri) templo de hatshepsut, deir el-bahari egito"
+ },
+ {
+  "title": "Vale das Rainhas",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/valley-of-queens/",
+  "q": "valley of the queens luxor egypt valley of the queens vale das rainhas egito"
+ },
+ {
+  "title": "Deir el-Medina",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/deir-el-medina/",
+  "q": "deir el medina luxor egypt deir el-medina deir el-medina egito"
+ },
+ {
+  "title": "Túmulos dos Nobres: Sheikh Abd el-Qurna",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/nobles-sheikh-abd-el-qurna/",
+  "q": "tombs of the nobles sheikh abd el qurna luxor egypt tombs of the nobles: sheikh abd el-qurna túmulos dos nobres: sheikh abd el-qurna egito"
+ },
+ {
+  "title": "Medinet Habu",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/medinet-habu/",
+  "q": "medinet habu luxor egypt medinet habu medinet habu egito"
+ },
+ {
+  "title": "Ramesseum, templo funerário de Ramsés Segundo",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/ramesseum/",
+  "q": "ramesseum mortuary temple of ramesses ii luxor egypt ramesseum (mortuary temple of ramesses ii) ramesseum, templo funerário de ramsés segundo egito"
+ },
+ {
+  "title": "Colossos de Mêmnon e templo de Amenhotep Terceiro",
+  "place": "Luxor",
+  "country": "Egito",
+  "href": "/pt/colossi-memnon/",
+  "q": "colossi of memnon temple amenhotep iii luxor egypt colossi of memnon & temple of amenhotep iii colossos de mêmnon e templo de amenhotep terceiro egito"
+ },
+ {
+  "title": "Abidos: templo de Seti Primeiro e Osireion",
+  "place": "Abydos",
+  "country": "Egito",
+  "href": "/pt/abydos-seti-i/",
+  "q": "abydos temple of seti i the osireion egypt abydos: temple of seti i & the osireion abidos: templo de seti primeiro e osireion egito"
+ },
+ {
+  "title": "Templo de Hathor em Dendera",
+  "place": "Dendera",
+  "country": "Egito",
+  "href": "/pt/dendera/",
+  "q": "temple of hathor at dendera egypt temple of hathor at dendera templo de hathor em dendera egito"
+ },
+ {
+  "title": "Templo de Hórus em Edfu",
+  "place": "Edfu",
+  "country": "Egito",
+  "href": "/pt/edfu/",
+  "q": "temple of horus at edfu egypt temple of horus at edfu templo de hórus em edfu egito"
+ },
+ {
+  "title": "Templo de Kom Ombo",
+  "place": "Kom Ombo",
+  "country": "Egito",
+  "href": "/pt/komombo/",
+  "q": "temple of kom ombo egypt temple of kom ombo templo de kom ombo egito"
+ },
+ {
+  "title": "Philae: templo de Ísis",
+  "place": "Aswan",
+  "country": "Egito",
+  "href": "/pt/philae/",
+  "q": "philae temple of isis aswan egypt philae: temple of isis philae: templo de ísis egito"
+ },
+ {
+  "title": "O obelisco inacabado e as pedreiras de granito de Assuã",
+  "place": "Aswan",
+  "country": "Egito",
+  "href": "/pt/unfinished-obelisk/",
+  "q": "unfinished obelisk aswan granite quarries egypt unfinished obelisk & aswan granite quarries o obelisco inacabado e as pedreiras de granito de assuã egito"
+ },
+ {
+  "title": "Ilha Elefantina",
+  "place": "Aswan",
+  "country": "Egito",
+  "href": "/pt/elephantine-island/",
+  "q": "elephantine island aswan egypt elephantine island ilha elefantina egito"
+ },
+ {
+  "title": "Museu Núbio, Assuã",
+  "place": "Aswan",
+  "country": "Egito",
+  "href": "/pt/nubian-museum/",
+  "q": "nubian museum aswan egypt nubian museum, aswan museu núbio, assuã egito"
+ },
+ {
+  "title": "Abu Simbel: Grande Templo de Ramsés Segundo",
+  "place": "Abu Simbel",
+  "country": "Egito",
+  "href": "/pt/abu-simbel/",
+  "q": "abu simbel great temple of ramesses ii egypt abu simbel: great temple of ramesses ii abu simbel: grande templo de ramsés segundo egito"
+ },
+ {
+  "title": "Abu Simbel: templo menor de Hathor e Nefertari",
+  "place": "Abu Simbel",
+  "country": "Egito",
+  "href": "/pt/abu-simbel-small-temple/",
+  "q": "abu simbel small temple of nefertari egypt abu simbel: small temple of nefertari abu simbel: templo menor de hathor e nefertari egito"
+ },
+ {
+  "title": "Bibliotheca Alexandrina",
+  "place": "Alexandria",
+  "country": "Egito",
+  "href": "/pt/bibliotheca-alexandrina/",
+  "q": "bibliotheca alexandrina alexandria egypt bibliotheca alexandrina bibliotheca alexandrina egito"
+ },
+ {
+  "title": "Cidadela de Qaitbay, local do Farol",
+  "place": "Alexandria",
+  "country": "Egito",
+  "href": "/pt/qaitbay-citadel/",
+  "q": "citadel of qaitbay pharos site alexandria egypt citadel of qaitbay (pharos site) cidadela de qaitbay, local do farol egito"
+ },
+ {
+  "title": "Catacumbas de Kom el-Shoqafa",
+  "place": "Alexandria",
+  "country": "Egito",
+  "href": "/pt/catacombs-kom-el-shoqafa/",
+  "q": "catacombs of kom el shoqafa alexandria egypt catacombs of kom el-shoqafa catacumbas de kom el-shoqafa egito"
+ },
+ {
+  "title": "Museu Greco-Romano, Alexandria",
+  "place": "Alexandria",
+  "country": "Egito",
+  "href": "/pt/greco-roman-museum/",
+  "q": "graeco roman museum alexandria egypt graeco-roman museum, alexandria museu greco-romano, alexandria egito"
+ },
+ {
+  "title": "O monte Sinai, Gebel Musa",
+  "place": "Sinai",
+  "country": "Egito",
+  "href": "/pt/mount-sinai/",
+  "q": "mount sinai gebel musa egypt mount sinai (gebel musa) o monte sinai, gebel musa egito"
+ },
+ {
+  "title": "O Mosteiro de Santa Catarina",
+  "place": "Sinai",
+  "country": "Egito",
+  "href": "/pt/saint-catherines-monastery/",
+  "q": "saint catherine s monastery sinai egypt saint catherine's monastery o mosteiro de santa catarina egito"
+ },
+ {
+  "title": "Parque Nacional de Ras Mohammed, Sinai",
+  "place": "Sinai",
+  "country": "Egito",
+  "href": "/pt/ras-mohammed/",
+  "q": "ras mohammed national park sinai egypt ras mohammed national park, sinai parque nacional de ras mohammed, sinai egito"
+ },
+ {
+  "title": "Siwa: o templo do Oráculo de Aghurmi e Alexandre",
+  "place": "Siwa",
+  "country": "Egito",
+  "href": "/pt/siwa-oracle-aghurmi/",
+  "q": "siwa temple of the oracle egypt siwa: temple of the oracle siwa: o templo do oráculo de aghurmi e alexandre egito"
+ },
+ {
+  "title": "Parque Nacional do Deserto Branco, Farafra",
+  "place": "Farafra",
+  "country": "Egito",
+  "href": "/pt/white-desert-farafra/",
+  "q": "white desert national park farafra egypt white desert national park (farafra) parque nacional do deserto branco, farafra egito"
+ },
+ {
+  "title": "Wadi El-Hitan, o Vale das Baleias, Faium",
+  "place": "Fayoum",
+  "country": "Egito",
+  "href": "/pt/wadi-el-hitan/",
+  "q": "wadi el hitan valley of the whales fayoum egypt wadi el-hitan (valley of the whales), fayoum wadi el-hitan, o vale das baleias, faium egito"
  }
 ];

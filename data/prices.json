@@ -2,6 +2,36 @@
   "currency": "EUR",
   "guides": [
     {
+      "id": "abu-simbel",
+      "title": "Abu Simbel: Great Temple of Ramesses II",
+      "country": "egypt",
+      "place": "Abu Simbel",
+      "stops": 14,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "abu-simbel-small-temple",
+      "title": "Abu Simbel: Small Temple of Nefertari",
+      "country": "egypt",
+      "place": "Abu Simbel",
+      "stops": 10,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "abydos-seti-i",
+      "title": "Abydos: Temple of Seti I & the Osireion",
+      "country": "egypt",
+      "place": "Abydos",
+      "stops": 10,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "accademia",
       "title": "The Accademia",
       "country": "italy",
@@ -332,6 +362,16 @@
       "free": true
     },
     {
+      "id": "avenue-of-sphinxes",
+      "title": "Avenue of Sphinxes (Karnak to Luxor)",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "avila",
       "title": "Walls of Ávila",
       "country": "spain",
@@ -347,6 +387,16 @@
       "country": "france",
       "place": "Azay-le-Rideau",
       "stops": 5,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "azhar",
+      "title": "Al-Azhar Mosque & University",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 8,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -452,6 +502,16 @@
       "free": false
     },
     {
+      "id": "bibliotheca-alexandrina",
+      "title": "Bibliotheca Alexandrina",
+      "country": "egypt",
+      "place": "Alexandria",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "blue-mosque",
       "title": "Blue Mosque",
       "country": "turkey",
@@ -528,6 +588,16 @@
       "place": "Dubai",
       "stops": 8,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "cairo-citadel",
+      "title": "Cairo Citadel (Citadel of Salah al-Din)",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 8,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -628,6 +698,16 @@
       "place": "Paris",
       "stops": 6,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "catacombs-kom-el-shoqafa",
+      "title": "Catacombs of Kom el-Shoqafa",
+      "country": "egypt",
+      "place": "Alexandria",
+      "stops": 6,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -822,11 +902,41 @@
       "free": false
     },
     {
+      "id": "colossi-memnon",
+      "title": "Colossi of Memnon & Temple of Amenhotep III",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "conciergerie",
       "title": "Conciergerie",
       "country": "france",
       "place": "Paris",
       "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "coptic-cairo",
+      "title": "Coptic Cairo",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "coptic-museum",
+      "title": "Coptic Museum",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 7,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -882,6 +992,26 @@
       "free": false
     },
     {
+      "id": "dahshur-bent-pyramid",
+      "title": "Dahshur: Bent Pyramid of Sneferu",
+      "country": "egypt",
+      "place": "Dahshur",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "dahshur-red-pyramid",
+      "title": "Dahshur: Red Pyramid of Sneferu",
+      "country": "egypt",
+      "place": "Dahshur",
+      "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "dali-museum",
       "title": "Dalí Theatre-Museum",
       "country": "spain",
@@ -897,6 +1027,16 @@
       "country": "jordan",
       "place": "Dead Sea",
       "stops": 5,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "deir-el-medina",
+      "title": "Deir el-Medina",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 10,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -918,6 +1058,16 @@
       "place": "Delphi",
       "stops": 21,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "dendera",
+      "title": "Temple of Hathor at Dendera",
+      "country": "egypt",
+      "place": "Dendera",
+      "stops": 11,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -948,6 +1098,16 @@
       "place": "Dion",
       "stops": 8,
       "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "djoser-saqqara",
+      "title": "Saqqara: Step Pyramid of Djoser complex",
+      "country": "egypt",
+      "place": "Saqqara",
+      "stops": 10,
+      "price": 2.99,
       "currency": "EUR",
       "free": false
     },
@@ -1002,6 +1162,26 @@
       "free": true
     },
     {
+      "id": "edfu",
+      "title": "Temple of Horus at Edfu",
+      "country": "egypt",
+      "place": "Edfu",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "egyptian-museum-tahrir",
+      "title": "Egyptian Museum, Tahrir Square, Cairo",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 16,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "eiffel-tower",
       "title": "Eiffel Tower",
       "country": "france",
@@ -1028,6 +1208,16 @@
       "place": "San Lorenzo de El Escorial",
       "stops": 9,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "elephantine-island",
+      "title": "Elephantine Island",
+      "country": "egypt",
+      "place": "Aswan",
+      "stops": 10,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -1212,6 +1402,36 @@
       "free": false
     },
     {
+      "id": "gem-grand-hall",
+      "title": "Grand Egyptian Museum: Grand Hall & Staircase",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 14,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "gem-main-galleries",
+      "title": "Grand Egyptian Museum: Main Galleries",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 17,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "gem-tutankhamun",
+      "title": "Grand Egyptian Museum: Tutankhamun Galleries",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 16,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "giverny",
       "title": "Giverny",
       "country": "france",
@@ -1282,6 +1502,26 @@
       "free": false
     },
     {
+      "id": "great-pyramid-khufu",
+      "title": "The Great Pyramid of Khufu, Giza",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 10,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "greco-roman-museum",
+      "title": "Graeco-Roman Museum, Alexandria",
+      "country": "egypt",
+      "place": "Alexandria",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "guggenheim-bilbao",
       "title": "Guggenheim Bilbao",
       "country": "spain",
@@ -1348,6 +1588,16 @@
       "place": "Rabat",
       "stops": 6,
       "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "hatshepsut-deir-el-bahri",
+      "title": "Temple of Hatshepsut (Deir el-Bahri)",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 12,
+      "price": 2.99,
       "currency": "EUR",
       "free": false
     },
@@ -1442,6 +1692,16 @@
       "free": false
     },
     {
+      "id": "ibn-tulun",
+      "title": "Mosque of Ibn Tulun",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "ihlara-selime",
       "title": "Ihlara & Selime",
       "country": "turkey",
@@ -1458,6 +1718,26 @@
       "place": "Paris",
       "stops": 10,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "islamic-cairo-muizz-north",
+      "title": "Al-Muizz Street North, Islamic Cairo",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 9,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "islamic-cairo-muizz-south",
+      "title": "Al-Muizz Street South, Islamic Cairo",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 6,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -1512,6 +1792,16 @@
       "free": false
     },
     {
+      "id": "karnak-amun-ra",
+      "title": "Karnak: Precinct of Amun-Ra",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 15,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "kaymakli-underground-city",
       "title": "Kaymaklı",
       "country": "turkey",
@@ -1532,12 +1822,42 @@
       "free": false
     },
     {
+      "id": "khafre-menkaure",
+      "title": "Pyramids of Khafre and Menkaure, Giza",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 9,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "khan-el-khalili-hussein",
+      "title": "Khan el-Khalili and Al-Hussein",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 6,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "knossos",
       "title": "Knossos",
       "country": "greece",
       "place": "Heraklion",
       "stops": 12,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "komombo",
+      "title": "Temple of Kom Ombo",
+      "country": "egypt",
+      "place": "Kom Ombo",
+      "stops": 8,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -1557,6 +1877,16 @@
       "country": "morocco",
       "place": "Marrakech",
       "stops": 5,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "kv17",
+      "title": "Valley of the Kings: Tomb of Seti I (KV17)",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 8,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -1682,6 +2012,26 @@
       "free": false
     },
     {
+      "id": "luxor-museum",
+      "title": "Luxor Museum",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 14,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "luxor-temple",
+      "title": "Luxor Temple",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 14,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "lyon",
       "title": "Lyon",
       "country": "france",
@@ -1772,11 +2122,31 @@
       "free": false
     },
     {
+      "id": "medinet-habu",
+      "title": "Medinet Habu",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 9,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "meknes",
       "title": "Meknes Imperial City",
       "country": "morocco",
       "place": "Meknes",
       "stops": 10,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "memphis-mit-rahina",
+      "title": "Memphis (Mit Rahina) Open-Air Museum",
+      "country": "egypt",
+      "place": "Memphis",
+      "stops": 5,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -1892,6 +2262,16 @@
       "free": false
     },
     {
+      "id": "mount-sinai",
+      "title": "Mount Sinai (Gebel Musa)",
+      "country": "egypt",
+      "place": "Sinai",
+      "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "musee-orangerie",
       "title": "Musée de l'Orangerie",
       "country": "france",
@@ -1926,6 +2306,16 @@
       "title": "Museo Egizio",
       "country": "italy",
       "place": "Turin",
+      "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "museum-islamic-art",
+      "title": "Museum of Islamic Art, Cairo",
+      "country": "egypt",
+      "place": "Cairo",
       "stops": 7,
       "price": 1.99,
       "currency": "EUR",
@@ -2012,12 +2402,42 @@
       "free": false
     },
     {
+      "id": "nmec-royal-mummies",
+      "title": "NMEC: The Royal Mummies Hall",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 19,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "nobles-sheikh-abd-el-qurna",
+      "title": "Tombs of the Nobles: Sheikh Abd el-Qurna",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "notre-dame",
       "title": "Notre-Dame de Paris",
       "country": "france",
       "place": "Paris",
       "stops": 11,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "nubian-museum",
+      "title": "Nubian Museum, Aswan",
+      "country": "egypt",
+      "place": "Aswan",
+      "stops": 7,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -2282,6 +2702,16 @@
       "free": false
     },
     {
+      "id": "philae",
+      "title": "Philae: Temple of Isis",
+      "country": "egypt",
+      "place": "Aswan",
+      "stops": 14,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "philippi",
       "title": "Philippi",
       "country": "greece",
@@ -2372,6 +2802,16 @@
       "free": false
     },
     {
+      "id": "qaitbay-citadel",
+      "title": "Citadel of Qaitbay (Pharos site)",
+      "country": "egypt",
+      "place": "Alexandria",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "qasr-al-hosn",
       "title": "Qasr Al Hosn",
       "country": "uae",
@@ -2398,6 +2838,26 @@
       "place": "Paris",
       "stops": 9,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "ramesseum",
+      "title": "Ramesseum (Mortuary Temple of Ramesses II)",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "ras-mohammed",
+      "title": "Ras Mohammed National Park, Sinai",
+      "country": "egypt",
+      "place": "Sinai",
+      "stops": 6,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -2532,6 +2992,16 @@
       "free": false
     },
     {
+      "id": "saint-catherines-monastery",
+      "title": "Saint Catherine's Monastery",
+      "country": "egypt",
+      "place": "Sinai",
+      "stops": 8,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "saint-denis",
       "title": "Basilica of Saint-Denis",
       "country": "france",
@@ -2608,6 +3078,26 @@
       "place": "Lisbon",
       "stops": 4,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "saqqara-teti",
+      "title": "Saqqara: Pyramid of Teti & Nobles' Tombs",
+      "country": "egypt",
+      "place": "Saqqara",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "saqqara-unas",
+      "title": "Saqqara: Pyramid of Unas & Causeway Tombs",
+      "country": "egypt",
+      "place": "Saqqara",
+      "stops": 8,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -2702,12 +3192,32 @@
       "free": true
     },
     {
+      "id": "siwa-oracle-aghurmi",
+      "title": "Siwa: Temple of the Oracle",
+      "country": "egypt",
+      "place": "Siwa",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "sounion",
       "title": "Temple of Poseidon, Sounion",
       "country": "greece",
       "place": "Sounion",
       "stops": 4,
       "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "sphinx-valley-temples",
+      "title": "Great Sphinx and Valley Temples, Giza",
+      "country": "egypt",
+      "place": "Giza",
+      "stops": 7,
+      "price": 2.99,
       "currency": "EUR",
       "free": false
     },
@@ -2758,6 +3268,16 @@
       "place": "Istanbul",
       "stops": 10,
       "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "sultan-hassan",
+      "title": "Sultan Hassan Mosque-Madrasa",
+      "country": "egypt",
+      "place": "Cairo",
+      "stops": 7,
+      "price": 1.99,
       "currency": "EUR",
       "free": false
     },
@@ -2892,11 +3412,51 @@
       "free": false
     },
     {
+      "id": "unfinished-obelisk",
+      "title": "Unfinished Obelisk & Aswan granite quarries",
+      "country": "egypt",
+      "place": "Aswan",
+      "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "valencia-old-town",
       "title": "Valencia old town",
       "country": "spain",
       "place": "Valencia",
       "stops": 7,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "valley-of-kings-kv62",
+      "title": "Valley of the Kings: Tutankhamun's Tomb (KV62)",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 17,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "valley-of-kings-open-tombs",
+      "title": "Valley of the Kings: the open tombs",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 12,
+      "price": 2.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "valley-of-queens",
+      "title": "Valley of the Queens",
+      "country": "egypt",
+      "place": "Luxor",
+      "stops": 5,
       "price": 1.99,
       "currency": "EUR",
       "free": false
@@ -2982,11 +3542,31 @@
       "free": false
     },
     {
+      "id": "wadi-el-hitan",
+      "title": "Wadi El-Hitan (Valley of the Whales), Fayoum",
+      "country": "egypt",
+      "place": "Fayoum",
+      "stops": 6,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
       "id": "wadi-rum",
       "title": "Wadi Rum",
       "country": "jordan",
       "place": "Wadi Rum",
       "stops": 10,
+      "price": 1.99,
+      "currency": "EUR",
+      "free": false
+    },
+    {
+      "id": "white-desert-farafra",
+      "title": "White Desert National Park (Farafra)",
+      "country": "egypt",
+      "place": "Farafra",
+      "stops": 7,
       "price": 1.99,
       "currency": "EUR",
       "free": false

@@ -1,0 +1,582 @@
+[
+  {
+    "id": "great-pyramid-khufu",
+    "title": "The Great Pyramid of Khufu, Giza",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 10,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "khafre-menkaure",
+    "title": "Pyramids of Khafre and Menkaure, Giza",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 9,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "sphinx-valley-temples",
+    "title": "Great Sphinx and Valley Temples, Giza",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 7,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gem-grand-hall",
+    "title": "Grand Egyptian Museum: Grand Hall & Staircase",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 14,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gem-main-galleries",
+    "title": "Grand Egyptian Museum: Main Galleries",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 17,
+    "minutes": 27,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "gem-tutankhamun",
+    "title": "Grand Egyptian Museum: Tutankhamun Galleries",
+    "place": "Giza",
+    "region": "cairo-giza",
+    "stops": 16,
+    "minutes": 24,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "egyptian-museum-tahrir",
+    "title": "Egyptian Museum, Tahrir Square, Cairo",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 16,
+    "minutes": 30,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "nmec-royal-mummies",
+    "title": "NMEC: The Royal Mummies Hall",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 19,
+    "minutes": 32,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "khan-el-khalili-hussein",
+    "title": "Khan el-Khalili and Al-Hussein",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 6,
+    "minutes": 12,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "azhar",
+    "title": "Al-Azhar Mosque & University",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "cairo-citadel",
+    "title": "Cairo Citadel (Citadel of Salah al-Din)",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 8,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ibn-tulun",
+    "title": "Mosque of Ibn Tulun",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 7,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "sultan-hassan",
+    "title": "Sultan Hassan Mosque-Madrasa",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "islamic-cairo-muizz-north",
+    "title": "Al-Muizz Street North, Islamic Cairo",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 9,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "islamic-cairo-muizz-south",
+    "title": "Al-Muizz Street South, Islamic Cairo",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 6,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "museum-islamic-art",
+    "title": "Museum of Islamic Art, Cairo",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "coptic-cairo",
+    "title": "Coptic Cairo",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "coptic-museum",
+    "title": "Coptic Museum",
+    "place": "Cairo",
+    "region": "cairo-giza",
+    "stops": 7,
+    "minutes": 9,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "djoser-saqqara",
+    "title": "Saqqara: Step Pyramid of Djoser complex",
+    "place": "Saqqara",
+    "region": "saqqara-dahshur",
+    "stops": 10,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "saqqara-teti",
+    "title": "Saqqara: Pyramid of Teti & Nobles' Tombs",
+    "place": "Saqqara",
+    "region": "saqqara-dahshur",
+    "stops": 6,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "saqqara-unas",
+    "title": "Saqqara: Pyramid of Unas & Causeway Tombs",
+    "place": "Saqqara",
+    "region": "saqqara-dahshur",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "memphis-mit-rahina",
+    "title": "Memphis (Mit Rahina) Open-Air Museum",
+    "place": "Memphis",
+    "region": "saqqara-dahshur",
+    "stops": 5,
+    "minutes": 8,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dahshur-bent-pyramid",
+    "title": "Dahshur: Bent Pyramid of Sneferu",
+    "place": "Dahshur",
+    "region": "saqqara-dahshur",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dahshur-red-pyramid",
+    "title": "Dahshur: Red Pyramid of Sneferu",
+    "place": "Dahshur",
+    "region": "saqqara-dahshur",
+    "stops": 7,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "karnak-amun-ra",
+    "title": "Karnak: Precinct of Amun-Ra",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 15,
+    "minutes": 20,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "luxor-temple",
+    "title": "Luxor Temple",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 14,
+    "minutes": 15,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "avenue-of-sphinxes",
+    "title": "Avenue of Sphinxes (Karnak to Luxor)",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 6,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "luxor-museum",
+    "title": "Luxor Museum",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 14,
+    "minutes": 17,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "valley-of-kings-kv62",
+    "title": "Valley of the Kings: Tutankhamun's Tomb (KV62)",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 17,
+    "minutes": 30,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "valley-of-kings-open-tombs",
+    "title": "Valley of the Kings: the open tombs",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 12,
+    "minutes": 19,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "kv17",
+    "title": "Valley of the Kings: Tomb of Seti I (KV17)",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 8,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "hatshepsut-deir-el-bahri",
+    "title": "Temple of Hatshepsut (Deir el-Bahri)",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 12,
+    "minutes": 17,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "valley-of-queens",
+    "title": "Valley of the Queens",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 5,
+    "minutes": 10,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "deir-el-medina",
+    "title": "Deir el-Medina",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 10,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "nobles-sheikh-abd-el-qurna",
+    "title": "Tombs of the Nobles: Sheikh Abd el-Qurna",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 8,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "medinet-habu",
+    "title": "Medinet Habu",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 9,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ramesseum",
+    "title": "Ramesseum (Mortuary Temple of Ramesses II)",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 8,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "colossi-memnon",
+    "title": "Colossi of Memnon & Temple of Amenhotep III",
+    "place": "Luxor",
+    "region": "luxor",
+    "stops": 6,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "abydos-seti-i",
+    "title": "Abydos: Temple of Seti I & the Osireion",
+    "place": "Abydos",
+    "region": "nile-temples",
+    "stops": 10,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "dendera",
+    "title": "Temple of Hathor at Dendera",
+    "place": "Dendera",
+    "region": "nile-temples",
+    "stops": 11,
+    "minutes": 18,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "edfu",
+    "title": "Temple of Horus at Edfu",
+    "place": "Edfu",
+    "region": "nile-temples",
+    "stops": 8,
+    "minutes": 14,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "komombo",
+    "title": "Temple of Kom Ombo",
+    "place": "Kom Ombo",
+    "region": "nile-temples",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "philae",
+    "title": "Philae: Temple of Isis",
+    "place": "Aswan",
+    "region": "aswan",
+    "stops": 14,
+    "minutes": 16,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "unfinished-obelisk",
+    "title": "Unfinished Obelisk & Aswan granite quarries",
+    "place": "Aswan",
+    "region": "aswan",
+    "stops": 7,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "elephantine-island",
+    "title": "Elephantine Island",
+    "place": "Aswan",
+    "region": "aswan",
+    "stops": 10,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "nubian-museum",
+    "title": "Nubian Museum, Aswan",
+    "place": "Aswan",
+    "region": "aswan",
+    "stops": 7,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "abu-simbel",
+    "title": "Abu Simbel: Great Temple of Ramesses II",
+    "place": "Abu Simbel",
+    "region": "aswan",
+    "stops": 14,
+    "minutes": 20,
+    "price": 2.99,
+    "priceLabel": "€2.99"
+  },
+  {
+    "id": "abu-simbel-small-temple",
+    "title": "Abu Simbel: Small Temple of Nefertari",
+    "place": "Abu Simbel",
+    "region": "aswan",
+    "stops": 10,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "bibliotheca-alexandrina",
+    "title": "Bibliotheca Alexandrina",
+    "place": "Alexandria",
+    "region": "alexandria",
+    "stops": 8,
+    "minutes": 13,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "qaitbay-citadel",
+    "title": "Citadel of Qaitbay (Pharos site)",
+    "place": "Alexandria",
+    "region": "alexandria",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "catacombs-kom-el-shoqafa",
+    "title": "Catacombs of Kom el-Shoqafa",
+    "place": "Alexandria",
+    "region": "alexandria",
+    "stops": 6,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "greco-roman-museum",
+    "title": "Graeco-Roman Museum, Alexandria",
+    "place": "Alexandria",
+    "region": "alexandria",
+    "stops": 8,
+    "minutes": 12,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "mount-sinai",
+    "title": "Mount Sinai (Gebel Musa)",
+    "place": "Sinai",
+    "region": "sinai",
+    "stops": 7,
+    "minutes": 16,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "saint-catherines-monastery",
+    "title": "Saint Catherine's Monastery",
+    "place": "Sinai",
+    "region": "sinai",
+    "stops": 8,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "ras-mohammed",
+    "title": "Ras Mohammed National Park, Sinai",
+    "place": "Sinai",
+    "region": "sinai",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "siwa-oracle-aghurmi",
+    "title": "Siwa: Temple of the Oracle",
+    "place": "Siwa",
+    "region": "western-desert",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "white-desert-farafra",
+    "title": "White Desert National Park (Farafra)",
+    "place": "Farafra",
+    "region": "western-desert",
+    "stops": 7,
+    "minutes": 15,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  },
+  {
+    "id": "wadi-el-hitan",
+    "title": "Wadi El-Hitan (Valley of the Whales), Fayoum",
+    "place": "Fayoum",
+    "region": "western-desert",
+    "stops": 6,
+    "minutes": 11,
+    "price": 1.99,
+    "priceLabel": "€1.99"
+  }
+]

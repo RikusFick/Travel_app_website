@@ -2120,5 +2120,411 @@ window.EARWISE_ATTRACTIONS = [
   "country": "ヨルダン",
   "href": "/ja/wadi-rum/",
   "q": "wadi rum desert jeep inscriptions jordan wadi rum ワディ・ラム ヨルダン"
+ },
+ {
+  "title": "ギザのクフ王の大ピラミッド",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/great-pyramid-khufu/",
+  "q": "the great pyramid of khufu giza egypt the great pyramid of khufu, giza ギザのクフ王の大ピラミッド エジプト"
+ },
+ {
+  "title": "カフラー王とメンカウラー王のピラミッド、ギザ",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/khafre-menkaure/",
+  "q": "pyramids of khafre and menkaure giza egypt pyramids of khafre and menkaure, giza カフラー王とメンカウラー王のピラミッド、ギザ エジプト"
+ },
+ {
+  "title": "ギザの大スフィンクスと河岸神殿",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/sphinx-valley-temples/",
+  "q": "great sphinx and valley temples giza egypt great sphinx and valley temples, giza ギザの大スフィンクスと河岸神殿 エジプト"
+ },
+ {
+  "title": "大エジプト博物館：グランドホールと大階段",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/gem-grand-hall/",
+  "q": "grand egyptian museum hall staircase giza egypt grand egyptian museum: grand hall & staircase 大エジプト博物館：グランドホールと大階段 エジプト"
+ },
+ {
+  "title": "大エジプト博物館：メインギャラリー",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/gem-main-galleries/",
+  "q": "grand egyptian museum main galleries giza egypt grand egyptian museum: main galleries 大エジプト博物館：メインギャラリー エジプト"
+ },
+ {
+  "title": "大エジプト博物館：ツタンカーメン・ギャラリー",
+  "place": "Giza",
+  "country": "エジプト",
+  "href": "/ja/gem-tutankhamun/",
+  "q": "grand egyptian museum tutankhamun galleries giza egypt grand egyptian museum: tutankhamun galleries 大エジプト博物館：ツタンカーメン・ギャラリー エジプト"
+ },
+ {
+  "title": "エジプト考古学博物館、タハリール広場、カイロ",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/egyptian-museum-tahrir/",
+  "q": "egyptian museum tahrir square cairo egypt egyptian museum, tahrir square, cairo エジプト考古学博物館、タハリール広場、カイロ エジプト"
+ },
+ {
+  "title": "エジプト文明国立博物館と王家のミイラの間",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/nmec-royal-mummies/",
+  "q": "nmec the royal mummies hall cairo egypt nmec: the royal mummies hall エジプト文明国立博物館と王家のミイラの間 エジプト"
+ },
+ {
+  "title": "ハーン・ハリーリとフサイン・モスク",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/khan-el-khalili-hussein/",
+  "q": "khan el khalili and al hussein cairo egypt khan el-khalili and al-hussein ハーン・ハリーリとフサイン・モスク エジプト"
+ },
+ {
+  "title": "アズハル・モスクとアズハル大学",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/azhar/",
+  "q": "al azhar mosque university cairo egypt al-azhar mosque & university アズハル・モスクとアズハル大学 エジプト"
+ },
+ {
+  "title": "カイロの城塞 サラーフッディーンの城塞",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/cairo-citadel/",
+  "q": "cairo citadel of salah al din egypt cairo citadel (citadel of salah al-din) カイロの城塞 サラーフッディーンの城塞 エジプト"
+ },
+ {
+  "title": "イブン・トゥールーン・モスク",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/ibn-tulun/",
+  "q": "mosque of ibn tulun cairo egypt mosque of ibn tulun イブン・トゥールーン・モスク エジプト"
+ },
+ {
+  "title": "スルタン・ハサンのモスク兼マドラサ",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/sultan-hassan/",
+  "q": "sultan hassan mosque madrasa cairo egypt sultan hassan mosque-madrasa スルタン・ハサンのモスク兼マドラサ エジプト"
+ },
+ {
+  "title": "イスラーム地区カイロ：ムイッズ通り北部、バーブ・アル・フトゥーフからバイン・アル・カスラインへ",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/islamic-cairo-muizz-north/",
+  "q": "al muizz street north islamic cairo egypt al-muizz street north, islamic cairo イスラーム地区カイロ：ムイッズ通り北部、バーブ・アル・フトゥーフからバイン・アル・カスラインへ エジプト"
+ },
+ {
+  "title": "イスラーム地区カイロ：ムイッズ通り南部、グーリーヤからテント職人街へ",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/islamic-cairo-muizz-south/",
+  "q": "al muizz street south islamic cairo egypt al-muizz street south, islamic cairo イスラーム地区カイロ：ムイッズ通り南部、グーリーヤからテント職人街へ エジプト"
+ },
+ {
+  "title": "カイロ・イスラム美術館",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/museum-islamic-art/",
+  "q": "museum of islamic art cairo egypt museum of islamic art, cairo カイロ・イスラム美術館 エジプト"
+ },
+ {
+  "title": "コプト地区",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/coptic-cairo/",
+  "q": "coptic cairo egypt coptic cairo コプト地区 エジプト"
+ },
+ {
+  "title": "コプト博物館",
+  "place": "Cairo",
+  "country": "エジプト",
+  "href": "/ja/coptic-museum/",
+  "q": "coptic museum cairo egypt coptic museum コプト博物館 エジプト"
+ },
+ {
+  "title": "サッカラ：ジョセル王の階段ピラミッド複合体",
+  "place": "Saqqara",
+  "country": "エジプト",
+  "href": "/ja/djoser-saqqara/",
+  "q": "saqqara step pyramid of djoser complex egypt saqqara: step pyramid of djoser complex サッカラ：ジョセル王の階段ピラミッド複合体 エジプト"
+ },
+ {
+  "title": "サッカラ：テティ王のピラミッドとメレルカ、カゲムニ",
+  "place": "Saqqara",
+  "country": "エジプト",
+  "href": "/ja/saqqara-teti/",
+  "q": "saqqara pyramid of teti nobles tombs egypt saqqara: pyramid of teti & nobles' tombs サッカラ：テティ王のピラミッドとメレルカ、カゲムニ エジプト"
+ },
+ {
+  "title": "サッカラ：ウナス王のピラミッドと参道の墓",
+  "place": "Saqqara",
+  "country": "エジプト",
+  "href": "/ja/saqqara-unas/",
+  "q": "saqqara pyramid of unas causeway tombs egypt saqqara: pyramid of unas & causeway tombs サッカラ：ウナス王のピラミッドと参道の墓 エジプト"
+ },
+ {
+  "title": "メンフィス野外博物館、ミート・ラヒーナ",
+  "place": "Memphis",
+  "country": "エジプト",
+  "href": "/ja/memphis-mit-rahina/",
+  "q": "memphis mit rahina open air museum egypt memphis (mit rahina) open-air museum メンフィス野外博物館、ミート・ラヒーナ エジプト"
+ },
+ {
+  "title": "ダハシュール：スネフェル王の屈折ピラミッド",
+  "place": "Dahshur",
+  "country": "エジプト",
+  "href": "/ja/dahshur-bent-pyramid/",
+  "q": "dahshur bent pyramid of sneferu egypt dahshur: bent pyramid of sneferu ダハシュール：スネフェル王の屈折ピラミッド エジプト"
+ },
+ {
+  "title": "ダハシュール：スネフェル王の赤いピラミッド",
+  "place": "Dahshur",
+  "country": "エジプト",
+  "href": "/ja/dahshur-red-pyramid/",
+  "q": "dahshur red pyramid of sneferu egypt dahshur: red pyramid of sneferu ダハシュール：スネフェル王の赤いピラミッド エジプト"
+ },
+ {
+  "title": "カルナック：アメン・ラー神域",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/karnak-amun-ra/",
+  "q": "karnak precinct of amun ra luxor egypt karnak: precinct of amun-ra カルナック：アメン・ラー神域 エジプト"
+ },
+ {
+  "title": "ルクソール神殿",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/luxor-temple/",
+  "q": "luxor temple egypt luxor temple ルクソール神殿 エジプト"
+ },
+ {
+  "title": "スフィンクス参道 カルナックからルクソールへ",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/avenue-of-sphinxes/",
+  "q": "avenue of sphinxes karnak to luxor egypt avenue of sphinxes (karnak to luxor) スフィンクス参道 カルナックからルクソールへ エジプト"
+ },
+ {
+  "title": "ルクソール博物館",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/luxor-museum/",
+  "q": "luxor museum egypt luxor museum ルクソール博物館 エジプト"
+ },
+ {
+  "title": "王家の谷: ツタンカーメンの墓",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/valley-of-kings-kv62/",
+  "q": "valley of the kings tutankhamun s tomb kv62 luxor egypt valley of the kings: tutankhamun's tomb (kv62) 王家の谷: ツタンカーメンの墓 エジプト"
+ },
+ {
+  "title": "王家の谷：公開中の墓",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/valley-of-kings-open-tombs/",
+  "q": "valley of the kings open tombs luxor egypt valley of the kings: the open tombs 王家の谷：公開中の墓 エジプト"
+ },
+ {
+  "title": "王家の谷: セティ1世の墓、ケーヴイ17号墓",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/kv17/",
+  "q": "valley of the kings tomb seti i kv17 luxor egypt valley of the kings: tomb of seti i (kv17) 王家の谷: セティ1世の墓、ケーヴイ17号墓 エジプト"
+ },
+ {
+  "title": "ハトシェプスト女王葬祭殿、デイル・エル・バハリ",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/hatshepsut-deir-el-bahri/",
+  "q": "temple of hatshepsut deir el bahri luxor egypt temple of hatshepsut (deir el-bahri) ハトシェプスト女王葬祭殿、デイル・エル・バハリ エジプト"
+ },
+ {
+  "title": "王妃の谷",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/valley-of-queens/",
+  "q": "valley of the queens luxor egypt valley of the queens 王妃の谷 エジプト"
+ },
+ {
+  "title": "デイル・エル・メディーナ",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/deir-el-medina/",
+  "q": "deir el medina luxor egypt deir el-medina デイル・エル・メディーナ エジプト"
+ },
+ {
+  "title": "貴族の墓：シェイク・アブド・エル・クルナ",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/nobles-sheikh-abd-el-qurna/",
+  "q": "tombs of the nobles sheikh abd el qurna luxor egypt tombs of the nobles: sheikh abd el-qurna 貴族の墓：シェイク・アブド・エル・クルナ エジプト"
+ },
+ {
+  "title": "メディネト・ハブ",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/medinet-habu/",
+  "q": "medinet habu luxor egypt medinet habu メディネト・ハブ エジプト"
+ },
+ {
+  "title": "ラメセウム、ラムセス2世の葬祭殿",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/ramesseum/",
+  "q": "ramesseum mortuary temple of ramesses ii luxor egypt ramesseum (mortuary temple of ramesses ii) ラメセウム、ラムセス2世の葬祭殿 エジプト"
+ },
+ {
+  "title": "メムノンの巨像とアメンヘテプ3世の神殿 音声ガイド",
+  "place": "Luxor",
+  "country": "エジプト",
+  "href": "/ja/colossi-memnon/",
+  "q": "colossi of memnon temple amenhotep iii luxor egypt colossi of memnon & temple of amenhotep iii メムノンの巨像とアメンヘテプ3世の神殿 音声ガイド エジプト"
+ },
+ {
+  "title": "アビドス：セティ1世神殿とオシレイオン",
+  "place": "Abydos",
+  "country": "エジプト",
+  "href": "/ja/abydos-seti-i/",
+  "q": "abydos temple of seti i the osireion egypt abydos: temple of seti i & the osireion アビドス：セティ1世神殿とオシレイオン エジプト"
+ },
+ {
+  "title": "デンデラのハトホル神殿",
+  "place": "Dendera",
+  "country": "エジプト",
+  "href": "/ja/dendera/",
+  "q": "temple of hathor at dendera egypt temple of hathor at dendera デンデラのハトホル神殿 エジプト"
+ },
+ {
+  "title": "エドフのホルス神殿",
+  "place": "Edfu",
+  "country": "エジプト",
+  "href": "/ja/edfu/",
+  "q": "temple of horus at edfu egypt temple of horus at edfu エドフのホルス神殿 エジプト"
+ },
+ {
+  "title": "コム・オンボ神殿",
+  "place": "Kom Ombo",
+  "country": "エジプト",
+  "href": "/ja/komombo/",
+  "q": "temple of kom ombo egypt temple of kom ombo コム・オンボ神殿 エジプト"
+ },
+ {
+  "title": "フィラエ：イシス神殿",
+  "place": "Aswan",
+  "country": "エジプト",
+  "href": "/ja/philae/",
+  "q": "philae temple of isis aswan egypt philae: temple of isis フィラエ：イシス神殿 エジプト"
+ },
+ {
+  "title": "切りかけのオベリスクとアスワンの花崗岩採石場",
+  "place": "Aswan",
+  "country": "エジプト",
+  "href": "/ja/unfinished-obelisk/",
+  "q": "unfinished obelisk aswan granite quarries egypt unfinished obelisk & aswan granite quarries 切りかけのオベリスクとアスワンの花崗岩採石場 エジプト"
+ },
+ {
+  "title": "エレファンティネ島",
+  "place": "Aswan",
+  "country": "エジプト",
+  "href": "/ja/elephantine-island/",
+  "q": "elephantine island aswan egypt elephantine island エレファンティネ島 エジプト"
+ },
+ {
+  "title": "ヌビア博物館、アスワン",
+  "place": "Aswan",
+  "country": "エジプト",
+  "href": "/ja/nubian-museum/",
+  "q": "nubian museum aswan egypt nubian museum, aswan ヌビア博物館、アスワン エジプト"
+ },
+ {
+  "title": "アブ・シンベル：ラムセス2世の大神殿",
+  "place": "Abu Simbel",
+  "country": "エジプト",
+  "href": "/ja/abu-simbel/",
+  "q": "abu simbel great temple of ramesses ii egypt abu simbel: great temple of ramesses ii アブ・シンベル：ラムセス2世の大神殿 エジプト"
+ },
+ {
+  "title": "アブ・シンベル：ハトホルとネフェルタリの小神殿",
+  "place": "Abu Simbel",
+  "country": "エジプト",
+  "href": "/ja/abu-simbel-small-temple/",
+  "q": "abu simbel small temple of nefertari egypt abu simbel: small temple of nefertari アブ・シンベル：ハトホルとネフェルタリの小神殿 エジプト"
+ },
+ {
+  "title": "アレクサンドリア図書館",
+  "place": "Alexandria",
+  "country": "エジプト",
+  "href": "/ja/bibliotheca-alexandrina/",
+  "q": "bibliotheca alexandrina alexandria egypt bibliotheca alexandrina アレクサンドリア図書館 エジプト"
+ },
+ {
+  "title": "カーイトベイの城塞、ファロス灯台の跡",
+  "place": "Alexandria",
+  "country": "エジプト",
+  "href": "/ja/qaitbay-citadel/",
+  "q": "citadel of qaitbay pharos site alexandria egypt citadel of qaitbay (pharos site) カーイトベイの城塞、ファロス灯台の跡 エジプト"
+ },
+ {
+  "title": "コム・エル・シュカファのカタコンベ 音声ガイド",
+  "place": "Alexandria",
+  "country": "エジプト",
+  "href": "/ja/catacombs-kom-el-shoqafa/",
+  "q": "catacombs of kom el shoqafa alexandria egypt catacombs of kom el-shoqafa コム・エル・シュカファのカタコンベ 音声ガイド エジプト"
+ },
+ {
+  "title": "グレコ・ローマン博物館、アレクサンドリア",
+  "place": "Alexandria",
+  "country": "エジプト",
+  "href": "/ja/greco-roman-museum/",
+  "q": "graeco roman museum alexandria egypt graeco-roman museum, alexandria グレコ・ローマン博物館、アレクサンドリア エジプト"
+ },
+ {
+  "title": "シナイ山、ジェベル・ムーサ",
+  "place": "Sinai",
+  "country": "エジプト",
+  "href": "/ja/mount-sinai/",
+  "q": "mount sinai gebel musa egypt mount sinai (gebel musa) シナイ山、ジェベル・ムーサ エジプト"
+ },
+ {
+  "title": "聖カタリナ修道院",
+  "place": "Sinai",
+  "country": "エジプト",
+  "href": "/ja/saint-catherines-monastery/",
+  "q": "saint catherine s monastery sinai egypt saint catherine's monastery 聖カタリナ修道院 エジプト"
+ },
+ {
+  "title": "ラス・モハメッド国立公園、シナイ",
+  "place": "Sinai",
+  "country": "エジプト",
+  "href": "/ja/ras-mohammed/",
+  "q": "ras mohammed national park sinai egypt ras mohammed national park, sinai ラス・モハメッド国立公園、シナイ エジプト"
+ },
+ {
+  "title": "シワ：アグルミの神託神殿とアレクサンドロス大王",
+  "place": "Siwa",
+  "country": "エジプト",
+  "href": "/ja/siwa-oracle-aghurmi/",
+  "q": "siwa temple of the oracle egypt siwa: temple of the oracle シワ：アグルミの神託神殿とアレクサンドロス大王 エジプト"
+ },
+ {
+  "title": "白砂漠国立公園、ファラフラ",
+  "place": "Farafra",
+  "country": "エジプト",
+  "href": "/ja/white-desert-farafra/",
+  "q": "white desert national park farafra egypt white desert national park (farafra) 白砂漠国立公園、ファラフラ エジプト"
+ },
+ {
+  "title": "ワディ・エル・ヒータン、クジラの谷、ファイユーム",
+  "place": "Fayoum",
+  "country": "エジプト",
+  "href": "/ja/wadi-el-hitan/",
+  "q": "wadi el hitan valley of the whales fayoum egypt wadi el-hitan (valley of the whales), fayoum ワディ・エル・ヒータン、クジラの谷、ファイユーム エジプト"
  }
 ];

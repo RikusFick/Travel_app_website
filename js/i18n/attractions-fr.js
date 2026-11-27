@@ -2120,5 +2120,411 @@ window.EARWISE_ATTRACTIONS = [
   "country": "Jordanie",
   "href": "/fr/wadi-rum/",
   "q": "wadi rum desert jeep inscriptions jordan wadi rum wadi rum jordanie"
+ },
+ {
+  "title": "La Grande Pyramide de Khéops, Gizeh",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/great-pyramid-khufu/",
+  "q": "the great pyramid of khufu giza egypt the great pyramid of khufu, giza la grande pyramide de khéops, gizeh égypte"
+ },
+ {
+  "title": "Pyramides de Khéphren et de Mykérinos, Gizeh",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/khafre-menkaure/",
+  "q": "pyramids of khafre and menkaure giza egypt pyramids of khafre and menkaure, giza pyramides de khéphren et de mykérinos, gizeh égypte"
+ },
+ {
+  "title": "Le grand Sphinx et les temples de la vallée, Gizeh",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/sphinx-valley-temples/",
+  "q": "great sphinx and valley temples giza egypt great sphinx and valley temples, giza le grand sphinx et les temples de la vallée, gizeh égypte"
+ },
+ {
+  "title": "Grand Egyptian Museum: Grand Hall & Staircase",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/gem-grand-hall/",
+  "q": "grand egyptian museum hall staircase giza egypt grand egyptian museum: grand hall & staircase grand egyptian museum: grand hall & staircase égypte"
+ },
+ {
+  "title": "Grand Musée égyptien : galeries principales",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/gem-main-galleries/",
+  "q": "grand egyptian museum main galleries giza egypt grand egyptian museum: main galleries grand musée égyptien : galeries principales égypte"
+ },
+ {
+  "title": "Grand Musée égyptien : galeries de Toutânkhamon",
+  "place": "Giza",
+  "country": "Égypte",
+  "href": "/fr/gem-tutankhamun/",
+  "q": "grand egyptian museum tutankhamun galleries giza egypt grand egyptian museum: tutankhamun galleries grand musée égyptien : galeries de toutânkhamon égypte"
+ },
+ {
+  "title": "Musée égyptien, place Tahrir, Le Caire",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/egyptian-museum-tahrir/",
+  "q": "egyptian museum tahrir square cairo egypt egyptian museum, tahrir square, cairo musée égyptien, place tahrir, le caire égypte"
+ },
+ {
+  "title": "NMEC: The Royal Mummies Hall",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/nmec-royal-mummies/",
+  "q": "nmec the royal mummies hall cairo egypt nmec: the royal mummies hall nmec: the royal mummies hall égypte"
+ },
+ {
+  "title": "Khan el-Khalili et al-Husayn",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/khan-el-khalili-hussein/",
+  "q": "khan el khalili and al hussein cairo egypt khan el-khalili and al-hussein khan el-khalili et al-husayn égypte"
+ },
+ {
+  "title": "Mosquée et université al-Azhar",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/azhar/",
+  "q": "al azhar mosque university cairo egypt al-azhar mosque & university mosquée et université al-azhar égypte"
+ },
+ {
+  "title": "Citadelle du Caire, citadelle de Saladin",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/cairo-citadel/",
+  "q": "cairo citadel of salah al din egypt cairo citadel (citadel of salah al-din) citadelle du caire, citadelle de saladin égypte"
+ },
+ {
+  "title": "Mosquée d’Ibn Touloun",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/ibn-tulun/",
+  "q": "mosque of ibn tulun cairo egypt mosque of ibn tulun mosquée d’ibn touloun égypte"
+ },
+ {
+  "title": "Mosquée-madrasa du sultan Hassan",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/sultan-hassan/",
+  "q": "sultan hassan mosque madrasa cairo egypt sultan hassan mosque-madrasa mosquée-madrasa du sultan hassan égypte"
+ },
+ {
+  "title": "Al-Muizz Street North, Islamic Cairo",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/islamic-cairo-muizz-north/",
+  "q": "al muizz street north islamic cairo egypt al-muizz street north, islamic cairo al-muizz street north, islamic cairo égypte"
+ },
+ {
+  "title": "Al-Muizz Street South, Islamic Cairo",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/islamic-cairo-muizz-south/",
+  "q": "al muizz street south islamic cairo egypt al-muizz street south, islamic cairo al-muizz street south, islamic cairo égypte"
+ },
+ {
+  "title": "Musée d’Art islamique, Le Caire",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/museum-islamic-art/",
+  "q": "museum of islamic art cairo egypt museum of islamic art, cairo musée d’art islamique, le caire égypte"
+ },
+ {
+  "title": "Le Caire copte",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/coptic-cairo/",
+  "q": "coptic cairo egypt coptic cairo le caire copte égypte"
+ },
+ {
+  "title": "Musée copte",
+  "place": "Cairo",
+  "country": "Égypte",
+  "href": "/fr/coptic-museum/",
+  "q": "coptic museum cairo egypt coptic museum musée copte égypte"
+ },
+ {
+  "title": "Saqqarah : le complexe de la pyramide à degrés de Djéser",
+  "place": "Saqqara",
+  "country": "Égypte",
+  "href": "/fr/djoser-saqqara/",
+  "q": "saqqara step pyramid of djoser complex egypt saqqara: step pyramid of djoser complex saqqarah : le complexe de la pyramide à degrés de djéser égypte"
+ },
+ {
+  "title": "Saqqara: Pyramid of Teti & Nobles' Tombs",
+  "place": "Saqqara",
+  "country": "Égypte",
+  "href": "/fr/saqqara-teti/",
+  "q": "saqqara pyramid of teti nobles tombs egypt saqqara: pyramid of teti & nobles' tombs saqqara: pyramid of teti & nobles' tombs égypte"
+ },
+ {
+  "title": "Saqqara: Pyramid of Unas & Causeway Tombs",
+  "place": "Saqqara",
+  "country": "Égypte",
+  "href": "/fr/saqqara-unas/",
+  "q": "saqqara pyramid of unas causeway tombs egypt saqqara: pyramid of unas & causeway tombs saqqara: pyramid of unas & causeway tombs égypte"
+ },
+ {
+  "title": "Musée en plein air de Memphis, Mit Rahina",
+  "place": "Memphis",
+  "country": "Égypte",
+  "href": "/fr/memphis-mit-rahina/",
+  "q": "memphis mit rahina open air museum egypt memphis (mit rahina) open-air museum musée en plein air de memphis, mit rahina égypte"
+ },
+ {
+  "title": "Dahchour : pyramide rhomboïdale de Snéfrou",
+  "place": "Dahshur",
+  "country": "Égypte",
+  "href": "/fr/dahshur-bent-pyramid/",
+  "q": "dahshur bent pyramid of sneferu egypt dahshur: bent pyramid of sneferu dahchour : pyramide rhomboïdale de snéfrou égypte"
+ },
+ {
+  "title": "Dahchour : pyramide rouge de Snéfrou",
+  "place": "Dahshur",
+  "country": "Égypte",
+  "href": "/fr/dahshur-red-pyramid/",
+  "q": "dahshur red pyramid of sneferu egypt dahshur: red pyramid of sneferu dahchour : pyramide rouge de snéfrou égypte"
+ },
+ {
+  "title": "Karnak : domaine d’Amon-Rê",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/karnak-amun-ra/",
+  "q": "karnak precinct of amun ra luxor egypt karnak: precinct of amun-ra karnak : domaine d’amon-rê égypte"
+ },
+ {
+  "title": "Temple de Louxor",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/luxor-temple/",
+  "q": "luxor temple egypt luxor temple temple de louxor égypte"
+ },
+ {
+  "title": "Allée des sphinx, de Karnak à Louxor",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/avenue-of-sphinxes/",
+  "q": "avenue of sphinxes karnak to luxor egypt avenue of sphinxes (karnak to luxor) allée des sphinx, de karnak à louxor égypte"
+ },
+ {
+  "title": "Musée de Louxor",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/luxor-museum/",
+  "q": "luxor museum egypt luxor museum musée de louxor égypte"
+ },
+ {
+  "title": "Vallée des Rois : La tombe de Toutânkhamon",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/valley-of-kings-kv62/",
+  "q": "valley of the kings tutankhamun s tomb kv62 luxor egypt valley of the kings: tutankhamun's tomb (kv62) vallée des rois : la tombe de toutânkhamon égypte"
+ },
+ {
+  "title": "Vallée des Rois : les tombes ouvertes",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/valley-of-kings-open-tombs/",
+  "q": "valley of the kings open tombs luxor egypt valley of the kings: the open tombs vallée des rois : les tombes ouvertes égypte"
+ },
+ {
+  "title": "Vallée des Rois : tombe de Séthi Premier, KV17",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/kv17/",
+  "q": "valley of the kings tomb seti i kv17 luxor egypt valley of the kings: tomb of seti i (kv17) vallée des rois : tombe de séthi premier, kv17 égypte"
+ },
+ {
+  "title": "Temple d’Hatchepsout, Deir el-Bahari",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/hatshepsut-deir-el-bahri/",
+  "q": "temple of hatshepsut deir el bahri luxor egypt temple of hatshepsut (deir el-bahri) temple d’hatchepsout, deir el-bahari égypte"
+ },
+ {
+  "title": "Vallée des Reines",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/valley-of-queens/",
+  "q": "valley of the queens luxor egypt valley of the queens vallée des reines égypte"
+ },
+ {
+  "title": "Deir el-Médineh",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/deir-el-medina/",
+  "q": "deir el medina luxor egypt deir el-medina deir el-médineh égypte"
+ },
+ {
+  "title": "Tombes des Nobles : Cheikh Abd el-Gournah",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/nobles-sheikh-abd-el-qurna/",
+  "q": "tombs of the nobles sheikh abd el qurna luxor egypt tombs of the nobles: sheikh abd el-qurna tombes des nobles : cheikh abd el-gournah égypte"
+ },
+ {
+  "title": "Médinet Habou",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/medinet-habu/",
+  "q": "medinet habu luxor egypt medinet habu médinet habou égypte"
+ },
+ {
+  "title": "Ramesséum, temple funéraire de Ramsès Deux",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/ramesseum/",
+  "q": "ramesseum mortuary temple of ramesses ii luxor egypt ramesseum (mortuary temple of ramesses ii) ramesséum, temple funéraire de ramsès deux égypte"
+ },
+ {
+  "title": "Colosses de Memnon et temple d’Amenhotep Trois",
+  "place": "Luxor",
+  "country": "Égypte",
+  "href": "/fr/colossi-memnon/",
+  "q": "colossi of memnon temple amenhotep iii luxor egypt colossi of memnon & temple of amenhotep iii colosses de memnon et temple d’amenhotep trois égypte"
+ },
+ {
+  "title": "Abydos : temple de Séthi Premier et Osiréion",
+  "place": "Abydos",
+  "country": "Égypte",
+  "href": "/fr/abydos-seti-i/",
+  "q": "abydos temple of seti i the osireion egypt abydos: temple of seti i & the osireion abydos : temple de séthi premier et osiréion égypte"
+ },
+ {
+  "title": "Temple d’Hathor à Dendérah",
+  "place": "Dendera",
+  "country": "Égypte",
+  "href": "/fr/dendera/",
+  "q": "temple of hathor at dendera egypt temple of hathor at dendera temple d’hathor à dendérah égypte"
+ },
+ {
+  "title": "Temple d’Horus à Edfu",
+  "place": "Edfu",
+  "country": "Égypte",
+  "href": "/fr/edfu/",
+  "q": "temple of horus at edfu egypt temple of horus at edfu temple d’horus à edfu égypte"
+ },
+ {
+  "title": "Temple de Kom Ombo",
+  "place": "Kom Ombo",
+  "country": "Égypte",
+  "href": "/fr/komombo/",
+  "q": "temple of kom ombo egypt temple of kom ombo temple de kom ombo égypte"
+ },
+ {
+  "title": "Philae : temple d’Isis",
+  "place": "Aswan",
+  "country": "Égypte",
+  "href": "/fr/philae/",
+  "q": "philae temple of isis aswan egypt philae: temple of isis philae : temple d’isis égypte"
+ },
+ {
+  "title": "L’obélisque inachevé et les carrières de granit d’Assouan",
+  "place": "Aswan",
+  "country": "Égypte",
+  "href": "/fr/unfinished-obelisk/",
+  "q": "unfinished obelisk aswan granite quarries egypt unfinished obelisk & aswan granite quarries l’obélisque inachevé et les carrières de granit d’assouan égypte"
+ },
+ {
+  "title": "Île Éléphantine",
+  "place": "Aswan",
+  "country": "Égypte",
+  "href": "/fr/elephantine-island/",
+  "q": "elephantine island aswan egypt elephantine island île éléphantine égypte"
+ },
+ {
+  "title": "Musée nubien, Assouan",
+  "place": "Aswan",
+  "country": "Égypte",
+  "href": "/fr/nubian-museum/",
+  "q": "nubian museum aswan egypt nubian museum, aswan musée nubien, assouan égypte"
+ },
+ {
+  "title": "Abou Simbel : grand temple de Ramsès Deux",
+  "place": "Abu Simbel",
+  "country": "Égypte",
+  "href": "/fr/abu-simbel/",
+  "q": "abu simbel great temple of ramesses ii egypt abu simbel: great temple of ramesses ii abou simbel : grand temple de ramsès deux égypte"
+ },
+ {
+  "title": "Abu Simbel: Small Temple of Nefertari",
+  "place": "Abu Simbel",
+  "country": "Égypte",
+  "href": "/fr/abu-simbel-small-temple/",
+  "q": "abu simbel small temple of nefertari egypt abu simbel: small temple of nefertari abu simbel: small temple of nefertari égypte"
+ },
+ {
+  "title": "Bibliotheca Alexandrina",
+  "place": "Alexandria",
+  "country": "Égypte",
+  "href": "/fr/bibliotheca-alexandrina/",
+  "q": "bibliotheca alexandrina alexandria egypt bibliotheca alexandrina bibliotheca alexandrina égypte"
+ },
+ {
+  "title": "Citadelle de Qaïtbay, site du Phare",
+  "place": "Alexandria",
+  "country": "Égypte",
+  "href": "/fr/qaitbay-citadel/",
+  "q": "citadel of qaitbay pharos site alexandria egypt citadel of qaitbay (pharos site) citadelle de qaïtbay, site du phare égypte"
+ },
+ {
+  "title": "Catacombes de Kom el-Chougafa",
+  "place": "Alexandria",
+  "country": "Égypte",
+  "href": "/fr/catacombs-kom-el-shoqafa/",
+  "q": "catacombs of kom el shoqafa alexandria egypt catacombs of kom el-shoqafa catacombes de kom el-chougafa égypte"
+ },
+ {
+  "title": "Musée gréco-romain, Alexandrie",
+  "place": "Alexandria",
+  "country": "Égypte",
+  "href": "/fr/greco-roman-museum/",
+  "q": "graeco roman museum alexandria egypt graeco-roman museum, alexandria musée gréco-romain, alexandrie égypte"
+ },
+ {
+  "title": "Le mont Sinaï, Gebel Moussa",
+  "place": "Sinai",
+  "country": "Égypte",
+  "href": "/fr/mount-sinai/",
+  "q": "mount sinai gebel musa egypt mount sinai (gebel musa) le mont sinaï, gebel moussa égypte"
+ },
+ {
+  "title": "Le monastère Sainte-Catherine",
+  "place": "Sinai",
+  "country": "Égypte",
+  "href": "/fr/saint-catherines-monastery/",
+  "q": "saint catherine s monastery sinai egypt saint catherine's monastery le monastère sainte-catherine égypte"
+ },
+ {
+  "title": "Parc national de Ras Mohammed, Sinaï",
+  "place": "Sinai",
+  "country": "Égypte",
+  "href": "/fr/ras-mohammed/",
+  "q": "ras mohammed national park sinai egypt ras mohammed national park, sinai parc national de ras mohammed, sinaï égypte"
+ },
+ {
+  "title": "Siwa: Temple of the Oracle",
+  "place": "Siwa",
+  "country": "Égypte",
+  "href": "/fr/siwa-oracle-aghurmi/",
+  "q": "siwa temple of the oracle egypt siwa: temple of the oracle siwa: temple of the oracle égypte"
+ },
+ {
+  "title": "Parc national du Désert Blanc, Farafra",
+  "place": "Farafra",
+  "country": "Égypte",
+  "href": "/fr/white-desert-farafra/",
+  "q": "white desert national park farafra egypt white desert national park (farafra) parc national du désert blanc, farafra égypte"
+ },
+ {
+  "title": "Wadi El-Hitan, la Vallée des Baleines, Fayoum",
+  "place": "Fayoum",
+  "country": "Égypte",
+  "href": "/fr/wadi-el-hitan/",
+  "q": "wadi el hitan valley of the whales fayoum egypt wadi el-hitan (valley of the whales), fayoum wadi el-hitan, la vallée des baleines, fayoum égypte"
  }
 ];

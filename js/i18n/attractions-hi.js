@@ -2120,5 +2120,411 @@ window.EARWISE_ATTRACTIONS = [
   "country": "जॉर्डन",
   "href": "/hi/wadi-rum/",
   "q": "wadi rum desert jeep inscriptions jordan wadi rum वादी रम जॉर्डन"
+ },
+ {
+  "title": "ख़ूफ़ू का महान पिरामिड, गीज़ा",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/great-pyramid-khufu/",
+  "q": "the great pyramid of khufu giza egypt the great pyramid of khufu, giza ख़ूफ़ू का महान पिरामिड, गीज़ा मिस्र"
+ },
+ {
+  "title": "ख़ाफ़्रे और मेनकाउरे के पिरामिड, गीज़ा",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/khafre-menkaure/",
+  "q": "pyramids of khafre and menkaure giza egypt pyramids of khafre and menkaure, giza ख़ाफ़्रे और मेनकाउरे के पिरामिड, गीज़ा मिस्र"
+ },
+ {
+  "title": "गीज़ा का महान स्फ़िंक्स और घाटी मंदिर",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/sphinx-valley-temples/",
+  "q": "great sphinx and valley temples giza egypt great sphinx and valley temples, giza गीज़ा का महान स्फ़िंक्स और घाटी मंदिर मिस्र"
+ },
+ {
+  "title": "Grand Egyptian Museum: Grand Hall & Staircase",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/gem-grand-hall/",
+  "q": "grand egyptian museum hall staircase giza egypt grand egyptian museum: grand hall & staircase grand egyptian museum: grand hall & staircase मिस्र"
+ },
+ {
+  "title": "ग्रैंड इजिप्शियन म्यूज़ियम: मुख्य दीर्घाएँ",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/gem-main-galleries/",
+  "q": "grand egyptian museum main galleries giza egypt grand egyptian museum: main galleries ग्रैंड इजिप्शियन म्यूज़ियम: मुख्य दीर्घाएँ मिस्र"
+ },
+ {
+  "title": "ग्रैंड इजिप्शियन म्यूज़ियम: तूतनख़ामुन दीर्घाएँ",
+  "place": "Giza",
+  "country": "मिस्र",
+  "href": "/hi/gem-tutankhamun/",
+  "q": "grand egyptian museum tutankhamun galleries giza egypt grand egyptian museum: tutankhamun galleries ग्रैंड इजिप्शियन म्यूज़ियम: तूतनख़ामुन दीर्घाएँ मिस्र"
+ },
+ {
+  "title": "मिस्री संग्रहालय, तहरीर चौक, काहिरा",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/egyptian-museum-tahrir/",
+  "q": "egyptian museum tahrir square cairo egypt egyptian museum, tahrir square, cairo मिस्री संग्रहालय, तहरीर चौक, काहिरा मिस्र"
+ },
+ {
+  "title": "NMEC: The Royal Mummies Hall",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/nmec-royal-mummies/",
+  "q": "nmec the royal mummies hall cairo egypt nmec: the royal mummies hall nmec: the royal mummies hall मिस्र"
+ },
+ {
+  "title": "ख़ान अल-ख़लीली और अल-हुसैन",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/khan-el-khalili-hussein/",
+  "q": "khan el khalili and al hussein cairo egypt khan el-khalili and al-hussein ख़ान अल-ख़लीली और अल-हुसैन मिस्र"
+ },
+ {
+  "title": "अल-अज़हर मस्जिद और विश्वविद्यालय",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/azhar/",
+  "q": "al azhar mosque university cairo egypt al-azhar mosque & university अल-अज़हर मस्जिद और विश्वविद्यालय मिस्र"
+ },
+ {
+  "title": "काहिरा का क़िला, सलाहुद्दीन का क़िला",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/cairo-citadel/",
+  "q": "cairo citadel of salah al din egypt cairo citadel (citadel of salah al-din) काहिरा का क़िला, सलाहुद्दीन का क़िला मिस्र"
+ },
+ {
+  "title": "इब्न तूलून की मस्जिद",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/ibn-tulun/",
+  "q": "mosque of ibn tulun cairo egypt mosque of ibn tulun इब्न तूलून की मस्जिद मिस्र"
+ },
+ {
+  "title": "सुल्तान हसन की मस्जिद और मदरसा",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/sultan-hassan/",
+  "q": "sultan hassan mosque madrasa cairo egypt sultan hassan mosque-madrasa सुल्तान हसन की मस्जिद और मदरसा मिस्र"
+ },
+ {
+  "title": "Al-Muizz Street North, Islamic Cairo",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/islamic-cairo-muizz-north/",
+  "q": "al muizz street north islamic cairo egypt al-muizz street north, islamic cairo al-muizz street north, islamic cairo मिस्र"
+ },
+ {
+  "title": "Al-Muizz Street South, Islamic Cairo",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/islamic-cairo-muizz-south/",
+  "q": "al muizz street south islamic cairo egypt al-muizz street south, islamic cairo al-muizz street south, islamic cairo मिस्र"
+ },
+ {
+  "title": "इस्लामी कला संग्रहालय, काहिरा",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/museum-islamic-art/",
+  "q": "museum of islamic art cairo egypt museum of islamic art, cairo इस्लामी कला संग्रहालय, काहिरा मिस्र"
+ },
+ {
+  "title": "कॉप्टिक काहिरा",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/coptic-cairo/",
+  "q": "coptic cairo egypt coptic cairo कॉप्टिक काहिरा मिस्र"
+ },
+ {
+  "title": "कॉप्टिक संग्रहालय",
+  "place": "Cairo",
+  "country": "मिस्र",
+  "href": "/hi/coptic-museum/",
+  "q": "coptic museum cairo egypt coptic museum कॉप्टिक संग्रहालय मिस्र"
+ },
+ {
+  "title": "सक़्क़ारा: जोसर के सीढ़ीदार पिरामिड का परिसर",
+  "place": "Saqqara",
+  "country": "मिस्र",
+  "href": "/hi/djoser-saqqara/",
+  "q": "saqqara step pyramid of djoser complex egypt saqqara: step pyramid of djoser complex सक़्क़ारा: जोसर के सीढ़ीदार पिरामिड का परिसर मिस्र"
+ },
+ {
+  "title": "सक़्क़ारा: तेती का पिरामिड और मेरेरुका",
+  "place": "Saqqara",
+  "country": "मिस्र",
+  "href": "/hi/saqqara-teti/",
+  "q": "saqqara pyramid of teti nobles tombs egypt saqqara: pyramid of teti & nobles' tombs सक़्क़ारा: तेती का पिरामिड और मेरेरुका मिस्र"
+ },
+ {
+  "title": "सक़्क़ारा: उनास का पिरामिड और रास्ते के मक़बरे",
+  "place": "Saqqara",
+  "country": "मिस्र",
+  "href": "/hi/saqqara-unas/",
+  "q": "saqqara pyramid of unas causeway tombs egypt saqqara: pyramid of unas & causeway tombs सक़्क़ारा: उनास का पिरामिड और रास्ते के मक़बरे मिस्र"
+ },
+ {
+  "title": "मेम्फ़िस खुला संग्रहालय, मित रहीना",
+  "place": "Memphis",
+  "country": "मिस्र",
+  "href": "/hi/memphis-mit-rahina/",
+  "q": "memphis mit rahina open air museum egypt memphis (mit rahina) open-air museum मेम्फ़िस खुला संग्रहालय, मित रहीना मिस्र"
+ },
+ {
+  "title": "दहशूर: स्नेफ़रू का मुड़ा हुआ पिरामिड",
+  "place": "Dahshur",
+  "country": "मिस्र",
+  "href": "/hi/dahshur-bent-pyramid/",
+  "q": "dahshur bent pyramid of sneferu egypt dahshur: bent pyramid of sneferu दहशूर: स्नेफ़रू का मुड़ा हुआ पिरामिड मिस्र"
+ },
+ {
+  "title": "दहशूर: स्नेफ़रू का लाल पिरामिड",
+  "place": "Dahshur",
+  "country": "मिस्र",
+  "href": "/hi/dahshur-red-pyramid/",
+  "q": "dahshur red pyramid of sneferu egypt dahshur: red pyramid of sneferu दहशूर: स्नेफ़रू का लाल पिरामिड मिस्र"
+ },
+ {
+  "title": "कर्नाक: अमून-रा का परिसर",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/karnak-amun-ra/",
+  "q": "karnak precinct of amun ra luxor egypt karnak: precinct of amun-ra कर्नाक: अमून-रा का परिसर मिस्र"
+ },
+ {
+  "title": "लक्सर मंदिर",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/luxor-temple/",
+  "q": "luxor temple egypt luxor temple लक्सर मंदिर मिस्र"
+ },
+ {
+  "title": "स्फ़िंक्स मार्ग, कर्नाक से लक्सर",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/avenue-of-sphinxes/",
+  "q": "avenue of sphinxes karnak to luxor egypt avenue of sphinxes (karnak to luxor) स्फ़िंक्स मार्ग, कर्नाक से लक्सर मिस्र"
+ },
+ {
+  "title": "लक्सर संग्रहालय",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/luxor-museum/",
+  "q": "luxor museum egypt luxor museum लक्सर संग्रहालय मिस्र"
+ },
+ {
+  "title": "राजाओं की घाटी: तूतनख़ामुन का मक़बरा",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/valley-of-kings-kv62/",
+  "q": "valley of the kings tutankhamun s tomb kv62 luxor egypt valley of the kings: tutankhamun's tomb (kv62) राजाओं की घाटी: तूतनख़ामुन का मक़बरा मिस्र"
+ },
+ {
+  "title": "राजाओं की घाटी: खुले मक़बरे",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/valley-of-kings-open-tombs/",
+  "q": "valley of the kings open tombs luxor egypt valley of the kings: the open tombs राजाओं की घाटी: खुले मक़बरे मिस्र"
+ },
+ {
+  "title": "राजाओं की घाटी: सेती प्रथम का मक़बरा, केवी17",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/kv17/",
+  "q": "valley of the kings tomb seti i kv17 luxor egypt valley of the kings: tomb of seti i (kv17) राजाओं की घाटी: सेती प्रथम का मक़बरा, केवी17 मिस्र"
+ },
+ {
+  "title": "हत्शेपसुत का मंदिर, दैर अल-बहरी",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/hatshepsut-deir-el-bahri/",
+  "q": "temple of hatshepsut deir el bahri luxor egypt temple of hatshepsut (deir el-bahri) हत्शेपसुत का मंदिर, दैर अल-बहरी मिस्र"
+ },
+ {
+  "title": "रानियों की घाटी",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/valley-of-queens/",
+  "q": "valley of the queens luxor egypt valley of the queens रानियों की घाटी मिस्र"
+ },
+ {
+  "title": "दैर अल मदीना",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/deir-el-medina/",
+  "q": "deir el medina luxor egypt deir el-medina दैर अल मदीना मिस्र"
+ },
+ {
+  "title": "सामंतों की क़ब्रें: शेख़ अब्द अल-क़ुर्ना",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/nobles-sheikh-abd-el-qurna/",
+  "q": "tombs of the nobles sheikh abd el qurna luxor egypt tombs of the nobles: sheikh abd el-qurna सामंतों की क़ब्रें: शेख़ अब्द अल-क़ुर्ना मिस्र"
+ },
+ {
+  "title": "मदीनत हाबू",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/medinet-habu/",
+  "q": "medinet habu luxor egypt medinet habu मदीनत हाबू मिस्र"
+ },
+ {
+  "title": "रामेसियम, रामसेस द्वितीय का स्मारक मंदिर",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/ramesseum/",
+  "q": "ramesseum mortuary temple of ramesses ii luxor egypt ramesseum (mortuary temple of ramesses ii) रामेसियम, रामसेस द्वितीय का स्मारक मंदिर मिस्र"
+ },
+ {
+  "title": "मेमनॉन की विशाल मूर्तियाँ और अमेनहोटेप तृतीय का मंदिर",
+  "place": "Luxor",
+  "country": "मिस्र",
+  "href": "/hi/colossi-memnon/",
+  "q": "colossi of memnon temple amenhotep iii luxor egypt colossi of memnon & temple of amenhotep iii मेमनॉन की विशाल मूर्तियाँ और अमेनहोटेप तृतीय का मंदिर मिस्र"
+ },
+ {
+  "title": "अबीदोस: सेती प्रथम का मंदिर और ओसिरियन",
+  "place": "Abydos",
+  "country": "मिस्र",
+  "href": "/hi/abydos-seti-i/",
+  "q": "abydos temple of seti i the osireion egypt abydos: temple of seti i & the osireion अबीदोस: सेती प्रथम का मंदिर और ओसिरियन मिस्र"
+ },
+ {
+  "title": "दंदेरा में हाथोर का मंदिर",
+  "place": "Dendera",
+  "country": "मिस्र",
+  "href": "/hi/dendera/",
+  "q": "temple of hathor at dendera egypt temple of hathor at dendera दंदेरा में हाथोर का मंदिर मिस्र"
+ },
+ {
+  "title": "एडफ़ू में होरस का मंदिर",
+  "place": "Edfu",
+  "country": "मिस्र",
+  "href": "/hi/edfu/",
+  "q": "temple of horus at edfu egypt temple of horus at edfu एडफ़ू में होरस का मंदिर मिस्र"
+ },
+ {
+  "title": "कोम ओम्बो मंदिर",
+  "place": "Kom Ombo",
+  "country": "मिस्र",
+  "href": "/hi/komombo/",
+  "q": "temple of kom ombo egypt temple of kom ombo कोम ओम्बो मंदिर मिस्र"
+ },
+ {
+  "title": "फ़िले: आइसिस का मंदिर",
+  "place": "Aswan",
+  "country": "मिस्र",
+  "href": "/hi/philae/",
+  "q": "philae temple of isis aswan egypt philae: temple of isis फ़िले: आइसिस का मंदिर मिस्र"
+ },
+ {
+  "title": "अधूरा ओबिलिस्क और असवान की ग्रेनाइट खदानें",
+  "place": "Aswan",
+  "country": "मिस्र",
+  "href": "/hi/unfinished-obelisk/",
+  "q": "unfinished obelisk aswan granite quarries egypt unfinished obelisk & aswan granite quarries अधूरा ओबिलिस्क और असवान की ग्रेनाइट खदानें मिस्र"
+ },
+ {
+  "title": "एलिफ़ेंटाइन द्वीप",
+  "place": "Aswan",
+  "country": "मिस्र",
+  "href": "/hi/elephantine-island/",
+  "q": "elephantine island aswan egypt elephantine island एलिफ़ेंटाइन द्वीप मिस्र"
+ },
+ {
+  "title": "नूबियाई संग्रहालय, असवान",
+  "place": "Aswan",
+  "country": "मिस्र",
+  "href": "/hi/nubian-museum/",
+  "q": "nubian museum aswan egypt nubian museum, aswan नूबियाई संग्रहालय, असवान मिस्र"
+ },
+ {
+  "title": "अबू सिम्बल: रामसेस द्वितीय का महान मंदिर",
+  "place": "Abu Simbel",
+  "country": "मिस्र",
+  "href": "/hi/abu-simbel/",
+  "q": "abu simbel great temple of ramesses ii egypt abu simbel: great temple of ramesses ii अबू सिम्बल: रामसेस द्वितीय का महान मंदिर मिस्र"
+ },
+ {
+  "title": "अबू सिम्बल: हाथोर और नेफ़र्तारी का छोटा मंदिर",
+  "place": "Abu Simbel",
+  "country": "मिस्र",
+  "href": "/hi/abu-simbel-small-temple/",
+  "q": "abu simbel small temple of nefertari egypt abu simbel: small temple of nefertari अबू सिम्बल: हाथोर और नेफ़र्तारी का छोटा मंदिर मिस्र"
+ },
+ {
+  "title": "बिब्लियोथेका अलेक्सांद्रिना",
+  "place": "Alexandria",
+  "country": "मिस्र",
+  "href": "/hi/bibliotheca-alexandrina/",
+  "q": "bibliotheca alexandrina alexandria egypt bibliotheca alexandrina बिब्लियोथेका अलेक्सांद्रिना मिस्र"
+ },
+ {
+  "title": "क़ायतबे का क़िला, फ़ारोस का स्थल",
+  "place": "Alexandria",
+  "country": "मिस्र",
+  "href": "/hi/qaitbay-citadel/",
+  "q": "citadel of qaitbay pharos site alexandria egypt citadel of qaitbay (pharos site) क़ायतबे का क़िला, फ़ारोस का स्थल मिस्र"
+ },
+ {
+  "title": "कोम अल-शुक़ाफ़ा के भूमिगत क़ब्रिस्तान",
+  "place": "Alexandria",
+  "country": "मिस्र",
+  "href": "/hi/catacombs-kom-el-shoqafa/",
+  "q": "catacombs of kom el shoqafa alexandria egypt catacombs of kom el-shoqafa कोम अल-शुक़ाफ़ा के भूमिगत क़ब्रिस्तान मिस्र"
+ },
+ {
+  "title": "ग्रीको-रोमन संग्रहालय, अलेक्ज़ेंड्रिया",
+  "place": "Alexandria",
+  "country": "मिस्र",
+  "href": "/hi/greco-roman-museum/",
+  "q": "graeco roman museum alexandria egypt graeco-roman museum, alexandria ग्रीको-रोमन संग्रहालय, अलेक्ज़ेंड्रिया मिस्र"
+ },
+ {
+  "title": "सिनाई पर्वत, जबल मूसा",
+  "place": "Sinai",
+  "country": "मिस्र",
+  "href": "/hi/mount-sinai/",
+  "q": "mount sinai gebel musa egypt mount sinai (gebel musa) सिनाई पर्वत, जबल मूसा मिस्र"
+ },
+ {
+  "title": "संत कैथरीन मठ",
+  "place": "Sinai",
+  "country": "मिस्र",
+  "href": "/hi/saint-catherines-monastery/",
+  "q": "saint catherine s monastery sinai egypt saint catherine's monastery संत कैथरीन मठ मिस्र"
+ },
+ {
+  "title": "रास मोहम्मद राष्ट्रीय उद्यान, सिनाई",
+  "place": "Sinai",
+  "country": "मिस्र",
+  "href": "/hi/ras-mohammed/",
+  "q": "ras mohammed national park sinai egypt ras mohammed national park, sinai रास मोहम्मद राष्ट्रीय उद्यान, सिनाई मिस्र"
+ },
+ {
+  "title": "सीवा: अग़ुरमी का ओरेकल मंदिर और सिकंदर महान",
+  "place": "Siwa",
+  "country": "मिस्र",
+  "href": "/hi/siwa-oracle-aghurmi/",
+  "q": "siwa temple of the oracle egypt siwa: temple of the oracle सीवा: अग़ुरमी का ओरेकल मंदिर और सिकंदर महान मिस्र"
+ },
+ {
+  "title": "श्वेत मरुस्थल राष्ट्रीय उद्यान, फ़राफ़्रा",
+  "place": "Farafra",
+  "country": "मिस्र",
+  "href": "/hi/white-desert-farafra/",
+  "q": "white desert national park farafra egypt white desert national park (farafra) श्वेत मरुस्थल राष्ट्रीय उद्यान, फ़राफ़्रा मिस्र"
+ },
+ {
+  "title": "वादी अल-हितान, व्हेलों की घाटी, फ़य्यूम",
+  "place": "Fayoum",
+  "country": "मिस्र",
+  "href": "/hi/wadi-el-hitan/",
+  "q": "wadi el hitan valley of the whales fayoum egypt wadi el-hitan (valley of the whales), fayoum वादी अल-हितान, व्हेलों की घाटी, फ़य्यूम मिस्र"
  }
 ];
