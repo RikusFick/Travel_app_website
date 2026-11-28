@@ -54,6 +54,44 @@
         "galleria-borghese",
         "tivoli-villas"
       ]
+    },
+    {
+      "id": "paris",
+      "href": "/tips/paris/",
+      "title": "What to do in Paris",
+      "teaser": "The Eiffel Tower, the Louvre, Notre-Dame and the Sainte-Chapelle, the Musée d’Orsay, Montmartre, the Arc de Triomphe, and a day at Versailles.",
+      "country": "France",
+      "image": "/img/guides/eiffel-tower.jpg",
+      "imageAlt": "The Eiffel Tower rising above the Champ de Mars in Paris",
+      "guides": [
+        "eiffel-tower",
+        "louvre",
+        "notre-dame",
+        "sainte-chapelle",
+        "musee-orsay",
+        "sacre-coeur-montmartre",
+        "arc-de-triomphe",
+        "versailles"
+      ]
+    },
+    {
+      "id": "istanbul",
+      "href": "/tips/istanbul/",
+      "title": "What to do in Istanbul",
+      "teaser": "Hagia Sophia, the Blue Mosque and the Hippodrome, the Basilica Cistern, Topkapı Palace, the Grand Bazaar, Galata Tower and the Bosphorus.",
+      "country": "Turkey",
+      "image": "/img/guides/hagia-sophia.jpg",
+      "imageAlt": "The dome and minarets of Hagia Sophia in Sultanahmet, Istanbul",
+      "guides": [
+        "hagia-sophia",
+        "blue-mosque",
+        "basilica-cistern",
+        "topkapi-palace",
+        "grand-bazaar",
+        "suleymaniye-mosque",
+        "galata-tower",
+        "bosphorus-cruise"
+      ]
     }
   ]
 }
